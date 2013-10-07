@@ -1,5 +1,5 @@
         <div class="l-footer milli">
-            © <?php echo date("Y"); ?> <a href="http://twitter.com/bramsmulders">Bram Smulders</a>. Made with <a href="http://getkirby.com">Kirby & ♥</a>. Powered by <a href="https://github.com/bramsmulders/blocss">Blocss F/E Framework</a>.
+            © <?php echo date("Y"); ?> <a href="http://twitter.com/bramsmulders">Bram Smulders</a>. Made with <a href="http://getkirby.com">Kirby & ♥</a>. Powered by <a href="https://github.com/Blocss/blocss">Blocss F/E Framework</a>.
         </div><!-- .l-footer -->
 
     </div><!-- .container-site -->

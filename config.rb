@@ -1,7 +1,7 @@
 # Compass settings
 
 # Set this to the root of your project when deployed:
-http_path = "/project/bs/"
+http_path = "/project/bramsmulders.com/"
 css_dir = "public/css"
 sass_dir = "public/css"
 images_dir = "public/gfx"
