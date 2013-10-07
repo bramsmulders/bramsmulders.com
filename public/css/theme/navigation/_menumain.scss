@@ -1,0 +1,92 @@
+/*----------------------------------------------------------------------------*\
+    $MENUMAIN
+    The top menu of the website
+    Used in conjunction with '.nav' from 'blocss/blocs/_nav.scss'
+\*----------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------*\
+    $CONTENTS
+\*----------------------------------------------------------------------------*/
+
+    /*
+    CONTENTS................You're reading it, LOL
+    MODULE..................Includes base module & submodules
+    STATE...................States the module can be in
+    THEME...................Theming of the module
+    */
+
+
+
+
+
+/*----------------------------------------------------------------------------*\
+    $MODULE
+\*----------------------------------------------------------------------------*/
+
+    .n-menu-main{
+        line-height: $base-spacing-unit*4;
+        line-height: ($base-spacing-unit*4)/$base-font-size*1rem;
+
+        &,
+        &.nav{
+            display: inline-block;
+        }
+            a{
+                color: $lightest;
+            }
+            a:hover,
+            .is-active a{
+                color: $lightest;
+                background-color: $brand;
+            }
+    }
+
+
+
+
+
+/*----------------------------------------------------------------------------*\
+    $STATE
+\*----------------------------------------------------------------------------*/
+
+    /* Media Queries
+       The default media queries shipped with Blocss:
+       Uncomment the ones you need
+    \*------------------------------------------------------------------------*/
+
+        /**
+         * Desk state
+         */
+        //@include media-query(desk){}
+
+
+        /**
+         * Portable state
+         */
+        //@include media-query(portable){}
+
+
+        /**
+         * Lap state
+         */
+        //@include media-query(lap){}
+
+
+        /**
+         * Lapup state
+         */
+        //@include media-query(lapup){}
+
+
+        /**
+         * Palm state
+         */
+        //@include media-query(palm){}
+
+
+
+
+
+/*----------------------------------------------------------------------------*\
+    $THEME
+\*----------------------------------------------------------------------------*/

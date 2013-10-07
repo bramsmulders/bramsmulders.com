@@ -1,0 +1,5 @@
+﻿Title: Blog
+
+----
+
+Text: Articles about front-end development, CSS, OOCSS, HTML and Bram Smulders

@@ -1,0 +1,13 @@
+﻿Title: Bram Smulders, front-end architecture, CSS, OOCSS, HTML & more
+
+----
+
+Description: A front-end developers blog covering front-end architecture, CSS, OOCSS, HTML and more.
+
+----
+
+Analytics: UA-39276659-1
+
+----
+
+Version: v1.0.1
