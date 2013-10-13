@@ -25,7 +25,7 @@ $htmltitle = html($page->title()) .' - '. html($site->title());
 
     <!-- CSS -->
     <?php echo css('//fonts.googleapis.com/css?family=Lato:100,300,400,700') ?>
-    <?php echo css('public/css/theme.20130508.css') ?>
+    <?php echo css('public/css/theme.20131013.css') ?>
 
     <!-- Modernizr -->
     <?php echo js('public/js/libs/modernizr.min.js') ?>
@@ -53,21 +53,11 @@ $htmltitle = html($page->title()) .' - '. html($site->title());
 </head>
 
 <body>
+        <div class="wrapper">
+        <!--[if lt IE 9]>
+            <div class="notice--warning">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</div>
+        <![endif]-->
 
-<div class="prefetch">
-    <img src="<?php echo url('public/gfx/theme/sprite.20130126.svg'); ?>" alt="">
-</div><!-- .prefetch -->
-
-<div class="wrapper">
-    <!--[if lt IE 9]>
-        <div class="notice-warning">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</div>
-    <![endif]-->
-    <div class="container-site site-width">
-
-        <div class="l-masthead">
-            <?php snippet('menu') ?>
-            <a href="<?php echo url(); ?>" title="Get me Home!" class="m-logo<?php echo (($pages->find('home')->isOpen())?' is-active':''); ?>">
-                <span class="m-logo__b">B</span>
-                <span class="m-logo__s">S</span>
-            </a>
-        </div><!-- .l-masthead -->
+        <?php snippet('menu') ?>
+        <a href="<?php echo url(); ?>" title="Get me Home!" class="<?php echo (($pages->find('home')->isOpen())?' is-active':''); ?>">BS
+        </a>

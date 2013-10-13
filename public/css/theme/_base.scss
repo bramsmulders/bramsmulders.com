@@ -1,6 +1,6 @@
 /*----------------------------------------------------------------------------*\
     $BASE
-    High-level elements like 'html', 'body', etc
+    High-level elements like 'html', 'body', h1 t/m h6, p, a etc.
 \*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*\
@@ -9,9 +9,7 @@
 
     /*
     CONTENTS................You're reading it, LOL
-    MODULE..................Includes base module & submodules
-    STATE...................States the module can be in
-    THEME...................Theming of the module
+    TOPLEVEL................html, body, .wrapper
     */
 
 
@@ -19,117 +17,7 @@
 
 
 /*----------------------------------------------------------------------------*\
-    $MODULE
+    $INCLUDES
 \*----------------------------------------------------------------------------*/
 
-    /* commented backslash hack \*/
-    html, body { height: 100%; }
-    /* end hack */
-    * html .wrapper { height: 100%; }
-
-    body{
-        position: relative;
-        min-height: 100%;
-        font-family: $base-font-family;
-        font-weight: 300;
-        background-color: $dark;
-        color: $light;
-        letter-spacing: 1px;
-    }
-
-    .wrapper {
-        position: relative;
-        z-index: 3;
-        height: auto;
-        min-height: 100%;
-        width: 100%;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-
-    .site-width{
-        position: relative;
-        max-width: $portable-width;
-        padding-left: $half-spacing-unit;
-        padding-right: $half-spacing-unit;
-        margin: 0 auto;
-    }
-
-
-
-
-
-/*----------------------------------------------------------------------------*\
-    $STATE
-\*----------------------------------------------------------------------------*/
-
-    /* Media Queries
-       The default media queries shipped with Blocss:
-       Uncomment the ones you need
-    \*------------------------------------------------------------------------*/
-
-        /**
-         * Desk state
-         */
-        @include media-query(desk){
-
-            .site-width{
-                max-width: $site-width;
-            }
-
-        }
-
-
-        /**
-         * Portable state
-         */
-        @include media-query(portable){
-
-            html{
-                font-size: 1em;
-            }
-
-            .site-width{
-                max-width: $portable-width;
-            }
-
-        }
-
-
-        /**
-         * Lap state
-         */
-        //@include media-query(lap){}
-
-
-        /**
-         * Lapup state
-         */
-        @include media-query(lapup){
-
-            .site-width{
-                padding-left: $base-spacing-unit;
-                padding-right: $base-spacing-unit;
-            }
-
-        }
-
-
-        /**
-         * Palm state
-         */
-        @include media-query(palm){
-
-            html{
-                font-size: 0.8125em;
-            }
-
-        }
-
-
-
-
-
-/*----------------------------------------------------------------------------*\
-    $THEME
-\*----------------------------------------------------------------------------*/
+    @import "base/toplevel";

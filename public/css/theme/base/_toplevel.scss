@@ -1,6 +1,6 @@
 /*----------------------------------------------------------------------------*\
-    $HEADINGS
-    All headings on the page
+    $TOPLEVEL
+    html, body, .wrapper
 \*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*\
@@ -22,9 +22,24 @@
     $MODULE
 \*----------------------------------------------------------------------------*/
 
-    h1, h2, h3, h4, h5, h6{
-        color: $lightest;
-        font-weight: 300;
+    html, body { height: 100%; }
+
+    body{
+        position: relative;
+        min-height: 100%;
+    }
+
+
+    /**
+     * Make wrapper 100% height
+     */
+    .wrapper {
+        position: relative;
+        min-height: 100%;
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+        z-index: 3;
     }
 
 
@@ -34,40 +49,6 @@
 /*----------------------------------------------------------------------------*\
     $STATE
 \*----------------------------------------------------------------------------*/
-
-    /* Media Queries
-       The default media queries shipped with Blocss:
-       Uncomment the ones you need
-    \*------------------------------------------------------------------------*/
-
-        /**
-         * Desk state
-         */
-        //@include media-query(desk){}
-
-
-        /**
-         * Portable state
-         */
-        //@include media-query(portable){}
-
-
-        /**
-         * Lap state
-         */
-        //@include media-query(lap){}
-
-
-        /**
-         * Lapup state
-         */
-        //@include media-query(lapup){}
-
-
-        /**
-         * Palm state
-         */
-        //@include media-query(palm){}
 
 
 
