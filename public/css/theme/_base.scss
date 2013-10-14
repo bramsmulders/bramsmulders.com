@@ -9,7 +9,10 @@
 
     /*
     CONTENTS................You're reading it, LOL
+    FONT....................Font face declarations
     TOPLEVEL................html, body, .wrapper
+    SITE....................Site width properties
+    HEADINGS................
     */
 
 
@@ -20,4 +23,9 @@
     $INCLUDES
 \*----------------------------------------------------------------------------*/
 
-    @import "base/toplevel";
+    @import
+            "base/font",
+            "base/toplevel",
+            "base/site",
+            "base/headings"
+    ;

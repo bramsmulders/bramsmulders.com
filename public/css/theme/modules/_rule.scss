@@ -1,6 +1,5 @@
 /*----------------------------------------------------------------------------*\
-    $TOPLEVEL
-    html, body, .wrapper
+    $RULE
 \*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*\
@@ -22,23 +21,29 @@
     $MODULE
 \*----------------------------------------------------------------------------*/
 
-    html, body { height: 100%; }
-
-    body{
-        position: relative;
-        min-height: 100%;
+    .rule {
+        border-color: $color-light;
+        border-width: 2px;
     }
 
 
     /**
-     * Make wrapper 100% height
+     * Modifyer: tiny rule
      */
-    .wrapper {
-        position: relative;
-        height: 100%;
-        width: 100%;
-        margin: 0 auto;
+    .rule--tiny {
+        max-width: $space*3;
+        margin-left: auto;
+        margin-right: auto;
     }
+
+
+    /**
+     * Modifyer: colors
+     */
+    .rule--white {
+        border-color: $color-white;
+    }
+
 
 
 

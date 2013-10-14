@@ -1,6 +1,6 @@
 /*----------------------------------------------------------------------------*\
-    $LAYOUT
-    Structural styling
+    $MIXINS
+    Project specific mixins
 \*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*\
@@ -9,9 +9,7 @@
 
     /*
     CONTENTS................You're reading it, LOL
-    LAYER...................Divides the page into sections
-    MASTHEAD................Uppermost header of the page
-    FOOTER..................Footer
+    ANIMATION...............Animation & keyframe mixins
     */
 
 
@@ -22,7 +20,6 @@
     $INCLUDES
 \*----------------------------------------------------------------------------*/
 
-    @import "layout/layer",
-            "layout/masthead",
-            "layout/footer"
+    @import
+            "mixins/animation"
     ;

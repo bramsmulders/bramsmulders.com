@@ -1,10 +1,8 @@
 <?php
 $htmltitle = html($page->title()) .' - '. html($site->title());
 ?><!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9" lang="en"> <![endif]-->
-<!--[if IE 9]>    <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!--[if lt IE 9]>    <html class="no-js lt-ie9 lt-ie10" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
     <meta charset="utf-8"/>
@@ -14,9 +12,6 @@ $htmltitle = html($page->title()) .' - '. html($site->title());
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//themes.googleusercontent.com">
     <link rel="dns-prefetch" href="//www.google-analytics.com">
-    <link rel="dns-prefetch" href="//platform.twitter.com">
-    <link rel="dns-prefetch" href="//p.twitter.com">
-    <link rel="dns-prefetch" href="//cdn.api.twitter.com">
 
     <!-- SEO stuff -->
     <title><?php echo $htmltitle; ?></title>
@@ -24,7 +19,7 @@ $htmltitle = html($page->title()) .' - '. html($site->title());
     <meta name="robots" content="index, follow" />
 
     <!-- CSS -->
-    <?php echo css('//fonts.googleapis.com/css?family=Lato:100,300,400,700') ?>
+    <?php echo css('//fonts.googleapis.com/css?family=Raleway:400,300,700') ?>
     <?php echo css('public/css/theme.20131013.css') ?>
 
     <!-- Modernizr -->
@@ -53,11 +48,13 @@ $htmltitle = html($page->title()) .' - '. html($site->title());
 </head>
 
 <body>
-        <div class="wrapper">
+    <div class="wrapper">
         <!--[if lt IE 9]>
             <div class="notice--warning">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</div>
         <![endif]-->
 
+        <?php /* ?>
         <?php snippet('menu') ?>
         <a href="<?php echo url(); ?>" title="Get me Home!" class="<?php echo (($pages->find('home')->isOpen())?' is-active':''); ?>">BS
         </a>
+        <?php */ ?>

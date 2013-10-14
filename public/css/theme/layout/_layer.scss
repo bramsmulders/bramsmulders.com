@@ -1,6 +1,5 @@
 /*----------------------------------------------------------------------------*\
-    $TOPLEVEL
-    html, body, .wrapper
+    $LAYER
 \*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*\
@@ -22,22 +21,33 @@
     $MODULE
 \*----------------------------------------------------------------------------*/
 
-    html, body { height: 100%; }
-
-    body{
+    .layer {
         position: relative;
-        min-height: 100%;
+        @extend %module;
+        @include rem(padding, $space 0);
     }
 
 
     /**
-     * Make wrapper 100% height
+     * Modifyers: layer sizes
      */
-    .wrapper {
-        position: relative;
-        height: 100%;
-        width: 100%;
-        margin: 0 auto;
+    .layer--medium {
+        @include rem(padding, $space*2 0);
+    }
+    .layer--large {
+        @include rem(padding, $space*3 0);
+    }
+
+
+    /**
+     * Modifyers: colors
+     */
+    .layer--lightest {
+        background-color: $color-lightest;
+    }
+
+    .layer--brand {
+        background-color: $brand;
     }
 
 

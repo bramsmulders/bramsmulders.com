@@ -2,6 +2,8 @@
     "name":  "bramsmulders.com",
     "version": "2.0.0.alpha.1",
     "dependencies": {
-        "jquery": "latest"
+        "jquery": "latest",
+        "jRespond": "https://github.com/ten1seven/jRespond.git",
+        "jquery-cycle2": "1.0.0-2013.01.22.2"
     }
 }

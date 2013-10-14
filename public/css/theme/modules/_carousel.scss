@@ -1,6 +1,5 @@
 /*----------------------------------------------------------------------------*\
-    $TOPLEVEL
-    html, body, .wrapper
+    $CAROUSEL
 \*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*\
@@ -22,22 +21,29 @@
     $MODULE
 \*----------------------------------------------------------------------------*/
 
-    html, body { height: 100%; }
-
-    body{
+    .carousel {
         position: relative;
-        min-height: 100%;
     }
+        .carousel__panes {
+            @include rem(margin, 0 $space*4);
+            list-style: none;
+        }
+            .carousel__pane {
+                @extend %module;
+                width: 100%;
+            }
 
+    .carousel__control {
+        position: absolute;
+        top: 50%;
+        @include translate(0, -50%);
 
-    /**
-     * Make wrapper 100% height
-     */
-    .wrapper {
-        position: relative;
-        height: 100%;
-        width: 100%;
-        margin: 0 auto;
+        &.is-prev {
+            left: 0;
+        }
+        &.is-next {
+            right: 0;
+        }
     }
 
 

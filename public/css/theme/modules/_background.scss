@@ -1,6 +1,5 @@
 /*----------------------------------------------------------------------------*\
-    $TOPLEVEL
-    html, body, .wrapper
+    $BACKGROUND
 \*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*\
@@ -22,24 +21,32 @@
     $MODULE
 \*----------------------------------------------------------------------------*/
 
-    html, body { height: 100%; }
-
-    body{
-        position: relative;
-        min-height: 100%;
-    }
-
-
-    /**
-     * Make wrapper 100% height
-     */
-    .wrapper {
-        position: relative;
-        height: 100%;
+    .background {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 50% 0;
         width: 100%;
-        margin: 0 auto;
+        height: 100%;
     }
 
+    .background--absolute {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+        .background__overlay {
+            position: relative;
+            z-index: 10;
+        }
+
+
+    .background--rain {
+        background-image: url(../gfx/theme/backgrounds/rain.jpg);
+    }
 
 
 

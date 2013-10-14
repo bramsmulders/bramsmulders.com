@@ -1,6 +1,6 @@
 /*----------------------------------------------------------------------------*\
-    $TOPLEVEL
-    html, body, .wrapper
+    $SITE
+    Site width properties
 \*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*\
@@ -22,22 +22,14 @@
     $MODULE
 \*----------------------------------------------------------------------------*/
 
-    html, body { height: 100%; }
-
-    body{
-        position: relative;
-        min-height: 100%;
-    }
-
-
     /**
-     * Make wrapper 100% height
+     * Retain
      */
-    .wrapper {
-        position: relative;
-        height: 100%;
-        width: 100%;
-        margin: 0 auto;
+    .site--retain {
+        max-width: $site-retain + ($space*2);
+        @include rem(padding, 0 $space);
+        margin-left: auto;
+        margin-right: auto;
     }
 
 
