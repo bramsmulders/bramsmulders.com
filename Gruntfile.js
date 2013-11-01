@@ -301,8 +301,8 @@ module.exports = function (grunt) {
             build: [
                 'coffee',
                 'compass',
-                'imagemin',
-                'htmlmin'
+                'imagemin'/*,
+                'htmlmin'*/
             ]
         },
         bower: {
