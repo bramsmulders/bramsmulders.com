@@ -133,7 +133,7 @@
                     <h2 class="alpha  hN  color--dark">I’ve made websites, frameworks , guidelines</h2>
                 </div><!-- .hgroup -->
                 <hr class="rule  rule--tiny">
-                <div class="grid">
+                <div class="grid  grid--center">
 
                     <div class="grid__cell  unit-4-12">
                         <article class="jetpack">
@@ -141,12 +141,12 @@
                                 <div class="jetpack__center">
                                     <div class="hgroup">
                                         <h1 class="jetpack__title  gamma  hN">Blocss</h1>
-                                        <h2 class="jetpack__subtitle  milli  hN">Front-end framework</h2>
+                                        <h2 class="jetpack__subtitle  milli  hN">CSS framework</h2>
                                     </div>
                                 </div><!-- .jetpack__center -->
                             </div><!-- .jetpack__overlay -->
                             <img src="images/theme/cases/blocss.png" alt="" class="jetpack__platform">
-                            <a href="https://github.com/Blocss/blocss" class="jetpack__link" rel="external">Blocss Front-end framework</a>
+                            <a href="https://github.com/Blocss/blocss" class="jetpack__link" rel="external" title="Blocss Front-end framework">Blocss Front-end framework</a>
                         </article><!-- .jetpack -->
                     </div><!-- .grid__cell -->
 
@@ -156,12 +156,12 @@
                                 <div class="jetpack__center">
                                     <div class="hgroup">
                                         <h1 class="jetpack__title  gamma  hN">Scoor je stage</h1>
-                                        <h2 class="jetpack__subtitle  milli  hN">for freshheads</h2>
+                                        <h2 class="jetpack__subtitle  milli  hN">Agency: freshheads</h2>
                                     </div>
                                 </div><!-- .jetpack__center -->
                             </div><!-- .jetpack__overlay -->
                             <img src="images/theme/cases/scoorjestage.png" alt="" class="jetpack__platform">
-                            <a href="http://www.knvbtalentteam.nl" class="jetpack__link" rel="external">Scoor je stage</a>
+                            <a href="http://www.knvbtalentteam.nl" class="jetpack__link" rel="external" title="Scoor je stage">Scoor je stage</a>
                         </article><!-- .jetpack -->
                     </div><!-- .grid__cell -->
 
@@ -170,13 +170,28 @@
                             <div class="jetpack__overlay">
                                 <div class="jetpack__center">
                                     <div class="hgroup">
-                                        <h1 class="jetpack__title  gamma  hN">Scoor je stage</h1>
-                                        <h2 class="jetpack__subtitle  milli  hN">for freshheads</h2>
+                                        <h1 class="jetpack__title  gamma  hN">GFK mijn florijn</h1>
+                                        <h2 class="jetpack__subtitle  milli  hN">Agency: freshheads</h2>
                                     </div>
                                 </div><!-- .jetpack__center -->
                             </div><!-- .jetpack__overlay -->
-                            <img src="//lorempixel.com/340/340/city/3" alt="" class="jetpack__platform">
-                            <a href="http://www.knvbtalentteam.nl" class="jetpack__link" rel="external">Scoor je stage</a>
+                            <img src="images/theme/cases/gfk.png" alt="" class="jetpack__platform">
+                            <a href="#" class="jetpack__link" rel="external" title="GFK mijn florijn">GFK mijn florijn</a>
+                        </article><!-- .jetpack -->
+                    </div><!-- .grid__cell -->
+
+                    <div class="grid__cell  unit-4-12">
+                        <article class="jetpack">
+                            <div class="jetpack__overlay">
+                                <div class="jetpack__center">
+                                    <div class="hgroup">
+                                        <h1 class="jetpack__title  gamma  hN">Emerce eDay</h1>
+                                        <h2 class="jetpack__subtitle  milli  hN">Agency: freshheads</h2>
+                                    </div>
+                                </div><!-- .jetpack__center -->
+                            </div><!-- .jetpack__overlay -->
+                            <img src="images/theme/cases/eday.png" alt="" class="jetpack__platform">
+                            <a href="http://www.emerceeday.nl" class="jetpack__link" rel="external" title="Emerce eDay">Emerce eDay</a>
                         </article><!-- .jetpack -->
                     </div><!-- .grid__cell -->
 
@@ -204,17 +219,23 @@
             </div>
         </footer>
 
-        {{> header }}
-        {{> body }}
+        <div class="visuallyhidden">
+            {{> header }}
+            {{> body }}
+        </div>
     </div><!-- .wrapper -->
-    <!-- build:js js/vendor/jquery.js -->
+    <!-- build:js js/vendor/main.js -->
     <script src="bower_components/jquery/jquery.js"></script>
-    <!-- endbuild -->
-    <!-- build:js js/main.js -->
-    <script src="js/main.js"></script>
-    <!-- endbuild -->
-    <!-- build:js js/plugins.js -->
     <script src="js/plugins.js"></script>
+    <script src="bower_components/jRespond/js/jRespond.js"></script>
+    <script src="bower_components/jquery-cycle2/jquery.cycle2.core.js"></script>
+    <script src="bower_components/jquery-cycle2/jquery.cycle2.autoheight.js"></script>
+    <script src="bower_components/jquery-cycle2/jquery.cycle2.pager.js"></script>
+    <script src="bower_components/jquery-cycle2/jquery.cycle2.prevnext.js"></script>
+    <script src="bower_components/jquery-cycle2/jquery.cycle2.scrollVert.js"></script>
+    <script src="bower_components/jquery-cycle2/jquery.cycle2.swipe.js"></script>
+    <script src="bower_components/jquery-cycle2/jquery.cycle2.carousel.js"></script>
+    <script src="js/main.js"></script>
     <!-- endbuild -->
 </body>
 </html>

@@ -27,6 +27,7 @@
         overflow: hidden;
         border: 1px solid $color-light;
         @include rem(padding, $space-half/2);
+        @include rem(margin-bottom, $space);
     }
         .jetpack__overlay,
         .jetpack__link {
