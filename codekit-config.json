@@ -1,6 +1,6 @@
 {
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
-  "creatorBuild" : "8326",
+  "creatorBuild" : "8376",
   "files" : {
     "\/public\/components\/jquery\/jquery.min.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1043,6 +1043,24 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/panel\/languages\/tr.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/panel\/languages\/tr.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/panel\/fields\/textarea\/textarea.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/panel\/fields\/textarea\/textarea.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/public\/css\/blocss\/_defaults.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1054,24 +1072,6 @@
       "outputAbbreviatedPath" : "\/public\/css\/_defaults.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/panel\/fields\/textarea\/textarea.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/panel\/fields\/textarea\/textarea.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/panel\/languages\/tr.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/panel\/languages\/tr.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/site\/templates\/default.php" : {
       "ignoreWasSetByUser" : 0,
@@ -1145,15 +1145,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/panel\/defaults\/config\/config.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/panel\/defaults\/config\/config.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/public\/css\/blocss\/generic\/_clearfix.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1165,6 +1156,15 @@
       "outputAbbreviatedPath" : "\/public\/css\/_clearfix.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/panel\/defaults\/config\/config.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/panel\/defaults\/config\/config.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/panel\/lib\/user.php" : {
       "ignoreWasSetByUser" : 0,
@@ -1800,14 +1800,16 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/panel\/languages\/nl.php" : {
+    "\/public\/components\/jquery-cycle2\/jquery.cycle2.video.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/panel\/languages\/nl.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/public\/components\/jquery-cycle2\/jquery.cycle2.video.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/public\/components\/jquery-cycle2\/jquery.cycle2.video-min.js",
+      "fileType" : 64
     },
     "\/public\/css\/blocss\/generic\/_mixins.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -1865,16 +1867,14 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/public\/components\/jquery-cycle2\/jquery.cycle2.video.js" : {
+    "\/panel\/languages\/nl.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/public\/components\/jquery-cycle2\/jquery.cycle2.video.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/public\/components\/jquery-cycle2\/jquery.cycle2.video-min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/panel\/languages\/nl.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/public\/css\/blocss\/_removed\/_position.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -1994,24 +1994,6 @@
       "outputAbbreviatedPath" : "\/public\/components\/jquery-cycle2\/jquery.cycle2.tile-min.js",
       "fileType" : 64
     },
-    "\/site\/panel\/blueprints\/blog.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/site\/panel\/blueprints\/blog.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/kirby\/parsers\/markdown.extra.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/kirby\/parsers\/markdown.extra.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/public\/components\/jquery-cycle2\/jquery.cycle2.command.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -2022,6 +2004,24 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/public\/components\/jquery-cycle2\/jquery.cycle2.command-min.js",
       "fileType" : 64
+    },
+    "\/kirby\/parsers\/markdown.extra.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/kirby\/parsers\/markdown.extra.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/site\/panel\/blueprints\/blog.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/site\/panel\/blueprints\/blog.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/panel\/snippets\/pages.delete.php" : {
       "ignoreWasSetByUser" : 0,
@@ -2085,6 +2085,15 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/site\/panel\/blueprints\/default.php" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/site\/panel\/blueprints\/default.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/kirby\/lib\/obj.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -2114,15 +2123,6 @@
       "outputAbbreviatedPath" : "\/public\/css\/_base.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/site\/panel\/blueprints\/default.php" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/site\/panel\/blueprints\/default.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/panel\/assets\/images\/sort.png" : {
       "ignoreWasSetByUser" : 0,
@@ -2333,14 +2333,16 @@
       "outputAbbreviatedPath" : "\/public\/components\/jquery-cycle2\/jquery.cycle2.hash-min.js",
       "fileType" : 64
     },
-    "\/panel\/snippets\/footer.php" : {
+    "\/panel\/assets\/fancybox\/fancy_shadow_nw.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/panel\/snippets\/footer.php",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/panel\/assets\/fancybox\/fancy_shadow_nw.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/panel\/assets\/fancybox\/fancy_shadow_nw.png",
+      "initialSize" : 324,
+      "fileType" : 8192
     },
     "\/site\/panel\/config\/config.php" : {
       "ignoreWasSetByUser" : 0,
@@ -2362,16 +2364,14 @@
       "outputAbbreviatedPath" : "\/public\/components\/jquery-cycle2\/jquery.cycle2.loader-min.js",
       "fileType" : 64
     },
-    "\/panel\/assets\/fancybox\/fancy_shadow_nw.png" : {
+    "\/panel\/snippets\/footer.php" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/panel\/assets\/fancybox\/fancy_shadow_nw.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/panel\/assets\/fancybox\/fancy_shadow_nw.png",
-      "initialSize" : 324,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/panel\/snippets\/footer.php",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/index.php" : {
       "ignoreWasSetByUser" : 0,
@@ -2752,6 +2752,7 @@
       "trailing" : 1,
       "nonew" : 1,
       "es3" : 0,
+      "freeze" : true,
       "yui" : 0,
       "mootools" : 0,
       "proto" : 0,
@@ -2787,6 +2788,7 @@
       "unused" : 1,
       "debug" : 0,
       "bitwise" : 1,
+      "notypeof" : true,
       "white" : 0,
       "browser" : 1,
       "worker" : 0,
@@ -2813,7 +2815,6 @@
       "newcap" : 0,
       "sloppy" : 0,
       "closure" : 0,
-      "es5" : 0,
       "browser" : 1,
       "properties" : 0,
       "plusplus" : 0,
