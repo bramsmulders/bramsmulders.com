@@ -1,6 +1,6 @@
 /*----------------------------------------------------------------------------*\
-    $TOPLEVEL
-    html, body, .wrapper
+    $BUTTON
+    Various buttons
 \*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*\
@@ -22,22 +22,35 @@
     $MODULE
 \*----------------------------------------------------------------------------*/
 
-    html, body { height: 100%; }
-
-    body{
-        position: relative;
-        min-height: 100%;
+    .button {
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        @include transition(background-color $transition-duration-short, color $transition-duration-short, border-color $transition-duration-short);
     }
 
 
-    /**
-     * Make wrapper 100% height
-     */
-    .wrapper {
-        position: relative;
-        height: 100%;
-        width: 100%;
-        margin: 0 auto;
+    .button--white {
+        color: $color-white;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: rgba(255,255,255,.2);
+        }
+    }
+
+
+    .button--brand {
+        background-color: $brand;
+        color: $color-white;
+        border-color: $brand;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: darken($brand, 10%);
+        }
     }
 
 

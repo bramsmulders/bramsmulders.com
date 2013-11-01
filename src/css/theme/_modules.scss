@@ -9,6 +9,13 @@
 
     /*
     CONTENTS................You're reading it, LOL
+    BUTTON..................Various buttons
+    RULE....................Various rule variations
+    BACKGROUND..............Background images
+    HERO....................Hero carousel
+    CAROUSEL................Carousel object
+    JETPACK.................
+    HELPERS.................Set of handy dandy helper classes
     */
 
 
@@ -18,3 +25,14 @@
 /*----------------------------------------------------------------------------*\
     $INCLUDES
 \*----------------------------------------------------------------------------*/
+
+    @import
+            "modules/button",
+            "modules/rule",
+            "modules/background",
+            "modules/hero",
+            "modules/carousel",
+            "modules/jetpack",
+
+            "modules/helpers"
+    ;

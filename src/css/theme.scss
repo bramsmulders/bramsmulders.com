@@ -46,7 +46,7 @@
     /**
      * If you use compass enable this
      */
-    //@import "compass/css3";
+    @import "compass/css3";
     @import "vars";
     @import "blocss-framework/blocss";
 
@@ -54,6 +54,7 @@
     /**
      * Theme includes
      */
+    @import "theme/mixins";
     @import "theme/base";
     @import "theme/layout";
     @import "theme/modules";

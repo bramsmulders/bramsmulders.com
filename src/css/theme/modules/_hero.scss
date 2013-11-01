@@ -1,6 +1,6 @@
 /*----------------------------------------------------------------------------*\
-    $TOPLEVEL
-    html, body, .wrapper
+    $HERO
+    Hero carousel
 \*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*\
@@ -22,23 +22,55 @@
     $MODULE
 \*----------------------------------------------------------------------------*/
 
-    html, body { height: 100%; }
-
-    body{
-        position: relative;
-        min-height: 100%;
-    }
-
-
     /**
-     * Make wrapper 100% height
+     * Shared absolute positioning
      */
-    .wrapper {
-        position: relative;
-        height: 100%;
-        width: 100%;
-        margin: 0 auto;
+    .hero,
+        .hero__panes,
+            .hero__pane {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
+
+        /**
+         * Hero panes
+         */
+        .hero__panes {
+            list-style: none;
+            margin: 0;
+        }
+
+            .hero__pane {
+                &:first-child {
+                    z-index: 10;
+                }
+            }
+
+            .hero__center {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                @include translate(-50%, -50%);
+                width: 100%;
+                max-width: $site-retain;
+
+                &.is-animated {
+                    @include animation(hero-animated $transition-duration-long);
+                }
+            }
+            @include keyframes(hero-animated){
+                from {
+                    top: 45%;
+                    opacity: 0;
+                }
+                to {
+                    top: 50%;
+                    opacity: 1;
+                }
+            }
 
 
 

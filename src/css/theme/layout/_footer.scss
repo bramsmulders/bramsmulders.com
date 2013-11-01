@@ -1,6 +1,5 @@
 /*----------------------------------------------------------------------------*\
-    $TOPLEVEL
-    html, body, .wrapper
+    $FOOTER
 \*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*\
@@ -22,22 +21,17 @@
     $MODULE
 \*----------------------------------------------------------------------------*/
 
-    html, body { height: 100%; }
+    .footer {
+        a {
+            color: $color-white;
+            text-decoration: none;
 
-    body{
-        position: relative;
-        min-height: 100%;
-    }
-
-
-    /**
-     * Make wrapper 100% height
-     */
-    .wrapper {
-        position: relative;
-        height: 100%;
-        width: 100%;
-        margin: 0 auto;
+            &:hover,
+            &:active,
+            &:focus {
+                color: $brand;
+            }
+        }
     }
 
 
