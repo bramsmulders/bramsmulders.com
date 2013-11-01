@@ -1,12 +1,9 @@
 {
-    "name": "bramsmulderscom",
-    "version": "0.0.0",
+    "name":  "bramsmulders.com",
+    "version": "2.0.0.alpha.1",
     "dependencies": {
-        "blocss-framework": "~4",
-        "modernizr": "~2.6.2",
         "jquery": "latest",
         "jRespond": "https://github.com/ten1seven/jRespond.git",
         "jquery-cycle2": "1.0.0-2013.01.22.2"
-    },
-    "devDependencies": {}
+    }
 }
