@@ -48,6 +48,18 @@
     $STATE
 \*----------------------------------------------------------------------------*/
 
+    @include media-query(lap) {
+        html {
+            font-size: .875em;
+        }
+    }
+
+    @include media-query(palm) {
+        html {
+            font-size: .75em;
+        }
+    }
+
 
 
 

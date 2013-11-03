@@ -42,7 +42,7 @@
     .icon-html5:before { content: '\e80f'; } /* '' */
     .icon-linkedin:before { content: '\e811'; } /* '' */
     .icon-down:before { content: '\e801'; } /* '' */
-    @include fontface("Icon", "../font/icon/icon");
+    @include fontface("Icon", "fonts/icon");
 
     .icon {
         font-family: "Icon";

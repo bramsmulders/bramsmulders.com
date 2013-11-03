@@ -116,6 +116,20 @@
 
 
 
+    /* Responsive
+    \*------------------------------------------------------------------------*/
+
+        $breakpoints: (
+            'palm' '(max-width: 480px)',
+            'gt-palm' '(min-width: 481px)',
+            'lap' '(min-width: 481px) and (max-width: 767px)',
+            'lt-desk' '(max-width: 767px)',
+            'desk' '(min-width: 768px)',
+            'gt-desk' '(min-width: 1200px)'
+        )!default;
+
+
+
     /* Misc
     \*------------------------------------------------------------------------*/
 

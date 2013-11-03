@@ -36,8 +36,8 @@ module.exports = function (grunt) {
                 tasks: ['coffee:test']
             },
             compass: {
-                files: ['<%= yeoman.src %>/css/{,*/}*.{scss,sass}'],
-                tasks: ['compass:server']
+                files: ['<%= yeoman.src %>/css/{,*/}{,*/}*.{scss,sass}'],
+                tasks: ['compass:server', 'autoprefixer']
             },
             livereload: {
                 options: {
@@ -45,7 +45,7 @@ module.exports = function (grunt) {
                 },
                 files: [
                     '<%= yeoman.src %>/templates/{,*/}*.hbs',
-                    '{.tmp,<%= yeoman.src %>}/css/{,*/}*.css',
+                    '{.tmp,<%= yeoman.src %>}/css/{,*/}{,*/}*.css',
                     '{.tmp,<%= yeoman.src %>}/js/{,*/}*.js',
                     '<%= yeoman.src %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
                 ],
@@ -169,6 +169,24 @@ module.exports = function (grunt) {
                 options: {
                     debugInfo: true
                 }
+            }
+        },
+        autoprefixer: {
+            options: {
+                browsers: [
+                    '> 5%',
+                    'last 2 versions',
+                    'ff 17', // last esr version
+                    'opera 12.1' // Support drops when opera drops support
+                ]
+            },
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: '.tmp/css/',
+                    src: '{,*/}*.css',
+                    dest: '.tmp/css/'
+                }]
             }
         },
         // not used since Uglify task does concat,
@@ -301,6 +319,7 @@ module.exports = function (grunt) {
             build: [
                 'coffee',
                 'compass',
+                'autoprefixer',
                 'imagemin'/*,
                 'htmlmin'*/
             ]
@@ -323,6 +342,7 @@ module.exports = function (grunt) {
         grunt.task.run([
             'clean:server',
             'concurrent:server',
+            'autoprefixer',
             'connect:livereload',
             'open',
             'watch'
@@ -332,6 +352,7 @@ module.exports = function (grunt) {
     grunt.registerTask('test', [
         'clean:server',
         'concurrent:test',
+        'autoprefixer',
         'connect:test',
         'mocha'
     ]);
@@ -342,6 +363,7 @@ module.exports = function (grunt) {
         'grunticon',
         'useminPrepare',
         'concurrent:build',
+        'autoprefixer',
         'concat',
         'cssmin',
         'uglify',

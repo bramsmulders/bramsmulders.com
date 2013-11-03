@@ -3,6 +3,8 @@
         instead of separate, slower script files.
 \*----------------------------------------------------------------------------*/
 
+'use strict';
+
 /*----------------------------------------------------------------------------*\
     $CONSOLE
     Prevents error when .log is not available
@@ -10,7 +12,6 @@
 \*----------------------------------------------------------------------------*/
 
 (function() {
-    'use strict';
     var method;
     var noop = function noop() {};
     var methods = [
@@ -31,3 +32,29 @@
         }
     }
 }());
+
+
+
+
+
+/*----------------------------------------------------------------------------*\
+    $VISIBLE
+    A small plugin that checks whether elements are within the user visible
+    viewport of a web browser.
+    Only accounts for vertical position, not horizontal.
+\*----------------------------------------------------------------------------*/
+
+(function($) {
+    $.fn.visible = function(partial) {
+        var $t            = $(this),
+            $w            = $(window),
+            viewTop       = $w.scrollTop(),
+            viewBottom    = viewTop + $w.height(),
+            _top          = $t.offset().top,
+            _bottom       = _top + $t.height(),
+            compareTop    = partial === true ? _bottom : _top,
+            compareBottom = partial === true ? _top : _bottom
+        ;
+        return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+    };
+})(jQuery);

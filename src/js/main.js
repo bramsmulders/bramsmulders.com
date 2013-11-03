@@ -40,6 +40,31 @@ var cycle = {
 
 
 /*----------------------------------------------------------------------------*\
+    $SLIDEIN
+\*----------------------------------------------------------------------------*/
+
+var slidein = {
+    init: function() {
+        var $module = $('.js--slide-in');
+
+        if($module.length) {
+            $(window).scroll(function() {
+                $module.each(function(i, el) {
+                    var $el = $(el);
+                    if ($el.visible(true)) {
+                        $el.addClass('slide-in');
+                    }
+                });
+            });
+        }
+    }
+};
+
+
+
+
+
+/*----------------------------------------------------------------------------*\
     $INIT
     Fire ALL the things
 \*----------------------------------------------------------------------------*/
@@ -47,4 +72,5 @@ var cycle = {
 $(document).ready(function(){
     cycle.init();
     links.init();
+    slidein.init();
 });

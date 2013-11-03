@@ -1,5 +1,5 @@
 /*----------------------------------------------------------------------------*\
-    $HEADINGS
+    $SLIDE
 \*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*\
@@ -21,13 +21,19 @@
     $MODULE
 \*----------------------------------------------------------------------------*/
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        text-transform: uppercase;
+    .slide-in {
+        transform: translate(0, 150px);
+        animation: slide-in $transition-duration-long ease forwards;
+
+        &:nth-child(odd) {
+          animation-duration: $transition-duration-medium; /* So they look staggered */
+        }
+    }
+
+    @keyframes slide-in {
+        to {
+            transform: translate(0, 0);
+        }
     }
 
 
@@ -37,18 +43,6 @@
 /*----------------------------------------------------------------------------*\
     $STATE
 \*----------------------------------------------------------------------------*/
-
-    @include media-query(lap) {
-        .giga {
-            @include font-size($kilo-size);
-        }
-    }
-
-    @include media-query(palm) {
-        .giga {
-            @include font-size($kilo-size);
-        }
-    }
 
 
 
