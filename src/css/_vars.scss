@@ -55,7 +55,7 @@
     $use-modules-buttons:              true;
     $use-modules-rules:                true;
     $use-modules-greybox:              false;
-    $use-modules-notice:               false;
+    $use-modules-notice:               true;
 
 
     /**
@@ -120,6 +120,7 @@
     \*------------------------------------------------------------------------*/
 
         $breakpoints: (
+            'palm-port' '(max-width: 479px)',
             'palm' '(max-width: 600px)',
             'gt-palm' '(min-width: 601px)',
             'lap' '(min-width: 601px) and (max-width: 767px)',
