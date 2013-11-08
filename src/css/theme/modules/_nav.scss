@@ -1,6 +1,5 @@
 /*----------------------------------------------------------------------------*\
-    $BUTTON
-    Various buttons
+    $NAV
 \*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*\
@@ -22,40 +21,34 @@
     $MODULE
 \*----------------------------------------------------------------------------*/
 
-    .button {
-        text-transform: uppercase;
-        font-weight: bold;
-        letter-spacing: 0.1em;
-        transition: background-color $transition-duration-short, color $transition-duration-short, border-color $transition-duration-short;
+    /**
+     * Social
+     */
+    .nav--social {
+        a {
+            transition: background-color $transition-duration-short, color $transition-duration-short, border-color $transition-duration-short;
 
-        + .button {
-            @include rem(margin-left, $space-half);
+            &:hover,
+            &:focus,
+            &:active {
+                text-decoration: none;
+            }
         }
     }
 
 
-    .button--white {
-        color: $color-white;
+    /**
+     * Modifyer: dark
+     */
+    .nav--social--dark {
+        a {
+            color: $base-color;
 
-        &:hover,
-        &:focus,
-        &:active {
-            color: $color-white;
-            background-color: rgba(255,255,255,.2);
-        }
-    }
-
-
-    .button--brand {
-        background-color: $brand;
-        color: $color-white;
-        border-color: $brand;
-
-        &:hover,
-        &:focus,
-        &:active {
-            color: $color-white;
-            background-color: darken($brand, 10%);
+            &:hover,
+            &:focus,
+            &:active {
+                color: $brand;
+            }
         }
     }
 

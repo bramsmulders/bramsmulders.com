@@ -1,6 +1,5 @@
 /*----------------------------------------------------------------------------*\
-    $BUTTON
-    Various buttons
+    $HEADER
 \*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*\
@@ -22,42 +21,15 @@
     $MODULE
 \*----------------------------------------------------------------------------*/
 
-    .button {
-        text-transform: uppercase;
-        font-weight: bold;
-        letter-spacing: 0.1em;
-        transition: background-color $transition-duration-short, color $transition-duration-short, border-color $transition-duration-short;
-
-        + .button {
-            @include rem(margin-left, $space-half);
-        }
+    .header {
+        @include rem(padding, 0 $space);
     }
+        .header__head {
 
-
-    .button--white {
-        color: $color-white;
-
-        &:hover,
-        &:focus,
-        &:active {
-            color: $color-white;
-            background-color: rgba(255,255,255,.2);
         }
-    }
-
-
-    .button--brand {
-        background-color: $brand;
-        color: $color-white;
-        border-color: $brand;
-
-        &:hover,
-        &:focus,
-        &:active {
-            color: $color-white;
-            background-color: darken($brand, 10%);
+        .header__sub-head {
+            font-weight: 300;
         }
-    }
 
 
 

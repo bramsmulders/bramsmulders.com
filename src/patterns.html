@@ -11,11 +11,11 @@
     <link rel="dns-prefetch" href="//themes.googleusercontent.com">
     <link rel="dns-prefetch" href="//www.google-analytics.com">
 
-    <title></title>
+    <title>Bram Smulders: UX-developer, Front-end architect, writer and I create awesome stuff for the web</title>
     <meta name="description" content="">
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:400,300,700">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:300,400,300,700">
     <!-- build:css({.tmp,src}) css/theme.css -->
     <link rel="stylesheet" href="css/theme.css">
     <!-- endbuild -->
@@ -45,8 +45,10 @@
                         <div class="background  background--rain"></div>
                         <div class="hero__center  is-animated">
                             <h1 class="giga">Hi, my name is Bram Smulders</h1>
-                            <p class="caps">I'm a UX-designer, Front-end architect, writer and I create awesome stuff for the web.</p>
-                            <a href="#about" class="button  button--white">About</a>
+                            <p class="caps">I'm a UX-developer, Front-end architect, writer and I create awesome stuff for the web.</p>
+                            <a href="#about" class="button  button--white  js-scroll">About</a>
+                            <a href="#work" class="button  button--large  button--brand  js-scroll">I am available</a>
+                            <a href="#portfolio" class="button  button--white  js-scroll" data-speed="2000">Portfolio</a>
                         </div><!-- .hero__center -->
                     </li><!-- .hero__pane -->
                 </ul><!-- .hero__panes -->
@@ -54,85 +56,63 @@
         </section><!-- .masthead -->
 
         <section id="about" class="layer  layer--large  layer--lightest  text--center  js--page-section">
+            <header class="header  sign">
+                <h1 class="header__head  kilo">About me</h1>
+                <h2 class="header__sub-head  beta  color--light  flatten">UX and front-end architecture enthousiast</h2>
+            </header>
+            <hr class="rule  rule--tiny">
             <div class="site--retain">
-                <div class="hgroup  sign">
-                    <h1 class="delta  hN  color--light">About me</h1>
-                    <h2 class="alpha  hN  color--dark">This is how i roll</h2>
-                </div><!-- .hgroup -->
-                <hr class="rule  rule--tiny">
-                <div class="carousel">
-                    <ul class="carousel__panes  js--cycle"
-                        id="js--cycle-carousel"
-                        data-slides=">li"
-                        data-cycle-pager=".carousel__pager"
-                        data-cycle-fx="scrollHorz"
-                        data-auto-height="0"
-                        data-speed="400"
-                        data-timeout="8000"
-                    >
-                        <li class="carousel__pane">
-                            <h3 class="brand--color  flatten">I Design</h3>
-                            <p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.</p>
-                        </li><!-- .carousel__pane -->
-                        <li class="carousel__pane">
-                            <h3 class="brand--color  flatten">I Code</h3>
-                            <p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.</p>
-                        </li><!-- .carousel__pane -->
-                        <li class="carousel__pane">
-                            <h3 class="brand--color  flatten">I Create</h3>
-                            <p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.</p>
-                        </li><!-- .carousel__pane -->
-                    </ul><!-- .carousel__panes -->
-                    <button
-                        class="carousel__control  is-prev  button  button--brand  js--cycle-carousel-controller"
-                        data-cycle-cmd="prev"
-                        data-cycle-context="#js--cycle-carousel"
-                    ><</button>
-                    <button
-                        class="carousel__control  is-next  button  button--brand  js--cycle-carousel-controller"
-                        data-cycle-cmd="next"
-                        data-cycle-context="#js--cycle-carousel"
-                    >></button>
-                </div><!-- .carousel -->
+                <div class="grid  grid--wide  grid--rev">
+                    <div class="grid__cell unit-8-12  unit-1-1--palm">
+                        <p>Howdy, my name is Bram Smulders and I am a UX-developer, front-end architect & writer from Tilburg, The Netherlands. With the greatest pleasure I put tons of my time and energy into my work. Currently I am <a href="#work" class="js-scroll">available</a> for work on interesting projects or agency work.</p>
+                        </p>I specialise in coding scalable CSS and Javascript for large apps and websites, with a strong focus on performance, OOCSS and powerful and speedy development. As a member of the <a href="http://www.fronteers.nl" rel="external">Fronteers labor union</a> I am always on top of the rapid changes within the internet world.</p>
+                        <p>Want to know more? You are lucky; I share a lot of my thoughts & my daily lunch on <a href="http://twitter.com/bramsmulders" rel="external">twitter</a>.</p>
+                    </div>
+                    <div class="grid__cell unit-4-12  unit-1-1--palm">
+                        <p class="sign">
+                            <a href="mailto:bram@bramsmulders.com" class="button  button--brand  button--large  button--full">Get in touch!</a>
+                        </p>
+                        <div class="nav--social  nav--social--dark  text--center  sign--triple">
+                            <ul class="nav">
+                                <li><a href="http://twitter.com/bramsmulders" class="icon  icon--large" rel="external" data-icon=""></a></li>
+                                <li><a href="http://www.facebook.com/bramsmulders" class="icon  icon--large" rel="external" data-icon=""></a></li>
+                                <li><a href="http://www.github.com/bramsmulders" class="icon  icon--large" rel="external" data-icon=""></a></li>
+                                <li><a href="http://nl.linkedin.com/in/smuldersbram" class="icon  icon--large" rel="external" data-icon=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div><!-- .site-retain -->
         </section><!-- layer -->
 
-        <section id="process" class="layer  layer--large  layer--brand  color--white  text--center  js--page-section">
+        <section id="work" class="layer  layer--large  layer--brand  color--white  text--center  js--page-section">
+            <header class="header  sign">
+                <h1 class="header__head  kilo">I am available!</h1>
+                <h2 class="header__sub-head  beta  color--white  flatten">I work best with enthousiast teams on great projects</h2>
+            </header>
+            <hr class="rule  rule--tiny  rule--white">
             <div class="site--retain">
-                <div class="hgroup  sign">
-                    <h1 class="delta  hN">Process</h1>
-                    <h2 class="alpha  hN">How I do it</h2>
-                </div><!-- .hgroup -->
-                <hr class="rule  rule--tiny  rule--white">
-
-                <div class="grid">
-                    <div class="grid__cell  unit-3-12  text--center">
-                        <h3 class="flatten">Title</h3>
-                        <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression.</p>
+                <div class="grid  grid--wide">
+                    <div class="grid__cell  unit-6-12  unit-1-1--palm">
+                        <h3 class="flatten">Agency</h3>
+                        <p>If you have a job opening in wich you search for a spontaneous, responsible, work driven UX-developer and front-end architect, I am your man! I work best in enthousiastic, agile teams on great projects.</p>
                     </div><!-- .grid__cell -->
-                    <div class="grid__cell  unit-3-12  text--center">
-                        <h3 class="flatten">Title</h3>
-                        <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression.</p>
-                    </div><!-- .grid__cell -->
-                    <div class="grid__cell  unit-3-12  text--center">
-                        <h3 class="flatten">Title</h3>
-                        <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression.</p>
-                    </div><!-- .grid__cell -->
-                    <div class="grid__cell  unit-3-12  text--center">
-                        <h3 class="flatten">Title</h3>
-                        <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression.</p>
+                    <div class="grid__cell  unit-6-12  unit-1-1--palm">
+                        <h3 class="flatten">Freelance</h3>
+                        <p>Do you have a stunning project but you need a extra hand? I am your man! I can work on location and collaborate on your workfloor. <br>When needed I can also work from my home office.</p>
                     </div><!-- .grid__cell -->
                 </div><!-- .grid -->
+                <a href="mailto:bram@bramsmulders.com" class="button  button--white  button--large">Get in touch!</a>
             </div><!-- .site-retain -->
         </section><!-- layer -->
 
         <section id="portfolio" class="layer  layer--large  text--center  js--page-section">
+            <header class="header  sign">
+                <h1 class="header__head  kilo">Portfolio</h1>
+                <h2 class="header__sub-head  beta  color--light  flatten">I’ve made websites, frameworks , guidelines</h2>
+            </header>
+            <hr class="rule  rule--tiny">
             <div class="site--retain">
-                <div class="hgroup  sign">
-                    <h1 class="delta  hN  color--light">Portfolio</h1>
-                    <h2 class="alpha  hN  color--dark">I’ve made websites, frameworks , guidelines</h2>
-                </div><!-- .hgroup -->
-                <hr class="rule  rule--tiny">
                 <div class="grid  grid--center">
 
                     <div class="grid__cell  unit-4-12  unit-6-12--lt-desk">
@@ -165,18 +145,20 @@
                         </article><!-- .jetpack -->
                     </div><!-- .grid__cell -->
 
+                    
+
                     <div class="grid__cell  unit-4-12  unit-6-12--lt-desk">
                         <article class="jetpack  js--slide-in">
                             <div class="jetpack__overlay">
                                 <div class="jetpack__center">
                                     <div class="hgroup">
-                                        <h1 class="jetpack__title  gamma  hN">GFK mijn florijn</h1>
+                                        <h1 class="jetpack__title  gamma  hN">klantOK</h1>
                                         <h2 class="jetpack__subtitle  milli  hN">Agency: freshheads</h2>
                                     </div>
                                 </div><!-- .jetpack__center -->
                             </div><!-- .jetpack__overlay -->
-                            <img src="images/theme/cases/gfk.png" alt="" class="jetpack__platform">
-                            <a href="#" class="jetpack__link" rel="external" title="GFK mijn florijn">GFK mijn florijn</a>
+                            <img src="images/theme/cases/klantok.png" alt="" class="jetpack__platform">
+                            <a href="http://klantok.nl" class="jetpack__link" rel="external" title="klantOK">Emerce eDay</a>
                         </article><!-- .jetpack -->
                     </div><!-- .grid__cell -->
 
@@ -315,7 +297,8 @@
                         </article><!-- .jetpack -->
                     </div><!-- .grid__cell -->
 
-                </div>
+                </div><!-- .grid -->
+                <a href="mailto:bram@bramsmulders.com" class="button  button--brand  button--large">Get in touch!</a>
             </div><!-- .site-retain -->
         </section><!-- layer -->
 
@@ -324,16 +307,16 @@
                 <div class="background  background--absolute  background--rain"></div>
                 <div class="background__overlay">
                     <h1>Get in touch</h1>
-                    <nav class="nav--social  text--center  sign--triple">
+                    <div class="nav--social  text--center  sign--triple">
                         <ul class="nav">
-                            <li><a href="" class="icon  icon--large" data-icon=""></a></li>
-                            <li><a href="" class="icon  icon--large" data-icon=""></a></li>
-                            <li><a href="" class="icon  icon--large" data-icon=""></a></li>
-                            <li><a href="" class="icon  icon--large" data-icon=""></a></li>
+                            <li><a href="http://twitter.com/bramsmulders" class="icon  icon--large" rel="external" data-icon=""></a></li>
+                            <li><a href="http://www.facebook.com/bramsmulders" class="icon  icon--large" rel="external" data-icon=""></a></li>
+                            <li><a href="http://www.github.com/bramsmulders" class="icon  icon--large" rel="external" data-icon=""></a></li>
+                            <li><a href="http://nl.linkedin.com/in/smuldersbram" class="icon  icon--large" rel="external" data-icon=""></a></li>
                         </ul>
-                    </nav>
+                    </div>
                     <p class="milli">
-                        © 2013 <a href="http://twitter.com/bramsmulders">Bram Smulders</a>. Made with <a href="http://getkirby.com">Kirby & ♥</a>. Powered by <a href="https://github.com/Blocss/blocss">Blocss F/E Framework</a>.
+                        © 2013 <a href="http://twitter.com/bramsmulders">Bram Smulders</a>. Made with <a href="http://getkirby.com">Kirby & ♥</a>. Powered by <a href="http://blocss.github.io/blocss">Blocss CSS Framework</a>.
                     </p>
                 </div>
             </div>

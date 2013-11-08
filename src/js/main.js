@@ -72,5 +72,5 @@ var slidein = {
 $(document).ready(function(){
     cycle.init();
     links.init();
-    slidein.init();
+    //slidein.init();
 });
