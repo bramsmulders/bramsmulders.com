@@ -1,12 +1,5 @@
-# The usual
-.DS_Store
-.sass-cache/
-
-#kirby
-#panel/
-#site/panel
-docs
-
-# Don't bundle any compiled css
-#*.css
-
+node_modules
+build
+.tmp
+.sass-cache
+src/bower_components

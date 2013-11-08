@@ -1,0 +1,70 @@
+/*----------------------------------------------------------------------------*\
+    $BUTTON
+    Various buttons
+\*----------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------*\
+    $CONTENTS
+\*----------------------------------------------------------------------------*/
+
+    /*
+    CONTENTS................You're reading it, LOL
+    MODULE..................Includes base module & submodules
+    STATE...................States the module can be in
+    THEME...................Theming of the module
+    */
+
+
+
+
+
+/*----------------------------------------------------------------------------*\
+    $MODULE
+\*----------------------------------------------------------------------------*/
+
+    .button {
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        @include transition(background-color $transition-duration-short, color $transition-duration-short, border-color $transition-duration-short);
+    }
+
+
+    .button--white {
+        color: $color-white;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: rgba(255,255,255,.2);
+        }
+    }
+
+
+    .button--brand {
+        background-color: $brand;
+        color: $color-white;
+        border-color: $brand;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: darken($brand, 10%);
+        }
+    }
+
+
+
+
+
+/*----------------------------------------------------------------------------*\
+    $STATE
+\*----------------------------------------------------------------------------*/
+
+
+
+
+
+/*----------------------------------------------------------------------------*\
+    $THEME
+\*----------------------------------------------------------------------------*/

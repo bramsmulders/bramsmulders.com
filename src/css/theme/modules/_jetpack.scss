@@ -1,0 +1,100 @@
+/*----------------------------------------------------------------------------*\
+    $JETPACK
+\*----------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------*\
+    $CONTENTS
+\*----------------------------------------------------------------------------*/
+
+    /*
+    CONTENTS................You're reading it, LOL
+    MODULE..................Includes base module & submodules
+    STATE...................States the module can be in
+    THEME...................Theming of the module
+    */
+
+
+
+
+
+/*----------------------------------------------------------------------------*\
+    $MODULE
+\*----------------------------------------------------------------------------*/
+
+    .jetpack {
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        border: 1px solid $color-light;
+        @include rem(padding, $space-half/2);
+        @include rem(margin-bottom, $space);
+    }
+        .jetpack__overlay,
+        .jetpack__link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .jetpack__overlay {
+            background-color: transparentize($color-dark, .3);
+            z-index: 10;
+            opacity: 0;
+            @include transition(opacity $transition-duration-long);
+
+            .jetpack:hover & {
+                @include transition-duration($transition-duration-short);
+                opacity: 1;
+            }
+        }
+            .jetpack__center {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                @include translate(0, -50%);
+                text-align: center;
+            }
+                .jetpack__title {
+                    color: $color-white;
+                }
+                .jetpack__subtitle {
+                    color: $color-light;
+                }
+
+
+        .jetpack__platform {
+            display: block;
+            @include transition(all $transition-duration-long);
+            @include prefixer(filter, blur(0), webkit moz o spec);
+
+            .jetpack:hover & {
+                @include transition-duration($transition-duration-short);
+                @include prefixer(filter, blur(2px), webkit moz o spec);
+            }
+        }
+        .jetpack__link {
+            overflow: hidden;
+            text-indent: 200%;
+            white-space: nowrap;
+            z-index: 20;
+        }
+
+
+
+
+
+
+/*----------------------------------------------------------------------------*\
+    $STATE
+\*----------------------------------------------------------------------------*/
+
+
+
+
+
+/*----------------------------------------------------------------------------*\
+    $THEME
+\*----------------------------------------------------------------------------*/

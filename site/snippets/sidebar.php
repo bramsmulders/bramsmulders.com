@@ -1,6 +1,0 @@
-<aside class="m-aside">
-    <hr class="visuallyhidden--desk">
-    <p>Howdy, my name is Bram Smulders and I am a front-end developer. With the greatest pleasure I put tons of my time and energy into <a href="http://github.com/bramsmulders" title="Yeah, i code stuff" class="link--attention">my work</a>. Currently I'm employed as lead Front-end developer for <a href="http://www.freshheads.com" title="freshheads website" class="link--attention">freshheads</a>, a Dutch Web Design and Development Agency.<br> I enjoy myself best while fiddling with markup, CSS & Javascipt. I also keep myself busy with front-end architecture, performance & maintainablity.</p>
-    <p>Want to know more? You're lucky; I share a lot of my thoughts & my daily lunch on <a href="http://www.twitter.com/bramsmulders" title="Bs on twitter" class="link--attention">twitter</a>.</p>
-    <p><a href="https://twitter.com/bramsmulders" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @bramsmulders</a></p>
-</aside><!-- .m-aside -->
