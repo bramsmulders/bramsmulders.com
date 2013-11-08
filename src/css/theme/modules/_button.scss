@@ -60,6 +60,21 @@
     }
 
 
+    /**
+     * modifyer: full button palm
+     */
+    @include media-query(palm-port) {
+        .button--full--palm-port {
+            width: 100%;
+
+            + .button {
+                @include rem(margin-top, $space-half);
+                margin-left: 0;
+            }
+        }
+    }
+
+
 
 
 
