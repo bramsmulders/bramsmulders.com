@@ -9,56 +9,51 @@
 \*----------------------------------------------------------------------------*/
 
 var links = {
+    root: null,
     init: function(){
+        var self = this;
+        self.root = $('html, body');
+
         $('a[rel*=external]').on('click', function(){
             $(this).attr('target', '_blank');
         });
-    }
-};
 
+        self.anchor();
+    },
 
+    anchor: function(){
+        var self = this,
+            ancloc = window.location.hash
+        ;
 
+        if(ancloc.length){
+            event.preventDefault();
+            self.locate(ancloc);
+        }
 
-
-/*----------------------------------------------------------------------------*\
-    $CYCLE
-\*----------------------------------------------------------------------------*/
-
-var cycle = {
-    init: function(){
-        var $containers = $('.js--cycle');
-
-        $containers.each(function(){
-            var $el = $(this);
-            $el.cycle();
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
+                var target = this.hash;
+                if (target.length) {
+                    event.preventDefault();
+                    self.locate(target);
+                }
+            }
         });
+
+        return false;
+    },
+
+    locate: function(ancloc){
+        var self = this;
+        self.root.animate({
+            scrollTop: $(ancloc).offset().top
+        }, 300, function () {
+            window.location.hash = ancloc;
+        });
+        return false;
     }
 };
-
-
-
-
-
-/*----------------------------------------------------------------------------*\
-    $SLIDEIN
-\*----------------------------------------------------------------------------*/
-
-// var slidein = {
-//     init: function() {
-//         var $module = $('.js--slide-in');
-
-//         if($module.length) {
-//             $(window).scroll(function() {
-//                 $module.each(function(i, el) {
-//                     var $el = $(el);
-//                     if ($el.visible(true)) {
-//                         $el.addClass('slide-in');
-//                     }
-//                 });
-//             });
-//         }
-//     }
-// };
 
 
 
@@ -70,7 +65,6 @@ var cycle = {
 \*----------------------------------------------------------------------------*/
 
 $(document).ready(function(){
-    cycle.init();
+    $('.no-js').removeClass('no-js').addClass('js');
     links.init();
-    //slidein.init();
 });
