@@ -28,15 +28,15 @@ module.exports = function (grunt) {
         yeoman: yeomanConfig,
         watch: {
             coffee: {
-                files: ['<%= yeoman.src %>/js/{,*/}*.coffee'],
+                files: ['<%= yeoman.src %>/js/**/*.coffee'],
                 tasks: ['coffee:build']
             },
             coffeeTest: {
-                files: ['test/spec/{,*/}*.coffee'],
+                files: ['test/spec/**/*.coffee'],
                 tasks: ['coffee:test']
             },
             compass: {
-                files: ['<%= yeoman.src %>/css/{,*/}{,*/}*.{scss,sass}'],
+                files: ['<%= yeoman.src %>/css/**/*.{scss,sass}'],
                 tasks: ['compass:server', 'autoprefixer']
             },
             livereload: {
@@ -45,9 +45,9 @@ module.exports = function (grunt) {
                 },
                 files: [
                     '<%= yeoman.src %>/templates/{,*/}*.hbs',
-                    '{.tmp,<%= yeoman.src %>}/css/{,*/}{,*/}*.css',
-                    '{.tmp,<%= yeoman.src %>}/js/{,*/}*.js',
-                    '<%= yeoman.src %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+                    '{.tmp,<%= yeoman.src %>}/css/**/*.css',
+                    '{.tmp,<%= yeoman.src %>}/js/**/*.js',
+                    '<%= yeoman.src %>/images/**/*.{png,jpg,jpeg,gif,webp,svg}'
                 ],
                 tasks: ['assemble']
             }
@@ -113,9 +113,9 @@ module.exports = function (grunt) {
             },
             all: [
                 'Gruntfile.js',
-                '<%= yeoman.src %>/js/{,*/}*.js',
+                '<%= yeoman.src %>/js/**/*.js',
                 '!<%= yeoman.src %>/js/vendor/*',
-                'test/spec/{,*/}*.js'
+                'test/spec/**/*.js'
             ]
         },
         mocha: {
@@ -131,7 +131,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= yeoman.src %>/js',
-                    src: '{,*/}*.coffee',
+                    src: '**/*.coffee',
                     dest: '.tmp/js',
                     ext: '.js'
                 }]
@@ -140,7 +140,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: 'test/spec',
-                    src: '{,*/}*.coffee',
+                    src: '**/*.coffee',
                     dest: '.tmp/spec',
                     ext: '.js'
                 }]
@@ -184,7 +184,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: '.tmp/css/',
-                    src: '{,*/}*.css',
+                    src: '**/*.css',
                     dest: '.tmp/css/'
                 }]
             }
@@ -198,8 +198,8 @@ module.exports = function (grunt) {
             build: {
                 files: {
                     src: [
-                        '<%= yeoman.build %>/js/{,*/}*.js',
-                        '<%= yeoman.build %>/css/{,*/}*.css',
+                        '<%= yeoman.build %>/js/**/*.js',
+                        '<%= yeoman.build %>/css/**/*.css',
                         '<%= yeoman.build %>/css/fonts/*'
                     ]
                 }
@@ -232,15 +232,15 @@ module.exports = function (grunt) {
             options: {
                 dirs: ['<%= yeoman.build %>']
             },
-            html: ['<%= yeoman.build %>/{,*/}*.html'],
-            css: ['<%= yeoman.build %>/css/{,*/}*.css']
+            html: ['<%= yeoman.build %>/**/*.html'],
+            css: ['<%= yeoman.build %>/css/**/*.css']
         },
         imagemin: {
             build: {
                 files: [{
                     expand: true,
                     cwd: '<%= yeoman.src %>/images',
-                    src: '{,*/}*.{png,jpg,jpeg}',
+                    src: '**/*.{png,jpg,jpeg}',
                     dest: '<%= yeoman.build %>/images'
                 }]
             }
