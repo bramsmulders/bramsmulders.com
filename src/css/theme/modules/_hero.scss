@@ -56,7 +56,7 @@
                 top: 50%;
                 transform: translate(-50%, -50%);
                 width: 100%;
-                max-width: $site-retain + ($space*2);
+                max-width: $retain + ($space*2);
                 @include rem(padding, 0 $space);
 
                 &.is-animated {

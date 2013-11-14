@@ -25,11 +25,23 @@
     /**
      * Retain
      */
-    .site--retain {
-        max-width: $site-retain + ($space*2);
+    .retain {
+        max-width: $retain + ($space*2);
         @include rem(padding, 0 $space);
         margin-left: auto;
         margin-right: auto;
+    }
+
+
+    /**
+     * Modifyers
+     */
+    .retain--small {
+        max-width: $retain-small + ($space*2);
+    }
+
+    .retain--large {
+        max-width: $retain-large + ($space*2);
     }
 
 

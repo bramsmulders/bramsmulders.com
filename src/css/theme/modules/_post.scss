@@ -1,5 +1,5 @@
 /*----------------------------------------------------------------------------*\
-    $LAYER
+    $POST
 \*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*\
@@ -21,37 +21,8 @@
     $MODULE
 \*----------------------------------------------------------------------------*/
 
-    .layer {
-        position: relative;
+    .post {
         @extend %module;
-        @include rem(padding, $space 0);
-    }
-
-
-    /**
-     * Modifyers: layer sizes
-     */
-    .layer--medium {
-        @include rem(padding, $space*2 0);
-    }
-    .layer--large {
-        @include rem(padding, $space*3 0);
-    }
-
-
-    /**
-     * Modifyers: colors
-     */
-    .layer--lightest {
-        background-color: $color-lightest;
-    }
-
-    .layer--dark {
-        background-color: $base-color;
-    }
-
-    .layer--brand {
-        background-color: $brand;
     }
 
 
