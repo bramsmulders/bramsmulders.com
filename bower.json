@@ -1,9 +1,10 @@
 {
     "name": "bramsmulderscom",
-    "version": "2.1.0",
+    "version": "2.1.5",
     "dependencies": {
         "blocss-framework": "~4",
-        "jquery": "latest"
+        "jquery": "~1.10",
+        "modernizr": "~2.6.2"
     },
     "devDependencies": {}
 }

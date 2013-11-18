@@ -1,5 +1,5 @@
 /*----------------------------------------------------------------------------*\
-    $LAYER
+    $NOTICE
 \*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*\
@@ -21,37 +21,13 @@
     $MODULE
 \*----------------------------------------------------------------------------*/
 
-    .layer {
-        position: relative;
-        @extend %module;
-        @include rem(padding, $space 0);
-    }
-
-
-    /**
-     * Modifyers: layer sizes
-     */
-    .layer--medium {
-        @include rem(padding, $space*1 0);
-    }
-    .layer--large {
-        @include rem(padding, $space*2 0);
-    }
-
-
-    /**
-     * Modifyers: colors
-     */
-    .layer--lightest {
-        background-color: $color-lightest;
-    }
-
-    .layer--dark {
-        background-color: $base-color;
-    }
-
-    .layer--brand {
-        background-color: $brand;
+    .notice--upgrade {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 1000;
     }
 
 
@@ -61,18 +37,6 @@
 /*----------------------------------------------------------------------------*\
     $STATE
 \*----------------------------------------------------------------------------*/
-
-    @include media-query(gt-palm) {
-        /**
-         * Modifyers: layer sizes
-         */
-        .layer--medium {
-            @include rem(padding, $space*2 0);
-        }
-        .layer--large {
-            @include rem(padding, $space*3 0);
-        }
-    }
 
 
 

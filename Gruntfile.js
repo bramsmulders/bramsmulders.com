@@ -174,7 +174,7 @@ module.exports = function (grunt) {
         autoprefixer: {
             options: {
                 browsers: [
-                    '> 5%',
+                    '> 4%',
                     'last 2 versions',
                     'ff 17', // last esr version
                     'opera 12.1' // Support drops when opera drops support
