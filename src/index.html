@@ -38,11 +38,12 @@
                 <div class="background  background--rain"></div>
                 <div class="hero__center  is-animated">
                     <h1 class="giga">Hi, my name is Bram Smulders</h1>
-                    <p class="caps">I'm a UX-developer, Front-end architect, writer and I create awesome stuff for the web.</p>
+                    <p class="caps">I&#x27;M A UX-DEVELOPER, FRONT-END ARCHITECT, WRITER AND I CREATE AWESOME STUFF FOR THE WEB.</p>
                     
-                    <a href="#about" class="button  button--white  js-scroll  button--full--palm-port">About</a>
-                    <a href="#work" class="button  button--large  button--brand  js-scroll  button--full--palm-port">I am available</a>
-                    <a href="#portfolio" class="button  button--white  js-scroll  button--full--palm-port" data-speed="2000">Portfolio</a>
+                    <a href="#about" class="button  button--white  button--full--palm-port" title="About Bram Smulders">About</a>
+                    <a href="#blog" class="button  button--white  button--full--palm-port" title="UX & front-end based blogposts">Blog</a>
+                    <a href="#work" class="button  button--large  button--brand  button--full--palm-port" title="I am available for work">I am available</a>
+                    <a href="#portfolio" class="button  button--white  button--full--palm-port" title="Bram Smulders portfolio">Portfolio</a>
                     
                 </div><!-- .hero__center -->
             </li><!-- .hero__pane -->
@@ -56,16 +57,16 @@
         <h2 class="header__sub-head  beta  color--light  flatten">UX and front-end architecture enthousiast</h2>
     </header>
     <hr class="rule  rule--tiny">
-    <div class="site--retain">
+    <div class="retain">
         <div class="grid  grid--wide  grid--rev">
             <div class="grid__cell unit-8-12  unit-1-1--palm">
-                <p>Howdy, my name is Bram Smulders and I am a UX-developer, front-end architect & writer from Tilburg, The Netherlands. With the greatest pleasure I put tons of my time and energy into my work. Currently I am <a href="#work" class="js-scroll">available</a> for work on interesting projects or agency work.</p>
-                </p>I specialise in coding scalable CSS and Javascript for large apps and websites, with a strong focus on performance, OOCSS and powerful and speedy development. As a member of the <a href="http://www.fronteers.nl" rel="external">Fronteers labor union</a> I am always on top of the rapid changes within the internet world.</p>
-                <p>Want to know more? You are lucky; I share a lot of my thoughts & my daily lunch on <a href="http://twitter.com/bramsmulders" rel="external">twitter</a>.</p>
+                <p>Howdy, my name is Bram Smulders and I am a UX-developer, front-end architect & writer from Tilburg, The Netherlands. With the greatest pleasure I put tons of my time and energy into my work. Currently I am <a href="#work" class="js-scroll" title="I am available for work">available</a> for work on interesting projects or agency work.</p>
+                <p>I specialise in coding scalable CSS and Javascript for large apps and websites, with a strong focus on performance, OOCSS and powerful and speedy development. As a member of the <a href="http://www.fronteers.nl" rel="external" title="Fronteers labor union">Fronteers labor union</a> I am always on top of the rapid changes within the internet world.</p>
+                <p>Want to know more? You are lucky; I share a lot of my thoughts & my daily lunch on <a href="http://twitter.com/bramsmulders" rel="external" title="follow me on Twitter">twitter</a>.</p>
             </div>
             <div class="grid__cell unit-4-12  unit-1-1--palm">
                 <p class="sign">
-                    <a href="mailto:bram@bramsmulders.com" class="button  button--brand  button--large  button--full">Get in touch!</a>
+                    <a href="mailto:bram@bramsmulders.com" class="button  button--brand  button--large  button--full" title="Contact me!">Get in touch!</a>
                 </p>
                 <div class="nav--social  nav--social--dark  text--center  sign--triple">
                     <ul class="nav">
@@ -80,13 +81,57 @@
     </div><!-- .site-retain -->
 </section><!-- layer -->
 
+<section id="blog" class="layer  layer--large  color--white  text--center  js--page-section">
+    <div class="background  background--absolute  background--writer"></div>
+    <div class="background__overlay">
+        <header class="header  sign">
+            <h1 class="header__head  kilo">Blog</h1>
+            <h2 class="header__sub-head  beta  color--white  flatten">Well yes, I also write</h2>
+        </header>
+        <hr class="rule  rule--tiny  rule--white">
+        <div class="retain  retain--small  text--left">
+            <div class="grid  grid--center">
+
+                <div class="grid__cell  unit-4-12  unit-6-12--lt-desk">
+                    <article class="jetpack  js--slide-in">
+                        <div class="jetpack__overlay">
+                            <div class="jetpack__center">
+                                <div class="hgroup  flatten">
+                                    <h1 class="jetpack__title  gamma  hN">Finger friendly ALL the things</h1>
+                                </div>
+                            </div><!-- .jetpack__center -->
+                        </div><!-- .jetpack__overlay -->
+                        <img src="images/theme/post/finger-friendly.jpg" alt="Thumbnail Finger friendly ALL the things" class="jetpack__platform">
+                        <a href="finger-friendly-all-the-things.html" class="jetpack__link" title="Finger friendly ALL the things">Finger friendly ALL the things</a>
+                    </article><!-- .jetpack -->
+                </div><!-- .grid__cell -->
+
+                <div class="grid__cell  unit-4-12  unit-6-12--lt-desk">
+                    <article class="jetpack  js--slide-in">
+                        <div class="jetpack__overlay">
+                            <div class="jetpack__center">
+                                <div class="hgroup  flatten">
+                                    <h1 class="jetpack__title  gamma  hN">How I improved my workflow with SMACSS & Sass</h1>
+                                </div>
+                            </div><!-- .jetpack__center -->
+                        </div><!-- .jetpack__overlay -->
+                        <img src="images/theme/post/workflow.jpg" alt="Thumbnail How I improved my workflow with SMACSS & Sass" class="jetpack__platform">
+                        <a href="how-i-improved-my-workflow-with-smacss-sass.html" class="jetpack__link" title="How I improved my workflow with SMACSS & Sass">How I improved my workflow with SMACSS & Sass</a>
+                    </article><!-- .jetpack -->
+                </div><!-- .grid__cell -->
+
+            </div><!-- .grid -->
+        </div><!-- .retain -->
+    </div>
+</section><!-- layer -->
+
 <section id="work" class="layer  layer--large  layer--brand  color--white  text--center  js--page-section">
     <header class="header  sign">
         <h1 class="header__head  kilo">I am available!</h1>
         <h2 class="header__sub-head  beta  color--white  flatten">I work best with enthusiastic teams on great projects</h2>
     </header>
     <hr class="rule  rule--tiny  rule--white">
-    <div class="site--retain">
+    <div class="retain">
         <div class="grid  grid--wide">
             <div class="grid__cell  unit-6-12  unit-1-1--palm">
                 <h3 class="flatten">Agency</h3>
@@ -97,30 +142,30 @@
                 <p>Do you have a stunning project but you need a extra hand? I am your man! I can work on location and collaborate on your workfloor. <br>When needed I can also work from my home office.</p>
             </div><!-- .grid__cell -->
         </div><!-- .grid -->
-        <a href="mailto:bram@bramsmulders.com" class="button  button--white  button--large">Get in touch!</a>
+        <a href="mailto:bram@bramsmulders.com" class="button  button--white  button--large" title="Contact me!">Get in touch!</a>
     </div><!-- .site-retain -->
 </section><!-- layer -->
 
-<section id="portfolio" class="layer  layer--large  text--center  js--page-section">
+<section id="portfolio" class="layer  layer--large  layer--lightest  text--center  js--page-section">
     <header class="header  sign">
         <h1 class="header__head  kilo">Portfolio</h1>
         <h2 class="header__sub-head  beta  color--light  flatten">A grasp of stuff that I have made</h2>
     </header>
     <hr class="rule  rule--tiny">
-    <div class="site--retain">
+    <div class="retain">
         <div class="grid  grid--center">
 
             <div class="grid__cell  unit-4-12  unit-6-12--lt-desk">
                 <article class="jetpack  js--slide-in">
                     <div class="jetpack__overlay">
                         <div class="jetpack__center">
-                            <div class="hgroup">
+                            <div class="hgroup  flatten">
                                 <h1 class="jetpack__title  gamma  hN">Blocss</h1>
                                 <h2 class="jetpack__subtitle  milli  hN">CSS framework</h2>
                             </div>
                         </div><!-- .jetpack__center -->
                     </div><!-- .jetpack__overlay -->
-                    <img src="images/theme/cases/blocss.png" alt="" class="jetpack__platform">
+                    <img src="images/theme/cases/blocss.png" alt="Screenshot Blocss" class="jetpack__platform">
                     <a href="http://blocss.github.io/blocss" class="jetpack__link" rel="external" title="Blocss CSS framework">Blocss CSS framework</a>
                 </article><!-- .jetpack -->
             </div><!-- .grid__cell -->
@@ -129,13 +174,13 @@
                 <article class="jetpack  js--slide-in">
                     <div class="jetpack__overlay">
                         <div class="jetpack__center">
-                            <div class="hgroup">
+                            <div class="hgroup  flatten">
                                 <h1 class="jetpack__title  gamma  hN">KNVB Talent Team</h1>
                                 <h2 class="jetpack__subtitle  milli  hN">Agency: Freshheads</h2>
                             </div>
                         </div><!-- .jetpack__center -->
                     </div><!-- .jetpack__overlay -->
-                    <img src="images/theme/cases/scoorjestage.png" alt="" class="jetpack__platform">
+                    <img src="images/theme/cases/scoorjestage.png" alt="Screenshot KNVB talent team" class="jetpack__platform">
                     <a href="http://www.knvbtalentteam.nl" class="jetpack__link" rel="external" title="KNVB Talent Team">KNVB Talent Team</a>
                 </article><!-- .jetpack -->
             </div><!-- .grid__cell -->
@@ -144,13 +189,13 @@
                 <article class="jetpack  js--slide-in">
                     <div class="jetpack__overlay">
                         <div class="jetpack__center">
-                            <div class="hgroup">
+                            <div class="hgroup  flatten">
                                 <h1 class="jetpack__title  gamma  hN">Beautyspot</h1>
                                 <h2 class="jetpack__subtitle  milli  hN">Agency: Freshheads</h2>
                             </div>
                         </div><!-- .jetpack__center -->
                     </div><!-- .jetpack__overlay -->
-                    <img src="images/theme/cases/beautyspot.png" alt="" class="jetpack__platform">
+                    <img src="images/theme/cases/beautyspot.png" alt="Screenshot Beautyspot" class="jetpack__platform">
                     <a href="http://www.beautyspot.nl" class="jetpack__link" rel="external" title="Beautyspot">Beautyspot</a>
                 </article><!-- .jetpack -->
             </div><!-- .grid__cell -->
@@ -159,13 +204,13 @@
                 <article class="jetpack  js--slide-in">
                     <div class="jetpack__overlay">
                         <div class="jetpack__center">
-                            <div class="hgroup">
+                            <div class="hgroup  flatten">
                                 <h1 class="jetpack__title  gamma  hN">klantOK</h1>
                                 <h2 class="jetpack__subtitle  milli  hN">Agency: Freshheads</h2>
                             </div>
                         </div><!-- .jetpack__center -->
                     </div><!-- .jetpack__overlay -->
-                    <img src="images/theme/cases/klantok.png" alt="" class="jetpack__platform">
+                    <img src="images/theme/cases/klantok.png" alt="Screenshot klantOK" class="jetpack__platform">
                     <a href="http://klantok.nl" class="jetpack__link" rel="external" title="klantOK">KlantOK</a>
                 </article><!-- .jetpack -->
             </div><!-- .grid__cell -->
@@ -174,13 +219,13 @@
                 <article class="jetpack  js--slide-in">
                     <div class="jetpack__overlay">
                         <div class="jetpack__center">
-                            <div class="hgroup">
+                            <div class="hgroup  flatten">
                                 <h1 class="jetpack__title  gamma  hN">Emerce eDay</h1>
                                 <h2 class="jetpack__subtitle  milli  hN">Agency: Freshheads</h2>
                             </div>
                         </div><!-- .jetpack__center -->
                     </div><!-- .jetpack__overlay -->
-                    <img src="images/theme/cases/eday.png" alt="" class="jetpack__platform">
+                    <img src="images/theme/cases/eday.png" alt="Screenshot Emerce eDay" class="jetpack__platform">
                     <a href="http://www.emerceeday.nl" class="jetpack__link" rel="external" title="Emerce eDay">Emerce eDay</a>
                 </article><!-- .jetpack -->
             </div><!-- .grid__cell -->
@@ -189,13 +234,13 @@
                 <article class="jetpack  js--slide-in">
                     <div class="jetpack__overlay">
                         <div class="jetpack__center">
-                            <div class="hgroup">
+                            <div class="hgroup  flatten">
                                 <h1 class="jetpack__title  gamma  hN">Skidôme</h1>
                                 <h2 class="jetpack__subtitle  milli  hN">Agency: Freshheads</h2>
                             </div>
                         </div><!-- .jetpack__center -->
                     </div><!-- .jetpack__overlay -->
-                    <img src="images/theme/cases/skidome.png" alt="" class="jetpack__platform">
+                    <img src="images/theme/cases/skidome.png" alt="Screenshot Skidôme" class="jetpack__platform">
                     <a href="http://skidome.nl" class="jetpack__link" rel="external" title="Skidôme">Skidôme</a>
                 </article><!-- .jetpack -->
             </div><!-- .grid__cell -->
@@ -204,13 +249,13 @@
                 <article class="jetpack  js--slide-in">
                     <div class="jetpack__overlay">
                         <div class="jetpack__center">
-                            <div class="hgroup">
+                            <div class="hgroup  flatten">
                                 <h1 class="jetpack__title  gamma  hN">Freshheads</h1>
                                 <h2 class="jetpack__subtitle  milli  hN">Agency: Freshheads</h2>
                             </div>
                         </div><!-- .jetpack__center -->
                     </div><!-- .jetpack__overlay -->
-                    <img src="images/theme/cases/freshheads.png" alt="" class="jetpack__platform">
+                    <img src="images/theme/cases/freshheads.png" alt="Screenshot Freshheads" class="jetpack__platform">
                     <a href="http://www.freshheads.com" class="jetpack__link" rel="external" title="Freshheads">Freshheads</a>
                 </article><!-- .jetpack -->
             </div><!-- .grid__cell -->
@@ -219,13 +264,13 @@
                 <article class="jetpack  js--slide-in">
                     <div class="jetpack__overlay">
                         <div class="jetpack__center">
-                            <div class="hgroup">
+                            <div class="hgroup  flatten">
                                 <h1 class="jetpack__title  gamma  hN">QForma</h1>
                                 <h2 class="jetpack__subtitle  milli  hN">Agency: QForma</h2>
                             </div>
                         </div><!-- .jetpack__center -->
                     </div><!-- .jetpack__overlay -->
-                    <img src="images/theme/cases/qforma.png" alt="" class="jetpack__platform">
+                    <img src="images/theme/cases/qforma.png" alt="Screenshot QForma" class="jetpack__platform">
                     <a href="http://qforma.nl" class="jetpack__link" rel="external" title="QForma">QForma</a>
                 </article><!-- .jetpack -->
             </div><!-- .grid__cell -->
@@ -234,13 +279,13 @@
                 <article class="jetpack  js--slide-in">
                     <div class="jetpack__overlay">
                         <div class="jetpack__center">
-                            <div class="hgroup">
+                            <div class="hgroup  flatten">
                                 <h1 class="jetpack__title  gamma  hN">Andere Koek advertising</h1>
                                 <h2 class="jetpack__subtitle  milli  hN">Agency: QForma</h2>
                             </div>
                         </div><!-- .jetpack__center -->
                     </div><!-- .jetpack__overlay -->
-                    <img src="images/theme/cases/anderekoek.png" alt="" class="jetpack__platform">
+                    <img src="images/theme/cases/anderekoek.png" alt="Screenshot Andere Koek advertising" class="jetpack__platform">
                     <a href="http://www.anderekoekadvertising.nl" class="jetpack__link" rel="external" title="Andere koek advertising">Andere koek advertising</a>
                 </article><!-- .jetpack -->
             </div><!-- .grid__cell -->
@@ -249,13 +294,13 @@
                 <article class="jetpack  js--slide-in">
                     <div class="jetpack__overlay">
                         <div class="jetpack__center">
-                            <div class="hgroup">
+                            <div class="hgroup  flatten">
                                 <h1 class="jetpack__title  gamma  hN">Zinnen op Linnen</h1>
                                 <h2 class="jetpack__subtitle  milli  hN">Agency: QForma</h2>
                             </div>
                         </div><!-- .jetpack__center -->
                     </div><!-- .jetpack__overlay -->
-                    <img src="images/theme/cases/zinnenoplinnen.png" alt="" class="jetpack__platform">
+                    <img src="images/theme/cases/zinnenoplinnen.png" alt="Screenshot Zinnen op linnen" class="jetpack__platform">
                     <a href="http://www.zinnenoptafellinnen.nl/" class="jetpack__link" rel="external" title="Zinnen op Linnen">Zinnen op Linnen</a>
                 </article><!-- .jetpack -->
             </div><!-- .grid__cell -->
@@ -264,13 +309,13 @@
                 <article class="jetpack  js--slide-in">
                     <div class="jetpack__overlay">
                         <div class="jetpack__center">
-                            <div class="hgroup">
+                            <div class="hgroup  flatten">
                                 <h1 class="jetpack__title  gamma  hN">Wonen in het land van</h1>
                                 <h2 class="jetpack__subtitle  milli  hN">Agency: QForma</h2>
                             </div>
                         </div><!-- .jetpack__center -->
                     </div><!-- .jetpack__overlay -->
-                    <img src="images/theme/cases/woneninhetlandvan.png" alt="" class="jetpack__platform">
+                    <img src="images/theme/cases/woneninhetlandvan.png" alt="Screenshot Wonen in het land van" class="jetpack__platform">
                     <a href="http://woneninhetlandvan.nl/" class="jetpack__link" rel="external" title="Wonen in het land van">Wonen in het land van</a>
                 </article><!-- .jetpack -->
             </div><!-- .grid__cell -->
@@ -279,25 +324,25 @@
                 <article class="jetpack  js--slide-in">
                     <div class="jetpack__overlay">
                         <div class="jetpack__center">
-                            <div class="hgroup">
+                            <div class="hgroup  flatten">
                                 <h1 class="jetpack__title  gamma  hN">NoRobot</h1>
                                 <h2 class="jetpack__subtitle  milli  hN">Fashion webshop</h2>
                             </div>
                         </div><!-- .jetpack__center -->
                     </div><!-- .jetpack__overlay -->
-                    <img src="images/theme/cases/norobot.png" alt="" class="jetpack__platform">
+                    <img src="images/theme/cases/norobot.png" alt="Screenshot NoRobot" class="jetpack__platform">
                     <a href="http://norobot.nl/" class="jetpack__link" rel="external" title="NoRobot">NoRobot</a>
                 </article><!-- .jetpack -->
             </div><!-- .grid__cell -->
 
         </div><!-- .grid -->
-        <a href="mailto:bram@bramsmulders.com" class="button  button--brand  button--large">Get in touch!</a>
+        <a href="mailto:bram@bramsmulders.com" class="button  button--brand  button--large" title="Contact me!">Get in touch!</a>
     </div><!-- .site-retain -->
 </section><!-- layer -->
 
 
         <footer class="footer  layer  layer--large  text--center  color--white">
-    <div class="site--retain">
+    <div class="retain">
         <div class="background  background--absolute  background--rain"></div>
         <div class="background__overlay">
             <h1>Get in touch</h1>
@@ -310,7 +355,7 @@
 </ul>
             </div>
             <p class="milli">
-                © 2013 <a href="http://twitter.com/bramsmulders" rel="external">Bram Smulders</a>. Made with <a href="http://blocss.github.io/blocss" rel="external">Blocss CSS Framework</a> & <a href="http://yeoman.io" rel="external">Yeoman</a>.
+                © 2013 <a href="http://twitter.com/bramsmulders" rel="external" title="Follow me on twitter">Bram Smulders</a>. Made with <a href="http://blocss.github.io/blocss" rel="external" title="Blocss CSS framework">Blocss CSS Framework</a> & <a href="http://yeoman.io" rel="external" title="Yeoman">Yeoman</a>.
             </p>
         </div>
     </div>

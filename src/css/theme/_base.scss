@@ -11,7 +11,7 @@
     CONTENTS................You're reading it, LOL
     FONT....................Font face declarations
     TOPLEVEL................html, body, .wrapper
-    SITE....................Site width properties
+    RETAIN..................Retain stuff within boundaries
     HEADINGS................
     LINKS...................
     */
@@ -27,7 +27,7 @@
     @import
             "base/font",
             "base/toplevel",
-            "base/site",
+            "base/retain",
             "base/headings",
             "base/links"
     ;

@@ -28,6 +28,15 @@
     h5,
     h6 {
         text-transform: uppercase;
+
+        > a {
+            &,
+            &:hover,
+            &:active,
+            &:focus {
+                color: inherit;
+            }
+        }
     }
 
 

@@ -151,7 +151,9 @@
     /* Site
     \*------------------------------------------------------------------------*/
 
-        $site-retain:                       980px!default;
+        $retain:                            980px!default;
+        $retain-small:                      768px!default;
+        $retain-large:                      1200px!default;
 
 
 

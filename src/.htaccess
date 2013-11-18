@@ -156,6 +156,13 @@
     RewriteRule ^(.*)$ http://bramsmulders.com/$1 [R=301,L]
 
 
+    # URL migration
+    # ----------------------------------------------------------------------
+
+        Redirect 301 /blog/finger-friendly-all-the-things http://bramsmulders.com/finger-friendly-all-the-things.html
+        Redirect 301 /blog/how-i-improved-my-workflow-with-smacss-sass http://bramsmulders.com/how-i-improved-my-workflow-with-smacss-sass.html
+
+
 
 
 # ----------------------------------------------------------------------
