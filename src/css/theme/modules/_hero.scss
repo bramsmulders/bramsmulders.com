@@ -51,6 +51,7 @@
             }
 
             .hero__center {
+                @extend %module;
                 position: absolute;
                 left: 50%;
                 top: 50%;

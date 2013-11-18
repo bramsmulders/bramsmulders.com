@@ -2,7 +2,7 @@
 herotitle: "How I improved my workflow with SMACSS & Sass"
 herosubtitle: "Preprocessing & Component based design principles"
 herohasbuttons: 0
-defbackground: "background--jarvis"
+defbackground: "background--writer"
 
 subpostnext: "finger-friendly-all-the-things.html"
 ---
@@ -11,7 +11,162 @@ subpostnext: "finger-friendly-all-the-things.html"
 <div id="post" class="layer  layer--large  layer--lightest  js--page-section">
     <div class="retain  retain--small">
 
-        <p>Lorem ipsum dolor</p>
+        <p>A couple of months ago I passed by Jonathan Snook's <a href="http://smacss.com">SMACSS</a> website while browsing the web. After reading the SMACSS core articles I felt a bit awkward about how I organised and crafted my CSS. My CSS was quite unorganised and the only pattern used was the waterfall pattern; Work your way from the header all the way to the footer. The CSS also contained fixed withs, overuse of ID selectors &amp; many specificity workarounds. It was not organised, not modular &amp; most of all: Not reusable.</p>
+
+        <h2>Meet SMACSS</h2>
+
+        <p>SMACSS stands for Scalable and Modular Architecture for CSS, and is more a style guide than a CSS framework. On a high level SMACSS aims at changing the way we are turning designs into code. Instead of working in a page mentality where you try to turn a single page design into code, SMACSS aims to identify repeating visual patterns. Those patterns are then supposed to be coded into flexible/re-usable modules, wich should be independent as possible from the individual page context. This is not a revolutionary point-of-view for a programmer, but in the web design world this is indeed a newer way of thinking.</p>
+
+        <h3>Categorization</h3>
+
+        <p>The basic concept of SMACSS is to devide styles into 5 categories: base, layout, modules, states and theme*. Each category comes with a set of usage rules and naming conventions. The main reason of this categorization is that rulesets should only ever inherit and add to previous ones, never undo.</p>
+
+        <p>Any declarations like these</p>
+
+    </div><!-- .site-retain -->
+</div><!-- layer -->
+
+<div class="layer  layer--dark  js--page-section  color--white">
+    <div class="retain  retain--small">
+        <pre><code>border-bottom: none;
+padding: 0;
+float: none;
+margin: 0;</code></pre>
+    </div>
+</div>
+
+<div class="layer  layer--large  layer--lightest  js--page-section">
+    <div class="retain  retain--small">
+
+        <p>...are typically bad news. If you have to remove borders, you probably applied them to early.</p>
+
+        <h4>Base</h4>
+
+        <p>This is where all the base styles live; resets, element defaults, default font sizes, etc. This category is mainly dominated by element selectors. You should always ask yourself if a ruleset must live in base in order to not lose flexibility down the road.</p>
+
+        <h4>Layout</h4>
+
+        <p>In this section you specify all types of layout containers, such as header, footer, content, sidebar, etc. The layout elements haven't got any styles applied to them, they only divide the website into sections. This is the layer where grid systems etc, would be living.</p>
+
+        <h4>Modules</h4>
+
+        <p>The bulk of your css is made up of independent modules and submodules. Every module should be completely independent of its context and should work within any layout container or other module. </p>
+
+        <p>If a specific context requires changes to a module you rather create a submodule that describes the context instead changing styles based on the parent.</p>
+
+        <h4>State</h4>
+
+        <p>Modules can be in different types of states: class-based-states(.is-active), pseudo-classes(:hover, :focus), attribute states(data-state="rotating"), or @mediaquery states.<br />
+        These states belong directly to the modules but have a different categorybecause the have their own naming convention and usage rules.</p>
+
+        <h4>*Theme</h4>
+
+        <p>SMACSS points to an optional fifth category, theme, but this is only applicable to pages that require theming. Theme styles override or extend the modules, and only apply colors and backgrounds.</p>
+
+        <h2>Syntactically Awesome StyleSheets(Sass)</h2>
+
+        <p>SMACSS works especially well with <a href="http://sass-lang.com">Sass</a>, and I'll try to explain why and how I implemented Sass into my workflow:</p>
+
+        <h3>File structure</h3>
+
+        <p>In Sass you can easily chop your stylesheet into partials by using the @import rule. This allows us to easily organize and maintain our files similar like this:</p>
+    </div><!-- .site-retain -->
+</div><!-- layer -->
+
+<div class="layer  layer--dark  js--page-section  color--white">
+    <div class="retain  retain--small">
+        <pre><code>-theme.scss
+    - theme/_base.scss
+        - theme/base/_reset.scss
+        - theme/base/_headings.scss
+    - theme/_layout.scss
+        - theme/layout/_masthead.scss
+        - theme/layout/_main.scss
+        - theme/layout/_footer.scss
+    - theme/_modules.scss
+        - theme/modules/_search.scss
+        - theme/modules/_gallery.scss
+    - theme/_state.scss
+        - theme/state/_mediaqueries.scss</code></pre>
+    </div>
+</div>
+
+<div class="layer  layer--large  layer--lightest  js--page-section">
+    <div class="retain  retain--small">
+
+        <h3>Partial setup</h3>
+
+        <p>Every partial stands for a standalone module wich has its own sectioning:</p>
+
+        <ul>
+        <li>module, the base module rulesets</li>
+        <li>state, the different states the module can be in</li>
+        <li>theme, optional but recommended to separate style from structure</li>
+        </ul>
+
+        <p>Since the module has its own module, state, theme sections it can be easily copied to another project while the characteristics stay the same.</p>
+
+        <h3>Namespacing</h3>
+
+        <p>I'm using a namespacing that is based off the <a href="http://bem.info/">BEM</a> front-end naming methodology wich stands for: Block, Element, Modifyer. The naming convention follows the following pattern:</p>
+   </div><!-- .site-retain -->
+</div><!-- layer -->
+
+<div class="layer  layer--dark  js--page-section  color--white">
+    <div class="retain  retain--small">
+        <pre><code>.block{}
+.block__element{}
+.block--modifyer{}</code></pre>
+    </div>
+</div>
+
+<div class="layer  layer--large  layer--lightest  js--page-section">
+    <div class="retain  retain--small">
+
+        <ul>
+        <li><em>.block</em>  represents the high level element of the module</li>
+        <li><em>.block&#95;&#95;element</em>  represents a descendent of .block </li>
+        <li><em>.block--modifyer</em>  represents a different version of .block</li>
+        </ul>
+
+        <p>The point of BEM is to tell other developers more about what a piece of markup is doing from its name alone.</p>
+
+        <p>A brief example of a module:</p>
+   </div><!-- .site-retain -->
+</div><!-- layer -->
+
+<div class="layer  layer--dark  js--page-section  color--white">
+    <div class="retain  retain--small">
+        <pre><code>.search{
+    border: 1px solid #ccc;
+}
+    .search__heading{
+        font-size: 20px;
+        color: #f00;
+    }
+    .search__body{
+        padding: 10px;
+    }
+
+/* And a submodule is specified like this: */
+
+.search--attention{}
+    .search--attention__heading{
+        border-bottom: 1px solid #f00;
+    }</code></pre>
+    </div>
+</div>
+
+<div class="layer  layer--large  layer--lightest  js--page-section">
+    <div class="retain  retain--small">
+
+        <h3>Using Sass @extend</h3>
+
+        <p>Sass @extend is a very powerfull tool to DRY out you stylesheets, but must not be overused. Since we want modules to be portable you must only extend within a modules scope, a module must not be tied to other modules to work.</p>
+
+        <h2>Conclusion</h2>
+
+        <p>SMACSS is a very user-friendly approach to modular CSS. It asks for nothing less than a complete shift from a "page mentality" towards web design, to a search and codification of visual patterns. For that it offers a sensible categorization and naming scheme. It goes along very well with SASS, especially using the @extend feature and when it comes to themeing. It's kind of an open question how SASS's nesting capabilities fit with SMACSS, but in general I think it can bring lots of very valuable and badly needed modularity and conventions to the web design community.</p>
 
         {{>subpost}}
     </div><!-- .site-retain -->
