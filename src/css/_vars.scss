@@ -120,13 +120,13 @@
     \*------------------------------------------------------------------------*/
 
         $breakpoints: (
-            'palm-port' '(max-width: 479px)',
-            'palm' '(max-width: 600px)',
-            'gt-palm' '(min-width: 601px)',
-            'lap' '(min-width: 601px) and (max-width: 767px)',
-            'lt-desk' '(max-width: 767px)',
-            'desk' '(min-width: 768px)',
-            'gt-desk' '(min-width: 1200px)'
+            'palm-port' '(max-width: #{(479px/$base-font-size*1em)})',
+            'palm' '(max-width: #{(600px/$base-font-size*1em)})',
+            'gt-palm' '(min-width: #{(601px/$base-font-size*1em)})',
+            'lap' '(min-width: #{(601px/$base-font-size*1em)}) and (max-width: #{(767px/$base-font-size*1em)})',
+            'lt-desk' '(max-width: #{(767px/$base-font-size*1em)})',
+            'desk' '(min-width: #{(768px/$base-font-size*1em)})',
+            'gt-desk' '(min-width: #{(1200px/$base-font-size*1em)})'
         )!default;
 
 
@@ -151,7 +151,9 @@
     /* Site
     \*------------------------------------------------------------------------*/
 
-        $site-retain:                       980px!default;
+        $retain:                            980px!default;
+        $retain-small:                      768px!default;
+        $retain-large:                      1200px!default;
 
 
 

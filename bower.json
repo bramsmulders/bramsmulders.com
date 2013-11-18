@@ -1,13 +1,9 @@
 {
     "name": "bramsmulderscom",
-    "version": "2.0.2",
+    "version": "2.1.0",
     "dependencies": {
         "blocss-framework": "~4",
-        "modernizr": "~2.6.2",
-        "jquery": "latest",
-        "jRespond": "https://github.com/ten1seven/jRespond.git",
-        "animatedscrolljs": "https://github.com/yevhentiurin/animatedscrolljs.git",
-        "jquery-cycle2": "1.0.0-2013.01.22.2"
+        "jquery": "latest"
     },
     "devDependencies": {}
 }

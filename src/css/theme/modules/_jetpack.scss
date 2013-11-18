@@ -54,6 +54,7 @@
                 top: 50%;
                 left: 0;
                 right: 0;
+                @include rem(padding, 0 $space-half);
                 @include translate(0, -50%);
                 text-align: center;
             }
