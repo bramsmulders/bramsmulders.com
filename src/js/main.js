@@ -27,11 +27,10 @@ var links = {
         ;
 
         if(ancloc.length){
-            event.preventDefault();
             self.locate(ancloc);
         }
 
-        $('a[href*=#]:not([href=#])').click(function() {
+        $('a[href*=#]:not([href=#])').click(function(event) {
             if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
                 var target = this.hash;
                 if (target.length) {
@@ -65,6 +64,5 @@ var links = {
 \*----------------------------------------------------------------------------*/
 
 $(document).ready(function(){
-    $('.no-js').removeClass('no-js').addClass('js');
     links.init();
 });

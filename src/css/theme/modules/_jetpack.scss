@@ -77,10 +77,11 @@
             }
         }
         .jetpack__link {
+            display: block;
             overflow: hidden;
             text-indent: 200%;
             white-space: nowrap;
-            z-index: 20;
+            z-index: 30;
         }
 
 
@@ -91,6 +92,28 @@
 /*----------------------------------------------------------------------------*\
     $STATE
 \*----------------------------------------------------------------------------*/
+
+    .no-rgba {
+        .jetpack__overlay {
+            background-color: $color-dark;
+        }
+    }
+
+    .no-opacity {
+        .jetpack__overlay {
+            display: none;
+        }
+        .jetpack {
+            &:hover,
+            &:active,
+            &:focus {
+                .jetpack__overlay {
+                    display: block;
+                }
+            }
+        }
+    }
+
 
 
 

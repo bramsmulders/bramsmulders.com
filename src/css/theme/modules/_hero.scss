@@ -57,8 +57,8 @@
                 top: 50%;
                 transform: translate(-50%, -50%);
                 width: 100%;
-                max-width: $retain + ($space*2);
                 @include rem(padding, 0 $space);
+                max-width: $retain + ($space*2);
 
                 &.is-animated {
                     animation: hero-animated $transition-duration-long;
@@ -83,6 +83,15 @@
 /*----------------------------------------------------------------------------*\
     $STATE
 \*----------------------------------------------------------------------------*/
+
+    .no-csstransforms {
+        .hero__center {
+            @include rem(top, $space*3);
+            left: 0;
+            right: 0;
+            width: 100%;
+        }
+    }
 
 
 
