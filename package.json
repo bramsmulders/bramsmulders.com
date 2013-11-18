@@ -1,6 +1,6 @@
 {
   "name": "bramsmulderscom",
-  "version": "2.1.0",
+  "version": "2.1.5",
   "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
