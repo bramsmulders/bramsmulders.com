@@ -28,14 +28,21 @@ var links = {
 
         if(ancloc.length){
             self.locate(ancloc);
+            if(event && typeof event.preventDefault() === 'function'){
+                event.preventDefault();
+            }
         }
 
-        $('a[href*=#]:not([href=#])').click(function(event) {
+        $('a[href*=#]:not([href=#])').click(function() {
             if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
                 var target = this.hash;
                 if (target.length) {
-                    event.preventDefault();
-                    self.locate(target);
+                    if(event && typeof event.preventDefault() === 'function'){
+                        event.preventDefault();
+                    }
+                    setTimeout(function() {
+                        self.locate(target);
+                    }, 200);
                 }
             }
         });

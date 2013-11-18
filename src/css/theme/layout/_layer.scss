@@ -32,10 +32,10 @@
      * Modifyers: layer sizes
      */
     .layer--medium {
-        @include rem(padding, $space*2 0);
+        @include rem(padding, $space*1 0);
     }
     .layer--large {
-        @include rem(padding, $space*3 0);
+        @include rem(padding, $space*2 0);
     }
 
 
@@ -61,6 +61,18 @@
 /*----------------------------------------------------------------------------*\
     $STATE
 \*----------------------------------------------------------------------------*/
+
+    @include media-query(gt-palm) {
+        /**
+         * Modifyers: layer sizes
+         */
+        .layer--medium {
+            @include rem(padding, $space*2 0);
+        }
+        .layer--large {
+            @include rem(padding, $space*3 0);
+        }
+    }
 
 
 
