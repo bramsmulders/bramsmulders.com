@@ -1,5 +1,6 @@
 node_modules
-build
+#build
 .tmp
 .sass-cache
+dploy.yaml
 src/bower_components
