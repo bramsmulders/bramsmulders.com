@@ -5,10 +5,15 @@
 'use strict';
 
 /*----------------------------------------------------------------------------*\
-    $LINKS
+    $SCROLLER
+    Varous scroll related functions
 \*----------------------------------------------------------------------------*/
 
 var scroller = {
+    init: function(){
+        this.preventHover();
+    },
+
     currentYPosition: function() {
         if (self.pageYOffset) {
             return self.pageYOffset;
@@ -17,7 +22,7 @@ var scroller = {
         }
     },
 
-    elmYPosition: function(elementID) {
+    elementYPosition: function(elementID) {
         var elm = document.querySelector(elementID);
         var y = elm.offsetTop;
         while (elm.offsetParent && elm.offsetParent != document.body) {
@@ -29,7 +34,7 @@ var scroller = {
 
     smoothScroll: function(elementID) {
         var start = this.currentYPosition();
-        var stop = this.elmYPosition(elementID);
+        var stop = this.elementYPosition(elementID);
         var distance = (stop > start)
             ? stop - start
             : start - stop
@@ -66,11 +71,32 @@ var scroller = {
             }
             timer++;
         }
+    },
+
+    preventHover: function(){
+        var body = document.body,
+            timer;
+
+        window.addEventListener('scroll', function() {
+            clearTimeout(timer);
+            if(!body.classList.contains('disable-hover')) {
+                body.classList.add('disable-hover')
+            }
+
+            timer = setTimeout(function(){
+                body.classList.remove('disable-hover')
+            },100);
+        }, false);
     }
 };
 
 
 
+
+
+/*----------------------------------------------------------------------------*\
+    $LINKS
+\*----------------------------------------------------------------------------*/
 
 var links = {
     init: function(){
@@ -94,9 +120,6 @@ var links = {
 
         if(ancloc.length){
             scroller.smoothScroll(ancloc);
-            if(event && typeof event.preventDefault() === 'function'){
-                event.preventDefault();
-            }
         }
         var links = document.querySelectorAll('a[href*="#"]:not([href="#"])');
         for(var key in links) {
@@ -104,12 +127,10 @@ var links = {
                 if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
                     var target = this.hash;
                     if (target.length) {
-                        if(event && typeof event.preventDefault() === 'function'){
-                            event.preventDefault();
-                        }
                         setTimeout(function() {
                             scroller.smoothScroll(target);
                         }, 200);
+                        return false;
                     }
                 }
             };
@@ -128,5 +149,6 @@ var links = {
 \*----------------------------------------------------------------------------*/
 
 window.onload = function(){
+    scroller.init();
     links.init();
 }
