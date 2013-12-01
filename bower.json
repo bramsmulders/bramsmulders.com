@@ -3,7 +3,6 @@
     "version": "2.1.6",
     "dependencies": {
         "blocss-framework": "~4",
-        "jquery": "~1.10",
         "modernizr": "~2.6.2"
     },
     "devDependencies": {}
