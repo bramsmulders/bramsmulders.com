@@ -68,6 +68,7 @@
 
         .jetpack__platform {
             display: block;
+            width: 100%;
             @include transition(all $transition-duration-long);
             @include prefixer(filter, blur(0), webkit moz o spec);
 
@@ -76,6 +77,26 @@
                 @include prefixer(filter, blur(2px), webkit moz o spec);
             }
         }
+
+        .jetpack__platform--resp {
+
+            &,
+            img {
+                display: block;
+                width: 100%;
+            }
+
+            img {
+                @include transition(all $transition-duration-long);
+                @include prefixer(filter, blur(0), webkit moz o spec);
+            }
+            .jetpack:hover & {
+                @include transition-duration($transition-duration-short);
+                @include prefixer(filter, blur(2px), webkit moz o spec);
+            }
+        }
+
+
         .jetpack__link {
             display: block;
             overflow: hidden;
