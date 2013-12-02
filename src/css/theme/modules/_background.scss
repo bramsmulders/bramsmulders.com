@@ -65,6 +65,18 @@
     $STATE
 \*----------------------------------------------------------------------------*/
 
+    @include media-query(palm){
+        .background--rain {
+            background-image: url(../images/theme/backgrounds/rain_small.jpg);
+        }
+        .background--writer {
+            background-image: url(../images/theme/backgrounds/writer_small.jpg);
+        }
+        .background--jarvis {
+            background-image: url(../images/theme/backgrounds/jarvis_small.jpg);
+        }
+    }
+
 
 
 
