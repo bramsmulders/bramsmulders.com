@@ -45,6 +45,7 @@
      */
     $use-modules-grid:                 true;
     $use-modules-arrange:              false;
+    $use-modules-columns:              false;
     $use-modules-nav:                  true;
         $use-modules-breadcrumb:       false;
         $use-modules-pagination:       false;
@@ -132,6 +133,7 @@
         $breakpoint-has-widths:             ('gt-palm', 'desk');
         $breakpoint-has-visuallyhidden:     ();
         $breakpoint-has-collapsed-arrange:  ();
+        $breakpoint-has-columns:            ();
         $breakpoint-has-collapsed-media:    ();
         $breakpoint-has-text-mods:          ();
 
