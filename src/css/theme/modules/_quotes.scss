@@ -48,6 +48,12 @@
     $STATE
 \*----------------------------------------------------------------------------*/
 
+    @include media-query(palm) {
+        blockquote {
+            @include rem(margin-left, $space);
+        }
+    }
+
 
 
 
