@@ -44,7 +44,7 @@ module.exports = function (grunt) {
                     livereload: LIVERELOAD_PORT
                 },
                 files: [
-                    '<%= yeoman.src %>/templates/{,*/}*.hbs',
+                    '<%= yeoman.src %>/templates/**/*.hbs',
                     '{.tmp,<%= yeoman.src %>}/css/**/*.css',
                     '{.tmp,<%= yeoman.src %>}/js/**/*.js',
                     '<%= yeoman.src %>/images/**/*.{png,jpg,jpeg,gif,webp,svg}'
@@ -213,7 +213,7 @@ module.exports = function (grunt) {
             },
             pages: {
                 files: {
-                    '<%= yeoman.src %>/': ['<%= yeoman.src %>/templates/pages/*.hbs', '!<%= yeoman.src %>/templates/pages/index.hbs']
+                    '<%= yeoman.src %>/': ['<%= yeoman.src %>/templates/pages/**/*.hbs', '!<%= yeoman.src %>/templates/pages/index.hbs']
                 }
             },
             index: {

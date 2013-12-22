@@ -24,6 +24,12 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="msapplication-TileImage" content="mstile-310x310.png" />
 
+    <!-- Open graph stuff -->
+    <meta property="og:title" content="{{htmltitle}}"/>
+    <meta property="og:description" content="{{htmldescription}}"/>
+    {{#if ogtype }}<meta property="og:type" content="{{ogtype}}"/>{{/if}}
+    {{#if ogimage }}<meta property="og:image" content="{{ogimage}}"/>{{/if}}
+
     <!-- build:js js/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->

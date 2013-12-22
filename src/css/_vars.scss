@@ -34,7 +34,7 @@
     /**
      * Base
      */
-    $use-base-quotes:                  false;
+    $use-base-quotes:                  true;
     $use-base-code:                    false;
     $use-base-tables:                  false;
     $use-base-forms:                   false;
@@ -114,6 +114,7 @@
 
         $base-color:                        #5c5c5c; // Dark grey
         $brand:                             #f85c37; // Bright orange
+        $brand-face:                        "adobe-garamond-pro", serif;
 
 
 
