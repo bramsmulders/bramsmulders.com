@@ -1,8 +1,8 @@
 {
     "name": "bramsmulderscom",
-    "version": "2.3.5",
+    "version": "2.3.6",
     "dependencies": {
-        "blocss-framework": "~4",
+        "blocss": "~4",
         "modernizr": "~2",
         "picturefill": "~1.2"
     },
