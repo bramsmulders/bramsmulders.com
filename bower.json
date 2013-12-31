@@ -1,6 +1,6 @@
 {
     "name": "bramsmulderscom",
-    "version": "2.3.5",
+    "version": "2.3.6",
     "dependencies": {
         "blocss": "~4",
         "modernizr": "~2",
