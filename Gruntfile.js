@@ -273,7 +273,7 @@ module.exports = function (grunt) {
             build: {
                 options: {
                     removeCommentsFromCDATA: true,
-                    //https://github.com/yeoman/grunt-usemin/issues/44
+                    // https://github.com/yeoman/grunt-usemin/issues/44
                     collapseWhitespace: true,
                     collapseBooleanAttributes: true,
                     removeAttributeQuotes: true,
@@ -284,7 +284,7 @@ module.exports = function (grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: '<%= yeoman.src %>',
+                    cwd: '<%= yeoman.build %>',
                     src: '*.html',
                     dest: '<%= yeoman.build %>'
                 }]
@@ -369,7 +369,8 @@ module.exports = function (grunt) {
         'uglify',
         'copy:build',
         'rev',
-        'usemin'
+        'usemin',
+        'htmlmin'
     ]);
 
     grunt.registerTask('default', [
