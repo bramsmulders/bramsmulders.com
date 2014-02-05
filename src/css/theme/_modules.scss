@@ -4,34 +4,12 @@
 \*----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------*\
-    $CONTENTS
-\*----------------------------------------------------------------------------*/
-
-    /*
-    CONTENTS................You're reading it, LOL
-    BUTTON..................Various buttons
-    RULE....................Various rule variations
-    NOTICE..................Notifications
-    BACKGROUND..............Background images
-    HEADER..................Section headings
-    NAV.....................Navigation objects
-    HERO....................Hero carousel
-    CAROUSEL................Carousel object
-    JETPACK.................
-    SLIDE...................
-    POST....................Blog posts
-    HELPERS.................Set of handy dandy helper classes
-    */
-
-
-
-
-
-/*----------------------------------------------------------------------------*\
     $INCLUDES
 \*----------------------------------------------------------------------------*/
 
-    @import
+    @import "blocss-buttons/buttons",
+            "blocss-navigation/navigation",
+            "modules/sprite",
             "modules/button",
             "modules/rule",
             "modules/quotes",
@@ -43,7 +21,5 @@
             "modules/carousel",
             "modules/jetpack",
             "modules/slide",
-            "modules/post",
-
-            "modules/helpers"
+            "modules/post"
     ;

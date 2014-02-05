@@ -23,11 +23,13 @@
 
     a {
         color: $brand;
+        text-decoration: none;
 
         &:hover,
         &:focus,
         &:active {
             color: darken($brand, 10%);
+            text-decoration: underline;
         }
     }
 
