@@ -86,12 +86,9 @@
         );
 
         $breakpoint-has-units:             ('gt-palm', 'desk');
-        $breakpoint-has-visuallyhidden:     ();
-        $breakpoint-has-collapsed-arrange:  ();
-        $breakpoint-has-columns:            ();
-        $breakpoint-has-collapsed-media:    ();
-        $breakpoint-has-text-mods:          ();
 
+        $use-push:                          false;
+        $use-pull:                          false;
         $name-units:                        unit;
 
 
