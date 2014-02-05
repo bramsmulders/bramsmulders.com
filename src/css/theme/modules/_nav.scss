@@ -25,6 +25,9 @@
      * Social
      */
     .nav--social {
+        > ul > li + li {
+            @include rem(margin-left, $space-half);
+        }
         a {
             transition: background-color $transition-duration-short, color $transition-duration-short, border-color $transition-duration-short;
 
@@ -42,7 +45,7 @@
      */
     .nav--social--dark {
         a {
-            color: $base-color;
+            color: $color-base;
 
             &:hover,
             &:focus,

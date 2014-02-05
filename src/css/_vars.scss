@@ -24,52 +24,6 @@
 
 
 /*----------------------------------------------------------------------------*\
-    $MODULES
-    All of blocss’ objects and abstractions are initially turned off by
-    default. This means that you start any project with as little as possible,
-    and introducing objects and abstractions is as simple as switching the
-    following variables to `true`.
-\*----------------------------------------------------------------------------*/
-
-    /**
-     * Base
-     */
-    $use-base-quotes:                  true;
-    $use-base-code:                    false;
-    $use-base-tables:                  false;
-    $use-base-forms:                   false;
-
-
-    /**
-     * Modules
-     */
-    $use-modules-grid:                 true;
-    $use-modules-arrange:              false;
-    $use-modules-columns:              false;
-    $use-modules-nav:                  true;
-        $use-modules-breadcrumb:       false;
-        $use-modules-pagination:       false;
-    $use-modules-media:                false;
-    $use-modules-flexembed:            false;
-    $use-modules-island:               false;
-    $use-modules-sprite:               true;
-    $use-modules-buttons:              true;
-    $use-modules-rules:                true;
-    $use-modules-greybox:              false;
-    $use-modules-notice:               true;
-
-
-    /**
-     * Generic
-     */
-    $use-generic-widths:               true;
-    $use-generic-push:                 false;
-
-
-
-
-
-/*----------------------------------------------------------------------------*\
     $OVERRIDES
     Place any variables that should override blocss’ defaults here.
 \*----------------------------------------------------------------------------*/
@@ -80,7 +34,7 @@
         /**
          * Font
          */
-        $base-font-family:                  "Raleway", Helvetica, Arial, sans-serif;
+        $face-base:                  "Raleway", Helvetica, Arial, sans-serif;
 
 
         /**
@@ -93,26 +47,26 @@
         /**
          * Headings (in pixels)
          */
-        $giga-size:                         96px; // .giga
-        $mega-size:                         72px; // .mega
-        $kilo-size:                         48px; // .kilo
+        $giga:                              96px; // .giga
+        $mega:                              72px; // .mega
+        $kilo:                              48px; // .kilo
 
-        $h1-size:                           24px; // .alpha
-        $h2-size:                           20px; // .beta
-        $h3-size:                           18px; // .gamma
-        $h4-size:                           $base-font-size; // .delta
-        $h5-size:                           $h4-size; // .epsilon
-        $h6-size:                           $h4-size; // .zeta
+        $alpha:                             24px; // .alpha
+        $beta:                              20px; // .beta
+        $gamma:                             18px; // .gamma
+        $delta:                             $base-font-size; // .delta
+        $epsilon:                           $delta; // .epsilon
+        $zeta:                              $delta; // .zeta
 
-        $milli-size:                        14px; // .milli
-        $micro-size:                        12px; // .micro
+        $milli:                             14px; // .milli
+        $micro:                             12px; // .micro
 
 
 
     /* Brand
     \*------------------------------------------------------------------------*/
 
-        $base-color:                        #5c5c5c; // Dark grey
+        $color-base:                        #5c5c5c; // Dark grey
         $brand:                             #f85c37; // Bright orange
         $brand-face:                        "adobe-garamond-pro", serif;
 
@@ -131,12 +85,11 @@
             'gt-desk' '(min-width: #{(1200px/$base-font-size*1em)})'
         );
 
-        $breakpoint-has-widths:             ('gt-palm', 'desk');
-        $breakpoint-has-visuallyhidden:     ();
-        $breakpoint-has-collapsed-arrange:  ();
-        $breakpoint-has-columns:            ();
-        $breakpoint-has-collapsed-media:    ();
-        $breakpoint-has-text-mods:          ();
+        $breakpoint-has-units:             ('gt-palm', 'desk');
+
+        $use-push:                          false;
+        $use-pull:                          false;
+        $name-units:                        unit;
 
 
 

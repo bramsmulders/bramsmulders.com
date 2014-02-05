@@ -27,6 +27,7 @@
     h4,
     h5,
     h6 {
+        @include rem(margin-bottom, $space);
         text-transform: uppercase;
 
         > a {
@@ -49,13 +50,13 @@
 
     @include media-query(lap) {
         .giga {
-            @include font-size($kilo-size);
+            @include font-size($kilo);
         }
     }
 
     @include media-query(palm) {
         .giga {
-            @include font-size($kilo-size);
+            @include font-size($kilo);
         }
     }
 

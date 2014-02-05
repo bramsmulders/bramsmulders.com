@@ -27,7 +27,7 @@
         @include rem(padding, $space-half $space);
         text-indent: 0;
         font-family: $brand-face;
-        @include font-size($h2-size);
+        @include font-size($beta);
         font-style: italic;
 
         border-left: $space-half/2 solid $color-light;

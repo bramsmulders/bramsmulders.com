@@ -272,19 +272,19 @@ module.exports = function (grunt) {
         htmlmin: {
             build: {
                 options: {
-                    // removeCommentsFromCDATA: true,
+                    removeCommentsFromCDATA: true,
                     // https://github.com/yeoman/grunt-usemin/issues/44
-                    // collapseWhitespace: true,
-                    // collapseBooleanAttributes: true,
-                    // removeAttributeQuotes: true,
-                    // removeRedundantAttributes: true,
-                    // useShortDoctype: true,
-                    // removeEmptyAttributes: true,
-                    // removeOptionalTags: true
+                    collapseWhitespace: true,
+                    collapseBooleanAttributes: true,
+                    removeAttributeQuotes: true,
+                    removeRedundantAttributes: true,
+                    useShortDoctype: true,
+                    removeEmptyAttributes: true,
+                    removeOptionalTags: true
                 },
                 files: [{
                     expand: true,
-                    cwd: '<%= yeoman.src %>',
+                    cwd: '<%= yeoman.build %>',
                     src: '*.html',
                     dest: '<%= yeoman.build %>'
                 }]
@@ -320,8 +320,8 @@ module.exports = function (grunt) {
                 'coffee',
                 'compass',
                 'autoprefixer',
-                'imagemin'/*,
-                'htmlmin'*/
+                'imagemin',
+                'htmlmin'
             ]
         },
         bower: {
@@ -369,7 +369,8 @@ module.exports = function (grunt) {
         'uglify',
         'copy:build',
         'rev',
-        'usemin'
+        'usemin',
+        'htmlmin'
     ]);
 
     grunt.registerTask('default', [

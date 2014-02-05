@@ -1,7 +1,7 @@
 <!doctype html>
-<!--[if lt IE 9]>    <html class="no-js lt-ie10 lt-ie9" lang="en"> <![endif]-->
-<!--[if IE 9]>    <html class="no-js ie9 lt-ie10" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!--[if lt IE 9]>    <html class="lt-ie10 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html lang="en"><!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -15,7 +15,6 @@
     <title>How I improved my workflow with SMACSS &amp; Sass - Bram Smulders</title>
     <meta name="description" content="Preprocessing &amp; Component based design principles.">
 
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:300,400,300,700">
     <!-- build:css({.tmp,src}) css/theme.css -->
     <link rel="stylesheet" href="css/theme.css">
     <!-- endbuild -->
@@ -29,10 +28,6 @@
     <meta property="og:description" content="Preprocessing &amp; Component based design principles."/>
     <meta property="og:type" content="article"/>
     <meta property="og:image" content="http://bramsmulders.com/images/theme/post/workflow.jpg"/>
-
-    <!-- build:js js/vendor/modernizr.js -->
-    <script src="bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
 </head>
 <body>
     <div class="wrapper">
@@ -217,7 +212,7 @@ margin: 0;</code></pre>
         <p>SMACSS is a very user-friendly approach to modular CSS. It asks for nothing less than a complete shift from a "page mentality" towards web design, to a search and codification of visual patterns. For that it offers a sensible categorization and naming scheme. It goes along very well with SASS, especially using the @extend feature and when it comes to themeing. It's kind of an open question how SASS's nesting capabilities fit with SMACSS, but in general I think it can bring lots of very valuable and badly needed modularity and conventions to the web design community.</p>
 
         <hr class="rule">
-<p class="text--center">
+<p class="text--center  flatten">
     
     <a href="/#blog" class="button    button--full--palm-port" title="Back to overview">Overview</a>
     
@@ -232,7 +227,7 @@ margin: 0;</code></pre>
         <div class="background  background--absolute  background--writer"></div>
         <div class="background__overlay">
             <h1>Get in touch</h1>
-            <div class="nav--social  text--center  sign--triple">
+            <div class="nav--social  text--center  sign--large">
                 <ul class="nav">
     <li><a href="http://twitter.com/bramsmulders" class="icon  icon--large" rel="external" data-icon="" title="Follow me on twitter"></a></li>
     <li><a href="http://www.facebook.com/bramsmulders" class="icon  icon--large" rel="external" data-icon="" title="Follow me on Facebook"></a></li>
@@ -248,6 +243,7 @@ margin: 0;</code></pre>
 </footer>
 
     </div><!-- .wrapper -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:300,400,300,700">
     <!-- build:js js/vendor/main.js -->
     <script src="bower_components/picturefill/picturefill.js"></script>
     <script src="js/plugins.js"></script>
