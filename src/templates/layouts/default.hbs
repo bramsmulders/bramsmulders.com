@@ -15,7 +15,6 @@
     <title>{{htmltitle}}</title>
     <meta name="description" content="{{htmldescription}}">
 
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:300,400,300,700">
     <!-- build:css({.tmp,src}) css/theme.css -->
     <link rel="stylesheet" href="css/theme.css">
     <!-- endbuild -->
@@ -29,10 +28,6 @@
     <meta property="og:description" content="{{htmldescription}}"/>
     {{#if ogtype }}<meta property="og:type" content="{{ogtype}}"/>{{/if}}
     {{#if ogimage }}<meta property="og:image" content="{{ogimage}}"/>{{/if}}
-
-    <!-- build:js js/vendor/modernizr.js -->
-    <script src="bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
 </head>
 <body>
     <div class="wrapper">
@@ -45,6 +40,7 @@
         {{> footer }}
 
     </div><!-- .wrapper -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:300,400,300,700">
     <!-- build:js js/vendor/main.js -->
     <script src="bower_components/picturefill/picturefill.js"></script>
     <script src="js/plugins.js"></script>

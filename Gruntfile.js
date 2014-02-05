@@ -272,15 +272,15 @@ module.exports = function (grunt) {
         htmlmin: {
             build: {
                 options: {
-                    // removeCommentsFromCDATA: true,
-                    // https://github.com/yeoman/grunt-usemin/issues/44
-                    // collapseWhitespace: true,
-                    // collapseBooleanAttributes: true,
-                    // removeAttributeQuotes: true,
-                    // removeRedundantAttributes: true,
-                    // useShortDoctype: true,
-                    // removeEmptyAttributes: true,
-                    // removeOptionalTags: true
+                    removeCommentsFromCDATA: true,
+                    //https://github.com/yeoman/grunt-usemin/issues/44
+                    collapseWhitespace: true,
+                    collapseBooleanAttributes: true,
+                    removeAttributeQuotes: true,
+                    removeRedundantAttributes: true,
+                    useShortDoctype: true,
+                    removeEmptyAttributes: true,
+                    removeOptionalTags: true
                 },
                 files: [{
                     expand: true,
@@ -320,8 +320,8 @@ module.exports = function (grunt) {
                 'coffee',
                 'compass',
                 'autoprefixer',
-                'imagemin'/*,
-                'htmlmin'*/
+                'imagemin',
+                'htmlmin'
             ]
         },
         bower: {
