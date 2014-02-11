@@ -1,4 +1,4 @@
-# bramsmulders.com - v2.3.9
+# bramsmulders.com - v2.4.0
 
 This is the uncompiled Yeoman/Grunt source code of [bramsmulders.com](http://bramsmulders.com).
 
