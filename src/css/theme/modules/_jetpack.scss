@@ -25,8 +25,6 @@
         position: relative;
         cursor: pointer;
         overflow: hidden;
-        border: 1px solid $color-light;
-        @include rem(padding, $space-half/2);
         @include rem(margin-bottom, $space);
     }
         .jetpack__overlay,
@@ -34,35 +32,30 @@
             position: absolute;
             top: 0;
             left: 0;
-            right: 0;
             bottom: 0;
+            width: 100%;
         }
 
         .jetpack__overlay {
             background-color: transparentize($color-dark, .3);
             z-index: 10;
-            opacity: 0;
-            @include transition(opacity $transition-duration-long);
+            left: 100%;
+            @include transition(left $transition-duration-long);
 
             .jetpack:hover & {
                 @include transition-duration($transition-duration-short);
-                opacity: 1;
+                left: 0;
             }
         }
             .jetpack__center {
-                position: absolute;
-                top: 50%;
-                left: 0;
-                right: 0;
-                @include rem(padding, 0 $space-half);
-                @include translate(0, -50%);
-                text-align: center;
+                @include rem(padding, $space);
             }
                 .jetpack__title {
                     color: $color-white;
                 }
                 .jetpack__subtitle {
-                    color: $color-light;
+                    color: $color-white;
+                    font-weight: 400;
                 }
 
 
