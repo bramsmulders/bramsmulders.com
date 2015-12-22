@@ -35,9 +35,9 @@ module.exports = function (grunt) {
                 files: ['test/spec/**/*.coffee'],
                 tasks: ['coffee:test']
             },
-            compass: {
+            sass: {
                 files: ['<%= yeoman.src %>/css/**/*.{scss,sass}'],
-                tasks: ['compass:server', 'autoprefixer']
+                tasks: ['sass:server', 'autoprefixer']
             },
             livereload: {
                 options: {
@@ -146,31 +146,24 @@ module.exports = function (grunt) {
                 }]
             }
         },
-        compass: {
-            options: {
-                sassDir: '<%= yeoman.src %>/css',
-                cssDir: '.tmp/css',
-                generatedImagesDir: '.tmp/images/generated',
-                imagesDir: '<%= yeoman.src %>/images',
-                javascriptsDir: '<%= yeoman.src %>/js',
-                fontsDir: '<%= yeoman.src %>/css/fonts',
-                importPath: '<%= yeoman.src %>/bower_components',
-                httpImagesPath: '/images',
-                httpGeneratedImagesPath: '/images/generated',
-                httpFontsPath: '/css/fonts',
-                relativeAssets: false
+
+        sass: {
+            "options": {
+                "precision": 8,
+                "includePaths": ['<%= yeoman.src %>/bower_components'],
+                "sourceMap": true
             },
-            build: {
-                options: {
-                    generatedImagesDir: '<%= yeoman.build %>/images/generated'
-                }
-            },
-            server: {
-                options: {
-                    debugInfo: true
-                }
+            "dev": {
+                "files": [{
+                    "expand": true,
+                    "cwd": "<%= yeoman.src %>/css",
+                    "src": ["**/*.scss"],
+                    "dest": ".tmp/css",
+                    "ext": ".css"
+                }]
             }
         },
+
         autoprefixer: {
             options: {
                 browsers: [
@@ -310,7 +303,7 @@ module.exports = function (grunt) {
         },
         concurrent: {
             server: [
-                'compass',
+                'sass',
                 'coffee:build'
             ],
             test: [
@@ -318,7 +311,7 @@ module.exports = function (grunt) {
             ],
             build: [
                 'coffee',
-                'compass',
+                'sass',
                 'autoprefixer',
                 'imagemin',
                 'htmlmin'
