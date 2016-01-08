@@ -41,10 +41,10 @@
             background-color: transparentize($color-dark, .3);
             z-index: 10;
             left: 100%;
-            @include transition(left $transition-duration-long);
+            transition: left $transition-duration-long;
 
             .jetpack:hover & {
-                @include transition-duration($transition-duration-short);
+                transition-duration: $transition-duration-short;
                 left: 0;
             }
         }

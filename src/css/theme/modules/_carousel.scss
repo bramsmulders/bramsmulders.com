@@ -36,7 +36,7 @@
     .carousel__control {
         position: absolute;
         top: 50%;
-        @include translate(0, -50%);
+        transform: translate(0, -50%);
 
         &.is-prev {
             left: 0;
