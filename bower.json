@@ -1,9 +1,8 @@
 {
     "name": "bramsmulderscom",
-    "version": "2.4.7",
+    "version": "3.0.0",
     "dependencies": {
-        "blocss": "~5",
-        "picturefill": "~1.2"
+        "blocss": "~6"
     },
     "devDependencies": {}
 }
