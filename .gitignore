@@ -3,4 +3,6 @@ node_modules
 .tmp
 .sass-cache
 dploy.yaml
-src/bower_components
+assets/bower_components
+assets/**/*.map
+assets/**/*.css
