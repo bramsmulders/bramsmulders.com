@@ -4,9 +4,11 @@
   "dependencies": {},
   "devDependencies": {
     "grunt": "^1.0.1",
-    "load-grunt-tasks": "^3.5.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-php": "^1.5.1",
     "grunt-sass": "^1.2.0",
-    "grunt-php": "^1.5.1"
+    "load-grunt-tasks": "^3.5.0"
   },
   "engines": {
     "node": ">=0.8.0"

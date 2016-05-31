@@ -9,17 +9,46 @@ module.exports = function(grunt) {
             dest: {
                 bower: './assets/bower_components',
                 css: './assets/css'
-            }
+            },
+            site: './site'
         }
     };
 
     grunt.initConfig({
         config: config,
-        php: {
-            test: {
+
+        watch: {
+            sass: {
+                files: ['<%= config.paths.src.sass %>/**/*.scss'],
+                tasks: ['sass'],
                 options: {
-                    keepalive: true,
-                    open: true
+                    spawn: false,
+                },
+            },
+        },
+
+        php: {
+            dev: {
+                options: {
+                    hostname: '127.0.0.1',
+                    port: 8000,
+                    keepalive: false,
+                    open: false
+                }
+            }
+        },
+
+        browserSync: {
+            dev: {
+                bsFiles: {
+                    src: [
+                        '<%= config.paths.dest.css %>/**/*.css',
+                        '<%= config.paths.site %>/**/*.php'
+                    ]
+                },
+                options: {
+                    proxy: '<%= php.dev.options.hostname %>:<%= php.dev.options.port %>',
+                    watchTask: true
                 }
             }
         },
@@ -28,7 +57,8 @@ module.exports = function(grunt) {
             options: {
                 precision: 8,
                 includePaths: ['<%= config.paths.dest.bower %>'],
-                sourceMap: true
+                sourceMap: true,
+                outputStyle: 'compressed'
             },
             dev: {
                 files: [{
@@ -43,7 +73,12 @@ module.exports = function(grunt) {
 
     });
 
-    grunt.registerTask('serve', ['sass','php']);
+    grunt.registerTask('serve', [
+        'sass',
+        'php:dev',
+        'browserSync:dev',
+        'watch'
+    ]);
 };
 
 
