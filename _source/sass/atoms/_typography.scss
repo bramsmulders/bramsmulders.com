@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/*----------------------------------------------------------------------------*\
+    $TYPOGRAPHY
+\*----------------------------------------------------------------------------*/
+
+/*  Mixins
+\*----------------------------------------------------------------------------*/
+
+@mixin fs($map: $normalis){
+    @include font-size(map-get($map, font-size), false);
+    line-height: strip-units(map-get($map, line-height)/map-get($map, font-size));
+}
+
+
+
+/*  Toplevel
+\*----------------------------------------------------------------------------*/
+
+html {
+    font-family: $face-base;
+}
+
+
+
+/*  Sizes
+\*----------------------------------------------------------------------------*/
+
+.normalis {
+    @include fs($normalis);
+}
+.alpha {
+    @include fs($alpha);
+}
+.beta {
+    @include fs($beta);
+}
+.gamma {
+    @include fs($gamma);
+}
+.delta {
+    @include fs($delta);
+}
+.epsilon {
+    @include fs($epsilon);
+}
+.zeta {
+    @include fs($zeta);
+}
+
+
+
+/*  Headings
+\*----------------------------------------------------------------------------*/
+
+h1 {
+    @extend .alpha;
+}
+h2 {
+    @extend .beta;
+}
+h3 {
+    @extend .gamma;
+}
+h4 {
+    @extend .delta;
+}
+h5 {
+    @extend .epsilon;
+}
+h6 {
+    @extend .zeta;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $face-secondary;
+    text-transform: uppercase;
+}
+
+
+
+/*  Double stranded heading hierachy
+\*----------------------------------------------------------------------------*/
+
+.h1 {
+    @extend h1;
+}
+.h2 {
+    @extend h2;
+}
+.h3 {
+    @extend h3;
+}
+.h4 {
+    @extend h4;
+}
+.h5 {
+    @extend h5;
+}
+.h6 {
+    @extend h6;
+}
