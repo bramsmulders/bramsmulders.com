@@ -10,7 +10,8 @@ module.exports = function(grunt) {
                 bower: './assets/bower_components',
                 css: './assets/css'
             },
-            site: './site'
+            site: './site',
+            content: './content'
         }
     };
 
@@ -43,7 +44,8 @@ module.exports = function(grunt) {
                 bsFiles: {
                     src: [
                         '<%= config.paths.dest.css %>/**/*.css',
-                        '<%= config.paths.site %>/**/*.php'
+                        '<%= config.paths.site %>/**/*.php',
+                        '<%= config.paths.content %>/**/*'
                     ]
                 },
                 options: {
