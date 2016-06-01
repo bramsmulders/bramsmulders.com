@@ -1,0 +1,35 @@
+﻿Title: URL design craft
+
+----
+
+Date: 
+
+----
+
+Text: Here I am, my fist post in a couple of months, and I’m writing about one of the lamest subjects in the online world; URL design. I’ve been tinkering about this subject a long time, had many discussions about it. The outcome was simple: **You should take time to design your URL structure**. 
+
+URL design is a complex subject, and like the rest of design there are many ways that lead to Rome. There’s good URL design, bad URL design, and anything in between -- It’s subjective.
+
+I hope to lay out some ideas I’ve learned over the years on creating great URLs, and explain in detail why you need to think about them.
+
+##Think about your users
+The first thing the user usually sees is the url of the page. URLs are universal; They work in Firefox, Chrome, Safari, Internet Explorer, your iPhone, Android and even written down on sticky notes. This is the main reason to carefully craft your URLs, so the user knows what’s is behind it.
+
+Firstly a URL needs to be descriptive, it must give the user a glympse of the content behind it. Take a look at the following example, a product overview of a fictional webstore:
+
+    http://www.some-domain.com/product.php?filter=45&page=4
+
+This url tells you nothing about the content that lies behind it. We can only roughly determine that we have filtered something and we are on page 4 of product.php. Now take a look at the following example:
+
+    http://www.some-domain.com/catalog/mens-shoes/page:4
+
+This URL tell us that we are on page 4 in the mens-shoes category/filter in the catalog of our webshop. Firstly this looks much cleaner, but more importantly: the URL tells us were we are, and what can be expected when we navigate to it. 
+
+We established that URLs must be descriptive, but that’s not the only thing what is good for the user. In my opinion URLs must be as short as possible, while maintaining their descriptive purpose. 
+
+###Short = Sexy
+URLs are typically usefull when they are short. That means the user can share them easily, read them faster, and above all: remember them. 
+
+How many times you have been on a interesting page, and later on you wanted show the page to a friend, but you couldn’t remember the URL. With a short, but very descriptive URL you can remember it very easy. By typing one or more keywords of the articles URL into your URL bar your browser will use dark magic to seemingly conjure up exactly the full URL you were looking for. 
+
+Short URLs are also cleaner, more beautifull then their longer counterparts. A user will perceive a short url to be a more valuable/plausible resource of content by its simplicity.

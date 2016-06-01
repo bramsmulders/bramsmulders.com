@@ -14,7 +14,5 @@
     <?php echo css('assets/css/style.css') ?>
 </head>
 <body>
-
-    <header role="banner">
+    <div class="wrapper">
         <?php snippet('menu') ?>
-    </header>
