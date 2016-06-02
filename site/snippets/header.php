@@ -15,4 +15,4 @@
 </head>
 <body>
     <div class="wrapper">
-        <?php snippet('menu') ?>
+        <?php //snippet('menu') ?>

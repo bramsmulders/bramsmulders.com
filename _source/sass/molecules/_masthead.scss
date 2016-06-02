@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/*----------------------------------------------------------------------------*\
+    $MASTHEAD
+\*----------------------------------------------------------------------------*/
+
+.masthead {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+    .masthead__content {
+        order: 2;
+    }
+        .masthead__content__inner {
+            @include rem(padding, $blocss-space-huge 0);
+        }
+    .masthead__visual {
+        flex: 1;
+        order: 1;
+        background-color: lightgray;
+    }
+
+
+
+/*  Responsive
+\*----------------------------------------------------------------------------*/
+
+@include media-query(lap) {
+    .masthead {
+        flex-direction: row;
+    }
+    .masthead__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        .masthead__content__inner {
+            padding: 0;
+        }
+    .masthead__visual {
+        flex: 1 0 50%;
+        order: 2;
+    }
+}
