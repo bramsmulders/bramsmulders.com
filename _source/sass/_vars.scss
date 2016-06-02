@@ -12,14 +12,17 @@
     Place any variables that should override defaults here.
 \*----------------------------------------------------------------------------*/
 
-$blocss-base-font-size: 24px;
-$blocss-base-line-height: 36px;
+$blocss-base-font-size: 16px;
+$blocss-base-line-height: 24px;
 
 
 
 /*----------------------------------------------------------------------------*\
     $CUSTOM
     Place any of your own variables that sit on top of the framework here.
+\*----------------------------------------------------------------------------*/
+
+/*  Typography
 \*----------------------------------------------------------------------------*/
 
 $face-base: 'Arvo', serif !default;
@@ -35,8 +38,8 @@ $normalis: (
 )!default;
 
 $alpha: (
-    'font-size': 96px,
-    'line-height': 139px
+    'font-size': 84px,
+    'line-height': 96px
 )!default;
 
 $beta: (
@@ -57,4 +60,19 @@ $delta: (
 $epsilon: $normalis !default;
 
 $zeta: $normalis !default;
+
+
+
+/*  Colors
+\*----------------------------------------------------------------------------*/
+
+/**
+ * Brand
+ */
+$brand: #CC4425 !default;
+
+/**
+ * Grayscale
+ */
+$gray-a: #3E4147 !default;
 

@@ -59,8 +59,8 @@ module.exports = function(grunt) {
             options: {
                 precision: 8,
                 includePaths: ['<%= config.paths.dest.bower %>'],
-                sourceMap: true,
-                outputStyle: 'compressed'
+                sourceMap: true/*,
+                outputStyle: 'compressed'*/
             },
             dev: {
                 files: [{

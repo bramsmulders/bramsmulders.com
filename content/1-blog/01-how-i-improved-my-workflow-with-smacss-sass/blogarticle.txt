@@ -6,6 +6,10 @@ Date: 2013-02-17
 
 ----
 
+Description: How i improved
+
+----
+
 Text: A couple of months ago I passed by Jonathan Snook's (link: http://smacss.com text: SMACSS) website while browsing the web. After reading the SMACSS core articles I felt a bit awkward about how I organised and crafted my CSS. My CSS was quite unorganised and the only pattern used was the waterfall pattern; Work your way from the header all the way to the footer. The CSS also contained fixed withs, overuse of ID selectors & many specificity workarounds. It was not organised, not modular & most of all: Not reusable.
 
 ## Meet SMACSS
@@ -30,7 +34,7 @@ This is where all the base styles live; resets, element defaults, default font s
 In this section you specify all types of layout containers, such as header, footer, content, sidebar, etc. The layout elements haven't got any styles applied to them, they only divide the website into sections. This is the layer where grid systems etc, would be living.
 
 #### Modules
-The bulk of your css is made up of independent modules and submodules. Every module should be completely independent of its context and should work within any layout container or other module. 
+The bulk of your css is made up of independent modules and submodules. Every module should be completely independent of its context and should work within any layout container or other module.
 
 If a specific context requires changes to a module you rather create a submodule that describes the context instead changing styles based on the parent.
 
@@ -59,7 +63,7 @@ In Sass you can easily chop your stylesheet into partials by using the @import r
             - theme/modules/_search.scss
             - theme/modules/_gallery.scss
         - theme/_state.scss
-            - theme/state/_mediaqueries.scss 
+            - theme/state/_mediaqueries.scss
 
 ### Partial setup
 Every partial stands for a standalone module wich has its own sectioning:
@@ -78,7 +82,7 @@ I'm using a namespacing that is based off the (link: http://bem.info/ text: BEM)
     .block--modifyer{}
 
 - _.block_  represents the high level element of the module
-- _.block\_\_element_  represents a descendent of .block 
+- _.block\_\_element_  represents a descendent of .block
 - _.block--modifyer_  represents a different version of .block
 
 The point of BEM is to tell other developers more about what a piece of markup is doing from its name alone.
@@ -105,7 +109,7 @@ A submodule is specified like this:
             border-bottom: 1px solid #f00;
         }
 
-A module that lives in the layout section gets the prefix of: .l-. 
+A module that lives in the layout section gets the prefix of: .l-.
 
 When you are using BEM, though, it is important to remember that you don’t need to use it for everything. Take for example:
 
