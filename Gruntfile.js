@@ -21,7 +21,7 @@ module.exports = function(grunt) {
         watch: {
             sass: {
                 files: ['<%= config.paths.src.sass %>/**/*.scss'],
-                tasks: ['sass'],
+                tasks: ['sass', 'postcss:dev'],
                 options: {
                     spawn: false,
                 },
@@ -71,12 +71,30 @@ module.exports = function(grunt) {
                     ext: '.css'
                 }]
             }
+        },
+
+        postcss: {
+            options: {
+                map: true,
+                processors: [
+                    require('autoprefixer')({browsers: 'last 2 versions'}),
+                ]
+            },
+            dev: {
+                files: [{
+                    expand: true,
+                    cwd: "<%= config.paths.dest.css %>",
+                    src: ["**/*.css"],
+                    dest: "<%= config.paths.dest.css %>"
+                }]
+            }
         }
 
     });
 
     grunt.registerTask('serve', [
         'sass',
+        'postcss:dev',
         'php:dev',
         'browserSync:dev',
         'watch'
