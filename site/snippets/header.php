@@ -12,6 +12,8 @@
     <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
     <?php echo css('assets/css/style.css') ?>
 
+    <?php echo js('assets/js/lib/modernizr.build.js') ?>
+
 </head>
 <body>
     <div class="wrapper">

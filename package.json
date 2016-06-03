@@ -10,7 +10,8 @@
     "grunt-php": "^1.5.1",
     "grunt-postcss": "^0.8.0",
     "grunt-sass": "^1.2.0",
-    "load-grunt-tasks": "^3.5.0"
+    "load-grunt-tasks": "^3.5.0",
+    "grunt-modernizr": "~1.0.1"
   },
   "engines": {
     "node": ">=0.8.0"

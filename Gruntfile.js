@@ -8,7 +8,8 @@ module.exports = function(grunt) {
             },
             dest: {
                 bower: './assets/bower_components',
-                css: './assets/css'
+                css: './assets/css',
+                js: './assets/js'
             },
             site: './site',
             content: './content'
@@ -21,7 +22,7 @@ module.exports = function(grunt) {
         watch: {
             sass: {
                 files: ['<%= config.paths.src.sass %>/**/*.scss'],
-                tasks: ['sass', 'postcss:dev'],
+                tasks: ['sass', 'postcss:dev', 'modernizr:dist'],
                 options: {
                     spawn: false,
                 },
@@ -88,6 +89,32 @@ module.exports = function(grunt) {
                     dest: "<%= config.paths.dest.css %>"
                 }]
             }
+        },
+
+        modernizr: {
+            dist: {
+                "parseFiles": true,
+                "customTests": [],
+                "devFile": false,
+                "dest": "<%= config.paths.dest.js %>/lib/modernizr.build.js",
+                "tests": [
+                    // Tests
+                ],
+                "options": [
+                    "addTest",
+                    "testProp",
+                    "setClasses",
+                    "prefixed",
+                    "mq"
+                ],
+                "uglify": true,
+                "files" : {
+                    "src": [
+                        config.paths.dest.css + "/**/*.css",
+                        "!" + config.paths.dest.js + "/lib/**/*.js"
+                    ]
+                }
+            }
         }
 
     });
@@ -95,6 +122,7 @@ module.exports = function(grunt) {
     grunt.registerTask('serve', [
         'sass',
         'postcss:dev',
+        'modernizr:dist',
         'php:dev',
         'browserSync:dev',
         'watch'
