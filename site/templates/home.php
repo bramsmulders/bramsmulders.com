@@ -17,7 +17,7 @@
                     </div>
                 </div>
                 <div class="masthead__visual">
-                    visual
+                    <img class="masthead__visual__object" src="assets/images/bakkes.jpg" alt="Bram's Bakkes" data-img-replace="assets/images/bakkes-bling.jpg">
                 </div>
             </div>
 

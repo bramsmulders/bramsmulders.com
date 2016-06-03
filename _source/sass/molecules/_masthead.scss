@@ -12,12 +12,42 @@
         order: 2;
     }
         .masthead__content__inner {
-            @include rem(padding, $blocss-space-huge 0);
+            @include rem(padding, $blocss-space-large 0);
         }
     .masthead__visual {
+        position: relative;
         flex: 1;
         order: 1;
-        background-color: lightgray;
+        overflow: hidden;
+
+        .no-objectfit & {
+            background-color: lightgray;
+            background-image: url(../images/bakkes.jpg);
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+    .masthead__visual__object {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1.1);
+        animation: 1.5s mastheadScale;
+
+        .no-objectfit & {
+            display: none;
+        }
+    }
+
+
+    @keyframes mastheadScale {
+        0% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
     }
 
 
