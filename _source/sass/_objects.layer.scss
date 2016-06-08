@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*----------------------------------------------------------------------------*\
-    $RETAIN
+    $LAYER
 \*----------------------------------------------------------------------------*/
 
-.retain {
-    @include rem(padding-left, $blocss-space);
-    @include rem(padding-right, $blocss-space);
+.o-layer {
+    @include rem(padding-top, $blocss-space);
+    @include rem(padding-bottom, $blocss-space);
 }

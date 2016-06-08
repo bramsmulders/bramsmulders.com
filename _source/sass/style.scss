@@ -4,40 +4,74 @@
     Styles, extends a CSS Framework and defines all imports
 \*----------------------------------------------------------------------------*/
 
-@import "vars";
+/*  Settings
+    Global variables, config switches
+\*----------------------------------------------------------------------------*/
+
+@import "settings.vars";
 @import "blocss-defaults/lib/settings.defaults";
+
+
+
+/*  Tools
+    Default mixins & functions
+\*----------------------------------------------------------------------------*/
+
 @import "blocss-mixins/lib/tools.mixins";
+@import "tools.mixins";
 
 
 
-/*  Atoms
-    These are basic tags, such as form labels, inputs or buttons. They also
-    include more abstract elements like color palettes, fonts, and animations.
+/*  Generic
+    Ground zero styles, normalize.css, resets
 \*----------------------------------------------------------------------------*/
 
 @import "blocss-reset/lib/atoms.reset";
 @import "blocss-shared/lib/atoms.shared";
+
+
+
+/*  Base
+    Unclassed HTML elements (type selectors)
+\*----------------------------------------------------------------------------*/
+
+@import "base.toplevel";
+@import "base.typography";
+@import "base.links";
+
+
+
+/*  Objects
+    Cosmetic free design patterns
+    Prefixed with: o-
+\*----------------------------------------------------------------------------*/
+
 @import "blocss-extends/lib/tools.extends";
-@import "atoms/toplevel";
-@import "atoms/typography";
-@import "atoms/colors";
-@import "atoms/links";
-@import "atoms/layout.retain";
+@import "objects.layer";
+@import "objects.retain";
 
 
 
-/*  Molecules
-    Molecules are groups of elements that function together as a unit. (for
-    example a search form molecule)
+/*  Components
+    Designed components, chunks of UI
+    Prefixed with: c-
 \*----------------------------------------------------------------------------*/
 
-@import "molecules/masthead";
+@import "components.masthead";
 
 
 
-/*  Organisms
-    Organisms are groups of molecules (and possibly atoms) joined together to
-    form distinct section of an interface. (for example a masthead organism)
+/*  Theme
+    Colors, branding
+    Prefixed with: t-
 \*----------------------------------------------------------------------------*/
 
-// @import "";
+
+
+/*  Utilities
+    Helpers & overrides
+    Prefixed with: u-
+\*----------------------------------------------------------------------------*/
+
+@import "utilities.typography";
+@import "utilities.colors";

@@ -1,11 +1,14 @@
 @charset "UTF-8";
 /*----------------------------------------------------------------------------*\
-    $COLORS
+    $TOPLEVEL
 \*----------------------------------------------------------------------------*/
 
-.color--brand {
-    color: $brand;
-}
-.color--gray-a {
+html {
+    font-family: $family-body;
     color: $gray-a;
+    @include fluid-type(font-size, 20em, 80em, 1em, 1.5em);
+}
+
+body {
+    margin: 0;
 }

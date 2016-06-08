@@ -25,41 +25,8 @@ $blocss-base-line-height: 24px;
 /*  Typography
 \*----------------------------------------------------------------------------*/
 
-$face-base: 'Arvo', serif !default;
-$face-secondary: 'Oswald', sans-serif !default;
-
-
-/**
- * Sizes
- */
-$normalis: (
-    'font-size': $blocss-base-font-size,
-    'line-height': $blocss-base-line-height
-)!default;
-
-$alpha: (
-    'font-size': 84px,
-    'line-height': 96px
-)!default;
-
-$beta: (
-    'font-size': 68px,
-    'line-height': 98px
-)!default;
-
-$gamma: (
-    'font-size': 48px,
-    'line-height': 70px
-)!default;
-
-$delta: (
-    'font-size': 34px,
-    'line-height': 49px
-)!default;
-
-$epsilon: $normalis !default;
-
-$zeta: $normalis !default;
+$family-body: 'Arvo', serif !default;
+$family-leader: 'Oswald', sans-serif !default;
 
 
 
@@ -81,4 +48,4 @@ $gray-a: #3E4147 !default;
 /*  Transitions
 \*----------------------------------------------------------------------------*/
 
-$ease-swift:        cubic-bezier(.55,0,.1,1) !default;
+$ease-swift: cubic-bezier(.55,0,.1,1) !default;

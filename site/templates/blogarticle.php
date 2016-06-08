@@ -2,20 +2,28 @@
 
     <main role="main">
 
-        <article>
-            <time datetime="<?php echo $page->date('Y-m-d'); ?>" pubdate>
-                <?php echo $page->date('M d Y'); ?>
-            </time>
+        <div class="o-layer">
 
-            <hgroup>
-                <h1><?php echo html($page->title()) ?></h1>
-                <p>Estimated reading time: <?php echo readingtime($page->text()) ?></p>
-            </hgroup>
+            <div class="o-retain  o-retain--readable">
 
-            <?php echo kirbytext($page->text()) ?>
+                <article>
+                    <time datetime="<?php echo $page->date('Y-m-d'); ?>" pubdate>
+                        <?php echo $page->date('M d Y'); ?>
+                    </time>
 
-        </article>
-        <a href="<?php echo url('blog') ?>">< Back</a>
+                    <hgroup>
+                        <h1><?php echo html($page->title()) ?></h1>
+                        <p>Estimated reading time: <?php echo readingtime($page->text()) ?></p>
+                    </hgroup>
+
+                    <?php echo kirbytext($page->text()) ?>
+
+                </article>
+                <a href="<?php echo url('blog') ?>">< Back</a>
+
+            </div><!-- .o-retain -->
+
+        </div><!-- .o-layer -->
 
     </main>
 

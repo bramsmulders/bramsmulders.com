@@ -3,18 +3,18 @@
     $MASTHEAD
 \*----------------------------------------------------------------------------*/
 
-.masthead {
+.c-masthead {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
-    .masthead__content {
+    .c-masthead__content {
         order: 2;
     }
-        .masthead__content__inner {
+        .c-masthead__content__inner {
             @include rem(padding, $blocss-space-large 0);
         }
-    .masthead__visual {
+    .c-masthead__visual {
         position: relative;
         flex: 1;
         order: 1;
@@ -27,7 +27,7 @@
             background-position: center center;
         }
     }
-    .masthead__visual__object {
+    .c-masthead__visual__object {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -59,18 +59,18 @@
 \*----------------------------------------------------------------------------*/
 
 @include media-query(lap) {
-    .masthead {
+    .c-masthead {
         flex-direction: row;
     }
-    .masthead__content {
+    .c-masthead__content {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-        .masthead__content__inner {
+        .c-masthead__content__inner {
             padding: 0;
         }
-    .masthead__visual {
+    .c-masthead__visual {
         flex: 1 0 50%;
         order: 2;
     }
