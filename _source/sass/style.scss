@@ -5,7 +5,8 @@
 \*----------------------------------------------------------------------------*/
 
 @import "vars";
-@import "blocss/lib/starterkit";
+@import "blocss-defaults/lib/settings.defaults";
+@import "blocss-mixins/lib/tools.mixins";
 
 
 
@@ -14,8 +15,13 @@
     include more abstract elements like color palettes, fonts, and animations.
 \*----------------------------------------------------------------------------*/
 
+@import "blocss-reset/lib/atoms.reset";
+@import "blocss-shared/lib/atoms.shared";
+@import "blocss-extends/lib/tools.extends";
+@import "atoms/toplevel";
 @import "atoms/typography";
 @import "atoms/colors";
+@import "atoms/links";
 @import "atoms/layout.retain";
 
 
