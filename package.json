@@ -7,11 +7,12 @@
     "grunt": "^1.0.1",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-watch": "^1.0.0",
+    "grunt-modernizr": "~1.0.1",
     "grunt-php": "^1.5.1",
     "grunt-postcss": "^0.8.0",
     "grunt-sass": "^1.2.0",
     "load-grunt-tasks": "^3.5.0",
-    "grunt-modernizr": "~1.0.1"
+    "postcss-cssnext": "^2.6.0"
   },
   "engines": {
     "node": ">=0.8.0"
