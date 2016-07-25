@@ -7,19 +7,20 @@
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background-color: $gray-c;
 }
     .c-masthead__content {
         order: 2;
     }
         .c-masthead__content__inner {
-            @include rem(padding, $blocss-space-large 0);
+            @include rem(padding, $blocss-space 0);
         }
     .c-masthead__visual {
         position: relative;
         flex: 1;
         order: 1;
         overflow: hidden;
-        background-color: lightgray;
+        background-color: $gray-b;
 
         .no-objectfit & {
             background-image: url(../images/bakkes.jpg);
@@ -58,7 +59,7 @@
 /*  Responsive
 \*----------------------------------------------------------------------------*/
 
-@include media-query(lap) {
+@include media-query(landscape) {
     .c-masthead {
         flex-direction: row;
     }
@@ -67,9 +68,6 @@
         align-items: center;
         justify-content: center;
     }
-        .c-masthead__content__inner {
-            padding: 0;
-        }
     .c-masthead__visual {
         flex: 1 0 50%;
         order: 2;

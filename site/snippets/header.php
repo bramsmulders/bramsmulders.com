@@ -10,10 +10,9 @@
 
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
-    <?php echo css('assets/css/style.css') ?>
 
-    <?php echo js('assets/js/lib/modernizr.build.js') ?>
-
+    <link rel="stylesheet" href="<?php echo url('assets/css/style.css'); ?>">
+    <script type="text/javascript" async="" src="<?php echo url('assets/js/lib/modernizr.build.js'); ?>"></script>
 </head>
 <body>
     <div class="wrapper">

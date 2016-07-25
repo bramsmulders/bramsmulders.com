@@ -3,7 +3,7 @@
     <main role="main">
 
         <article>
-            <div class="c-masthead">
+            <div class="c-masthead  js--vh-trick">
                 <div class="c-masthead__content">
                     <div class="c-masthead__content__inner">
                         <div class="o-retain  o-retain--readable  module">
@@ -17,7 +17,10 @@
                     </div>
                 </div>
                 <div class="c-masthead__visual">
-                    <img class="c-masthead__visual__object" src="assets/images/bakkes.jpg" alt="Bram's Bakkes" data-img-replace="assets/images/bakkes-bling.jpg">
+                    <picture>
+                        <source srcset="assets/images/bakkes.jpg" media="(min-width: 768px)">
+                        <img class="c-masthead__visual__object" src="assets/images/bakkes-small.jpg" alt="Bram’s Bakkes">
+                    </picture>
                 </div>
             </div>
 

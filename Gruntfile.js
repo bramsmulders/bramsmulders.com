@@ -26,7 +26,7 @@ module.exports = function(grunt) {
                 options: {
                     spawn: false,
                 },
-            },
+            }
         },
 
         php: {
@@ -45,6 +45,7 @@ module.exports = function(grunt) {
                 bsFiles: {
                     src: [
                         '<%= config.paths.dest.css %>/**/*.css',
+                        '<%= config.paths.dest.js %>/**/*.js',
                         '<%= config.paths.site %>/**/*.php',
                         '<%= config.paths.content %>/**/*'
                     ]
