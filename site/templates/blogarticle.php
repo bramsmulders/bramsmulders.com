@@ -19,7 +19,7 @@
                     <?php echo kirbytext($page->text()) ?>
 
                 </article>
-                <a href="<?php echo url('blog') ?>">< Back</a>
+                <a href="<?php echo url('home') ?>#section:articles">< Back</a>
 
             </div><!-- .o-retain -->
 

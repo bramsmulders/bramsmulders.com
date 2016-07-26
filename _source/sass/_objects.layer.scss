@@ -7,3 +7,15 @@
     @include rem(padding-top, $blocss-space);
     @include rem(padding-bottom, $blocss-space);
 }
+
+
+
+/*  Responsive
+\*----------------------------------------------------------------------------*/
+
+@include media-query (lap) {
+    .o-layer {
+        @include rem(padding-top, $blocss-space-large);
+        @include rem(padding-bottom, $blocss-space-large);
+    }
+}
