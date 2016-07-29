@@ -67,3 +67,21 @@ h5 {
 h6 {
     @extend %zeta;
 }
+
+blockquote {
+    @include rem(margin-left, $blocss-space);
+    @include rem(padding, $blocss-space-small $blocss-space);
+    text-indent: 0;
+    font-style: italic;
+    border-left: 6px solid $gray-b;
+
+    *:last-child {
+        margin-bottom: 0;
+    }
+}
+
+pre {
+    @include rem(padding, $blocss-space-small);
+    background-color: $gray-c;
+    overflow: auto;
+}

@@ -13,7 +13,7 @@
 
                     <hgroup>
                         <h1><?php echo html($page->title()) ?></h1>
-                        <p>Estimated reading time: <?php echo readingtime($page->text()) ?></p>
+                        <p class="u-milli">Estimated reading time: <?php echo readingtime($page->text()) ?></p>
                     </hgroup>
 
                     <?php echo kirbytext($page->text()) ?>
