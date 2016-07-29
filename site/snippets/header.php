@@ -8,11 +8,7 @@
     <title><?php echo $page->title()->html() ?> | <?php echo $site->title()->html() ?></title>
     <meta name="description" content="<?php echo ( $page->content()->has('Description') ) ? $page->description()->html() : $site->description()->html(); ?>">
 
-    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" href="<?php echo url('assets/css/style.css'); ?>">
-    <script type="text/javascript" async="" src="<?php echo url('assets/js/lib/modernizr.build.js'); ?>"></script>
+    <link rel="stylesheet" href="assets/css/style.css" inline="true">
 </head>
 <body>
     <div class="wrapper">

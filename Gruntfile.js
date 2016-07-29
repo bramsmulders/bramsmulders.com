@@ -4,7 +4,9 @@ module.exports = function(grunt) {
     var config = {
         paths: {
             src: {
-                sass: './_source/sass'
+                sass: './_source/sass',
+                php: './_source/site',
+                js: './_source/js'
             },
             dest: {
                 bower: './assets/bower_components',
@@ -12,7 +14,8 @@ module.exports = function(grunt) {
                 js: './assets/js'
             },
             site: './site',
-            content: './content'
+            content: './content',
+            build: './_build'
         }
     };
 
@@ -22,10 +25,10 @@ module.exports = function(grunt) {
         watch: {
             sass: {
                 files: ['<%= config.paths.src.sass %>/**/*.scss'],
-                tasks: ['sass', 'postcss:dev', 'modernizr:dist'],
+                tasks: ['sass', 'postcss:dev', 'modernizr:dev'],
                 options: {
                     spawn: false,
-                },
+                }
             }
         },
 
@@ -61,8 +64,8 @@ module.exports = function(grunt) {
             options: {
                 precision: 8,
                 includePaths: ['<%= config.paths.dest.bower %>'],
-                sourceMap: true/*,
-                outputStyle: 'compressed'*/
+                sourceMap: true,
+                outputStyle: 'compressed'
             },
             dev: {
                 files: [{
@@ -96,7 +99,7 @@ module.exports = function(grunt) {
         },
 
         modernizr: {
-            dist: {
+            dev: {
                 "parseFiles": true,
                 "customTests": [],
                 "devFile": false,
@@ -120,17 +123,67 @@ module.exports = function(grunt) {
                     ]
                 }
             }
+        },
+
+        staticinline: {
+            build: {
+                options: {
+                    prefix: '@{',
+                    suffix: '}@',
+                    basepath: './'
+                },
+                files: {
+                    '_build/site/snippets/header.php': 'site/snippets/header.php',
+                    '_build/site/snippets/footer.php': 'site/snippets/footer.php'
+                }
+            }
+        },
+
+        copy: {
+            build: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: './',
+                        src: [
+                            'assets/**/*',
+                            'content/**/*',
+                            'kirby/**/*',
+                            'site/**/*',
+                            'index.php',
+                            '.htaccess',
+                            // 'panel/**/*'
+                        ],
+                        dest: '_build/'
+                    },
+                ],
+            },
+        },
+
+        clean: {
+            build: ['_build/**/*']
         }
 
     });
 
-    grunt.registerTask('serve', [
+    grunt.registerTask('default', [
         'sass',
         'postcss:dev',
-        'modernizr:dist',
+        'modernizr:dev',
+    ]);
+
+    grunt.registerTask('serve', [
+        'default',
         'php:dev',
         'browserSync:dev',
         'watch'
+    ]);
+
+    grunt.registerTask('build', [
+        'default',
+        'clean:build',
+        'copy:build',
+        'staticinline:build'
     ]);
 };
 

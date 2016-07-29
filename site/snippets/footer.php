@@ -1,5 +1,10 @@
     </div><!-- .wrapper -->
 
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+
+    <script src="assets/js/lib/modernizr.build.js" inline="true"></script>
+
     <script type="text/javascript">
         // Define bs object
         var bs = bs || {};
@@ -8,16 +13,8 @@
         // Cut the mustard
         if ('visibilityState' in document) {
             bs.cutsMustard = true;
-            // load all javascript
-            (function(){
-                var app = document.createElement('script');
-                app.type = 'text/javascript';
-                app.async = true;
-                app.src = '<?php echo url('assets/js/app/app.js'); ?>';
-            (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(app);
-            })();
         }
     </script>
-
+    <script src="assets/js/app/app.js" inline="true"></script>
 </body>
 </html>
