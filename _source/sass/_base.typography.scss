@@ -80,6 +80,11 @@ blockquote {
     }
 }
 
+code {
+    display: inline-block;
+    background-color: $gray-c;
+}
+
 pre {
     @include rem(padding, $blocss-space-small);
     background-color: $gray-c;

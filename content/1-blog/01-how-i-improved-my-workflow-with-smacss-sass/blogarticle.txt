@@ -75,15 +75,15 @@ Every partial stands for a standalone module wich has its own sectioning:
 Since the module has its own module, state, theme sections it can be easily copied to another project while the characteristics stay the same.
 
 ### Namespacing
-I'm using a namespacing that is based off the (link: http://bem.info/ text: BEM) front-end naming methodology wich stands for: Block, Element, Modifyer. The naming convention follows the following pattern:
+I'm using a namespacing that is based off the (link: http://bem.info/ text: BEM) front-end naming methodology wich stands for: Block, Element, Modifier. The naming convention follows the following pattern:
 
     .block{}
     .block__element{}
-    .block--modifyer{}
+    .block--modifier{}
 
-- _.block_  represents the high level element of the module
-- _.block\_\_element_  represents a descendent of .block
-- _.block--modifyer_  represents a different version of .block
+- `.block`  represents the high level element of the module
+- `.block__element`  represents a descendent of .block
+- `.block--modifier`  represents a different version of .block
 
 The point of BEM is to tell other developers more about what a piece of markup is doing from its name alone.
 
