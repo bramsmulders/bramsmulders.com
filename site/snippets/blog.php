@@ -1,8 +1,20 @@
-<section class="o-layer  u-background--gray-c" id="section:articles">
+<?php
+    $headingTypeInit = 'h3';
+    if ($headingType) {
+        $headingTypeInit = $headingType;
+    }
+
+    $headingModifierInit = '';
+    if ($headingModifier) {
+        $headingModifierInit = $headingModifier;
+    }
+?>
+
+<section class="o-layer  t-zebra" id="section:articles">
 
     <div class="o-retain  o-retain--readable  module">
         <hgroup class="hgroup">
-            <h3 class="">Articles</h3>
+            <<?php echo $headingTypeInit; ?> class="<?php echo $headingModifierInit; ?>">Articles</<?php echo $headingTypeInit; ?>>
         </hgroup>
 
         <?php $articles = $pages->find('blog')->children()->visible()->flip()->paginate(5); ?>

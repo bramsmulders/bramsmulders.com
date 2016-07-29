@@ -2,7 +2,7 @@
 
     <main role="main">
 
-        <section class="c-masthead  js--vh-trick">
+        <section class="c-masthead  t-zebra  js--vh-trick">
             <div class="c-masthead__content">
                 <div class="c-masthead__content__inner">
                     <div class="o-retain  o-retain--readable  module">
@@ -23,7 +23,7 @@
             </div>
         </section>
 
-        <section class="o-layer">
+        <section class="o-layer  t-zebra">
 
             <div class="o-retain  o-retain--readable  module">
                 <?php echo $page->text()->kirbytext() ?>
@@ -33,7 +33,9 @@
 
         <?php snippet('blog') ?>
 
-        <?php snippet('projects') ?>
+        <?php // snippet('clients') ?>
+
+        <?php snippet('contentinfo') ?>
 
     </main>
 

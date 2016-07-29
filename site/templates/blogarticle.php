@@ -2,7 +2,7 @@
 
     <main role="main">
 
-        <div class="o-layer">
+        <div class="o-layer  t-zebra">
 
             <div class="o-retain  o-retain--readable">
 
@@ -24,6 +24,8 @@
             </div><!-- .o-retain -->
 
         </div><!-- .o-layer -->
+
+        <?php snippet('contentinfo') ?>
 
     </main>
 
