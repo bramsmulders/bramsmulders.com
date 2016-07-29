@@ -29,6 +29,13 @@ module.exports = function(grunt) {
                 options: {
                     spawn: false,
                 }
+            },
+            scripts: {
+                files: ['<%= config.paths.src.js %>/**/*.js'],
+                tasks: ['uglify:dev'],
+                options: {
+                    spawn: false,
+                }
             }
         },
 
@@ -125,6 +132,14 @@ module.exports = function(grunt) {
             }
         },
 
+        uglify: {
+            dev: {
+                files: {
+                    '<%= config.paths.dest.js %>/app/app.js': ['<%= config.paths.src.js %>/app/app.js']
+                }
+            }
+        },
+
         staticinline: {
             build: {
                 options: {
@@ -170,6 +185,7 @@ module.exports = function(grunt) {
         'sass',
         'postcss:dev',
         'modernizr:dev',
+        'uglify:dev',
     ]);
 
     grunt.registerTask('serve', [
