@@ -1,20 +1,20 @@
-Title: Kirby Starterkit
+Title: Bram Smulders, UX and Front-End architecture enthousiast
 
 ----
 
-Author: Bastian Allgeier GmbH
+Author: Bram Smulders
 
 ----
 
-Description: This is Kirby's Starterkit.
+Description: My name is Bram Smulders and I am a UX-developer, front-end architect & writer from Tilburg, The Netherlands.
 
 ----
 
-Keywords: Kirby, CMS, file-based
+Keywords:
 
 ----
 
-Copyright: © 2009-(date: Year) (link: http://getkirby.com text: Kirby)
+Copyright:
 
 ----
 

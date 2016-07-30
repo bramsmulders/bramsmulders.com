@@ -8,8 +8,8 @@
                     <div class="c-masthead__content__inner">
                         <div class="o-retain  o-retain--readable  module">
                             <hgroup class="hgroup">
-                                <h1 class="u-h4  u-hN  u-color--gray-a  u-family-body"><?php echo $page->title()->html() ?></h1>
-                                <h2 class="u-h1  u-hN"><?php echo $page->subtitle()->html() ?></h2>
+                                <h1 class="u-h4  u-hN  u-color--gray-a  u-family-body">Bram Smulders</h1>
+                                <h2 class="u-h1  u-hN">UX and Front-End architecture enthousiast</h2>
                             </hgroup>
 
                             <p><?php echo $site->email()->html() ?><br><a href="<?php echo $site->twitterlink()->html() ?>"><?php echo $site->twitter()->html() ?></a></p>

@@ -1,8 +1,4 @@
-Title: Bram Smulders
-
-----
-
-Subtitle: UX and Front-End architecture enthousiast
+Title: Home
 
 ----
 
