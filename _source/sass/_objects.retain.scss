@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/*----------------------------------------------------------------------------*\
+    $RETAIN
+\*----------------------------------------------------------------------------*/
+
+.o-retain {
+    @include rem(padding-left, $blocss-space);
+    @include rem(padding-right, $blocss-space);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.o-retain--readable {
+    max-width: 34em;
+}
