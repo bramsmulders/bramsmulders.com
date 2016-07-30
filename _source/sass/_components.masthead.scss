@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/*----------------------------------------------------------------------------*\
+    $MASTHEAD
+\*----------------------------------------------------------------------------*/
+
+.c-masthead {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+    .c-masthead__content {
+        order: 2;
+    }
+        .c-masthead__content__inner {
+            @include rem(padding, $blocss-space 0);
+        }
+    .c-masthead__visual {
+        position: relative;
+        flex: 1;
+        order: 1;
+        overflow: hidden;
+        background-color: $gray-b;
+
+        .no-objectfit & {
+            display: none;
+        }
+    }
+    .c-masthead__visual__object {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1.1);
+        animation: 1.5s $ease-swift both mastheadScale;
+        opacity: 0;
+    }
+
+
+    @keyframes mastheadScale {
+        0% {
+            transform: scale(1.1);
+            opacity: 0;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+
+
+/*  Responsive
+\*----------------------------------------------------------------------------*/
+
+@include media-query(landscape) {
+    .c-masthead {
+        flex-direction: row;
+    }
+    .c-masthead__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .c-masthead__visual {
+        flex: 1 0 50%;
+        order: 2;
+    }
+}

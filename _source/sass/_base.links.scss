@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/*----------------------------------------------------------------------------*\
+    $LINKS
+\*----------------------------------------------------------------------------*/
+
+a {
+    border-bottom: valueToRem(2px) solid $brand;
+    font-weight: 700;
+    text-decoration: none;
+    color: $gray-a;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $brand;
+    }
+}
+
+
+
+.link-humble {
+    font-weight: normal;
+    border-bottom-width: 1px;
+}

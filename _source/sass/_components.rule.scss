@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/*----------------------------------------------------------------------------*\
+    $COMPONENTS.RULE
+\*----------------------------------------------------------------------------*/
+
+.c-rule {
+    margin-right: auto;
+    @include rem(margin-bottom, $blocss-space - 1px); /* [1] */
+    border: none;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    color: $gray-b;
+}

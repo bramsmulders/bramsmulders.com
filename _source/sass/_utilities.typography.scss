@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/*----------------------------------------------------------------------------*\
+    $TYPOGRAPHY
+\*----------------------------------------------------------------------------*/
+
+/*  Size classes
+\*----------------------------------------------------------------------------*/
+
+.u-normalis {
+    @extend %normalis;
+}
+.u-alpha {
+    @extend %alpha;
+}
+.u-beta {
+    @extend %beta;
+}
+.u-gamma {
+    @extend %gamma;
+}
+.u-delta {
+    @extend %delta;
+}
+.u-epsilon {
+    @extend %epsilon;
+}
+.u-zeta {
+    @extend %zeta;
+}
+.u-milli {
+    @extend %milli;
+}
+
+
+
+/*  Double stranded heading hierachy
+\*----------------------------------------------------------------------------*/
+
+.u-h1 {
+    @extend h1;
+}
+.u-h2 {
+    @extend h2;
+}
+.u-h3 {
+    @extend h3;
+}
+.u-h4 {
+    @extend h4;
+}
+.u-h5 {
+    @extend h5;
+}
+.u-h6 {
+    @extend h6;
+}
+
+
+/**
+ * Heading groups
+ */
+.u-hgroup {
+    .u-hN {
+        margin-bottom: 0;
+    }
+}
+
+.u-heading-linked {
+    line-height: $blocss-line-height-ratio;
+}
+
+
+
+/*  Font families
+\*----------------------------------------------------------------------------*/
+
+.u-family-body {
+    font-family: $family-body;
+    text-transform: none;
+    font-weight: normal;
+}
+
+.u-family-leader {
+    font-family: $family-leader;
+    text-transform: uppercase;
+}
