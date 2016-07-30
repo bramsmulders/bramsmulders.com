@@ -28,7 +28,7 @@
                         <?php echo $article->date('M d Y'); ?>
                     </time>
                     <h1 class="u-h5  u-heading-linked">
-                        <a href="<?php echo $article->url() ?>">
+                        <a class="js--pjax__link" href="<?php echo $article->url() ?>">
                             <?php echo $article->title(); ?>
                         </a>
                     </h1>

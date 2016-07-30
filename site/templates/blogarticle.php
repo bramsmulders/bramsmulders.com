@@ -1,31 +1,35 @@
 <?php snippet('header'); ?>
 
-    <main role="main">
+    <main role="main" class="o-main  js--pjax__target">
 
-        <div class="o-layer  t-zebra">
+        <div class="o-main__content  js--pjax__content">
 
-            <div class="o-retain  o-retain--readable">
+            <div class="o-layer  t-zebra">
 
-                <article>
-                    <time datetime="<?php echo $page->date('Y-m-d'); ?>" pubdate>
-                        <?php echo $page->date('M d Y'); ?>
-                    </time>
+                <div class="o-retain  o-retain--readable">
 
-                    <hgroup>
-                        <h1><?php echo html($page->title()) ?></h1>
-                        <p class="u-milli">Estimated reading time: <?php echo readingtime($page->text()) ?></p>
-                    </hgroup>
+                    <article>
+                        <time datetime="<?php echo $page->date('Y-m-d'); ?>" pubdate>
+                            <?php echo $page->date('M d Y'); ?>
+                        </time>
 
-                    <?php echo kirbytext($page->text()) ?>
+                        <hgroup>
+                            <h1><?php echo html($page->title()) ?></h1>
+                            <p class="u-milli">Estimated reading time: <?php echo readingtime($page->text()) ?></p>
+                        </hgroup>
 
-                </article>
-                <a href="<?php echo url('home') ?>#section:articles">< Back</a>
+                        <?php echo kirbytext($page->text()) ?>
 
-            </div><!-- .o-retain -->
+                    </article>
+                    <a class="js--pjax__link" href="<?php echo url('home') ?>#section:articles">< Back</a>
 
-        </div><!-- .o-layer -->
+                </div><!-- .o-retain -->
 
-        <?php snippet('contentinfo') ?>
+            </div><!-- .o-layer -->
+
+            <?php snippet('contentinfo') ?>
+
+        </div>
 
     </main>
 

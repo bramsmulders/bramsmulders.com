@@ -125,7 +125,7 @@ module.exports = function(grunt) {
                 "files" : {
                     "src": [
                         config.paths.dest.css + "/**/*.css",
-                        config.paths.dest.js + "/**/*.js",
+                        config.paths.src.js + "/**/*.js",
                         "!" + config.paths.dest.js + "/lib/**/*.js"
                     ]
                 }

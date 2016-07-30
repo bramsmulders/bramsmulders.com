@@ -1,10 +1,15 @@
 <?php snippet('header'); ?>
 
-    <main role="main">
+    <main role="main" class="o-main  js--pjax__target">
 
-        <?php snippet('blog', array('headingType' => 'h1')); ?>
+        <div class="o-main__content  js--pjax__content">
 
-        <?php snippet('contentinfo'); ?>
+            <?php snippet('blog', array('headingType' => 'h1')); ?>
+
+            <?php snippet('contentinfo'); ?>
+
+        </div>
+
     </main>
 
 <?php snippet('footer'); ?>
