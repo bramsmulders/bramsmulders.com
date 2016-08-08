@@ -1,8 +1,12 @@
-﻿Title: I’m fine I’m just an introvert
+﻿Title: I’m fine,
 
 ----
 
 Date: 2014-03-22
+
+----
+
+Description: I’m fine, I’m just an introvert
 
 ----
 

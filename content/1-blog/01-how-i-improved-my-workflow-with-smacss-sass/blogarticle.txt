@@ -6,7 +6,7 @@ Date: 2013-02-17
 
 ----
 
-Description: How i improved
+Description: How I improved my workflow with SMACSS & Sass
 
 ----
 
