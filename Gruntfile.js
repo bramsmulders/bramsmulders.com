@@ -140,20 +140,6 @@ module.exports = function(grunt) {
             }
         },
 
-        staticinline: {
-            build: {
-                options: {
-                    prefix: '@{',
-                    suffix: '}@',
-                    basepath: './'
-                },
-                files: {
-                    '_build/site/snippets/header.php': 'site/snippets/header.php',
-                    '_build/site/snippets/footer.php': 'site/snippets/footer.php'
-                }
-            }
-        },
-
         copy: {
             build: {
                 files: [
@@ -198,8 +184,7 @@ module.exports = function(grunt) {
     grunt.registerTask('build', [
         'default',
         'clean:build',
-        'copy:build',
-        'staticinline:build'
+        'copy:build'
     ]);
 };
 

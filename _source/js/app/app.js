@@ -14,6 +14,14 @@
  */
 var bs = bs || {};
 
+// Define bs object
+bs.cutsMustard = false;
+
+// Cut the mustard
+if ('visibilityState' in document) {
+    bs.cutsMustard = true;
+}
+
 
 /**
  * Jshint global references

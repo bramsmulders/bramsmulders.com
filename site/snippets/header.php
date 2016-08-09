@@ -8,7 +8,9 @@
     <title><?php echo $page->title()->html() ?> | <?php echo $site->title()->html() ?></title>
     <meta name="description" content="<?php echo ( $page->content()->has('Description') ) ? $page->description()->html() : $site->description()->html(); ?>">
 
-    <link rel="stylesheet" href="/assets/css/style.css" inline="true">
+    <style>
+        <?php echo file_get_contents('assets/css/style.css'); ?>
+    </style>
 </head>
 <body>
     <div class="wrapper">
