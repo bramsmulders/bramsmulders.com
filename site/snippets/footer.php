@@ -5,8 +5,9 @@
     </script>
 
     <script>
-        <?php echo file_get_contents('assets/js/app/app.js'); ?>
+        <?php // echo file_get_contents('assets/js/app/app.js'); ?>
     </script>
+    <script src="/assets/js/app/app.js"></script>
 
     <script src="/assets/js/lib/analytics.js" async></script>
 

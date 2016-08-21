@@ -3,6 +3,7 @@ module.exports = function(grunt) {
 
     var config = {
         paths: {
+            root: './',
             src: {
                 sass: './_source/sass',
                 php: './_source/site',
@@ -135,7 +136,8 @@ module.exports = function(grunt) {
         uglify: {
             dev: {
                 files: {
-                    '<%= config.paths.dest.js %>/app/app.js': ['<%= config.paths.src.js %>/app/app.js']
+                    '<%= config.paths.dest.js %>/app/app.js': ['<%= config.paths.src.js %>/app/app.js'],
+                    '<%= config.paths.root %>/sw.js': ['<%= config.paths.src.js %>/sw.js']
                 }
             }
         },
