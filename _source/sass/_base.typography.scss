@@ -7,28 +7,28 @@
 \*----------------------------------------------------------------------------*/
 
 %normalis {
-    font-size: 1em;
+    font-size: 1rem;
 }
 %alpha {
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 %beta {
-    font-size: 2em;
+    font-size: 2rem;
 }
 %gamma {
-    font-size: 1.75em;
+    font-size: 1.75rem;
 }
 %delta {
-    font-size: 1.25em;
+    font-size: 1.25rem;
 }
 %epsilon {
-    font-size: 1em;
+    font-size: 1rem;
 }
 %zeta {
-    font-size: 1em;
+    font-size: 1rem;
 }
 %milli {
-    font-size: 0.75em;
+    font-size: 0.75rem;
 }
 
 
@@ -42,6 +42,7 @@ h3,
 h4,
 h5,
 h6 {
+    display: block;
     @include rem(margin-bottom, $blocss-space-small);
     font-family: $family-leader;
     line-height: 1.14;

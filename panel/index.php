@@ -45,7 +45,7 @@ if(!isset($kirby->roots->thumbs)) {
 try {
 
   // create the panel object
-  $panel = new Panel($kirby, __DIR__);  
+  $panel = new Panel($kirby, __DIR__);
 
   // launch the panel
   echo $panel->launch();

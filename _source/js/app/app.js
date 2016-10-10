@@ -124,25 +124,25 @@ window.addEventListener('load', function (event) {
 /*  Offline support
 \*----------------------------------------------------------------------------*/
 
-bs.sw = {
-    init: function () {
-        if (bs.cutsMustard) {
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('/sw.js').then(function(registration) {
-                    // Registration was successful
-                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                }).catch(function(err) {
-                    // registration failed :(
-                    console.log('ServiceWorker registration failed: ', err);
-                });
-            }
-        }
-    }
-};
+// bs.sw = {
+//     init: function () {
+//         if (bs.cutsMustard) {
+//             if ('serviceWorker' in navigator) {
+//                 navigator.serviceWorker.register('/sw.js').then(function(registration) {
+//                     // Registration was successful
+//                     console.log('ServiceWorker registration successful with scope: ', registration.scope);
+//                 }).catch(function(err) {
+//                     // registration failed :(
+//                     console.log('ServiceWorker registration failed: ', err);
+//                 });
+//             }
+//         }
+//     }
+// };
 
-window.addEventListener('load', function (event) {
-    bs.sw.init();
-}, false);
+// window.addEventListener('load', function (event) {
+//     bs.sw.init();
+// }, false);
 
 
 

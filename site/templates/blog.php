@@ -4,7 +4,16 @@
 
         <div class="o-main__content  js--pjax__content">
 
-            <?php snippet('blog', array('headingType' => 'h1')); ?>
+            <section class="o-layer  t-zebra">
+
+                <div class="o-retain  o-retain--readable  module">
+                    <h1><?php echo html($page->title()) ?></h1>
+                    <?php echo $page->text()->kirbytext() ?>
+                </div>
+
+            </section>
+
+            <?php snippet('blog', array('headingType' => 'h2')); ?>
 
             <?php snippet('contentinfo'); ?>
 

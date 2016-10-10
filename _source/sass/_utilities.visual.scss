@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/*----------------------------------------------------------------------------*\
+    $UTILITIES.visual
+\*----------------------------------------------------------------------------*/
+
+/*  Variables
+    Variables used in this module
+\*----------------------------------------------------------------------------*/
+
+
+
+/*  Functions/Mixins
+    Functions and/or mixins used in this module
+\*----------------------------------------------------------------------------*/
+
+
+
+/*  Module
+    Core module
+\*----------------------------------------------------------------------------*/
+
+.u-visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

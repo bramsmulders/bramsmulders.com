@@ -7,10 +7,7 @@
                 <div class="c-masthead__content">
                     <div class="c-masthead__content__inner">
                         <div class="o-retain  o-retain--readable  module">
-                            <hgroup class="hgroup">
-                                <h1 class="u-h4  u-hN  u-color--gray-a  u-family-body">Bram Smulders</h1>
-                                <h2 class="u-h1  u-hN">UX and Front-End architecture enthousiast</h2>
-                            </hgroup>
+                            <h1><span class="u-h4  u-hN  u-color--gray-a  u-family-body">Bram Smulders</span><span class="u-visuallyhidden">, </span>UX and Front-End architecture enthousiast</h1>
 
                             <p><?php echo $site->email()->html() ?><br><a href="<?php echo $site->twitterlink()->html() ?>"><?php echo $site->twitter()->html() ?></a></p>
                         </div>

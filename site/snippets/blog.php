@@ -1,5 +1,5 @@
 <?php
-    $headingTypeInit = 'h3';
+    $headingTypeInit = 'h2';
     if ($headingType) {
         $headingTypeInit = $headingType;
     }
@@ -27,11 +27,11 @@
                     <time class="u-milli" datetime="<?php echo $article->date('Y-m-d'); ?>" pubdate>
                         <?php echo $article->date('M d Y'); ?>
                     </time>
-                    <h1 class="u-h5  u-heading-linked">
+                    <h3 class="u-h5  u-heading-linked">
                         <a class="js--pjax__link" href="<?php echo $article->url() ?>">
                             <?php echo $article->title(); ?>
                         </a>
-                    </h1>
+                    </h3>
                 </article>
             </li>
             <?php endforeach ?>
