@@ -9,5 +9,8 @@ layout: compress
         <main role="main" aria-label="Content">
             {{ content }}
         </main>
+
+        {% assign random = site.time | date: "%Y%j%k%M%s" | md5 %}
+        <link rel="stylesheet" href="{{ "/assets/main.css?v=" | append: random | relative_url }}">
     </body>
 </html>

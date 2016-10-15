@@ -19,8 +19,7 @@ description: > # this means to ignore newlines until "baseurl:"
   My name is Bram Smulders and I am a UX-developer, front-end architect &amp; writer from Tilburg, The Netherlands
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: bramsmulders
-github_username:  bramsmulders
+permalink:        /blog/:title/
 
 # Build settings
 source: _source
@@ -29,8 +28,9 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - liquid-md5
 exclude:
   - Gemfile
   - Gemfile.lock
-
-permalink:        /blog/:title/
+sass:
+    style: compressed
