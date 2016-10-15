@@ -25,6 +25,8 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
+source: _source
+destination: _build
 markdown: kramdown
 theme: minima
 gems:
