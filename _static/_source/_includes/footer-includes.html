@@ -1,2 +1,6 @@
 {% assign random = site.time | date: "%Y%j%k%M%s" | md5 %}
 <link rel="stylesheet" href="{{ "/assets/css/main.css?v=" | append: random | relative_url }}">
+
+{% if jekyll.environment == 'production' and site.google_analytics %}
+{% include google-analytics.html %}
+{% endif %}
