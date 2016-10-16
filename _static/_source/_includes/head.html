@@ -9,10 +9,10 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
     {% capture styles %}
-    {% include critical.scss %}
+    {% include critical.css %}
     {% endcapture %}
 
     <style>
-    {{ styles | scssify }}
+    {{ styles }}
     </style>
 </head>

@@ -3,3 +3,5 @@ _build
 .jekyll-metadata
 bower_components
 node_modules
+*.map
+*.css

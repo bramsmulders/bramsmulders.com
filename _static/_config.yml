@@ -33,9 +33,10 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-sass:
-    style: expanded
-    load_paths: _source/assets/bower_components/
+  - assets/css
+  - _sass
+
+keep_files: ['assets/css']
 
 compress_html:
   ignore:
