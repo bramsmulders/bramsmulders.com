@@ -15,6 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Bram Smulders, UX and Front-End architecture enthousiast
 email: bram@bramsmulders.com
+twitter: bramsmulders
 description: > # this means to ignore newlines until "baseurl:"
   My name is Bram Smulders and I am a UX-developer, front-end architect &amp; writer from Tilburg, The Netherlands
 baseurl: "" # the subpath of your site, e.g. /blog

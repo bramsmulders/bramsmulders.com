@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/*----------------------------------------------------------------------------*\
+    $THEME.ZEBRA
+    Stacks layers on top of eachother
+\*----------------------------------------------------------------------------*/
+
+.t-zebra {
+    background-color: $white;
+
+    &:nth-child(even) {
+        background-color: $gray-c;
+    }
+}

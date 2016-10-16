@@ -6,28 +6,36 @@
 /*  Sizes
 \*----------------------------------------------------------------------------*/
 
-%normalis {
+%normalis,
+.u-normalis {
     font-size: 1rem;
 }
-%alpha {
+%alpha,
+.u-alpha {
     font-size: 2.5rem;
 }
-%beta {
+%beta,
+.u-beta {
     font-size: 2rem;
 }
-%gamma {
+%gamma,
+.u-gamma {
     font-size: 1.75rem;
 }
-%delta {
+%delta,
+.u-delta {
     font-size: 1.25rem;
 }
-%epsilon {
+%epsilon,
+.u-epsilon {
     font-size: 1rem;
 }
-%zeta {
+%zeta,
+.u-zeta {
     font-size: 1rem;
 }
-%milli {
+%milli,
+.u-milli {
     font-size: 0.75rem;
 }
 
@@ -37,11 +45,17 @@
 \*----------------------------------------------------------------------------*/
 
 h1,
+.u-h1,
 h2,
+.u-h2,
 h3,
+.u-h3,
 h4,
+.u-h4,
 h5,
-h6 {
+.u-h5,
+h6,
+.u-h6, {
     display: block;
     @include rem(margin-bottom, $blocss-space-small);
     font-family: $family-leader;
@@ -50,22 +64,28 @@ h6 {
     color: $brand;
 }
 
-h1 {
+h1,
+.u-h1 {
     @extend %alpha;
 }
-h2 {
+h2,
+.u-h2 {
     @extend %beta;
 }
-h3 {
+h3,
+.u-h3 {
     @extend %gamma;
 }
-h4 {
+h4,
+.u-h4 {
     @extend %delta;
 }
-h5 {
+h5,
+.u-h5 {
     @extend %epsilon;
 }
-h6 {
+h6,
+.u-h6 {
     @extend %zeta;
 }
 
