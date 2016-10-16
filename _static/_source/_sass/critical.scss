@@ -26,11 +26,19 @@
     Ground zero styles, normalize.css, resets
 \*----------------------------------------------------------------------------*/
 
+@import "blocss-reset/lib/atoms.reset";
+@import "blocss-shared/lib/atoms.shared";
+
 
 
 /*  Base
     Unclassed HTML elements (type selectors)
 \*----------------------------------------------------------------------------*/
+
+@import "base.fonts";
+@import "base.toplevel";
+@import "base.typography";
+@import "base.links";
 
 
 
@@ -39,19 +47,12 @@
     Prefixed with: o-
 \*----------------------------------------------------------------------------*/
 
-// @import "objects.layer";
-// @import "objects.retain";
-// @import "objects.list.clean";
-
 
 
 /*  Components
     Designed components, chunks of UI
     Prefixed with: c-
 \*----------------------------------------------------------------------------*/
-
-// @import "components.rule";
-// @import "components.masthead";
 
 
 
@@ -60,8 +61,6 @@
     Prefixed with: t-
 \*----------------------------------------------------------------------------*/
 
-// @import "theme.zebra";
-
 
 
 /*  Utilities
@@ -69,7 +68,3 @@
     Prefixed with: u-
 \*----------------------------------------------------------------------------*/
 
-// @import "utilities.typography";
-// @import "utilities.colors";
-// @import "utilities.layout.spacing";
-// @import "utilities.visual";

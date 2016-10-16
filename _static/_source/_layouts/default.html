@@ -10,7 +10,6 @@ layout: compress
             {{ content }}
         </main>
 
-        {% assign random = site.time | date: "%Y%j%k%M%s" | md5 %}
-        <link rel="stylesheet" href="{{ "/assets/css/main.css?v=" | append: random | relative_url }}">
+        {% include footer-includes.html %}
     </body>
 </html>
