@@ -8,7 +8,11 @@ layout: compress
         {% comment %} {% include header.html %} {% endcomment %}
 
         <main role="main" class="o-main  js--pjax__target">
-            {{ content }}
+            <div class="o-main__content">
+                {{ content }}
+
+                {% include contentinfo.html %}
+            </div>
         </main>
 
         {% include footer-includes.html %}
