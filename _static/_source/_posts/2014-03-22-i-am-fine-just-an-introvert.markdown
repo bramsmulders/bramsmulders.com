@@ -26,4 +26,4 @@ Contrary to what many assume, I don’t dislike being social. I just don’t wan
 
 The reality is, most people take comfort in connections with other people, regardless of where we fall on the introvert-extrovert spectrum. That feeling of belonging and understanding that we feel when we connect with another individual is such a wonderful part of the human condition. But how and when we get to that feeling varies. I find my connection in intimate dinners and small social gatherings. Plans that are bookended by recovery time. Yes, recovery time. No, I’m not unhappy or anti-social...
 
-###...I’m just an introvert
+### ...I’m just an introvert
