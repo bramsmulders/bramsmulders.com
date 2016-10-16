@@ -3,4 +3,8 @@ layout: home
 title: Home
 description: My name is Bram Smulders and I am a UX-developer, front-end architect & writer from Tilburg, The Netherlands
 ---
-WTF? booboo
+my name is Bram Smulders and I am a UX-developer, front-end architect & writer from Tilburg, The Netherlands. With the greatest pleasure I put tons of my time and energy into my work. Currently I am employed as lead Front-End developer for [Colours](http://colours.nl), a top 10 fullservice agency in Den Bosch.
+
+I specialise in coding scalable CSS and Javascript for large apps and websites, with a strong focus on performance, OOCSS and powerful and speedy development. As a member of the [Fronteers labor union](http://www.fronteers.nl) I am always on top of the rapid changes within the internet world.
+
+Want to know more? You are lucky; I share a lot of my thoughts & my daily lunch on [twitter](http://twitter.com/bramsmulders).
