@@ -25,7 +25,6 @@ permalink:        /blog/:title/
 source: _source
 destination: _build
 markdown: kramdown
-theme: minima
 gems:
   - jekyll-feed
   - liquid-md5
