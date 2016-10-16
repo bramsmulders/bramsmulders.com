@@ -17,6 +17,10 @@ module.exports = function (grunt) {
             sass: {
                 files: ['_source/_sass/**/*.{scss,sass}'],
                 tasks: ['sass:serve']
+            },
+            bower: {
+                files: ['bower.json'],
+                tasks: ['shell:bower']
             }
         },
 
@@ -27,6 +31,9 @@ module.exports = function (grunt) {
             },
             jekyllServe: {
                 command: 'JEKYLL_ENV=development bundle exec jekyll serve --config=_config.yml'
+            },
+            bower: {
+                command: 'bower prune && bower install && bower update'
             },
             deploy: {
                 command: 'firebase deploy'
@@ -73,12 +80,14 @@ module.exports = function (grunt) {
 
     // Register the grunt serve task
     grunt.registerTask('serve', [
+        'shell:bower',
         'sass:serve',
         'concurrent:serve'
     ]);
 
     // Register the grunt build task
     grunt.registerTask('prepare', [
+        'shell:bower',
         'sass:build',
         'shell:jekyllPrepare',
         'shell:deploy',
