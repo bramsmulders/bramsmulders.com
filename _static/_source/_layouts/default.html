@@ -5,7 +5,7 @@ layout: compress
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
     {% include head.html %}
     <body>
-        {% include header.html %}
+        {% comment %} {% include header.html %} {% endcomment %}
 
         <main role="main" class="o-main  js--pjax__target">
             {{ content }}
