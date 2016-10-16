@@ -1,3 +1,10 @@
-body {
-    border: 10px solid red;
-}
+@charset "UTF-8";
+/*----------------------------------------------------------------------------*\
+    $THEME
+    Default theme bramsmulders.com
+\*----------------------------------------------------------------------------*/
+
+@import "blocss-defaults/lib/settings.defaults";
+@import "blocss-mixins/lib/tools.mixins";
+@import "blocss-reset/lib/atoms.reset";
+@import "blocss-shared/lib/atoms.shared";
