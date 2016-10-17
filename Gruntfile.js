@@ -1,195 +1,134 @@
-module.exports = function(grunt) {
+'use strict';
+
+module.exports = function (grunt) {
+
+    // Show elapsed time after tasks run to visualize performance
+    require('time-grunt')(grunt);
+    // Load all Grunt tasks that are listed in package.json automagically
     require('load-grunt-tasks')(grunt);
 
-    var config = {
-        paths: {
-            root: './',
-            src: {
-                sass: './_source/sass',
-                php: './_source/site',
-                js: './_source/js'
-            },
-            dest: {
-                bower: './assets/bower_components',
-                css: './assets/css',
-                js: './assets/js'
-            },
-            site: './site',
-            content: './content',
-            build: './_build'
-        }
-    };
-
     grunt.initConfig({
-        config: config,
+        pkg: grunt.file.readJSON('package.json'),
 
+        // This is where our tasks are defined and configured
+
+        // watch for files to change and run tasks when they do
         watch: {
             sass: {
-                files: ['<%= config.paths.src.sass %>/**/*.scss'],
-                tasks: ['sass', 'postcss:dev', 'modernizr:dev'],
-                options: {
-                    spawn: false,
-                }
+                files: ['_source/_sass/**/*.{scss,sass}'],
+                tasks: ['sass:serve']
             },
-            scripts: {
-                files: ['<%= config.paths.src.js %>/**/*.js'],
-                tasks: ['uglify:dev'],
-                options: {
-                    spawn: false,
-                }
+            bower: {
+                files: ['bower.json'],
+                tasks: ['shell:bower']
+            },
+            js: {
+                files: ['_source/_js/**/*.{js}'],
+                tasks: ['copy:js']
             }
         },
 
-        php: {
-            dev: {
-                options: {
-                    hostname: '127.0.0.1',
-                    port: 8000,
-                    keepalive: false,
-                    open: false
-                }
+        // shell commands for use in Grunt tasks
+        shell: {
+            jekyllPrepare: {
+                command: 'JEKYLL_ENV=production bundle exec jekyll build --config=_config.yml,_config_prod.yml'
+            },
+            jekyllServe: {
+                command: 'JEKYLL_ENV=development bundle exec jekyll serve --config=_config.yml'
+            },
+            bower: {
+                command: 'bower prune && bower install && bower update'
+            },
+            deploy: {
+                command: 'firebase deploy'
             }
         },
 
-        browserSync: {
-            dev: {
-                bsFiles: {
-                    src: [
-                        '<%= config.paths.dest.css %>/**/*.css',
-                        '<%= config.paths.dest.js %>/**/*.js',
-                        '<%= config.paths.site %>/**/*.php',
-                        '<%= config.paths.content %>/**/*'
-                    ]
-                },
-                options: {
-                    proxy: '<%= php.dev.options.hostname %>:<%= php.dev.options.port %>',
-                    watchTask: true
-                }
-            }
-        },
-
+        // sass (libsass) config
         sass: {
             options: {
-                precision: 8,
-                includePaths: ['<%= config.paths.dest.bower %>'],
-                sourceMap: true,
-                outputStyle: 'compressed'
+                sourceMap: false,
+                includePaths: ['_source/assets/bower_components']
             },
-            dev: {
-                files: [{
-                    expand: true,
-                    cwd: '<%= config.paths.src.sass %>',
-                    src: ['**/*.scss'],
-                    dest: '<%= config.paths.dest.css %>',
-                    ext: '.css'
-                }]
-            }
-        },
-
-        postcss: {
-            options: {
-                map: true,
-                processors: [
-                    require('postcss-cssnext')({
-                        browsers: 'last 2 versions',
-                        features: {}
-                    })
-                ]
-            },
-            dev: {
-                files: [{
-                    expand: true,
-                    cwd: "<%= config.paths.dest.css %>",
-                    src: ["**/*.css"],
-                    dest: "<%= config.paths.dest.css %>"
-                }]
-            }
-        },
-
-        modernizr: {
-            dev: {
-                "parseFiles": true,
-                "customTests": [],
-                "devFile": false,
-                "dest": "<%= config.paths.dest.js %>/lib/modernizr.build.js",
-                "tests": [
-                    // Tests
-                ],
-                "options": [
-                    "addTest",
-                    "testProp",
-                    "setClasses",
-                    "prefixed",
-                    "mq"
-                ],
-                "uglify": true,
-                "files" : {
-                    "src": [
-                        config.paths.dest.css + "/**/*.css",
-                        config.paths.src.js + "/**/*.js",
-                        "!" + config.paths.dest.js + "/lib/**/*.js"
-                    ]
-                }
-            }
-        },
-
-        uglify: {
-            dev: {
+            serve: {
+                options: {
+                    outputStyle: 'expanded',
+                },
                 files: {
-                    '<%= config.paths.dest.js %>/app/app.js': ['<%= config.paths.src.js %>/app/app.js'],
-                    '<%= config.paths.root %>/sw.js': ['<%= config.paths.src.js %>/sw.js']
+                    '_build/assets/css/main.css': '_source/_sass/main.scss',
+                    '_source/_includes/critical.css': '_source/_sass/critical.scss'
+                }
+            },
+            build: {
+                options: {
+                    outputStyle: 'compressed',
+                },
+                files: {
+                    '_build/assets/css/main.css': '_source/_sass/main.scss',
+                    '_source/_includes/critical.css': '_source/_sass/critical.scss'
                 }
             }
         },
 
-        copy: {
+        // Uglify js
+        uglify: {
+            options: {
+                mangle: false
+            },
             build: {
+                files: [{
+                    expand: true,
+                    cwd: '_source/_js/',
+                    src: '**/*.js',
+                    dest: '_build/assets/js'
+                }]
+            }
+        },
+
+        // Copy stuff
+        copy: {
+            js: {
                 files: [
                     {
                         expand: true,
-                        cwd: './',
-                        src: [
-                            'assets/**/*',
-                            'content/**/*',
-                            'kirby/**/*',
-                            'site/**/*',
-                            'index.php',
-                            '.htaccess',
-                            // 'panel/**/*'
-                        ],
-                        dest: '_build/'
-                    },
-                ],
-            },
+                        cwd: '_source/_js/',
+                        src: ['**'],
+                        dest: '_build/assets/js'
+                    }
+                ]
+            }
         },
 
-        clean: {
-            build: ['_build/**/*']
-        }
-
+        // run tasks in parallel
+        concurrent: {
+            serve: [
+                'watch',
+                'shell:jekyllServe'
+            ],
+            options: {
+                logConcurrentOutput: true
+            }
+        },
     });
 
-    grunt.registerTask('default', [
-        'sass',
-        'postcss:dev',
-        'modernizr:dev',
-        'uglify:dev',
-    ]);
-
+    // Register the grunt serve task
     grunt.registerTask('serve', [
-        'default',
-        'php:dev',
-        'browserSync:dev',
-        'watch'
+        'shell:bower',
+        'sass:serve',
+        'copy:js',
+        'concurrent:serve'
     ]);
 
-    grunt.registerTask('build', [
-        'default',
-        'clean:build',
-        'copy:build'
+    // Register the grunt build task
+    grunt.registerTask('prepare', [
+        'shell:bower',
+        'sass:build',
+        'uglify:build',
+        'shell:jekyllPrepare',
+        'shell:deploy'
     ]);
+
+    // Register build as the default task fallback
+    grunt.registerTask('default', 'prepare');
+
 };
-
-
-
-

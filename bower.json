@@ -1,8 +1,29 @@
 {
-    "name": "bramsmulderscom",
-    "version": "3.0.0",
-    "dependencies": {
-        "blocss": "~6"
-    },
-    "devDependencies": {}
+  "name": "bramsmulders.com",
+  "homepage": "http://bramsmulders.com",
+  "authors": [
+    "Bram Smulders <bram@bramsmulders.com>"
+  ],
+  "description": "Personal site of Bram Smulders",
+  "main": "_source/index.md",
+  "moduleType": [],
+  "keywords": [
+    "site",
+    "private",
+    "bram",
+    "smuldes"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "blocss": "~6"
+  }
 }
