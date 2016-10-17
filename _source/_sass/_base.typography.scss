@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/*----------------------------------------------------------------------------*\
+    $TYPOGRAPHY
+\*----------------------------------------------------------------------------*/
+
+/*  Sizes
+\*----------------------------------------------------------------------------*/
+
+%normalis,
+.u-normalis {
+    font-size: 1rem;
+}
+%alpha,
+.u-alpha {
+    font-size: 2.5rem;
+}
+%beta,
+.u-beta {
+    font-size: 2rem;
+}
+%gamma,
+.u-gamma {
+    font-size: 1.75rem;
+}
+%delta,
+.u-delta {
+    font-size: 1.25rem;
+}
+%epsilon,
+.u-epsilon {
+    font-size: 1rem;
+}
+%zeta,
+.u-zeta {
+    font-size: 1rem;
+}
+%milli,
+.u-milli {
+    font-size: 0.75rem;
+}
+
+
+
+/*  Headings
+\*----------------------------------------------------------------------------*/
+
+h1,
+.u-h1,
+h2,
+.u-h2,
+h3,
+.u-h3,
+h4,
+.u-h4,
+h5,
+.u-h5,
+h6,
+.u-h6, {
+    display: block;
+    @include rem(margin-bottom, $blocss-space-small);
+    font-family: $family-leader;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $brand;
+}
+
+h1,
+.u-h1 {
+    @extend %alpha;
+}
+h2,
+.u-h2 {
+    @extend %beta;
+}
+h3,
+.u-h3 {
+    @extend %gamma;
+}
+h4,
+.u-h4 {
+    @extend %delta;
+}
+h5,
+.u-h5 {
+    @extend %epsilon;
+}
+h6,
+.u-h6 {
+    @extend %zeta;
+}
+
+blockquote {
+    @include rem(margin-left, $blocss-space);
+    @include rem(padding, $blocss-space-small $blocss-space);
+    text-indent: 0;
+    font-style: italic;
+    border-left: 6px solid $gray-b;
+
+    *:last-child {
+        margin-bottom: 0;
+    }
+}
+
+code {
+    display: inline-block;
+    background-color: $gray-c;
+}
+
+pre {
+    @include rem(padding, $blocss-space-small);
+    background-color: $gray-c;
+    overflow: auto;
+}

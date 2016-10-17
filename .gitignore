@@ -1,9 +1,7 @@
-node_modules
-_build/*
-.tmp
+_build
 .sass-cache
-dploy.yaml
-assets/bower_components
-assets/**/*.map
-assets/**/*.css
-modernizr.*.js
+.jekyll-metadata
+bower_components
+node_modules
+*.map
+*.css

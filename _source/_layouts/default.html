@@ -1,0 +1,20 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+    {% include head.html %}
+    <body>
+        {% comment %} {% include header.html %} {% endcomment %}
+
+        <main role="main" class="o-main  js--pjax__target">
+            <div class="o-main__content  js--pjax__content">
+                {{ content }}
+
+                {% include contentinfo.html %}
+            </div>
+        </main>
+
+        {% include footer-includes.html %}
+    </body>
+</html>

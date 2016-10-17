@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<section class="c-masthead  t-zebra  js--vh-trick">
+    <div class="c-masthead__content">
+        <div class="c-masthead__content__inner">
+            <div class="o-retain  o-retain--readable  module">
+                <h1><span class="u-h4  u-hN  u-color--gray-a  u-family-body">Bram Smulders</span><span class="u-visuallyhidden">, </span>UX and Front-End architecture enthousiast</h1>
+
+                <p>{{ site.email }}<br><a href="https://twitter.com/{{ site.twitter }}">@{{ site.twitter }}</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="c-masthead__visual">
+        <picture>
+            <source srcset="/assets/images/bakkes.jpg" media="(min-width: 768px)">
+            <img class="c-masthead__visual__object" src="/assets/images/bakkes-small.jpg" alt="Bram’s Bakkes">
+        </picture>
+    </div>
+</section>
+
+<section class="o-layer  t-zebra">
+
+    <div class="o-retain  o-retain--readable  module">
+        <h2 class="u-h1">Howdy,</h2>
+        {{ content }}
+    </div>
+
+</section>
+
+<section class="o-layer  t-zebra" id="section:articles">
+
+    <div class="o-retain  o-retain--readable  module">
+        <hgroup class="hgroup">
+            <h2>Articles</h2>
+        </hgroup>
+        {% include posts.html %}
+    </div>
+
+</section>
+
+
+

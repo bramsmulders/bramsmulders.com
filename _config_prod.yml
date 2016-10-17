@@ -1,0 +1,4 @@
+# Build settings
+sass:
+    style: compressed
+    load_paths: _source/assets/bower_components/

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/*----------------------------------------------------------------------------*\
+    $LAYER
+\*----------------------------------------------------------------------------*/
+
+.o-layer {
+    @include rem(padding-top, $blocss-space);
+    padding-bottom: 1px;
+}
+
+
+
+/*  Responsive
+\*----------------------------------------------------------------------------*/
+
+@include media-query (lap) {
+    .o-layer {
+        @include rem(padding-top, $blocss-space-large);
+        @include rem(padding-bottom, $blocss-space-large - $blocss-space);
+    }
+}
