@@ -1,9 +1,13 @@
 ---
 layout: default
 ---
-<article>
-    <header>
-        <h1>{{ page.title | escape }}</h1>
-    </header>
-    {{ content }}
-</article>
+<section class="o-layer  t-zebra" id="section:articles">
+
+    <div class="o-retain  o-retain--readable  module">
+        <hgroup class="hgroup">
+            <h1>{{ page.title }}</h1>
+        </hgroup>
+        {{content}}
+    </div>
+
+</section>

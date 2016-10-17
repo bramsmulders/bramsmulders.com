@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-description: My name is Bram Smulders and I am a UX-developer, front-end architect & writer from Tilburg, The Netherlands
+excerpt: My name is Bram Smulders and I am a UX-developer, front-end architect & writer from Tilburg, The Netherlands
 ---
 my name is Bram Smulders and I am a UX-developer, front-end architect & writer from Tilburg, The Netherlands. With the greatest pleasure I put tons of my time and energy into my work. Currently I am employed as lead Front-End developer for [Colours](http://colours.nl), a top 10 fullservice agency in Den Bosch.
 
