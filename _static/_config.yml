@@ -35,8 +35,9 @@ exclude:
   - Gemfile.lock
   - assets/css
   - _sass
+  - assets/js
 
-keep_files: ['assets/css']
+keep_files: ['assets/css','assets/js']
 
 compress_html:
   ignore:

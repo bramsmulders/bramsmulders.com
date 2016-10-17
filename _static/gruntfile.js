@@ -21,6 +21,10 @@ module.exports = function (grunt) {
             bower: {
                 files: ['bower.json'],
                 tasks: ['shell:bower']
+            },
+            js: {
+                files: ['_source/_js/**/*.{js}'],
+                tasks: ['copy:js']
             }
         },
 
@@ -66,6 +70,35 @@ module.exports = function (grunt) {
             }
         },
 
+        // Uglify js
+        uglify: {
+            options: {
+                mangle: false
+            },
+            build: {
+                files: [{
+                    expand: true,
+                    cwd: '_source/_js/',
+                    src: '**/*.js',
+                    dest: '_build/assets/js'
+                }]
+            }
+        },
+
+        // Copy stuff
+        copy: {
+            js: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: '_source/_js/',
+                        src: ['**'],
+                        dest: '_build/assets/js'
+                    }
+                ]
+            }
+        },
+
         // run tasks in parallel
         concurrent: {
             serve: [
@@ -82,6 +115,7 @@ module.exports = function (grunt) {
     grunt.registerTask('serve', [
         'shell:bower',
         'sass:serve',
+        'copy:js',
         'concurrent:serve'
     ]);
 
@@ -89,9 +123,9 @@ module.exports = function (grunt) {
     grunt.registerTask('prepare', [
         'shell:bower',
         'sass:build',
+        'uglify:build',
         'shell:jekyllPrepare',
-        'shell:deploy',
-        //'sass'
+        'shell:deploy'
     ]);
 
     // Register build as the default task fallback
