@@ -23,7 +23,7 @@ module.exports = function (grunt) {
                 tasks: ['shell:bower']
             },
             js: {
-                files: ['_source/_js/**/*.{js}'],
+                files: ['_source/_js/**/*.js'],
                 tasks: ['copy:js']
             }
         },
@@ -92,7 +92,7 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         cwd: '_source/_js/',
-                        src: ['**'],
+                        src: ['**/*'],
                         dest: '_build/assets/js'
                     }
                 ]

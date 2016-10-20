@@ -8,21 +8,6 @@
  */
 'use strict';
 
-
-/**
- * Check if bs object exists, otherwise create it
- */
-var bs = bs || {};
-
-// Define bs object
-bs.cutsMustard = false;
-
-// Cut the mustard
-if ('visibilityState' in document) {
-    bs.cutsMustard = true;
-}
-
-
 /**
  * Jshint global references
  * Please define all third party plugins that you use to not break jshinting
@@ -34,10 +19,10 @@ if ('visibilityState' in document) {
 /*  Easing
 \*----------------------------------------------------------------------------*/
 
-//t = current time
-//b = start value
-//c = change in value
-//d = duration
+// t = current time
+// b = start value
+// c = change in value
+// d = duration
 // Math.easeInOutQuad = function (t, b, c, d) {
 //     t /= d/2;
 //     if (t < 1) return c/2*t*t + b;
@@ -78,9 +63,7 @@ if ('visibilityState' in document) {
 
 bs.vhTrick = {
     init: function () {
-        if (bs.cutsMustard) {
-            this.initVhTrick();
-        }
+        this.initVhTrick();
     },
 
     initVhTrick: function ($context) {
@@ -99,7 +82,7 @@ bs.vhTrick = {
                         newHeight = height;
                     }
                     $el.setAttribute('style', 'min-height:'+newHeight+'px');
-                }, 200);
+                }, 500);
             }
         }
         window.addEventListener('optimizedOrientationchange', function (event) {
@@ -120,17 +103,15 @@ window.addEventListener('load', function (event) {
 
 // bs.sw = {
 //     init: function () {
-//         if (bs.cutsMustard) {
-//             if ('serviceWorker' in navigator) {
-//                 navigator.serviceWorker.register('/sw.js').then(function(registration) {
-//                     // Registration was successful
-//                     console.log('ServiceWorker registration successful with scope: ', registration.scope);
-//                 }).catch(function(err) {
-//                     // registration failed :(
-//                     console.log('ServiceWorker registration failed: ', err);
-//                 });
-//             }
-//         }
+        // if ('serviceWorker' in navigator) {
+        //     navigator.serviceWorker.register('/sw.js').then(function(registration) {
+        //         // Registration was successful
+        //         console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        //     }).catch(function(err) {
+        //         // registration failed :(
+        //         console.log('ServiceWorker registration failed: ', err);
+        //     });
+        // }
 //     }
 // };
 
@@ -171,9 +152,10 @@ window.addEventListener('load', function (event) {
 
 // bs.pjax = {
 //     target: document.querySelector('.js--pjax__target'),
+//     transitionSpeed: 500,
 
 //     init: function () {
-//         if (bs.cutsMustard && Modernizr.webanimations && Modernizr.fetch  && typeof Modernizr.animation === 'undefined') {
+//         if (Modernizr.webanimations && Modernizr.fetch && typeof Modernizr.animation === 'undefined') {
 //             this.initPjax();
 //         }
 //     },
@@ -188,7 +170,7 @@ window.addEventListener('load', function (event) {
 //                 el = el.parentNode;
 //             }
 
-//             if (el && el.classList.contains('js--pjax__link')) {
+//             if (el && el.classList.contains('js--pjax__link') && !(e.shiftKey || e.ctrlKey || e.metaKey)) {
 //                 e.preventDefault();
 //                 history.pushState(null, null, el.href);
 //                 self.changePage();
@@ -237,15 +219,15 @@ window.addEventListener('load', function (event) {
 //             scrollTo = document.getElementById(hash).offsetTop;
 //         }
 
-//         bs.scroller.scrollTo(document.body, scrollTo, 500);
+//         bs.scroller.scrollTo(document.body, scrollTo, bs.pjax.transitionSpeed/2);
 
 //         var fadeOut = oldContent.animate({
 //             opacity: [1, 0]
-//         }, 1000);
+//         }, bs.pjax.transitionSpeed);
 
 //         var fadeIn = newContent.animate({
 //             opacity: [0, 1]
-//         }, 1000);
+//         }, bs.pjax.transitionSpeed);
 
 //         fadeIn.onfinish = function() {
 //             oldContent.parentNode.removeChild(oldContent);
