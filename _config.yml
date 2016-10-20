@@ -30,6 +30,7 @@ markdown: kramdown
 gems:
   - jekyll-feed
   - liquid-md5
+  - jekyll-timeago
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -44,3 +45,22 @@ compress_html:
     envs: [
       'development'
     ]
+
+jekyll_timeago:
+  depth: 1 # Level of detail
+  today: 'today'
+  yesterday: 'yesterday'
+  tomorrow: 'tomorrow'
+  and: ''
+  suffix: ''
+  prefix: ''
+  suffix_future: ''
+  prefix_future: 'in'
+  years: 'years'
+  year: 'year'
+  months: 'months'
+  month: 'month'
+  weeks: 'weeks'
+  week: 'week'
+  days: 'days'
+  day: 'day'
