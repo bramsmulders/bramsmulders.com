@@ -75,12 +75,7 @@ bs.vhTrick = {
                  * Timeout to let the device actually change its orientation
                  */
                 setTimeout(function(){
-                    $el.setAttribute('style', 'min-height: 0px');
-                    var height = $el.offsetHeight;
                     var newHeight = window.innerHeight;
-                    if (height > newHeight) {
-                        newHeight = height;
-                    }
                     $el.setAttribute('style', 'min-height:'+newHeight+'px');
                 }, 500);
             }
