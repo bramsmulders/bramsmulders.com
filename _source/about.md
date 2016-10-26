@@ -16,7 +16,7 @@ In the moments where I’m not working I love to spend time with my lovely girlf
 
 ## Experience
 - Designing and creating websites
-- Accesible code
+- Accessible code
 - Responsive design
 - HTML<sub>5</sub>
 - CSS<sub>3</sub> (Sass & Less)
