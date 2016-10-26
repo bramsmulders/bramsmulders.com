@@ -23,12 +23,12 @@
 // b = start value
 // c = change in value
 // d = duration
-Math.easeInOutQuad = function (t, b, c, d) {
-    t /= d/2;
-    if (t < 1) return c/2*t*t + b;
-    t--;
-    return -c/2 * (t*(t-2) - 1) + b;
-};
+// Math.easeInOutQuad = function (t, b, c, d) {
+//     t /= d/2;
+//     if (t < 1) return c/2*t*t + b;
+//     t--;
+//     return -c/2 * (t*(t-2) - 1) + b;
+// };
 
 
 
@@ -63,11 +63,11 @@ Math.easeInOutQuad = function (t, b, c, d) {
 
 bs.vhTrick = {
     init: function () {
-        this.initVhTrick();
+        this.initVhTrick(document);
     },
 
     initVhTrick: function ($context) {
-        var $vhEl = document.querySelectorAll('.js--vh-trick');
+        var $vhEl = $context.querySelectorAll('.js--vh-trick');
         function resizeBackground() {
             for (var i = 0; i < $vhEl.length; ++i) {
                 var $el = $vhEl[i];
@@ -119,119 +119,119 @@ window.addEventListener('load', function (event) {
 /*  Scoller
 \*----------------------------------------------------------------------------*/
 
-bs.scroller = {
-    init: function () {},
+// bs.scroller = {
+//     init: function () {},
 
-    scrollTo: function (element, to, duration) {
-        var start = element.scrollTop,
-        change = to - start,
-        currentTime = 0,
-        increment = 20;
+//     scrollTo: function (element, to, duration) {
+//         var start = element.scrollTop,
+//         change = to - start,
+//         currentTime = 0,
+//         increment = 20;
 
-        var animateScroll = function(){
-            currentTime += increment;
-            var val = Math.easeInOutQuad(currentTime, start, change, duration);
-            element.scrollTop = val;
-            if(currentTime < duration) {
-                setTimeout(animateScroll, increment);
-            }
-        };
-        animateScroll();
-    }
-};
+//         var animateScroll = function(){
+//             currentTime += increment;
+//             var val = Math.easeInOutQuad(currentTime, start, change, duration);
+//             element.scrollTop = val;
+//             if(currentTime < duration) {
+//                 setTimeout(animateScroll, increment);
+//             }
+//         };
+//         animateScroll();
+//     }
+// };
 
 
 
 /*  Pjax
 \*----------------------------------------------------------------------------*/
 
-bs.pjax = {
-    target: document.querySelector('.js--pjax__target'),
-    transitionSpeed: 500,
+// bs.pjax = {
+//     target: document.querySelector('.js--pjax__target'),
+//     transitionSpeed: 500,
 
-    init: function () {
-        if (Modernizr.webanimations && Modernizr.fetch && typeof Modernizr.animation === 'undefined') {
-            this.initPjax();
-        }
-    },
+//     init: function () {
+//         if (Modernizr.webanimations && Modernizr.fetch && typeof Modernizr.animation === 'undefined') {
+//             this.initPjax();
+//         }
+//     },
 
-    initPjax: function () {
-        var self = this;
-        document.addEventListener('click', function(e) {
-            var el = e.target;
+//     initPjax: function () {
+//         var self = this;
+//         document.addEventListener('click', function(e) {
+//             var el = e.target;
 
-            // Go up in the nodelist until we find a node with .href (HTMLAnchorElement)
-            while (el && !el.href) {
-                el = el.parentNode;
-            }
+//             // Go up in the nodelist until we find a node with .href (HTMLAnchorElement)
+//             while (el && !el.href) {
+//                 el = el.parentNode;
+//             }
 
-            if (el && el.classList.contains('js--pjax__link') && !(e.shiftKey || e.ctrlKey || e.metaKey)) {
-                e.preventDefault();
-                history.pushState(null, null, el.href);
-                self.changePage();
-                return;
-            }
-        });
+//             if (el && el.classList.contains('js--pjax__link') && !(e.shiftKey || e.ctrlKey || e.metaKey)) {
+//                 e.preventDefault();
+//                 history.pushState(null, null, el.href);
+//                 self.changePage();
+//                 return;
+//             }
+//         });
 
-        window.addEventListener('popstate', self.changePage);
-    },
+//         window.addEventListener('popstate', self.changePage);
+//     },
 
-    changePage: function () {
-        var self = this;
-        // Note, the URL has already been changed
-        var url = window.location.href;
+//     changePage: function () {
+//         var self = this;
+//         // Note, the URL has already been changed
+//         var url = window.location.href;
 
-        bs.pjax.loadPage(url).then(function(responseText) {
-            var wrapper = document.createElement('div');
-            wrapper.innerHTML = responseText;
+//         bs.pjax.loadPage(url).then(function(responseText) {
+//             var wrapper = document.createElement('div');
+//             wrapper.innerHTML = responseText;
 
-            var oldContent = document.querySelector('.js--pjax__content');
-            var newContent = wrapper.querySelector('.js--pjax__content');
+//             var oldContent = document.querySelector('.js--pjax__content');
+//             var newContent = wrapper.querySelector('.js--pjax__content');
 
-            bs.vhTrick.initVhTrick(newContent);
+//             bs.vhTrick.initVhTrick(newContent);
 
-            bs.pjax.target.appendChild(newContent);
-            bs.pjax.animate(oldContent, newContent, url);
-        });
-    },
+//             bs.pjax.target.appendChild(newContent);
+//             bs.pjax.animate(oldContent, newContent, url);
+//         });
+//     },
 
-    loadPage: function (url) {
-        return fetch(url, {
-            method: 'GET'
-        }).then(function(response) {
-            return response.text();
-        });
-    },
+//     loadPage: function (url) {
+//         return fetch(url, {
+//             method: 'GET'
+//         }).then(function(response) {
+//             return response.text();
+//         });
+//     },
 
-    animate: function (oldContent, newContent, url) {
-        oldContent.style.position = 'absolute';
+//     animate: function (oldContent, newContent, url) {
+//         oldContent.style.position = 'absolute';
 
-        var scrollTo = 0;
-        var hash = window.location.hash.replace('#', '');
-
-
-        if (hash) {
-            scrollTo = document.getElementById(hash).offsetTop;
-            // bs.scroller.scrollTo(document.body, scrollTo, 0);
-        } else {
-            bs.scroller.scrollTo(document.body, scrollTo, bs.pjax.transitionSpeed);
-        }
+//         var scrollTo = 0;
+//         var hash = window.location.hash.replace('#', '');
 
 
-        var fadeOut = oldContent.animate({
-            opacity: [1, 0]
-        }, bs.pjax.transitionSpeed);
+//         if (hash) {
+//             scrollTo = document.getElementById(hash).offsetTop;
+//             // bs.scroller.scrollTo(document.body, scrollTo, 0);
+//         } else {
+//             bs.scroller.scrollTo(document.body, scrollTo, bs.pjax.transitionSpeed);
+//         }
 
-        var fadeIn = newContent.animate({
-            opacity: [0, 1]
-        }, bs.pjax.transitionSpeed);
 
-        fadeIn.onfinish = function() {
-            oldContent.parentNode.removeChild(oldContent);
-        };
-    }
-};
+//         var fadeOut = oldContent.animate({
+//             opacity: [1, 0]
+//         }, bs.pjax.transitionSpeed);
 
-window.addEventListener('load', function (event) {
-    bs.pjax.init();
-}, false);
+//         var fadeIn = newContent.animate({
+//             opacity: [0, 1]
+//         }, bs.pjax.transitionSpeed);
+
+//         fadeIn.onfinish = function() {
+//             oldContent.parentNode.removeChild(oldContent);
+//         };
+//     }
+// };
+
+// window.addEventListener('load', function (event) {
+//     bs.pjax.init();
+// }, false);
