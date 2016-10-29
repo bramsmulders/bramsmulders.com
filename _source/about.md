@@ -14,7 +14,7 @@ I maintain some [repositories on GitHub](https://github.com/bramsmulders) and I�
 
 Currently I’m employed as Lead Front-End developer at [Colours](http://colours.nl) where I’m responsible for a versatile, cross-country and awesome development team.
 
-In the moments where I’m not working I love to spend time with my lovely girlfriend Saskia, my 2 kids and my family and friends. The local cinema is treating me like one of the regulars. Occasionally I go for a run around the beatifull dutch countryside.
+In the moments where I’m not working I love to spend time with my lovely girlfriend Saskia, my 2 kids and my family and friends. The local cinema is treating me like one of the regulars. Occasionally I go for a run around the beautifull dutch countryside.
 
 ## Experience
 - Designing and creating websites
