@@ -32,67 +32,6 @@
 
 
 
-/*  Throttler
-    Throttles all sorts of events
-\*----------------------------------------------------------------------------*/
-
-(function() {
-    var throttle = function(type, name, obj) {
-        obj = obj || window;
-        var running = false;
-        var func = function() {
-            if (running) { return; }
-            running = true;
-             requestAnimationFrame(function() {
-                obj.dispatchEvent(new CustomEvent(name));
-                running = false;
-            });
-        };
-        obj.addEventListener(type, func);
-    };
-
-    /* init - you can init any event */
-    // throttle("resize", "optimizedResize");
-    throttle("orientationchange", "optimizedOrientationchange");
-})();
-
-
-/*  VH Trick
-    “fixes” the vh units change when url bar hides and shows
-\*----------------------------------------------------------------------------*/
-
-bs.vhTrick = {
-    init: function () {
-        this.initVhTrick(document);
-    },
-
-    initVhTrick: function ($context) {
-        var $vhEl = $context.querySelectorAll('.js--vh-trick');
-        function resizeBackground() {
-            for (var i = 0; i < $vhEl.length; ++i) {
-                var $el = $vhEl[i];
-                /**
-                 * Timeout to let the device actually change its orientation
-                 */
-                setTimeout(function(){
-                    var newHeight = window.innerHeight;
-                    $el.setAttribute('style', 'min-height:'+newHeight+'px');
-                }, 500);
-            }
-        }
-        window.addEventListener('optimizedOrientationchange', function (event) {
-            resizeBackground();
-        });
-        resizeBackground();
-    }
-};
-
-window.addEventListener('load', function (event) {
-    bs.vhTrick.init();
-}, false);
-
-
-
 /*  Offline support
 \*----------------------------------------------------------------------------*/
 
