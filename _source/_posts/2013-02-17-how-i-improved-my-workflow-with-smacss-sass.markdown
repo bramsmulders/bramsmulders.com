@@ -5,7 +5,7 @@ excerpt: How I improved my workflow with SMACSS & Sass
 date:   2013-02-17 21:07:57 +0100
 categories: workflow css sass scss smacss bem
 ---
-A couple of months ago I passed by Jonathan Snook's (link: http://smacss.com text: SMACSS) website while browsing the web. After reading the SMACSS core articles I felt a bit awkward about how I organised and crafted my CSS. My CSS was quite unorganised and the only pattern used was the waterfall pattern; Work your way from the header all the way to the footer. The CSS also contained fixed withs, overuse of ID selectors & many specificity workarounds. It was not organised, not modular & most of all: Not reusable.
+A couple of months ago I passed by Jonathan Snook's [SMACSS](http://smacss.com) website while browsing the web. After reading the SMACSS core articles I felt a bit awkward about how I organised and crafted my CSS. My CSS was quite unorganised and the only pattern used was the waterfall pattern; Work your way from the header all the way to the footer. The CSS also contained fixed withs, overuse of ID selectors & many specificity workarounds. It was not organised, not modular & most of all: Not reusable.
 
 ## Meet SMACSS
 SMACSS stands for Scalable and Modular Architecture for CSS, and is more a style guide than a CSS framework. On a high level SMACSS aims at changing the way we are turning designs into code. Instead of working in a page mentality where you try to turn a single page design into code, SMACSS aims to identify repeating visual patterns. Those patterns are then supposed to be coded into flexible/re-usable modules, wich should be independent as possible from the individual page context. This is not a revolutionary point-of-view for a programmer, but in the web design world this is indeed a newer way of thinking.
@@ -41,7 +41,7 @@ These states belong directly to the modules but have a different categorybecause
 SMACSS points to an optional fifth category, theme, but this is only applicable to pages that require theming. Theme styles override or extend the modules, and only apply colors and backgrounds.
 
 ## Syntactically Awesome StyleSheets(Sass)
-SMACSS works especially well with (link: http://sass-lang.com text: Sass), and I'll try to explain why and how I implemented Sass into my workflow:
+SMACSS works especially well with [Sass](http://sass-lang.com), and I'll try to explain why and how I implemented Sass into my workflow:
 
 ### File structure
 In Sass you can easily chop your stylesheet into partials by using the @import rule. This allows us to easily organize and maintain our files similar like this:
@@ -70,7 +70,7 @@ Every partial stands for a standalone module wich has its own sectioning:
 Since the module has its own module, state, theme sections it can be easily copied to another project while the characteristics stay the same.
 
 ### Namespacing
-I'm using a namespacing that is based off the (link: http://bem.info/ text: BEM) front-end naming methodology wich stands for: Block, Element, Modifier. The naming convention follows the following pattern:
+I'm using a namespacing that is based off the [BEM](http://bem.info/) front-end naming methodology wich stands for: Block, Element, Modifier. The naming convention follows the following pattern:
 
     .block{}
     .block__element{}
