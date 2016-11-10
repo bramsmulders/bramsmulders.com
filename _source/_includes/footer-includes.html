@@ -5,14 +5,6 @@ if ('visibilityState' in document) {
     (function(d, t) {
         var g = d.createElement(t),
             s = d.getElementsByTagName(t)[0];
-        g.src = '{{ "/assets/js/lib/modernizr-custom.js?v=" | append: random | relative_url }}';
-        g.async = true;
-        s.parentNode.insertBefore(g, s);
-    }(document, 'script'));
-
-    (function(d, t) {
-        var g = d.createElement(t),
-            s = d.getElementsByTagName(t)[0];
         g.src = '{{ "/assets/bower_components/require/require.js?v=" | append: random | relative_url }}';
         g.async = true;
         g.setAttribute('data-main', '/assets/js/app/main');
