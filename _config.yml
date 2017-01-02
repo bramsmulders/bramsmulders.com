@@ -38,7 +38,7 @@ exclude:
   - _sass
   - assets/js
 
-keep_files: ['assets/css','assets/js', '_hidden/stukken_smulders_kennekens.zip']
+keep_files: ['assets/css','assets/js']
 
 compress_html:
   ignore:
