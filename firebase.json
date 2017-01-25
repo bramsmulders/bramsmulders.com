@@ -35,6 +35,22 @@
                     }
                 ]
             }
+        ],
+
+        "redirects": [
+            {
+                "source" : "/how-i-improved-my-workflow-with-smacss-sass.html",
+                "destination" : "/blog/how-i-improved-my-workflow-with-smacss-sass",
+                "type" : 301
+            }, {
+                "source" : "/finger-friendly-all-the-things.html",
+                "destination" : "/blog/finger-friendly-all-the-things",
+                "type" : 301
+            }, {
+                "source" : "/i-am-fine-just-an-introvert.html",
+                "destination" : "/blog/i-am-fine-just-an-introvert",
+                "type" : 301
+            }
         ]
     }
 }

@@ -1,6 +1,18 @@
 {% assign random = site.time | date: "%Y%j%k%M%s" | md5 %}
-<link rel="stylesheet" href="{{ "/assets/css/main.css?v=" | append: random | relative_url }}">
-<script src="{{ "/assets/js/app/app.js?v=" | append: random | relative_url }}" async></script>
+<link rel="stylesheet" href="{{ "/assets/css/main.css?v=" | append: random | relative_url }}" async>
+<script>
+if ('visibilityState' in document) {
+    (function(d, t) {
+        var g = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        g.src = '{{ "/assets/bower_components/require/require.js?v=" | append: random | relative_url }}';
+        g.async = true;
+        g.setAttribute('data-main', '/assets/js/app/main');
+        s.parentNode.insertBefore(g, s);
+    }(document, 'script'));
+}
+</script>
+
 {% if jekyll.environment == 'production' and site.google_analytics %}
 {% include google-analytics.html %}
 {% endif %}

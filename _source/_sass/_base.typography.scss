@@ -60,6 +60,7 @@ h6,
     @include rem(margin-bottom, $blocss-space-small);
     font-family: $family-leader;
     line-height: 1.14;
+    font-weight: 700;
     text-transform: uppercase;
     color: $brand;
 }

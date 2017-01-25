@@ -4,10 +4,14 @@ layout: default
 <section class="o-layer  t-zebra" id="section:articles">
 
     <div class="o-retain  o-retain--readable  module">
-        <hgroup class="hgroup">
-            <h1>{{ page.title }}</h1>
-        </hgroup>
-        {{content}}
+        <article>
+            <hgroup class="hgroup">
+                <h1>{{ page.title }}</h1>
+            </hgroup>
+            {{content}}
+        </article>
+
+        <p><a class="js--pjax__link" href="/">< Back</a></p>
     </div>
 
 </section>
