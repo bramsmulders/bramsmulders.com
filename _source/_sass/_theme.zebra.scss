@@ -9,5 +9,9 @@
 
     &:nth-child(even) {
         background-color: $gray-c;
+
+        a {
+            text-shadow: 1px 1px 0 $gray-c, -1px 1px 0 $gray-c, 2px 0 0 $gray-c, -2px 0 0 $gray-c;
+        }
     }
 }
