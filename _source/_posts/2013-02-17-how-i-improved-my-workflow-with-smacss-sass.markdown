@@ -5,6 +5,9 @@ excerpt: How I improved my workflow with SMACSS & Sass
 date:   2013-02-17 21:07:57 +0100
 categories: workflow css sass scss smacss bem
 ---
+_Update: 27-02-2017_<br>
+_I wrote an extensive new article about [Structuring Front-end Components](https://bramsmulders.com/blog/structured-frontend-components/)._
+
 A couple of months ago I passed by Jonathan Snook's [SMACSS](http://smacss.com) website while browsing the web. After reading the SMACSS core articles I felt a bit awkward about how I organised and crafted my CSS. My CSS was quite unorganised and the only pattern used was the waterfall pattern; Work your way from the header all the way to the footer. The CSS also contained fixed withs, overuse of ID selectors & many specificity workarounds. It was not organised, not modular & most of all: Not reusable.
 
 ## Meet SMACSS
