@@ -27,7 +27,7 @@
     "blocss": "~6"
   },
   "dependencies": {
-    "require": "git@github.com:requirejs/requirejs.git#~2.3.2",
+    "require": "https://github.com/requirejs/requirejs.git#~2.3.2",
     "conditioner-js": "^1.2.3"
   }
 }
