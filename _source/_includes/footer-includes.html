@@ -1,5 +1,5 @@
 {% assign random = site.time | date: "%Y%j%k%M%s" | md5 %}
-<link rel="stylesheet" href="{{ "/assets/css/main.css?v=" | append: random | relative_url }}" async>
+<link rel="stylesheet" href="{{ "/assets/css/main.css?v=" | append: random | relative_url }}" defer>
 <script>
 if ('visibilityState' in document) {
     (function(d, t) {

@@ -81,6 +81,11 @@ module.exports = function (grunt) {
                     cwd: '_source/_js/',
                     src: '**/*.js',
                     dest: '_build/assets/js'
+                },
+                {
+                    // expand: true,
+                    src: '_source/assets/bower_components/require/require.js',
+                    dest: '_build/assets/bower_components/require/require.js'
                 }]
             }
         },
@@ -123,8 +128,8 @@ module.exports = function (grunt) {
     grunt.registerTask('prepare', [
         'shell:bower',
         'sass:build',
-        'uglify:build',
         'shell:jekyllPrepare',
+        'uglify:build',
         'shell:deploy'
     ]);
 
