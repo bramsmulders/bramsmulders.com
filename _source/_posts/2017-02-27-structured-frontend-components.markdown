@@ -2,7 +2,7 @@
 layout: post
 title:  Structured Front-end components
 excerpt: A new look on implementing front-end components with atomic design
-date:   2017-02-27 00:00:00 +0100
+date:   2017-02-27 15:00:00 +0100
 categories: workflow atomic-design css components sass
 ---
 ![Bram Smulders talking about Atomic Design at Fronteers meetup]({{ site.url }}/assets/images/talk-fronteers-e-sites.jpg)
