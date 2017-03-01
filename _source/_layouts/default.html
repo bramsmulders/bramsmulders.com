@@ -4,17 +4,22 @@ layout: compress
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
     {% include head.html %}
-    <body>
-        {% comment %} {% include header.html %} {% endcomment %}
+    <body class="o-wrap" data-module="app/navigation">
+        <div class="o-wrap__main">
+            {% comment %} {% include header.html %} {% endcomment %}
 
-        <main role="main" class="o-main  js--pjax__target">
-            <div class="o-main__content  js--pjax__content">
-                {{ content }}
+            <main role="main" class="o-main  js--pjax__target">
+                <div class="o-main__content  js--pjax__content">
+                    {{ content }}
 
-                {% include contentinfo.html %}
-            </div>
-        </main>
+                    {% include contentinfo.html %}
+                </div>
+            </main>
 
-        {% include footer-includes.html %}
+            {% include footer-includes.html %}
+        </div>
+        <div class="o-wrap__nav">
+            {% include navigation.html %}
+        </div>
     </body>
 </html>
