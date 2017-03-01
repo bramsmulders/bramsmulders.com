@@ -14,8 +14,8 @@ define(function(){
                  * Timeout to let the device actually change its orientation
                  */
                 setTimeout(function(){
-                    var newHeight = (window.innerHeight/100) * options.vh;
-                    element.setAttribute('style', 'min-height:'+newHeight+'px');
+                    const newHeight = (window.innerHeight/100) * options.vh;
+                    element.setAttribute('style', `min-height: ${newHeight}px`);
                 }, 500);
             }
 
