@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/*----------------------------------------------------------------------------*\
+    $COMPONENTS.nav-primary
+\*----------------------------------------------------------------------------*/
+
+/*  Variables
+    Variables used in this module
+\*----------------------------------------------------------------------------*/
+
+
+
+/*  Functions/Mixins
+    Functions and/or mixins used in this module
+\*----------------------------------------------------------------------------*/
+
+
+
+/*  Module
+    Core module
+\*----------------------------------------------------------------------------*/
+
+.c-nav-primary {
+    position: fixed;
+    @include rem(right, $blocss-space);
+    @include rem(bottom, $blocss-space);
+    height: 0%;
+    width: 0%;
+    background-color: $gray-a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.2s;
+
+    .is-menu-open & {
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+    }
+}
