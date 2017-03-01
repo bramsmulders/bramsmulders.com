@@ -80,7 +80,7 @@ module.exports = function (grunt) {
             build: {
                 files: [{
                     expand: true,
-                    cwd: '_build/assets/_js/',
+                    cwd: '_build/assets/js/',
                     src: '**/*.js',
                     dest: '_build/assets/js'
                 },
