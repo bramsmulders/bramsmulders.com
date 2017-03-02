@@ -33,20 +33,6 @@
 /*  Setup require.js
 \*----------------------------------------------------------------------------*/
 
-requirejs.config({
-    urlArgs: "v=v1",
-    baseUrl: '/assets',
-    paths: {
-        app: 'js/app'
-    },
-    map:{
-        '*':{
-            conditioner:'bower_components/conditioner-js/conditioner'
-        }
-    }
-});
-
-
 /**
  * Initialise conditioner
  */
