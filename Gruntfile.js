@@ -1,11 +1,13 @@
 'use strict';
 
+
 module.exports = function (grunt) {
 
     // Show elapsed time after tasks run to visualize performance
     require('time-grunt')(grunt);
     // Load all Grunt tasks that are listed in package.json automagically
     require('load-grunt-tasks')(grunt);
+    var buble = require('rollup-plugin-buble');
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -24,7 +26,7 @@ module.exports = function (grunt) {
             },
             js: {
                 files: ['_source/_js/**/*.js'],
-                tasks: ['copy:js']
+                tasks: ['babel'/*, 'copy:js'*/]
             }
         },
 
@@ -78,26 +80,48 @@ module.exports = function (grunt) {
             build: {
                 files: [{
                     expand: true,
-                    cwd: '_source/_js/',
+                    cwd: '_build/assets/js/',
                     src: '**/*.js',
                     dest: '_build/assets/js'
+                },
+                {
+                    // expand: true,
+                    src: '_source/assets/bower_components/require/require.js',
+                    dest: '_build/assets/bower_components/require/require.js'
                 }]
             }
         },
 
-        // Copy stuff
-        copy: {
-            js: {
+        babel: {
+            options: {
+                sourceMap: true,
+                presets: ['es2015']
+            },
+            dist: {
                 files: [
                     {
                         expand: true,
                         cwd: '_source/_js/',
-                        src: ['**/*'],
+                        src: ['**/*.js'],
                         dest: '_build/assets/js'
                     }
                 ]
             }
         },
+
+        // // Copy stuff
+        // copy: {
+        //     js: {
+        //         files: [
+        //             {
+        //                 expand: true,
+        //                 cwd: '_source/_js/',
+        //                 src: ['**/*'],
+        //                 dest: '_build/assets/js'
+        //             }
+        //         ]
+        //     }
+        // },
 
         // run tasks in parallel
         concurrent: {
@@ -115,7 +139,8 @@ module.exports = function (grunt) {
     grunt.registerTask('serve', [
         'shell:bower',
         'sass:serve',
-        'copy:js',
+        // 'copy:js',
+        'babel',
         'concurrent:serve'
     ]);
 
@@ -123,8 +148,9 @@ module.exports = function (grunt) {
     grunt.registerTask('prepare', [
         'shell:bower',
         'sass:build',
-        'uglify:build',
         'shell:jekyllPrepare',
+        'babel',
+        'uglify:build',
         'shell:deploy'
     ]);
 

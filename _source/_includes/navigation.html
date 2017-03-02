@@ -1,0 +1,24 @@
+{% for entry in site.data.navigation %}
+{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}
+    {% if fullurl == page.url %}
+        {% assign current_page = fullurl %}
+        {% break %}
+    {% elsif page.url contains fullurl %}
+        {% assign current_page = fullurl %}
+    {% endif %}
+{% endfor %}
+
+<!-- Then we build the nav bar. -->
+<nav class="c-nav-primary  u-milli">
+    <ul class="o-layout  o-layout--gutter-small  u-flatten">
+    {% for entry in site.data.navigation %}
+        {% if entry.url == current_page %}
+            {% assign current = '  is-current' %}
+        {% else %}
+            <!-- We have to declare it 'null' to ensure it doesn't propagate. -->
+            {% assign current = null %}
+        {% endif %}
+        <li class="o-layout__cell  o-layout__cell--fit{{ current }}"><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a></li>
+    {% endfor %}
+    </ul>
+</nav>

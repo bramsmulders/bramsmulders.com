@@ -8,11 +8,6 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
-    {% capture styles %}
-    {% include critical.css %}
-    {% endcapture %}
-
-    <style>
-    {{ styles }}
-    </style>
+    {% assign random = site.time | date: "%Y%j%k%M%s" | md5 %}
+    <link rel="stylesheet" href="{{ "/assets/css/main.css?v=" | append: random | relative_url }}" defer>
 </head>

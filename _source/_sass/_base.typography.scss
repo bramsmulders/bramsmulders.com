@@ -16,15 +16,15 @@
 }
 %beta,
 .u-beta {
-    font-size: 2rem;
+    font-size: 1.75rem;
 }
 %gamma,
 .u-gamma {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
 }
 %delta,
 .u-delta {
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 %epsilon,
 .u-epsilon {
@@ -72,6 +72,10 @@ h1,
 h2,
 .u-h2 {
     @extend %beta;
+
+    article & {
+        border-bottom: 1px solid $gray-b;
+    }
 }
 h3,
 .u-h3 {
@@ -104,11 +108,18 @@ blockquote {
 
 code {
     display: inline-block;
+    @include rem(padding-left, $blocss-space-tiny);
+    @include rem(padding-right, $blocss-space-tiny);
     background-color: $gray-c;
+    color: $brand;
 }
 
 pre {
     @include rem(padding, $blocss-space-small);
     background-color: $gray-c;
     overflow: auto;
+
+    code {
+        color: $gray-a;
+    }
 }

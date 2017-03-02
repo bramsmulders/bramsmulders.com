@@ -7,14 +7,14 @@
     Throttles the `oriantationchange` event
 \*----------------------------------------------------------------------------*/
 
-(function() {
-    var throttle = function(type, name, obj) {
+(() => {
+    const throttle = (type, name, obj) => {
         obj = obj || window;
-        var running = false;
-        var func = function() {
+        let running = false;
+        const func = () => {
             if (running) { return; }
             running = true;
-             requestAnimationFrame(function() {
+             requestAnimationFrame(() => {
                 obj.dispatchEvent(new CustomEvent(name));
                 running = false;
             });
@@ -33,23 +33,9 @@
 /*  Setup require.js
 \*----------------------------------------------------------------------------*/
 
-requirejs.config({
-    urlArgs: "v=v1",
-    baseUrl: '/assets',
-    paths: {
-        app: 'js/app'
-    },
-    map:{
-        '*':{
-            conditioner:'bower_components/conditioner-js/conditioner'
-        }
-    }
-});
-
-
 /**
  * Initialise conditioner
  */
-require(['conditioner'],function(conditioner) {
+require(['conditioner'], (conditioner) => {
     conditioner.init();
 });

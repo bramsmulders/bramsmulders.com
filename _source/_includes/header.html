@@ -1,10 +1,24 @@
-<header role="banner">
-    <a href="{{ "/" | relative_url}}">{{ site.title | escape }}</a>
-    <nav>
-        {% for my_page in site.pages %}
-            {% if my_page.title %}
-            <a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {% endif %}
-        {% endfor %}
-    </nav>
+<header class="c-header{% if page.masthead %}  c-header--masthead{% endif %}" role="banner" {% if page.masthead %}data-module="app/Vhtrick"{% endif %}>
+    <div class="c-header__wrap-nav">
+        <div class="o-retain  o-retain--readable  module">
+            <div class="o-layout  o-layout--gutter  o-layout--align-middle">
+                <div class="o-layout__cell  o-layout__cell--fill@lap">
+                    <span class="u-h2  u-flatten"><a href="{{ "/" | relative_url}}" class="link-heading">Bram Smulders</a></span>
+                </div><!-- .o-layout__cell -->
+                <div class="o-layout__cell  o-layout__cell--fit@lap">
+                    {% include navigation.html %}
+                </div><!-- .o-layout__cell -->
+            </div><!-- .o-layout -->
+        </div>
+    </div>
+    {% if page.masthead %}
+    <div class="c-header__visual">
+        <img class="c-header__visual__object" src="/assets/images/header/talk.jpg" alt="Bram Smulders talking about Atomic Design at Fronteers meetup">
+        <div class="c-header__wrap-heading">
+            <div class="o-retain o-retain--readable module">
+                <h1 class="c-header__heading">{{ page.masthead }}</h1>
+            </div>
+        </div>
+    </div>
+    {% endif %}
 </header>

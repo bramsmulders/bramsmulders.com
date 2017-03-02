@@ -20,11 +20,23 @@ $blocss-base-line-height: 24px;
 /*  Responsive
 \*----------------------------------------------------------------------------*/
 
+$blocss-responsive-modifier: unquote("\\@"); /* [1] */
+
 $blocss-breakpoints: (
     'landscape': '(orientation: landscape)',
     'lap': '(min-width: 480px)',
     'desk': '(min-width: 960px)'
-) !default;
+);
+
+
+
+/*  Layout
+\*----------------------------------------------------------------------------*/
+
+$blocss-layout-namespace: 'o-';
+
+$blocss-dimensions-breakpoint-has-fit: ('lap');
+$blocss-dimensions-breakpoint-has-fill: ('lap');
 
 
 
@@ -47,7 +59,7 @@ $family-leader: 'Oswald', sans-serif !default;
 /**
  * Brand
  */
-$brand: hotpink !default;
+$brand: #fc6471 !default;
 
 /**
  * Grayscale
