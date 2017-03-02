@@ -15,9 +15,20 @@ a {
     &:active {
         color: $brand;
     }
+
+    .c-header &,
+    .t-zebra:nth-child(even) & {
+        text-shadow: 1px 1px 0 $gray-c, -1px 1px 0 $gray-c, 2px 0 0 $gray-c, -2px 0 0 $gray-c;
+    }
 }
 
 
+
+.link-heading {
+    color: $gray-a;
+    text-shadow: none;
+    box-shadow: none;
+}
 
 .link-humble {
     font-weight: normal;

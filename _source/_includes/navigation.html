@@ -10,16 +10,15 @@
 
 <!-- Then we build the nav bar. -->
 <nav class="c-nav-primary">
-    <ul class="o-list-clean">
+    <ul class="o-layout  o-layout--gutter-small  u-flatten">
     {% for entry in site.data.navigation %}
         {% if entry.url == current_page %}
-            {% assign current = ' class="is-current"' %}
+            {% assign current = '  is-current' %}
         {% else %}
             <!-- We have to declare it 'null' to ensure it doesn't propagate. -->
             {% assign current = null %}
         {% endif %}
-        <li{{ current }}><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a></li>
+        <li class="o-layout__cell  o-layout__cell--fit{{ current }}"><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a></li>
     {% endfor %}
     </ul>
 </nav>
-<button class="c-burger  js--navigation__toggle">menu</button>

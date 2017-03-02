@@ -8,3 +8,7 @@
 .u-mb {
     @include rem(margin-bottom, $blocss-space);
 }
+
+.u-flatten {
+    margin-bottom: 0;
+}
