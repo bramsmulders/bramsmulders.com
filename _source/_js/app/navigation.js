@@ -2,12 +2,11 @@
     navigation
 \*----------------------------------------------------------------------------*/
 
-define(function(){
+define(() => {
 
     return {
-
         // load method, required when no constructor available
-        load: function (element, options) {
+        load: (element, options) => {
             const $burger = element.querySelector('.js--navigation__toggle');
 
             function toggleMenu () {

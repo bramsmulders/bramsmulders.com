@@ -7,14 +7,14 @@
     Throttles the `oriantationchange` event
 \*----------------------------------------------------------------------------*/
 
-(function() {
-    const throttle = function(type, name, obj) {
+(() => {
+    const throttle = (type, name, obj) => {
         obj = obj || window;
         let running = false;
-        const func = function() {
+        const func = () => {
             if (running) { return; }
             running = true;
-             requestAnimationFrame(function() {
+             requestAnimationFrame(() => {
                 obj.dispatchEvent(new CustomEvent(name));
                 running = false;
             });
@@ -50,6 +50,6 @@ requirejs.config({
 /**
  * Initialise conditioner
  */
-require(['conditioner'],function(conditioner) {
+require(['conditioner'], (conditioner) => {
     conditioner.init();
 });
