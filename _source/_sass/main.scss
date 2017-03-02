@@ -26,11 +26,19 @@
     Ground zero styles, normalize.css, resets
 \*----------------------------------------------------------------------------*/
 
+@import "blocss-reset/lib/atoms.reset";
+@import "blocss-shared/lib/atoms.shared";
+
 
 
 /*  Base
     Unclassed HTML elements (type selectors)
 \*----------------------------------------------------------------------------*/
+
+@import "base.fonts";
+@import "base.toplevel";
+@import "base.typography";
+@import "base.links";
 
 
 

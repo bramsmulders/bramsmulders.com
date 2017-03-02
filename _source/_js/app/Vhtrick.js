@@ -27,7 +27,7 @@ define(() => {
         },
 
         options: {
-            vh: 100
+            vh: 70
         }
     };
 

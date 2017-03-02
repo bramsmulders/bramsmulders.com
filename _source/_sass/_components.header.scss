@@ -30,16 +30,25 @@
     @include rem(padding, $blocss-space 0);
 }
 
-.c-header__visual {
+.c-header__visual,
+.c-header__visual__object,
+.c-header__wrap-heading {
     position: absolute;
-    top: 0;
+}
+
+.c-header__visual,
+.c-header__wrap-heading {
     left: 0;
     right: 0;
+}
+
+
+.c-header__visual {
+    top: 0;
     bottom: 0;
 }
 
 .c-header__visual__object {
-    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -47,10 +56,7 @@
 
 
 .c-header__wrap-heading {
-    position: absolute;
     @include rem(bottom, $blocss-space-small);
-    left: 0;
-    right: 0;
 }
 
 .c-header__heading {
