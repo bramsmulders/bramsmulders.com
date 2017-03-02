@@ -20,6 +20,63 @@
 \*----------------------------------------------------------------------------*/
 
 .c-header {
-    @include rem(padding, $blocss-space 0);
+    position: relative;
     background-color: $gray-c;
+}
+
+.c-header__wrap-nav {
+    position: relative;
+    z-index: 5;
+    @include rem(padding, $blocss-space 0);
+}
+
+.c-header__visual {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.c-header__visual__object {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.c-header__wrap-heading {
+    position: absolute;
+    @include rem(bottom, $blocss-space-small);
+    left: 0;
+    right: 0;
+}
+
+.c-header__heading {
+    color: $white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+
+/*  Modifiers
+\*----------------------------------------------------------------------------*/
+
+.c-header--masthead {
+    min-height: 70vh;
+
+    a {
+        color: $white;
+        text-shadow: none;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $brand;
+        }
+    }
+
+    .c-header__wrap-nav {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75) 20%, rgba(0, 0, 0, 0) 100%);
+    }
 }

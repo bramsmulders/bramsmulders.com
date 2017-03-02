@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Home
+masthead: UX and Front-end architecture enthousiast
 excerpt: My name is Bram Smulders and I am a UX-developer, front-end architect & writer from Tilburg, The Netherlands
 ---
 my name is Bram Smulders and I am a front-end developer from Tilburg, The Netherlands. I specialise in scalable code for large apps and websites with a strong focus on accessibility, progressive enhancement and powerful, speedy development.
