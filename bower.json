@@ -24,7 +24,8 @@
     "tests"
   ],
   "devDependencies": {
-    "blocss": "~6"
+    "blocss": "~6",
+    "blocss-layout": "^0.1.1"
   },
   "dependencies": {
     "require": "https://github.com/requirejs/requirejs.git#~2.3.2",
