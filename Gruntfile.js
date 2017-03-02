@@ -57,7 +57,6 @@ module.exports = function (grunt) {
                     outputStyle: 'expanded',
                 },
                 files: {
-                    '_build/assets/css/main.css': '_source/_sass/main.scss',
                     '_source/_includes/critical.css': '_source/_sass/critical.scss'
                 }
             },
@@ -66,7 +65,6 @@ module.exports = function (grunt) {
                     outputStyle: 'compressed',
                 },
                 files: {
-                    '_build/assets/css/main.css': '_source/_sass/main.scss',
                     '_source/_includes/critical.css': '_source/_sass/critical.scss'
                 }
             }
