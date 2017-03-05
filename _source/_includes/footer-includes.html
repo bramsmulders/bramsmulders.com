@@ -1,32 +1,9 @@
 {% assign random = site.time | date: "%Y%j%k%M%s" | md5 %}
 
 <script>
-if ('visibilityState' in document) {
-    var require = {
-        urlArgs: '{{ "v=" | append: random }}',
-        baseUrl: '/assets',
-        paths: {
-            app: 'js/app'
-        },
-        map:{
-            '*':{
-                conditioner:'bower_components/conditioner-js/conditioner'
-            }
-        }
-    };
-    (function(d, t) {
-        var g = d.createElement(t),
-            s = d.getElementsByTagName(t)[0];
-        g.src = '{{ "/assets/bower_components/require/require.js?v=" | append: random | relative_url }}';
-        g.async = true;
-        g.setAttribute('data-main', '/assets/js/app/main.js');
-        s.parentNode.insertBefore(g, s);
-    }(document, 'script'));
-}
-
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/sw.js').then(function (registration) {}).catch(function(err) {});
+        navigator.serviceWorker.register('/sw.js');
     });
 }
 </script>
