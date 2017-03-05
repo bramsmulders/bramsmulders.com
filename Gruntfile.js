@@ -42,7 +42,10 @@ module.exports = function (grunt) {
                 command: 'bower prune && bower install && bower update'
             },
             deploy: {
-                command: 'firebase deploy'
+                command: 'firebase use default && firebase deploy'
+            },
+            deployStaging: {
+                command: 'firebase use staging && firebase deploy'
             }
         },
 
@@ -161,6 +164,16 @@ module.exports = function (grunt) {
         'babel',
         'uglify:build',
         'shell:deploy'
+    ]);
+
+    // Register the grunt build task
+    grunt.registerTask('staging', [
+        'shell:bower',
+        'sass:build',
+        'shell:jekyllPrepare',
+        'babel',
+        'uglify:build',
+        'shell:deployStaging'
     ]);
 
     // Register build as the default task fallback
