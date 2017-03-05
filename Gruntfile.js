@@ -84,6 +84,11 @@ module.exports = function (grunt) {
                 },
                 {
                     // expand: true,
+                    src: '_build/sw.js',
+                    dest: '_build/sw.js'
+                },
+                {
+                    // expand: true,
                     src: '_source/assets/bower_components/require/require.js',
                     dest: '_build/assets/bower_components/require/require.js'
                 }]
