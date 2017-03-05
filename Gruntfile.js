@@ -42,7 +42,10 @@ module.exports = function (grunt) {
                 command: 'bower prune && bower install && bower update'
             },
             deploy: {
-                command: 'firebase deploy'
+                command: 'firebase use default && firebase deploy'
+            },
+            deployStaging: {
+                command: 'firebase use staging && firebase deploy'
             }
         },
 
@@ -57,7 +60,6 @@ module.exports = function (grunt) {
                     outputStyle: 'expanded',
                 },
                 files: {
-                    '_build/assets/css/main.css': '_source/_sass/main.scss',
                     '_source/_includes/critical.css': '_source/_sass/critical.scss'
                 }
             },
@@ -66,7 +68,6 @@ module.exports = function (grunt) {
                     outputStyle: 'compressed',
                 },
                 files: {
-                    '_build/assets/css/main.css': '_source/_sass/main.scss',
                     '_source/_includes/critical.css': '_source/_sass/critical.scss'
                 }
             }
@@ -86,6 +87,11 @@ module.exports = function (grunt) {
                 },
                 {
                     // expand: true,
+                    src: '_build/sw.js',
+                    dest: '_build/sw.js'
+                },
+                {
+                    // expand: true,
                     src: '_source/assets/bower_components/require/require.js',
                     dest: '_build/assets/bower_components/require/require.js'
                 }]
@@ -102,8 +108,14 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         cwd: '_source/_js/',
-                        src: ['**/*.js'],
+                        src: ['**/*.js', '!sw/sw.js'],
                         dest: '_build/assets/js'
+                    },
+                    {
+                        expand: true,
+                        cwd: '_source/_js/sw/',
+                        src: ['sw.js'],
+                        dest: '_build/'
                     }
                 ]
             }
@@ -152,6 +164,16 @@ module.exports = function (grunt) {
         'babel',
         'uglify:build',
         'shell:deploy'
+    ]);
+
+    // Register the grunt build task
+    grunt.registerTask('staging', [
+        'shell:bower',
+        'sass:build',
+        'shell:jekyllPrepare',
+        'babel',
+        'uglify:build',
+        'shell:deployStaging'
     ]);
 
     // Register build as the default task fallback

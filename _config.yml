@@ -38,7 +38,7 @@ exclude:
   - _sass
   - assets/js
 
-keep_files: ['assets/css','assets/js']
+keep_files: ['assets/css','assets/js', 'sw.js']
 
 compress_html:
   ignore:

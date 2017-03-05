@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "bramsmulderscom"
+    "default": "bramsmulderscom",
+    "staging": "bramsmulderscom-staging"
   }
 }
