@@ -19,4 +19,8 @@
     Core module
 \*----------------------------------------------------------------------------*/
 
-.c-nav-primary {}
+.c-nav-primary {
+    li.is-current a {
+        color: $brand;
+    }
+}
