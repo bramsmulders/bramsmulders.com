@@ -23,6 +23,12 @@ if ('visibilityState' in document) {
         s.parentNode.insertBefore(g, s);
     }(document, 'script'));
 }
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js').then(function (registration) {}).catch(function(err) {});
+    });
+}
 </script>
 
 {% if jekyll.environment == 'production' and site.google_analytics %}
