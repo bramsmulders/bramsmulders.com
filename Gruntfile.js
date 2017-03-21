@@ -159,22 +159,13 @@ module.exports = function (grunt) {
     ]);
 
     // Register the grunt build task
-    grunt.registerTask('prepareFirebase', [
+    grunt.registerTask('prepare', [
         'shell:bower',
         'sass:build',
         'shell:jekyllPrepare',
         'babel',
         'uglify:build',
         'shell:deploy'
-    ]);
-
-    // Register the grunt build task
-    grunt.registerTask('prepare', [
-        'shell:bower',
-        'sass:build',
-        'shell:jekyllPrepare',
-        'babel',
-        'uglify:build'
     ]);
 
     // Register the grunt build task

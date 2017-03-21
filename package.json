@@ -3,7 +3,8 @@
   "version": "4.1.3",
   "scripts": {
     "start": "grunt serve",
-    "prepare": "grunt prepare"
+    "prepare": "grunt prepare",
+    "staging": "grunt staging"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.22.0",
