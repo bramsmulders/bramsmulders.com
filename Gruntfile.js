@@ -7,7 +7,6 @@ module.exports = function (grunt) {
     require('time-grunt')(grunt);
     // Load all Grunt tasks that are listed in package.json automagically
     require('load-grunt-tasks')(grunt);
-    var buble = require('rollup-plugin-buble');
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
