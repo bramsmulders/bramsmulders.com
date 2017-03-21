@@ -38,6 +38,9 @@ module.exports = function (grunt) {
             jekyllServe: {
                 command: 'JEKYLL_ENV=development bundle exec jekyll serve --config=_config.yml'
             },
+            jekyllStaging: {
+                command: 'JEKYLL_ENV=staging bundle exec jekyll build --config=_config.yml,_config_prod.yml'
+            },
             bower: {
                 command: 'bower prune && bower install && bower update'
             },
@@ -157,7 +160,7 @@ module.exports = function (grunt) {
     ]);
 
     // Register the grunt build task
-    grunt.registerTask('prepare', [
+    grunt.registerTask('prepareFirebase', [
         'shell:bower',
         'sass:build',
         'shell:jekyllPrepare',
@@ -167,10 +170,19 @@ module.exports = function (grunt) {
     ]);
 
     // Register the grunt build task
-    grunt.registerTask('staging', [
+    grunt.registerTask('prepare', [
         'shell:bower',
         'sass:build',
         'shell:jekyllPrepare',
+        'babel',
+        'uglify:build'
+    ]);
+
+    // Register the grunt build task
+    grunt.registerTask('staging', [
+        'shell:bower',
+        'sass:build',
+        'shell:jekyllStaging',
         'babel',
         'uglify:build',
         'shell:deployStaging'
