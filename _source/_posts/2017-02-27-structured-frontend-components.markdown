@@ -198,7 +198,7 @@ This will enable us to structure our CSS in a more component based manner and al
 As you can see we can properly structure our CSS the same way as our HTML templates while maintaining the layers which cannot be easily put into the Atomic Design methodology. That leaves us with the last layer in out front-end stack: JavaScript
 
 ## JS Structure
-After these changes to our workflow we started tinkering with applying the same structure into our JavaScript layer. These ideas are getting more concrete but they are not crystallized yet. Also this acticle would become a pretty long read if I write about that implementation too ;). My next article will be covering our crystallized JavaScript plan of attack. Stay tuned.
+After these changes to our workflow we started tinkering with applying the same structure into our JavaScript layer. These ideas are getting more concrete but they are not crystallized yet. Also this article would become a pretty long read if I write about that implementation too ;). My next article will be covering our crystallized JavaScript plan of attack. Stay tuned.
 
 
 ## Credits
