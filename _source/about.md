@@ -23,7 +23,7 @@ In the moments where I’m not working I love to spend time with my lovely girlf
 - HTML
 - CSS (Including Sass & Less)
 - Javascript
-- Javascript frameworks & toolkits like React
+- Javascript frameworks & toolkits like React & Vue.js
 - Build tools like Webpack, Gulp, NPM scripts
 - Methods like scrum, Jira, TargetProcess, Git
 - A tiny bit of experience in PHP & .Net
