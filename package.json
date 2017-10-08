@@ -3,7 +3,7 @@
   "version": "4.1.8",
   "scripts": {
     "start": "grunt serve",
-    "prepare": "grunt prepare",
+    "build": "grunt prepare",
     "staging": "grunt staging"
   },
   "devDependencies": {
