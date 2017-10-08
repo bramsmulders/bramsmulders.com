@@ -16,12 +16,8 @@ module.exports = function (grunt) {
         // watch for files to change and run tasks when they do
         watch: {
             sass: {
-                files: ['_source/_css/**/*.{css}'],
+                files: ['_source/_css/**/*.css'],
                 tasks: ['postcss']
-            },
-            bower: {
-                files: ['bower.json'],
-                tasks: ['shell:bower']
             },
             js: {
                 files: ['_source/_js/**/*.js'],
@@ -40,9 +36,6 @@ module.exports = function (grunt) {
             jekyllStaging: {
                 command: 'JEKYLL_ENV=staging bundle exec jekyll build --config=_config.yml,_config_prod.yml'
             },
-            bower: {
-                command: 'bower prune && bower install && bower update'
-            },
             deploy: {
                 command: 'firebase use default && firebase deploy'
             },
@@ -60,12 +53,12 @@ module.exports = function (grunt) {
                     require('postcss-apply')(),
                     require('postcss-custom-media')(),
                     require('autoprefixer')(),
-                    require('cssnano')(),
+                    require('cssnano')({ minifyFontValues: false, discardUnused: false }),
                 ]
             },
             dist: {
                 files: {
-                    '_source/_includes/critical.css': '_source/_sass/critical.css'
+                    '_source/_includes/critical.css': '_source/_css/critical.css'
                 }
             }
         },
@@ -146,7 +139,6 @@ module.exports = function (grunt) {
 
     // Register the grunt serve task
     grunt.registerTask('serve', [
-        'shell:bower',
         'postcss',
         // 'copy:js',
         'babel',
@@ -155,7 +147,6 @@ module.exports = function (grunt) {
 
     // Register the grunt build task
     grunt.registerTask('prepare', [
-        'shell:bower',
         'postcss',
         'shell:jekyllPrepare',
         'babel',
@@ -165,7 +156,6 @@ module.exports = function (grunt) {
 
     // Register the grunt build task
     grunt.registerTask('staging', [
-        'shell:bower',
         'postcss',
         'shell:jekyllStaging',
         'babel',

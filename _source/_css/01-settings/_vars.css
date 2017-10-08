@@ -1,0 +1,20 @@
+/*  =========================================================================
+    settings.vars
+    ========================================================================= */
+
+:root {
+  --family-body: Arvo, serif;
+  --family-leader: Oswald, sans-serif;
+  --brand: #fc6471;
+  --black: #000000;
+  --gray-a: #3e4147;
+  --gray-b: #d3d3d3;
+  --gray-c: #f4f4f4;
+  --white: #ffffff;
+
+  --timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+@custom-media --landscape (orientation: landscape);
+@custom-media --lap (min-width: 480px);
+@custom-media --desk (min-width: 960px);

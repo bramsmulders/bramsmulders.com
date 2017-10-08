@@ -20,10 +20,12 @@
     "grunt-sass": "^1.2.1",
     "grunt-shell": "^2.0.0",
     "load-grunt-tasks": "^3.5.2",
+    "normalize.css": "^7.0.0",
     "postcss-apply": "^0.8.0",
     "postcss-color-function": "^4.0.0",
     "postcss-custom-media": "^6.0.0",
     "postcss-easy-import": "^3.0.0",
+    "stylelint-config-supple": "^1.0.0",
     "time-grunt": "^1.4.0"
   },
   "dependencies": {}
