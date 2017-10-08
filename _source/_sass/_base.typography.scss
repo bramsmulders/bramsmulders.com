@@ -72,10 +72,6 @@ h1,
 h2,
 .u-h2 {
     @extend %beta;
-
-    article & {
-        border-bottom: 1px solid $gray-b;
-    }
 }
 h3,
 .u-h3 {
