@@ -12,7 +12,8 @@ let cacheFiles = [
     '/offline/',
     '/blog/structured-frontend-components/',
     '/blog/how-i-improved-my-workflow-with-smacss-sass/',
-    '/blog/finger-friendly-all-the-things/'
+    '/blog/finger-friendly-all-the-things/',
+    '/blog/one-hell-of-a-week/'
 ];
 
 
