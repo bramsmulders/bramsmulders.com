@@ -6,7 +6,7 @@
 /*  Variables
 \*----------------------------------------------------------------------------*/
 
-let cacheName = 'bramsmulders:4.1.7';
+let cacheName = 'bramsmulders:4.1.8';
 let cacheFiles = [
     '/about/',
     '/offline/',
@@ -61,7 +61,7 @@ self.addEventListener('fetch', (event) => {
 
 self.addEventListener('activate', (event) => {
 
-    let cacheWhitelist = ['bramsmulders:4.1.7'];
+    let cacheWhitelist = ['bramsmulders:4.1.8'];
 
     event.waitUntil(
         caches.keys().then((cacheNames) => {
