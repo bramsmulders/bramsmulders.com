@@ -1,0 +1,14 @@
+/*  =========================================================================
+    objects.retain
+    ========================================================================= */
+
+.o-retain {
+  padding-left: var(--supple-space);
+  padding-right: var(--supple-space);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.o-retain--readable {
+  max-width: 34em;
+}
