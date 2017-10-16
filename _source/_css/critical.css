@@ -1,6 +1,7 @@
 /*! bramsmulders.critical | In conjunction with supple-css | github.com/supple-css */
 
 /*  Settings
+    Global variables, config switches
     ========================================================================= */
 
 @import "supple/lib/settings/defaults.css";
@@ -9,6 +10,7 @@
 
 
 /*  Generic
+    Ground zero styles, normalize.css, resets
     ========================================================================= */
 
 @import "normalize.css";
@@ -18,6 +20,7 @@
 
 
 /*  Base
+    Unclassed HTML elements (type selectors)
     ========================================================================= */
 
 @import "02-base/_fonts.css";
@@ -28,9 +31,20 @@
 
 
 /*  Objects
+    Cosmetic free design patterns
+    Prefixed with: o-
     ========================================================================= */
 
 @import "supple/lib/objects/list-clean.css";
 @import "supple/lib/objects/layout.css";
 @import "03-objects/_layer.css";
 @import "03-objects/_retain.css";
+
+
+
+/*  Components
+    Designed components, chunks of UI
+    Prefixed with: c-
+    ========================================================================= */
+
+@import "04-components/_header.css";
