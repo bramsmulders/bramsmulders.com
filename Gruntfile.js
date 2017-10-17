@@ -16,12 +16,8 @@ module.exports = function (grunt) {
         // watch for files to change and run tasks when they do
         watch: {
             sass: {
-                files: ['_source/_sass/**/*.{scss,sass}'],
-                tasks: ['sass:serve']
-            },
-            bower: {
-                files: ['bower.json'],
-                tasks: ['shell:bower']
+                files: ['_source/_css/**/*.css'],
+                tasks: ['postcss']
             },
             js: {
                 files: ['_source/_js/**/*.js'],
@@ -40,9 +36,6 @@ module.exports = function (grunt) {
             jekyllStaging: {
                 command: 'JEKYLL_ENV=staging bundle exec jekyll build --config=_config.yml,_config_prod.yml'
             },
-            bower: {
-                command: 'bower prune && bower install && bower update'
-            },
             deploy: {
                 command: 'firebase use default && firebase deploy'
             },
@@ -51,26 +44,21 @@ module.exports = function (grunt) {
             }
         },
 
-        // sass (libsass) config
-        sass: {
+        postcss: {
             options: {
-                sourceMap: false,
-                includePaths: ['_source/assets/bower_components']
+                map: false,
+                processors: [
+                    require('postcss-easy-import')(),
+                    require('postcss-color-function')(),
+                    require('postcss-apply')(),
+                    require('postcss-custom-media')(),
+                    require('autoprefixer')(),
+                    require('cssnano')({ minifyFontValues: false, discardUnused: false }),
+                ]
             },
-            serve: {
-                options: {
-                    outputStyle: 'expanded',
-                },
+            dist: {
                 files: {
-                    '_source/_includes/critical.css': '_source/_sass/critical.scss'
-                }
-            },
-            build: {
-                options: {
-                    outputStyle: 'compressed',
-                },
-                files: {
-                    '_source/_includes/critical.css': '_source/_sass/critical.scss'
+                    '_source/_includes/critical.css': '_source/_css/critical.css'
                 }
             }
         },
@@ -151,8 +139,7 @@ module.exports = function (grunt) {
 
     // Register the grunt serve task
     grunt.registerTask('serve', [
-        'shell:bower',
-        'sass:serve',
+        'postcss',
         // 'copy:js',
         'babel',
         'concurrent:serve'
@@ -160,8 +147,7 @@ module.exports = function (grunt) {
 
     // Register the grunt build task
     grunt.registerTask('prepare', [
-        'shell:bower',
-        'sass:build',
+        'postcss',
         'shell:jekyllPrepare',
         'babel',
         'uglify:build',
@@ -170,8 +156,7 @@ module.exports = function (grunt) {
 
     // Register the grunt build task
     grunt.registerTask('staging', [
-        'shell:bower',
-        'sass:build',
+        'postcss',
         'shell:jekyllStaging',
         'babel',
         'uglify:build',

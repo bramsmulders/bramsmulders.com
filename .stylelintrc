@@ -1,0 +1,7 @@
+{
+  "extends": "stylelint-config-supple",
+  "ignoreFiles": [
+    "node_modules/normalize.css/normalize.css",
+    "_source/_includes/critical.css"
+  ]
+}

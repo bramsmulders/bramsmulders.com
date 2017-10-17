@@ -1,0 +1,108 @@
+/*  =========================================================================
+    base.typography
+    ========================================================================= */
+
+/*  Toplevel font size
+    ========================================================================= */
+
+html {
+  font-family: var(--family-body);
+  color: var(--gray-a);
+}
+
+@media screen and (min-width: 20em) {
+  html {
+    font-size: calc(1em + (1.5 - 1) * (100vw - 20em) / (80 - 20));
+  }
+}
+
+@media screen and (min-width: 80em) {
+  html {
+    font-size: 1.5em;
+  }
+}
+
+
+
+/*  Headings
+    ========================================================================= */
+
+h1,
+.u-h1,
+h2,
+.u-h2,
+h3,
+.u-h3,
+h4,
+.u-h4,
+h5,
+.u-h5,
+h6,
+.u-h6 {
+  display: block;
+  margin-bottom: var(--supple-space-small);
+  font-family: var(--family-leader);
+  line-height: 1.14;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+
+h1 {
+  font-size: var(--alpha);
+}
+
+h2 {
+  font-size: var(--beta);
+}
+
+h3 {
+  font-size: var(--gamma);
+}
+
+h4 {
+  font-size: var(--delta);
+}
+
+h5 {
+  font-size: var(--epsilon);
+}
+
+h6 {
+  font-size: var(--zeta);
+}
+
+
+
+/*  Misc
+    ========================================================================= */
+
+blockquote {
+  margin-left: var(--supple-space);
+  padding: var(--supple-space-small) var(--supple-space);
+  text-indent: 0;
+  font-style: italic;
+  border-left: 6px solid var(--gray-d);
+}
+
+blockquote *:last-child {
+  margin-bottom: 0;
+}
+
+code {
+  display: inline-block;
+  padding-left: var(--supple-space-tiny);
+  padding-right: var(--supple-space-tiny);
+  background-color: var(--gray-e);
+  color: var(--brand);
+}
+
+pre {
+  padding: var(--supple-space-small);
+  background-color: var(--gray-e);
+  overflow: auto;
+}
+
+pre code {
+  color: var(--gray-a);
+}

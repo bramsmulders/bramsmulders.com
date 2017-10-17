@@ -12,9 +12,9 @@ Remember [this presentation]({% post_url 2016-12-15-atomic-design-at-fronteers-m
 ## Start of a new adventure
 After working for [Colours](https://www.colours.nl) for almost 4 years I decided that it was time for something new. This week I started working for [E-sites](https://www.e-sites.nl). A digital agency in Breda, The Netherlands.
 
-Usually, when you join a new company, it's the first week which is the hardest because all of the adjustments you make. But luckily [Johan](https://twitter.com/jvdnberg) has put together a really awesome onboarding plan. This makes adjusting and meeting all the new people a breeze. Instead of feeling tired after each day I felt very energetic and psyched. This is a good start, and I’m very excited for the rest to come!
-
 ![Flags @ E-sites Breda office]({{ site.url }}/assets/images/articles/hell-of-a-week/start-e-sites.jpg)
+
+Usually, when you join a new company, it's the first week which is the hardest because all of the adjustments you make. But luckily [Johan](https://twitter.com/jvdnberg) has put together a really awesome onboarding plan. This makes adjusting and meeting all the new people a breeze. Instead of feeling tired after each day I felt very energetic and psyched. This is a good start, and I’m very excited for the rest to come!
 
 ## Fronteers conference 2017
 I was lucky this week because Fronteers 2017 was around the corner. This 10th iteration of the conference was a really exciting one. Mainly because of all the inspiring talks and meeting old and new friends. But I also got to know some new colleagues from E-sites which was really awesome.
