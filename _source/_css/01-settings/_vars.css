@@ -5,6 +5,10 @@
 :root {
   --family-body: Arvo, serif;
   --family-leader: Oswald, sans-serif;
+
+  /**
+   * Colors
+   */
   --brand: #fc6471;
   --black: #000000;
   --gray-a: #3e4147;
@@ -12,6 +16,21 @@
   --gray-c: #f4f4f4;
   --white: #ffffff;
 
+  /**
+   * Font-sizes
+   */
+  --normalis: 1rem;
+  --alpha: 2.5rem;
+  --beta: 1.75rem;
+  --gamma: 1.25rem;
+  --delta: var(--normalis);
+  --epsilon: var(--normalis);
+  --zeta: var(--normalis);
+  --milli: 0.75rem;
+
+  /**
+   * Animations
+   */
   --timing-function: cubic-bezier(0.55, 0, 0.1, 1);
 }
 
