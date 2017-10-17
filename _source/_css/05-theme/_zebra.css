@@ -1,0 +1,12 @@
+/*  =========================================================================
+    theme.zebra
+    Stacks layers on top of eachother
+    ========================================================================= */
+
+.t-zebra {
+  background-color: var(--white);
+}
+
+.t-zebra:nth-child(even) {
+  background-color: var(--gray-c);
+}
