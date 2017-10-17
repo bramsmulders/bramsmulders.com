@@ -4,7 +4,7 @@
 
 .c-header {
   position: relative;
-  background-color: var(--gray-c);
+  background-color: var(--gray-e);
 }
 
 .c-header__wrap-nav {
@@ -53,6 +53,7 @@
 
 .c-header--masthead {
   min-height: 70vh;
+  background-color: var(--gray-c);
 }
 
 .c-header--masthead .c-header__wrap-nav {

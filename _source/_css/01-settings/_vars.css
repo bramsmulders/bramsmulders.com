@@ -9,11 +9,13 @@
   /**
    * Colors
    */
-  --brand: #fc6471;
+  --brand: #dc143c;
   --black: #000000;
   --gray-a: #3e4147;
-  --gray-b: #d3d3d3;
-  --gray-c: #f4f4f4;
+  --gray-b: #707070;
+  --gray-c: #949494;
+  --gray-d: #d3d3d3;
+  --gray-e: #f4f4f4;
   --white: #ffffff;
 
   /**
@@ -33,7 +35,3 @@
    */
   --timing-function: cubic-bezier(0.55, 0, 0.1, 1);
 }
-
-@custom-media --landscape (orientation: landscape);
-@custom-media --lap (min-width: 480px);
-@custom-media --desk (min-width: 960px);

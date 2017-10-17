@@ -8,5 +8,5 @@
 }
 
 .t-zebra:nth-child(even) {
-  background-color: var(--gray-c);
+  background-color: var(--gray-e);
 }

@@ -82,7 +82,7 @@ blockquote {
   padding: var(--supple-space-small) var(--supple-space);
   text-indent: 0;
   font-style: italic;
-  border-left: 6px solid var(--gray-b);
+  border-left: 6px solid var(--gray-d);
 }
 
 blockquote *:last-child {
@@ -93,13 +93,13 @@ code {
   display: inline-block;
   padding-left: var(--supple-space-tiny);
   padding-right: var(--supple-space-tiny);
-  background-color: var(--gray-c);
+  background-color: var(--gray-e);
   color: var(--brand);
 }
 
 pre {
   padding: var(--supple-space-small);
-  background-color: var(--gray-c);
+  background-color: var(--gray-e);
   overflow: auto;
 }
 
