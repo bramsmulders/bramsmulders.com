@@ -24,8 +24,10 @@
     "postcss-apply": "^0.8.0",
     "postcss-color-function": "^4.0.0",
     "postcss-custom-media": "^6.0.0",
+    "postcss-custom-properties": "^6.2.0",
     "postcss-easy-import": "^3.0.0",
     "stylelint-config-supple": "^1.0.0",
+    "supple": "^0.1.0",
     "time-grunt": "^1.4.0"
   },
   "dependencies": {}
