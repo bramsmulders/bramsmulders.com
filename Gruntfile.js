@@ -1,169 +1,171 @@
-'use strict';
+"use strict";
 
+module.exports = function(grunt) {
+  // Show elapsed time after tasks run to visualize performance
+  require("time-grunt")(grunt);
+  // Load all Grunt tasks that are listed in package.json automagically
+  require("load-grunt-tasks")(grunt);
 
-module.exports = function (grunt) {
+  grunt.initConfig({
+    pkg: grunt.file.readJSON("package.json"),
 
-    // Show elapsed time after tasks run to visualize performance
-    require('time-grunt')(grunt);
-    // Load all Grunt tasks that are listed in package.json automagically
-    require('load-grunt-tasks')(grunt);
+    // This is where our tasks are defined and configured
 
-    grunt.initConfig({
-        pkg: grunt.file.readJSON('package.json'),
+    // watch for files to change and run tasks when they do
+    watch: {
+      sass: {
+        files: ["_source/_css/**/*.css"],
+        tasks: ["postcss"]
+      },
+      js: {
+        files: ["_source/_js/**/*.js"],
+        tasks: ["babel" /*, 'copy:js'*/]
+      }
+    },
 
-        // This is where our tasks are defined and configured
+    // shell commands for use in Grunt tasks
+    shell: {
+      jekyllPrepare: {
+        command:
+          "JEKYLL_ENV=production bundle exec jekyll build --config=_config.yml,_config_prod.yml"
+      },
+      jekyllServe: {
+        command:
+          "JEKYLL_ENV=development bundle exec jekyll serve --config=_config.yml"
+      },
+      jekyllStaging: {
+        command:
+          "JEKYLL_ENV=staging bundle exec jekyll build --config=_config.yml,_config_prod.yml"
+      },
+      deploy: {
+        command: "firebase use default && firebase deploy"
+      },
+      deployStaging: {
+        command: "firebase use staging && firebase deploy"
+      }
+    },
 
-        // watch for files to change and run tasks when they do
-        watch: {
-            sass: {
-                files: ['_source/_css/**/*.css'],
-                tasks: ['postcss']
-            },
-            js: {
-                files: ['_source/_js/**/*.js'],
-                tasks: ['babel'/*, 'copy:js'*/]
-            }
-        },
+    postcss: {
+      options: {
+        map: false,
+        processors: [
+          require("postcss-easy-import")(),
+          require("postcss-color-function")(),
+          require("postcss-apply")(),
+          require("postcss-custom-media")(),
+          require("postcss-custom-properties")({
+            preserve: true,
+          }),
+          require("autoprefixer")(),
+          require("cssnano")({ minifyFontValues: false, discardUnused: false })
+        ]
+      },
+      dist: {
+        files: {
+          "_source/_includes/critical.css": "_source/_css/critical.css"
+        }
+      }
+    },
 
-        // shell commands for use in Grunt tasks
-        shell: {
-            jekyllPrepare: {
-                command: 'JEKYLL_ENV=production bundle exec jekyll build --config=_config.yml,_config_prod.yml'
-            },
-            jekyllServe: {
-                command: 'JEKYLL_ENV=development bundle exec jekyll serve --config=_config.yml'
-            },
-            jekyllStaging: {
-                command: 'JEKYLL_ENV=staging bundle exec jekyll build --config=_config.yml,_config_prod.yml'
-            },
-            deploy: {
-                command: 'firebase use default && firebase deploy'
-            },
-            deployStaging: {
-                command: 'firebase use staging && firebase deploy'
-            }
-        },
+    // Uglify js
+    uglify: {
+      options: {
+        mangle: false
+      },
+      build: {
+        files: [
+          {
+            expand: true,
+            cwd: "_build/assets/js/",
+            src: "**/*.js",
+            dest: "_build/assets/js"
+          },
+          {
+            // expand: true,
+            src: "_build/sw.js",
+            dest: "_build/sw.js"
+          },
+          {
+            // expand: true,
+            src: "_source/assets/bower_components/require/require.js",
+            dest: "_build/assets/bower_components/require/require.js"
+          }
+        ]
+      }
+    },
 
-        postcss: {
-            options: {
-                map: false,
-                processors: [
-                    require('postcss-easy-import')(),
-                    require('postcss-color-function')(),
-                    require('postcss-apply')(),
-                    require('postcss-custom-media')(),
-                    require('autoprefixer')(),
-                    require('cssnano')({ minifyFontValues: false, discardUnused: false }),
-                ]
-            },
-            dist: {
-                files: {
-                    '_source/_includes/critical.css': '_source/_css/critical.css'
-                }
-            }
-        },
+    babel: {
+      options: {
+        sourceMap: true,
+        presets: ["es2015"]
+      },
+      dist: {
+        files: [
+          {
+            expand: true,
+            cwd: "_source/_js/",
+            src: ["**/*.js", "!sw/sw.js"],
+            dest: "_build/assets/js"
+          },
+          {
+            expand: true,
+            cwd: "_source/_js/sw/",
+            src: ["sw.js"],
+            dest: "_build/"
+          }
+        ]
+      }
+    },
 
-        // Uglify js
-        uglify: {
-            options: {
-                mangle: false
-            },
-            build: {
-                files: [{
-                    expand: true,
-                    cwd: '_build/assets/js/',
-                    src: '**/*.js',
-                    dest: '_build/assets/js'
-                },
-                {
-                    // expand: true,
-                    src: '_build/sw.js',
-                    dest: '_build/sw.js'
-                },
-                {
-                    // expand: true,
-                    src: '_source/assets/bower_components/require/require.js',
-                    dest: '_build/assets/bower_components/require/require.js'
-                }]
-            }
-        },
+    // // Copy stuff
+    // copy: {
+    //     js: {
+    //         files: [
+    //             {
+    //                 expand: true,
+    //                 cwd: '_source/_js/',
+    //                 src: ['**/*'],
+    //                 dest: '_build/assets/js'
+    //             }
+    //         ]
+    //     }
+    // },
 
-        babel: {
-            options: {
-                sourceMap: true,
-                presets: ['es2015']
-            },
-            dist: {
-                files: [
-                    {
-                        expand: true,
-                        cwd: '_source/_js/',
-                        src: ['**/*.js', '!sw/sw.js'],
-                        dest: '_build/assets/js'
-                    },
-                    {
-                        expand: true,
-                        cwd: '_source/_js/sw/',
-                        src: ['sw.js'],
-                        dest: '_build/'
-                    }
-                ]
-            }
-        },
+    // run tasks in parallel
+    concurrent: {
+      serve: ["watch", "shell:jekyllServe"],
+      options: {
+        logConcurrentOutput: true
+      }
+    }
+  });
 
-        // // Copy stuff
-        // copy: {
-        //     js: {
-        //         files: [
-        //             {
-        //                 expand: true,
-        //                 cwd: '_source/_js/',
-        //                 src: ['**/*'],
-        //                 dest: '_build/assets/js'
-        //             }
-        //         ]
-        //     }
-        // },
+  // Register the grunt serve task
+  grunt.registerTask("serve", [
+    "postcss",
+    // 'copy:js',
+    "babel",
+    "concurrent:serve"
+  ]);
 
-        // run tasks in parallel
-        concurrent: {
-            serve: [
-                'watch',
-                'shell:jekyllServe'
-            ],
-            options: {
-                logConcurrentOutput: true
-            }
-        },
-    });
+  // Register the grunt build task
+  grunt.registerTask("prepare", [
+    "postcss",
+    "shell:jekyllPrepare",
+    "babel",
+    "uglify:build",
+    "shell:deploy"
+  ]);
 
-    // Register the grunt serve task
-    grunt.registerTask('serve', [
-        'postcss',
-        // 'copy:js',
-        'babel',
-        'concurrent:serve'
-    ]);
+  // Register the grunt build task
+  grunt.registerTask("staging", [
+    "postcss",
+    "shell:jekyllStaging",
+    "babel",
+    "uglify:build",
+    "shell:deployStaging"
+  ]);
 
-    // Register the grunt build task
-    grunt.registerTask('prepare', [
-        'postcss',
-        'shell:jekyllPrepare',
-        'babel',
-        'uglify:build',
-        'shell:deploy'
-    ]);
-
-    // Register the grunt build task
-    grunt.registerTask('staging', [
-        'postcss',
-        'shell:jekyllStaging',
-        'babel',
-        'uglify:build',
-        'shell:deployStaging'
-    ]);
-
-    // Register build as the default task fallback
-    grunt.registerTask('default', 'prepare');
-
+  // Register build as the default task fallback
+  grunt.registerTask("default", "prepare");
 };
