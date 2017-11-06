@@ -10,7 +10,7 @@ With a strong focus on accessibility & progressive enhancement I wire up HTML, C
 
 I’ve been contributing to the web for around {{ '2007-01-01' | timeago: site.time }} and worked with many different companies. These include agencies like [E-sites](https://www.e-sites.nl/), [Colours](http://colours.nl), [Freshheads](http://freshheads.com) and clients like [Eneco](http://eneco.com), [KNVB](http://knvb.nl), [Quinny](http://www.quinny.nl/), [New Heroes](http://newheroes.com) & [Emerce](http://emerce.nl).
 
-I maintain some [repositories on GitHub](https://github.com/bramsmulders) and I’ve created [Blocss](https://github.com/Blocss/)<sup>(‘Blocks’)</sup>, a small but powerfull css framework designed specially for serious developers.
+I maintain some [repositories on GitHub](https://github.com/bramsmulders) and I’ve created [Supple](https://github.com/supple-css/). It is a small but powerfull CSS framework designed specially with the latest browsers in mind.
 
 Currently I’m employed as Senior Front-End developer at [E-sites's Health team](https://www.e-sites.nl/health). We create innovative solutions for care institutions, patients, pharmaceuticals, suppliers and governments.
 
