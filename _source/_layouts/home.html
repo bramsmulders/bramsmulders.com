@@ -1,18 +1,12 @@
 ---
 layout: default
 ---
-<section class="o-layer  t-zebra">
-  <div class="o-retain  o-retain--readable  module">
-    <h2 class="u-h1">Howdy,</h2>
-    {{ content }}
-  </div>
+<section>
+  <h2 class="u-h1">Howdy,</h2>
+  {{ content }}
 </section>
 
-<section class="o-layer  t-zebra" id="section:articles">
-  <div class="o-retain  o-retain--readable  module">
-    <hgroup class="hgroup">
-      <h2>Articles</h2>
-    </hgroup>
-    {% include posts.html %}
-  </div>
+<section id="section:articles">
+  <h2>Articles</h2>
+  {% include posts.html %}
 </section>

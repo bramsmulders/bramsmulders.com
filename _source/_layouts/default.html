@@ -8,10 +8,8 @@ layout: compress
   <body>
     {% include header.html %}
 
-    <main role="main" class="o-main  js--pjax__target">
-      <div class="o-main__content  js--pjax__content">
-        {{ content }} {% include contentinfo.html %}
-      </div>
+    <main role="main">
+      {{ content }} {% include contentinfo.html %}
     </main>
 
     {% include footer-includes.html %}

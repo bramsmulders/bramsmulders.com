@@ -1,22 +1,22 @@
 {% for entry in site.data.navigation %}
 {% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}
-    {% if fullurl == page.url %}
-        {% assign current_page = fullurl %}
-        {% break %}
-    {% elsif page.url contains fullurl %}
-        {% assign current_page = fullurl %}
-    {% endif %}
+  {% if fullurl == page.url %}
+    {% assign current_page = fullurl %}
+    {% break %}
+  {% elsif page.url contains fullurl %}
+    {% assign current_page = fullurl %}
+  {% endif %}
 {% endfor %}
 
-<nav class="c-nav-primary u-milli">
-  <ul class="o-layout  o-layout--gutter-small  u-flatten">
+<nav>
+  <ul>
     {% for entry in site.data.navigation %}
       {% if entry.url == current_page %}
-        {% assign current = ' is-current' %}
+        {% assign current = 'is-current' %}
       {% else %}
         {% assign current = null %}
       {% endif %}
-      <li class="o-layout__cell  o-layout__cell--fit{{ current }}">
+      <li {% if current %}class="{{ current }}"{% endif %}>
         <a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
       </li>
     {% endfor %}
