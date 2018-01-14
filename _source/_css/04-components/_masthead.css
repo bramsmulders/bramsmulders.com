@@ -1,0 +1,32 @@
+/*  =========================================================================
+    components.masthead
+    ========================================================================= */
+
+/*  Variables
+    ========================================================================= */
+
+
+
+/*  Functions/Mixins
+    ========================================================================= */
+
+
+
+/*  Module
+    ========================================================================= */
+
+.c-masthead {
+  display: flex;
+  background-color: var(--color--paradise-pink);
+  min-height: 80vh;
+  color: var(--color--white);
+  align-items: center;
+  padding-top: var(--supple-space);
+  padding-bottom: var(--supple-space);
+}
+
+.c-masthead h1 {
+  /* font-size: 2rem; */
+  line-height: 1;
+  margin-bottom: 1rem;
+}

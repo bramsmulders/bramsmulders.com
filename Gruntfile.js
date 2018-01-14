@@ -53,9 +53,9 @@ module.exports = function(grunt) {
           require("postcss-color-function")(),
           require("postcss-apply")(),
           require("postcss-custom-media")(),
-          require("postcss-custom-properties")({
-            preserve: true,
-          }),
+          // require("postcss-custom-properties")({
+          //   preserve: true,
+          // }),
           require("autoprefixer")(),
           require("cssnano")({ minifyFontValues: false, discardUnused: false })
         ]

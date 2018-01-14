@@ -7,25 +7,61 @@
 
 html {
   font-family: var(--family-body);
-  color: var(--gray-a);
+  background-color: var(--color--russian-blue);
 }
 
 @media screen and (min-width: 20em) {
   html {
-    font-size: calc(1em + (1.5 - 1) * (100vw - 20em) / (80 - 20));
+    font-size: calc(((var(--supple-base-font-size) / 16) * 1em) + (1.75 - (var(--supple-base-font-size) / 16)) * (100vw - 20em) / (80 - 20));
   }
 }
 
+
 @media screen and (min-width: 80em) {
   html {
-    font-size: 1.5em;
+    font-size: 1.75em;
   }
+}
+
+body {
+  background-color: var(--color--paradise-pink);
 }
 
 
 
 /*  Headings
     ========================================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--family-leader);
+}
+
+
+/**
+ * Heading 1
+ * CSS Lock
+ */
+h1 {
+  font-size: 2em;
+}
+
+@media screen and (min-width: 20em) {
+  h1 {
+    font-size: calc(2em + 4 * ((100vw - 20em) / (80 - 20)));
+  }
+}
+
+@media screen and (min-width: 80em) {
+  h1 {
+    font-size: 4em;
+  }
+}
+
 
 
 /*  Misc
