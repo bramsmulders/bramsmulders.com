@@ -1,64 +1,70 @@
 {
-    "hosting": {
-        "public": "_build",
+  "hosting": {
+    "public": "_build",
+    "headers": [
+      {
+        "source": "*",
         "headers": [
-            {
-                "source" : "*",
-                "headers" : [
-                    {
-                        "key" : "Cache-Control",
-                        "value" : "max-age=0"
-                    }
-                ]
-            }, {
-                "source" : "**/**",
-                "headers" : [
-                    {
-                        "key" : "Cache-Control",
-                        "value" : "max-age=0"
-                    }
-                ]
-            }, {
-                "source" : "**/*.@(css|js|jsx|woff|woff2)",
-                "headers" : [
-                    {
-                        "key" : "Cache-Control",
-                        "value" : "max-age=31556926"
-                    }
-                ]
-            }, {
-                "source" : "sw.js",
-                "headers" : [
-                    {
-                        "key" : "Cache-Control",
-                        "value" : "max-age=0"
-                    }
-                ]
-            }, {
-                "source" : "**/*.@(jpg|jpeg|gif|svg|bmp|png|webp|mp4|ogg|webm)",
-                "headers" : [
-                    {
-                        "key" : "Cache-Control",
-                        "value" : "max-age=2629743"
-                    }
-                ]
-            }
-        ],
-
-        "redirects": [
-            {
-                "source" : "/how-i-improved-my-workflow-with-smacss-sass.html",
-                "destination" : "/blog/how-i-improved-my-workflow-with-smacss-sass",
-                "type" : 301
-            }, {
-                "source" : "/finger-friendly-all-the-things.html",
-                "destination" : "/blog/finger-friendly-all-the-things",
-                "type" : 301
-            }, {
-                "source" : "/i-am-fine-just-an-introvert.html",
-                "destination" : "/blog/i-am-fine-just-an-introvert",
-                "type" : 301
-            }
+          {
+            "key": "Cache-Control",
+            "value": "max-age=0"
+          }
         ]
-    }
+      },
+      {
+        "source": "**/**",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=0"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(css|js|jsx|woff|woff2)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=31556926"
+          }
+        ]
+      },
+      {
+        "source": "sw.js",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=0"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(jpg|jpeg|gif|svg|bmp|png|webp|mp4|ogg|webm)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=2629743"
+          }
+        ]
+      }
+    ],
+
+    "redirects": [
+      {
+        "source": "/how-i-improved-my-workflow-with-smacss-sass.html",
+        "destination": "/blog/how-i-improved-my-workflow-with-smacss-sass",
+        "type": 301
+      },
+      {
+        "source": "/finger-friendly-all-the-things.html",
+        "destination": "/blog/finger-friendly-all-the-things",
+        "type": 301
+      },
+      {
+        "source": "/i-am-fine-just-an-introvert.html",
+        "destination": "/blog/i-am-fine-just-an-introvert",
+        "type": 301
+      }
+    ]
+  }
 }

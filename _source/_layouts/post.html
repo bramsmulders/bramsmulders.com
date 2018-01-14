@@ -3,22 +3,22 @@ layout: default
 ---
 <div class="o-layer  t-zebra">
 
-    <div class="o-retain  o-retain--readable">
+  <div class="o-retain  o-retain--readable">
 
-        <article itemscope itemtype="http://schema.org/BlogPosting">
-            <header>
-                <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-                <hgroup>
-                    <h1 itemprop="name headline">{{ page.title | escape }}</h1>
-                    {% include readingtime.html %}
-                </hgroup>
-            </header>
-            {{ content }}
-        </article>
+    <article itemscope itemtype="http://schema.org/BlogPosting">
+      <header>
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+        <hgroup>
+          <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+          {% include readingtime.html %}
+        </hgroup>
+      </header>
+      {{ content }}
+    </article>
 
-        <p><a class="js--pjax__link" href="/#section:articles">< Back</a></p>
+    <p><a class="js--pjax__link" href="/#section:articles">< Back</a></p>
 
-    </div><!-- .o-retain -->
+  </div><!-- .o-retain -->
 
 </div><!-- .o-layer -->
 
