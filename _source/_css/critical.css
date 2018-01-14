@@ -23,10 +23,7 @@
     Unclassed HTML elements (type selectors)
     ========================================================================= */
 
-@import "02-base/_fonts.css";
-@import "02-base/_toplevel.css";
 @import "02-base/_typography.css";
-@import "02-base/_links.css";
 
 
 
@@ -35,10 +32,8 @@
     Prefixed with: o-
     ========================================================================= */
 
-@import "supple/lib/objects/list-clean.css";
-@import "supple/lib/objects/layout.css";
-@import "03-objects/_layer.css";
-@import "03-objects/_retain.css";
+/* @import "supple/lib/objects/list-clean.css";
+@import "supple/lib/objects/layout.css"; */
 
 
 
@@ -47,9 +42,7 @@
     Prefixed with: c-
     ========================================================================= */
 
-@import "04-components/_header.css";
-@import "04-components/_nav-primary.css";
-@import "04-components/_highlight.css";
+/* @import "04-components/_highlight.css"; */
 
 
 
@@ -58,16 +51,9 @@
     Prefixed with: t-
     ========================================================================= */
 
-@import "05-theme/_zebra.css";
-
 
 
 /*  Utilities
     Helpers & overrides
     Prefixed with: u-
     ========================================================================= */
-
-@import "06-utilities/_typography.css";
-@import "06-utilities/_colors.css";
-@import "06-utilities/_layout.spacing.css";
-@import "06-utilities/_visual.css";
