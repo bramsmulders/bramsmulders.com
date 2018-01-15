@@ -23,6 +23,7 @@
   align-items: center;
   padding-top: var(--supple-space);
   padding-bottom: var(--supple-space);
+  margin-top: var(--supple-space-small);
 }
 
 .c-masthead h1 {

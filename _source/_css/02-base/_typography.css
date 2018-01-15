@@ -7,7 +7,8 @@
 
 html {
   font-family: var(--family-body);
-  background-color: var(--color--russian-blue);
+  background-color: var(--color--prussian-blue);
+  color: var(--color--dark-gunmetal);
 }
 
 @media screen and (min-width: 20em) {

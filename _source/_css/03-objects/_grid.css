@@ -18,11 +18,12 @@
 .o-grid {
   display: grid;
   grid-template-columns:
-    [full-start] minmax(var(--supple-space), 1fr)
+    [full-start] minmax(0, 2fr)
+    [retained-start] minmax(var(--supple-space), 1fr)
     [main-start] minmax(0, 35em) [main-end]
-    minmax(var(--supple-space), 1fr) [full-end];
+    minmax(var(--supple-space), 1fr) [retained-end]
+    minmax(0, 2fr) [full-end];
   width: 100%;
-  max-width: 45em;
   margin-left: auto;
   margin-right: auto;
 }
