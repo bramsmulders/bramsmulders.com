@@ -1,9 +1,14 @@
 /*  =========================================================================
-    objects.grid
+    base.links
     ========================================================================= */
 
 /*  Variables
     ========================================================================= */
+
+:root {
+  --link--color: currentColor;
+  --link--underline-color: var(--color--prussian-blue);
+}
 
 
 
@@ -15,23 +20,13 @@
 /*  Module
     ========================================================================= */
 
-.o-grid {
-  display: grid;
-  grid-template-columns:
-    [full-start] minmax(var(--supple-space), 2fr)
-    [retained-start] minmax(0, 1fr)
-    [main-start] minmax(0, 35em) [main-end]
-    minmax(0, 1fr) [retained-end]
-    minmax(var(--supple-space), 2fr) [full-end];
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+a {
+  color: var(--link--color);
+  text-decoration-skip: ink;
+  text-decoration-color: var(--link--underline-color);
 }
 
-.o-grid > * {
-  grid-column: main;
-}
-
-.o-grid__retained {
-  grid-column: retained;
+a:hover,
+a:focus {
+  color: var(--link--underline-color);
 }

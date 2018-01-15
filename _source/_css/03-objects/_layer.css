@@ -1,0 +1,18 @@
+/*  =========================================================================
+    objects.layer
+    ========================================================================= */
+
+/*  Module
+    ========================================================================= */
+
+.o-layer {
+  padding-top: var(--supple-space);
+  padding-bottom: 1px;
+}
+
+@media (--lap) {
+  .o-layer {
+    padding-top: var(--supple-space-large);
+    padding-bottom: var(--supple-space);
+  }
+}

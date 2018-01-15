@@ -1,0 +1,24 @@
+/*  =========================================================================
+    theme.colors
+    ========================================================================= */
+
+/*  Module
+    ========================================================================= */
+
+.t-background--prussian-blue {
+  --link--underline-color: var(--color--paradise-pink);
+  background-color: var(--color--prussian-blue);
+  color: var(--color--baby-powder);
+}
+
+.t-background--baby-powder {
+  --link--underline-color: var(--color--paradise-pink);
+  background-color: var(--color--baby-powder);
+  color: var(--color--prussian-blue);
+}
+
+.t-background--eucalyptus {
+  --link--underline-color: var(--color--paradise-pink);
+  background-color: var(--color--eucalyptus);
+  color: var(--color--prussian-blue);
+}
