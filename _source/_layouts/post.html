@@ -2,13 +2,15 @@
 layout: default
 ---
 <article itemscope itemtype="http://schema.org/BlogPosting">
-  <header>
-    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-    <h1 itemprop="name headline">{{ page.title | escape }}</h1>
-    {% include readingtime.html %}
+  <header class="o-layer  o-grid  t-background--paradise-pink">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+      <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+      {% include readingtime.html %}
   </header>
-  {{ content }}
+  <div class="o-layer  o-grid  t-background--baby-powder">
+    {{ content }}
+    <p><a href="/#section:articles">Back to blogposts</a></p>
+  </div>
 </article>
 
-<p><a href="/#section:articles">< Back</a></p>
 

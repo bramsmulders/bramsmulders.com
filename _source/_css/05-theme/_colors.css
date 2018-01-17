@@ -5,6 +5,12 @@
 /*  Module
     ========================================================================= */
 
+.t-background--paradise-pink {
+  --link--underline-color: var(--color--prussian-blue);
+  background-color: var(--color--paradise-pink);
+  color: var(--color--white);
+}
+
 .t-background--prussian-blue {
   --link--underline-color: var(--color--paradise-pink);
   background-color: var(--color--prussian-blue);
@@ -15,6 +21,10 @@
   --link--underline-color: var(--color--paradise-pink);
   background-color: var(--color--baby-powder);
   color: var(--color--prussian-blue);
+}
+
+.t-background--baby-powder + .t-background--baby-powder {
+  border-top: 1px solid var(--color--prussian-blue);
 }
 
 .t-background--eucalyptus {

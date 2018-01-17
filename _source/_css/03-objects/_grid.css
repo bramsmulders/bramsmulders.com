@@ -20,7 +20,7 @@
   grid-template-columns:
     [full-start] minmax(var(--supple-space), 2fr)
     [retained-start] minmax(0, 1fr)
-    [main-start] minmax(0, 35em) [main-end]
+    [main-start] minmax(0, 26em) [main-end]
     minmax(0, 1fr) [retained-end]
     minmax(var(--supple-space), 2fr) [full-end];
   width: 100%;
@@ -32,6 +32,11 @@
   grid-column: main;
 }
 
-.o-grid__retained {
+.o-grid__retained,
+.highlighter-rouge {
   grid-column: retained;
+}
+
+.o-grid--full {
+  grid-column: full;
 }

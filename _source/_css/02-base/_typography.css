@@ -39,7 +39,9 @@ h3,
 h4,
 h5,
 h6 {
+  margin-bottom: var(--supple-space-small);
   font-family: var(--family-leader);
+  line-height: 1.1;
 }
 
 
@@ -49,17 +51,18 @@ h6 {
  */
 h1 {
   font-size: 2em;
+  margin-bottom: var(--supple-space);
 }
 
 @media screen and (min-width: 20em) {
   h1 {
-    font-size: calc(2em + 4 * ((100vw - 20em) / (80 - 20)));
+    font-size: calc(2em + 3 * ((100vw - 20em) / (80 - 20)));
   }
 }
 
 @media screen and (min-width: 80em) {
   h1 {
-    font-size: 4em;
+    font-size: 3em;
   }
 }
 
@@ -67,3 +70,31 @@ h1 {
 
 /*  Misc
     ========================================================================= */
+
+code {
+  display: inline-block;
+  padding-left: var(--supple-space-tiny);
+  padding-right: var(--supple-space-tiny);
+  background-color: var(--color--gray-b);
+  font-size: 0.875em;
+  /* color: var(--brand); */
+}
+
+pre {
+  padding: var(--supple-space-small);
+  background-color: var(--color--gray-b);
+  overflow: auto;
+  font-size: 0.75em;
+}
+
+blockquote {
+  margin-left: var(--supple-space);
+  padding: var(--supple-space-small) var(--supple-space);
+  text-indent: 0;
+  font-style: italic;
+  border-left: 6px solid var(--color--gray-b);
+}
+
+blockquote *:last-child {
+  margin-bottom: 0;
+}

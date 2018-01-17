@@ -2,7 +2,13 @@
 layout: default
 ---
 <section id="section:articles">
-  <h1>{{ page.title }}</h1>
-  {{content}}
-  {% include posts.html %}
+  <div class="o-layer  o-grid  t-background--paradise-pink">
+    <h1>{{ page.title }}</h1>
+    {{content}}
+  </div>
+
+  <div class="o-layer  o-grid  t-background--baby-powder">
+    <h2 class="u-visuallyhidden">Posts</h2>
+    {% include posts.html %}
+  </div>
 </section>

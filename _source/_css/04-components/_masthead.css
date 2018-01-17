@@ -48,9 +48,9 @@
     color: white;
   }
 
-  .c-masthead__center {
+  /* .c-masthead__center {
     mix-blend-mode: exclusion;
-  }
+  } */
 
   .c-masthead__image {
     position: absolute;
