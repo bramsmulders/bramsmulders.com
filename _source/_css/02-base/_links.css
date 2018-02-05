@@ -6,7 +6,6 @@
     ========================================================================= */
 
 :root {
-  --link--color: currentColor;
   --link--underline-color: var(--color--prussian-blue);
 }
 
@@ -21,7 +20,7 @@
     ========================================================================= */
 
 a {
-  color: var(--link--color);
+  color: currentColor;
   text-decoration-skip: ink;
   text-decoration-color: var(--link--underline-color);
 }

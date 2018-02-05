@@ -16,27 +16,38 @@
     ========================================================================= */
 
 .o-grid {
-  display: grid;
-  grid-template-columns:
-    [full-start] minmax(var(--supple-space), 2fr)
-    [retained-start] minmax(0, 1fr)
-    [main-start] minmax(0, 26em) [main-end]
-    minmax(0, 1fr) [retained-end]
-    minmax(var(--supple-space), 2fr) [full-end];
-  width: 100%;
+  max-width: 32em;
+  padding-left: var(--supple-space);
+  padding-right: var(--supple-space);
   margin-left: auto;
   margin-right: auto;
 }
 
-.o-grid > * {
-  grid-column: main;
-}
+@supports (grid-area: auto) {
+  .o-grid {
+    display: grid;
+    grid-template-columns:
+      [full-start] minmax(var(--supple-space), 2fr)
+      [retained-start] minmax(0, 1fr)
+      [main-start] minmax(0, 32em) [main-end]
+      minmax(0, 1fr) [retained-end]
+      minmax(var(--supple-space), 2fr) [full-end];
+    width: 100%;
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-.o-grid__retained,
-.highlighter-rouge {
-  grid-column: retained;
-}
+  .o-grid > * {
+    grid-column: main;
+  }
 
-.o-grid--full {
-  grid-column: full;
+  .o-grid__retained,
+  .highlighter-rouge {
+    grid-column: retained;
+  }
+
+  .o-grid__full {
+    grid-column: full;
+  }
 }

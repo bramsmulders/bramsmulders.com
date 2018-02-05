@@ -1,6 +1,12 @@
-<header class="c-masthead  o-grid" role="banner">
-  <div class="o-grid__retained">
-    <a href="{{ "/" | relative_url}}">Bram Smulders</a>
-    {% include navigation.html %}
+<header class="c-header  o-grid  t-background--prussian-blue" role="banner">
+  <div class="o-grid__full">
+    <div class="o-layout  o-layout--gutter">
+      <div class="o-layout__cell  o-layout__cell--fill@lap">
+        <a class="c-logo" href="{{ "/" | relative_url}}">Bram Smulders</a>
+      </div>
+      <div class="o-layout__cell  o-layout__cell--fit@lap">
+        {% include navigation.html %}
+      </div>
+    </div>
   </div>
 </header>

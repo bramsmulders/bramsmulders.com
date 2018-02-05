@@ -8,15 +8,15 @@
   {% endif %}
 {% endfor %}
 
-<nav>
-  <ul>
+<nav class="c-nav-main">
+  <ul class="o-layout  o-layout--gutter-small">
     {% for entry in site.data.navigation %}
       {% if entry.url == current_page %}
         {% assign current = 'is-current' %}
       {% else %}
         {% assign current = null %}
       {% endif %}
-      <li {% if current %}class="{{ current }}"{% endif %}>
+      <li class="o-layout__cell  o-layout__cell--fit{% if current %}  {{ current }}{% endif %}">
         <a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
       </li>
     {% endfor %}

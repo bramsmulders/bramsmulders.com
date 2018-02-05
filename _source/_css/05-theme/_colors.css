@@ -17,6 +17,14 @@
   color: var(--color--baby-powder);
 }
 
+/**
+ * Simple fallback for browsers who do not support custom properties
+ */
+.t-background--prussian-blue a:hover,
+.t-background--prussian-blue a:focus {
+  color: var(--color--paradise-pink);
+}
+
 .t-background--baby-powder {
   --link--underline-color: var(--color--paradise-pink);
   background-color: var(--color--baby-powder);
