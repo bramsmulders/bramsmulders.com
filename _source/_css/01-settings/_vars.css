@@ -3,32 +3,37 @@
     ========================================================================= */
 
 :root {
-  --family-body: Arvo, serif;
-  --family-leader: Oswald, sans-serif;
+  --family-body: "Crimson Text", serif;
+  --family-leader: "Ubuntu", sans-serif;
 
   /**
    * Colors
    */
-  --brand: #dc143c;
-  --black: #000000;
-  --gray-a: #3e4147;
-  --gray-b: #707070;
-  --gray-c: #949494;
-  --gray-d: #d3d3d3;
-  --gray-e: #f4f4f4;
-  --white: #ffffff;
+  --color--paradise-pink: #ee4266;
+  --color--dark-gunmetal: #161f2b;
+  --color--eucalyptus: #3ddc97;
+  --color--baby-powder: #fcfcfc;
+  --color--prussian-blue: #12355b;
+  --color--black: #000000;
+  --color--gray-a: #babfc3;
+  --color--gray-b: #e9eff3;
+  --color--white: #ffffff;
 
   /**
    * Font-sizes
    */
-  --normalis: 1rem;
+  --supple-base-font-size: 20;
+  --supple-base--line-height: 30;
+  --supple-base-line-height-ratio: calc(var(--supple-base--line-height) / var(--supple-base-font-size));
+
+  /* --normalis: 1rem;
   --alpha: 2.5rem;
   --beta: 1.75rem;
   --gamma: 1.25rem;
   --delta: var(--normalis);
   --epsilon: var(--normalis);
   --zeta: var(--normalis);
-  --milli: 0.75rem;
+  --milli: 0.75rem; */
 
   /**
    * Animations

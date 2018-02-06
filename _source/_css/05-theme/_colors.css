@@ -1,0 +1,42 @@
+/*  =========================================================================
+    theme.colors
+    ========================================================================= */
+
+/*  Module
+    ========================================================================= */
+
+.t-background--paradise-pink {
+  --link--underline-color: var(--color--prussian-blue);
+  background-color: var(--color--paradise-pink);
+  color: var(--color--white);
+}
+
+.t-background--prussian-blue {
+  --link--underline-color: var(--color--paradise-pink);
+  background-color: var(--color--prussian-blue);
+  color: var(--color--baby-powder);
+}
+
+/**
+ * Simple fallback for browsers who do not support custom properties
+ */
+.t-background--prussian-blue a:hover,
+.t-background--prussian-blue a:focus {
+  color: var(--color--paradise-pink);
+}
+
+.t-background--baby-powder {
+  --link--underline-color: var(--color--paradise-pink);
+  background-color: var(--color--baby-powder);
+  color: var(--color--prussian-blue);
+}
+
+.t-background--baby-powder + .t-background--baby-powder {
+  border-top: 1px solid var(--color--prussian-blue);
+}
+
+.t-background--eucalyptus {
+  --link--underline-color: var(--color--paradise-pink);
+  background-color: var(--color--eucalyptus);
+  color: var(--color--prussian-blue);
+}

@@ -1,11 +1,13 @@
 {% assign random = site.time | date: "%Y%j%k%M%s" | md5 %}
 
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Ubuntu:700" rel="stylesheet">
+
 {% if jekyll.environment == 'production' %}
 <script>
 if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/sw.js');
-    });
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js');
+  });
 }
 </script>
 

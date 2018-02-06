@@ -8,6 +8,7 @@ categories: private inner-learning
 While everyone knows the words “introvert” and “extrovert”, I’m surprised by the misunderstanding of the terms. Many people have the following understanding:
 
 > introvert = shy nerd = bad
+>
 > extrovert = cool dude = good
 
 I’m very introverted, but contrary to what many assume I don’t dislike being social and I’m definitely not shy.

@@ -65,7 +65,7 @@ This resembles the Atomic Design methodology and gives us proper structure to or
 
 Now that the HTML templating structure is in place we can move on to the next important step in our front-end workflow: CSS.
 
-## CSS structure with AtomicOocssItcssBem(Patent pending)
+## CSS structure with Atomic&shy;Oocss&shy;Itcss&shy;Bem&shy;(Patent pending)
 Since I used the Smacss methodology in my previous article there have emerged a lot more ways to structure and organise your CSS.
 To name a few:
 - [BEM](http://getbem.com/)

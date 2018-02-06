@@ -2,29 +2,30 @@
     base.links
     ========================================================================= */
 
+/*  Variables
+    ========================================================================= */
+
+:root {
+  --link--underline-color: var(--color--prussian-blue);
+}
+
+
+
+/*  Functions/Mixins
+    ========================================================================= */
+
+
+
+/*  Module
+    ========================================================================= */
+
 a {
-  font-weight: 700;
-  text-decoration: none;
-  color: var(--gray-a);
-  text-decoration: underline;
+  color: currentColor;
   text-decoration-skip: ink;
-  text-decoration-color: var(--brand);
+  text-decoration-color: var(--link--underline-color);
 }
 
 a:hover,
-a:focus,
-a:active {
-  color: var(--brand);
-}
-
-
-
-.link-heading {
-  color: var(--gray-a);
-  text-shadow: none;
-  box-shadow: none;
-}
-
-.link-humble {
-  font-weight: normal;
+a:focus {
+  color: var(--link--underline-color);
 }

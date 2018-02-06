@@ -5,23 +5,14 @@
 /*  Module
     ========================================================================= */
 
-/**
- * 1. This negates the effects of collapsing margins and accounts for
- *    vertical-rhythm
- */
 .o-layer {
   padding-top: var(--supple-space);
-  padding-bottom: 1px; /* [1] */
+  padding-bottom: 1px;
 }
-
-
-
-/*  Responsive
-    ========================================================================= */
 
 @media (--lap) {
   .o-layer {
     padding-top: var(--supple-space-large);
-    padding-bottom: calc(var(--supple-space-large) - var(--supple-space));
+    padding-bottom: var(--supple-space);
   }
 }
