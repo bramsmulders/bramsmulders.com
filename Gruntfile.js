@@ -19,7 +19,7 @@ module.exports = function(grunt) {
       },
       js: {
         files: ["_source/_js/**/*.js"],
-        tasks: ["babel" /*, 'copy:js'*/]
+        tasks: ["babel"]
       }
     },
 
@@ -81,14 +81,8 @@ module.exports = function(grunt) {
             dest: "_build/assets/js"
           },
           {
-            // expand: true,
             src: "_build/sw.js",
             dest: "_build/sw.js"
-          },
-          {
-            // expand: true,
-            src: "_source/assets/bower_components/require/require.js",
-            dest: "_build/assets/bower_components/require/require.js"
           }
         ]
       }
@@ -97,7 +91,7 @@ module.exports = function(grunt) {
     babel: {
       options: {
         sourceMap: true,
-        presets: ["es2015"]
+        presets: ["env"]
       },
       dist: {
         files: [
@@ -117,20 +111,6 @@ module.exports = function(grunt) {
       }
     },
 
-    // // Copy stuff
-    // copy: {
-    //     js: {
-    //         files: [
-    //             {
-    //                 expand: true,
-    //                 cwd: '_source/_js/',
-    //                 src: ['**/*'],
-    //                 dest: '_build/assets/js'
-    //             }
-    //         ]
-    //     }
-    // },
-
     // run tasks in parallel
     concurrent: {
       serve: ["watch", "shell:jekyllServe"],
@@ -143,7 +123,6 @@ module.exports = function(grunt) {
   // Register the grunt serve task
   grunt.registerTask("serve", [
     "postcss",
-    // 'copy:js',
     "babel",
     "concurrent:serve"
   ]);

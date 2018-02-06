@@ -7,6 +7,7 @@ categories: conference job fronteers talks
 ---
 Remember [this presentation]({% post_url 2016-12-15-atomic-design-at-fronteers-meetup %}) I gave earlier this year for the Fronteers meetup? Well, as it turned out it was a kickstart which led to this crazy week. A week where I started my new job at [E-sites](https://www.e-sites.nl) and experienced the 10th edition of the [Fronteers Conference](https://fronteers.nl/congres/2017).
 
+
 ![E-sites sweater & Fronteers 2017 shirt]({{ site.url }}/assets/images/articles/hell-of-a-week/hell-week.jpg)
 
 ## Start of a new adventure

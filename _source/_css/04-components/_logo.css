@@ -1,10 +1,18 @@
 /*  =========================================================================
-    base.toplevel
+    components.logo
     ========================================================================= */
 
 /*  Module
     ========================================================================= */
 
-main {
-  /* margin-top: var(--supple-space-small); */
+.c-logo {
+  font-family: var(--family-leader);
+  text-transform: uppercase;
+  text-decoration: none;
 }
+
+.c-logo:hover,
+.c-logo:focus {
+  text-decoration: underline;
+}
+
