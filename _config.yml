@@ -22,6 +22,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://bramsmulders.com" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: /blog/:title/
 google_analytics: UA-39276659-1
+hasCompany: true
 
 # Build settings
 source: _source

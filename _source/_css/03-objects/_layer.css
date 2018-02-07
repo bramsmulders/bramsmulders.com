@@ -2,6 +2,25 @@
     objects.layer
     ========================================================================= */
 
+/*  Keyframes
+    ========================================================================= */
+
+@keyframes keyframes-layer-target {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
 /*  Module
     ========================================================================= */
 
@@ -10,9 +29,22 @@
   padding-bottom: 1px;
 }
 
+.o-layer--target {
+  transform: scale(1);
+}
+
+.o-layer--target:target {
+  animation: keyframes-layer-target 500ms ease-in-out forwards;
+}
+
 @media (--lap) {
   .o-layer {
     padding-top: var(--supple-space-large);
     padding-bottom: var(--supple-space);
+  }
+
+  .o-layer--small {
+    padding-top: var(--supple-space);
+    padding-bottom: 1px;
   }
 }
