@@ -1,17 +1,11 @@
 /*  =========================================================================
-    base.toplevel
+    objects.content
     ========================================================================= */
 
 /*  Module
     ========================================================================= */
 
-main {
-  overflow: hidden;
-}
+.o-content {
 
-.image--full {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-bottom: var(--supple-space);
+  /* Empty for reference */
 }

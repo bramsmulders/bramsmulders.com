@@ -7,13 +7,16 @@ categories: conference job fronteers talks
 ---
 Remember [this presentation]({% post_url 2016-12-15-atomic-design-at-fronteers-meetup %}) I gave earlier this year for the Fronteers meetup? Well, as it turned out it was a kickstart which led to this crazy week. A week where I started my new job at [E-sites](https://www.e-sites.nl) and experienced the 10th edition of the [Fronteers Conference](https://fronteers.nl/congres/2017).
 
-
-![E-sites sweater & Fronteers 2017 shirt]({{ site.url }}/assets/images/articles/hell-of-a-week/hell-week.jpg)
+<div class="o-grid__retained">
+  <img class="image--full" src="{{ site.url }}/assets/images/articles/hell-of-a-week/hell-week.jpg" alt="E-sites sweater & Fronteers 2017 shirt">
+</div>
 
 ## Start of a new adventure
 After working for [Colours](https://www.colours.nl) for almost 4 years I decided that it was time for something new. This week I started working for [E-sites](https://www.e-sites.nl). A digital agency in Breda, The Netherlands.
 
-![Flags @ E-sites Breda office]({{ site.url }}/assets/images/articles/hell-of-a-week/start-e-sites.jpg)
+<div class="o-grid__retained">
+  <img class="image--full" src="{{ site.url }}/assets/images/articles/hell-of-a-week/start-e-sites.jpg" alt="Flags @ E-sites Breda office">
+</div>
 
 Usually, when you join a new company, it's the first week which is the hardest because all of the adjustments you make. But luckily [Johan](https://twitter.com/jvdnberg) has put together a really awesome onboarding plan. This makes adjusting and meeting all the new people a breeze. Instead of feeling tired after each day I felt very energetic and psyched. This is a good start, and I’m very excited for the rest to come!
 
@@ -23,14 +26,18 @@ I was lucky this week because Fronteers 2017 was around the corner. This 10th it
 ### From async to *NSYNC
 Just as last year the conference started with [FrontCheers](https://fronteers.nl/congres/2017/frontcheers). This pub quiz is a really cool and fun way to get to know new people. Our knowledge of web development, Fronteers history, and boy/girl bands was really tested by [Charis](https://twitter.com/charis) and [Peter](https://twitter.com/petervangrieken).
 
-![Charis and Peter rocking it on the FrontCheers stage]({{ site.url }}/assets/images/articles/hell-of-a-week/frontcheers.jpg)
+<div class="o-grid__retained">
+  <img class="image--full" src="{{ site.url }}/assets/images/articles/hell-of-a-week/frontcheers.jpg" alt="Charis and Peter rocking it on the FrontCheers stage">
+</div>
 
 Our team(team “Heydon”) did crazy bad at all the questions. I think we even ended up lower than the one-man team “Jake”. But we had fun and that what it’s all about right? Although it would be really nice if we won those awesome Fronteers umbrellas because of the weather.
 
 ### The conference
 The conference was really informative and contained interesting talks. I especially liked the talks from Niels Leenheer, Jessica Rose, Alice Boxhall, Ashley Bischoff, Stephen Hay, Ruben van der Leun, Val Head, Monica Dinculescu and Jason Scott.
 
-![Charis and Peter rocking it on the FrontCheers stage]({{ site.url }}/assets/images/articles/hell-of-a-week/start-fronteers.jpg)
+<div class="o-grid__retained">
+  <img class="image--full" src="{{ site.url }}/assets/images/articles/hell-of-a-week/start-fronteers.jpg" alt="Opening slide of Fronteers Conference">
+</div>
 
 #### Don’t panic
 Niels had the honor of the Opening keynote. In his talk, he provided a great overview of standardization, competing browsers, competition and the impact this has had on the web as we know it.

@@ -2,6 +2,15 @@
     base.typography
     ========================================================================= */
 
+/*  Variables
+    ========================================================================= */
+
+:root {
+  --heading--highlight-color: var(--color--paradise-pink);
+}
+
+
+
 /*  Toplevel font size
     ========================================================================= */
 
@@ -75,6 +84,33 @@ h1 {
   opacity: 0.4;
 }
 
+.heading--highlight,
+.o-content h1,
+.o-content h2,
+.o-content h3,
+.o-content h4,
+.o-content h5,
+.o-content h6 {
+  position: relative;
+  margin-bottom: var(--supple-space);
+}
+
+.heading--highlight:after,
+.o-content h1:after,
+.o-content h2:after,
+.o-content h3:after,
+.o-content h4:after,
+.o-content h5:after,
+.o-content h6:after {
+  position: absolute;
+  top: calc(100% + 0.25em);
+  left: 0;
+  width: calc(var(--supple-space) * 1.5);
+  height: 0.125em;
+  background-color: var(--heading--highlight-color);
+  content: "";
+}
+
 
 
 /*  Misc
@@ -86,7 +122,6 @@ code {
   padding-right: var(--supple-space-tiny);
   background-color: var(--color--gray-b);
   font-size: 0.875em;
-  /* color: var(--brand); */
 }
 
 pre {

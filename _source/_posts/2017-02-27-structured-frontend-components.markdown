@@ -5,7 +5,9 @@ excerpt: A new look on implementing front-end components with atomic design
 date:   2017-02-27 15:00:00 +0100
 categories: workflow atomic-design css components sass
 ---
-![Bram Smulders talking about Atomic Design at Fronteers meetup]({{ site.url }}/assets/images/talk-fronteers-e-sites.jpg)
+<div class="o-grid__retained">
+  <img class="image--full" src="{{ site.url }}/assets/images/talk-fronteers-e-sites.jpg" alt="Bram Smulders talking about Atomic Design at Fronteers meetup">
+</div>
 
 _This article is an in depth follow up on the [talk](https://bramsmulders.github.io/slides/atomic-design-met-pattern-lab.html#/) I gave at the [Fronteers meetup at e-sites](https://fronteers.nl/bijeenkomsten/2017/meetup-januari-e-sites)._
 
@@ -59,7 +61,7 @@ In the basis Pattern Lab is a static site generator and a pattern documentation 
 Out of the box Pattern Lab will include a limited folder structure. Actually it is entirely up to the designer to create the folder structure. It does not matter if you want to implement Atomic Design or another template methodology in Pattern Lab. It just works.
 In our projects we establish the folder structure like this:
 
-![Atomic design folder structure]({{ site.url }}/assets/images/articles/structured-frontend-components/pattern-lab-file-structure.png)
+<img class="image--full" src="{{ site.url }}/assets/images/articles/structured-frontend-components/pattern-lab-file-structure.png" alt="Atomic design folder structure">
 
 This resembles the Atomic Design methodology and gives us proper structure to organise our UI components.
 
