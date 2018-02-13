@@ -1,19 +1,11 @@
 /*  =========================================================================
-    components.logo
+    objects.content
     ========================================================================= */
 
 /*  Module
     ========================================================================= */
 
-.c-logo {
-  font-family: var(--family-leader);
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  text-decoration: none;
-}
+.o-content {
 
-.c-logo:hover,
-.c-logo:focus {
-  text-decoration: underline;
+  /* Empty for reference */
 }
-

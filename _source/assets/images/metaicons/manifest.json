@@ -1,10 +1,10 @@
 {
-    "short_name": "Bram Smulders",
+    "short_name": "B. Smulders",
     "name": "Bram Smulders; UX and Front-end architecture enthousiast",
     "start_url": "/",
     "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#dc143c",
+    "background_color": "#12355b",
+    "theme_color": "#ee4266",
     "icons": [
         {
             "src": "\/assets/images/metaicons/android-icon-36x36.png",
