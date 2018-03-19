@@ -111,6 +111,16 @@ h1 {
   content: "";
 }
 
+.heading--highlight > a,
+.o-content h1 > a,
+.o-content h2 > a,
+.o-content h3 > a,
+.o-content h4 > a,
+.o-content h5 > a,
+.o-content h6 > a {
+  text-decoration: none;
+}
+
 
 
 /*  Misc
