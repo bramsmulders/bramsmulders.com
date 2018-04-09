@@ -15,9 +15,7 @@
     ========================================================================= */
 
 html {
-  font-family: var(--family-body);
   background-color: var(--color--prussian-blue);
-  color: var(--color--dark-gunmetal);
 }
 
 @media screen and (min-width: 20em) {
@@ -49,8 +47,6 @@ h4,
 h5,
 h6 {
   margin-bottom: var(--supple-space-small);
-  font-family: var(--family-leader);
-  line-height: 1.1;
 }
 
 
