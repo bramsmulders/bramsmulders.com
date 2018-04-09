@@ -1,24 +1,9 @@
 /*  =========================================================================
     settings.vars
+    Extends upon `bramsmulders-style/lib/settings/vars.css`
     ========================================================================= */
 
 :root {
-  --family-body: "Crimson Text", serif;
-  --family-leader: "Ubuntu", sans-serif;
-
-  /**
-   * Colors
-   */
-  --color--paradise-pink: #ee4266;
-  --color--dark-gunmetal: #161f2b;
-  --color--eucalyptus: #3ddc97;
-  --color--baby-powder: #fcfcfc;
-  --color--prussian-blue: #12355b;
-  --color--black: #000000;
-  --color--gray-a: #babfc3;
-  --color--gray-b: #e9eff3;
-  --color--white: #ffffff;
-
   /**
    * Font-sizes
    */

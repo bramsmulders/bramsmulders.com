@@ -5,6 +5,7 @@
     ========================================================================= */
 
 @import "supple/lib/settings/defaults.css";
+@import "bramsmulders-style/lib/settings/vars.css";
 @import "01-settings/_vars.css";
 
 
@@ -23,9 +24,10 @@
     Unclassed HTML elements (type selectors)
     ========================================================================= */
 
-@import "02-base/_fonts.css";
+@import "bramsmulders-style/lib/elements/toplevel.css";
+@import "bramsmulders-style/lib/elements/typography.css";
 @import "02-base/_typography.css";
-@import "02-base/_links.css";
+@import "bramsmulders-style/lib/elements/links.css";
 @import "02-base/_toplevel.css";
 
 
