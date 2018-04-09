@@ -1,6 +1,6 @@
 {
   "name": "bramsmulders.com",
-  "version": "5.2.0",
+  "version": "5.2.1",
   "scripts": {
     "start": "grunt serve",
     "build": "grunt prepare",
