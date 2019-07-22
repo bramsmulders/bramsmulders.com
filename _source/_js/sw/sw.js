@@ -6,14 +6,13 @@
 /*  Variables
 \*----------------------------------------------------------------------------*/
 
-let cacheName = 'bramsmulders:5.2.3';
+let cacheName = 'bramsmulders:5.2.4';
 let cacheFiles = [
   '/about/',
   '/offline/',
   '/blog/structured-frontend-components/',
   '/blog/how-i-improved-my-workflow-with-smacss-sass/',
-  '/blog/finger-friendly-all-the-things/',
-  '/blog/one-hell-of-a-week/'
+  '/blog/finger-friendly-all-the-things/'
 ];
 
 
@@ -59,7 +58,7 @@ self.addEventListener('fetch', event => {
 \*----------------------------------------------------------------------------*/
 
 self.addEventListener('activate', event => {
-  let cacheWhitelist = ['bramsmulders:5.2.3'];
+  let cacheWhitelist = ['bramsmulders:5.2.4'];
 
   event.waitUntil(
     caches.keys().then(cacheNames => {
