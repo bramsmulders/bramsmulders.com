@@ -8,7 +8,7 @@ permalink: /about/
 I’m Bram Smulders, a Front-end UI developer from Tilburg, the Netherlands.
 With a strong focus on accessibility & progressive enhancement I wire up HTML, CSS and JavaScript into rich online experiences.
 
-I’ve been contributing to the web for around {{ '2007-01-01' | timeago: site.time }} and worked with many different companies. These include agencies like [We are you](https://www.weareyou.com/), [E-sites](https://www.e-sites.nl/), [Freshheads](http://freshheads.com) and clients like [Eneco](http://eneco.com), [KNVB](http://knvb.nl), [Quinny](http://www.quinny.nl/), [Dunea](http://dunea.nl) & [Emerce](http://emerce.nl).
+I’ve started contributing to the web around {{ '2007-01-01' | timeago: site.time }} and worked with many different companies. These include agencies like [We are you](https://www.weareyou.com/), [E-sites](https://www.e-sites.nl/), [Freshheads](http://freshheads.com) and clients like [Eneco](http://eneco.com), [KNVB](http://knvb.nl), [Quinny](http://www.quinny.nl/), [Dunea](http://dunea.nl) & [Emerce](http://emerce.nl).
 
 I maintain some [repositories on GitHub](https://github.com/bramsmulders) and I’ve created [Supple](https://github.com/supple-css/). It is a small but powerfull CSS framework designed specially with the latest browsers in mind.
 
