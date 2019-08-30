@@ -14,8 +14,6 @@ I maintain some [repositories on GitHub](https://github.com/bramsmulders) and I�
 
 Currently I’m employed as Senior UI developer at [We are you ’s-Hertogenbosch](https://www.weareyou.com). We have expertise in strategy, online marketing, customer journeys, design, development and managed hosting.
 
-In the moments where I’m not working I love to spend time with my lovely fiancé Saskia, my 2 kids and my family and friends. The local cinema is treating me like one of the regulars. Occasionally I go for a run around the beautiful dutch countryside.
-
 Since the beginning of this year I have also started producing hardstyle music.
 You can [check out my website](https://djrebolo.com) and stream my music [on spotify](https://open.spotify.com/artist/1SNDUhWRKHjgYZ56ktCSVL?si=ZfCC9lJtTHWQ0vvrjhpOVA) or on all other major platforms.
 
