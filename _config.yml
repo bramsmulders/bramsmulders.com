@@ -23,7 +23,7 @@ url: "https://bramsmulders.com" # the base hostname & protocol for your site, e.
 permalink: /blog/:title/
 google_analytics: UA-39276659-1
 hasCompany: true
-version: "5.2.7"
+version: "5.2.8"
 
 # Build settings
 source: _source
