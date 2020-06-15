@@ -1,0 +1,57 @@
+{
+  "name": "bramsmulders.com",
+  "version": "6.0.0",
+  "description": "My personal site",
+  "main": "index.js",
+  "dependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
+    "@tbranyen/jsdom": "^13.0.0",
+    "concurrently": "^4.1.2",
+    "html-minifier": "^4.0.0",
+    "image-size": "^0.8.3",
+    "json-to-scss": "^1.5.0",
+    "sass": "^1.26.3",
+    "semver": "^6.3.0",
+    "slugify": "^1.4.0",
+    "supple": "github:supple-css/supple#af5de38fa24ebd94cd5f28bea31898e872717e11"
+  },
+  "devDependencies": {
+    "@erquhart/rollup-plugin-node-builtins": "^2.1.5",
+    "autoprefixer": "^9.8.0",
+    "bl": "^3.0.0",
+    "chokidar-cli": "^2.1.0",
+    "cross-env": "^5.2.1",
+    "cssnano": "^4.1.10",
+    "make-dir-cli": "^2.0.0",
+    "postcss": "^7.0.32",
+    "postcss-cli": "^7.1.1",
+    "prettier": "^1.19.1",
+    "rollup": "^1.32.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "stylelint": "^13.6.0",
+    "stylelint-config-supple": "^3.0.3",
+    "stylelint-scss": "^3.17.2"
+  },
+  "scripts": {
+    "lint": "stylelint \"src/scss/**/*.scss\"",
+    "sass:tokens": "npx json-to-scss src/_data/tokens.json src/scss/_tokens.scss",
+    "sass:process": "npm run sass:tokens && sass src/scss/global.scss src/_includes/assets/css/global.css --style=compressed",
+    "css": "npm run lint && npm run sass:process",
+    "cms:precompile": "make-dir dist/admin && nunjucks-precompile src/_includes > dist/admin/templates.js -i \"\\.(njk|css|svg)$\"",
+    "cms:bundle": "rollup --config",
+    "start": "concurrently \"npm run css -- --watch\" \"npm run cms:bundle -- --watch\" \"chokidar \\\"src/_includes/**\\\" -c \\\"npm run cms:precompile\\\"\" \"npm run serve\"",
+    "serve": "cross-env ELEVENTY_ENV=development npx eleventy --serve",
+    "production": "npm run css && npm run cms:precompile && npm run cms:bundle && npx eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bramsmulders/bramsmulders.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

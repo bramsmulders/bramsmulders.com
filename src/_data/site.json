@@ -1,0 +1,13 @@
+{
+  "showThemeCredit": true,
+  "name": "Bram Smulders",
+  "shortDesc": "Bram Smulders SHORT DESC",
+  "url": "https://bramsmulders.com",
+  "authorEmail": "hello@bramsmulders.com",
+  "authorHandle": "@bramsmulders",
+  "authorName": "Bram Smulders",
+  "enableThirdPartyComments": false,
+  "maxPostsPerPage": 5,
+  "paymentPointer": "$ilp.uphold.com/MggmnFEyQqhk",
+  "faviconPath": "/images/favicon.png"
+}
