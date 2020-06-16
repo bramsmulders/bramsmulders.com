@@ -67,8 +67,8 @@ class ThemeToggle extends HTMLElement {
   render() {
     this.innerHTML = html`
       <div>
-        <div role="status"></div>
-        <button>
+        <div class="js-mode-status" role="status"></div>
+        <button class="js-mode-toggle">
           Dark theme
         </button>
       </div>
