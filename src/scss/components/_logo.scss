@@ -1,0 +1,57 @@
+/*  =========================================================================
+    components.logo
+    ========================================================================= */
+
+/*  Use/Forward rules
+    `@use` or `@forward` everything you need here from other files.
+    These can include variables, mixins & other includes.
+    ========================================================================= */
+
+@use '../../../node_modules/supple/lib/tools/mixins';
+@use '../../../node_modules/supple/lib/settings/defaults';
+
+
+
+/*  Variables
+    ========================================================================= */
+
+
+
+/*  Functions/Mixins
+    ========================================================================= */
+
+
+
+/*  Module
+    ========================================================================= */
+
+.c-logo {
+  position: relative;
+  display: inline-block;
+  @include mixins.rem(padding-block-start, defaults.$space-tiny);
+  @include mixins.rem(padding-block-end, defaults.$space-tiny);
+  @include mixins.font-size(32px);
+  color: var(--color-brand-primary);
+  font-weight: 800;
+  text-decoration: none;
+
+  &::before,
+  &::after {
+    position: absolute;
+    block-size: 4px;
+    content: '';
+    background-color: var(--color-stroke);
+  }
+
+  &::before {
+    inline-size: 62.5%;
+    top: 0;
+    right: 0;
+  }
+
+  &::after {
+    bottom: 0;
+    left: 0;
+    inline-size: 37.5%;
+  }
+}

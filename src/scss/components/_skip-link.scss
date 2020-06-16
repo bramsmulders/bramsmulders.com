@@ -1,0 +1,41 @@
+/*  =========================================================================
+    components.skip-link
+    ========================================================================= */
+
+/*  Use/Forward rules
+    `@use` or `@forward` everything you need here from other files.
+    These can include variables, mixins & other includes.
+    ========================================================================= */
+
+@use '../../../node_modules/supple/lib/settings/defaults';
+@use '../../../node_modules/supple/lib/tools/mixins';
+
+
+/*  Variables
+    ========================================================================= */
+
+
+
+/*  Functions/Mixins
+    ========================================================================= */
+
+
+
+/*  Module
+    ========================================================================= */
+
+.c-skip-link {
+  &:not(:focus) {
+    @include mixins.visually-hidden();
+  }
+
+  &:focus {
+    display: block;
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    @include mixins.rem(padding, defaults.$space-tiny defaults.$space-small);
+    background-color: var(--color-action-bg);
+    color: var(--color-action-text);
+  }
+}

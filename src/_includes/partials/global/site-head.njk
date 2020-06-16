@@ -1,12 +1,21 @@
-<a href="#main-content">Skip to content</a>
+<a class="c-skip-link" href="#main-content">Skip to content</a>
 
-<header role="banner">
-  <div>
-    <a href="/">
-      <span class="u-visually-hidden">{{ site.name }} - Home</span>
-      <span aria-hidden="true">{{ site.name }}</span>
-    </a>
-    {% set ariaLabel = 'navigation' %}
-    {% include "partials/components/nav.njk" %}
-  </div>
+<header class="c-masthead" role="banner">
+  <div class="o-retain  o-retain--wall">
+    <div class="o-layout  o-layout--gap-base  o-layout--align-block-center">
+
+      <div class="[ o-layout__cell  o-layout__cell--fit@from-lap ]">
+        <a class="c-logo" href="/">
+          <span class="u-visually-hidden">{{ site.name }} - Home</span>
+          <span aria-hidden="true">{{ site.name }}</span>
+        </a>
+      </div><!-- .o-layout__cell -->
+
+      <div class="[ o-layout__cell  o-layout__cell--fill@from-lap ]">
+        {% set ariaLabel = 'navigation' %}
+        {% include "partials/components/nav.njk" %}
+      </div><!-- .o-layout__cell -->
+
+    </div><!-- .o-layout -->
+  </div><!-- .o-retain -->
 </header>

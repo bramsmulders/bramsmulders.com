@@ -16,12 +16,21 @@
   $space-factor-huge: 16,
 );
 
+@use '../../../node_modules/supple/lib/objects/layout/variables' with (
+  $gaps: (
+    'base': defaults.$space-base,
+    'small': defaults.$space-small,
+  ),
+  $fill-in-breakpoint: (lap),
+  $fit-in-breakpoint: (lap),
+);
+
 
 
 /*  Custom
     ========================================================================= */
 
-$font-size-large: 28px !default;
+$font-size-large: 24px !default;
 
 $color-fire-opal: #ee6352 !default;
 $color-cyan-process: #08b2e3 !default;
