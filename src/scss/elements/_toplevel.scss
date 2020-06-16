@@ -19,8 +19,8 @@
 
 html {
   font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
-  background-color: vars.$color-magnolia;
-  color: vars.$color-independence;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 body {

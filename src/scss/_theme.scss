@@ -1,0 +1,27 @@
+/*  =========================================================================
+    theme
+    ========================================================================= */
+
+/*  Use/Forward rules
+    `@use` or `@forward` everything you need here from other files.
+    These can include variables, mixins & other includes.
+    ========================================================================= */
+
+@use 'settings/vars';
+@use 'tools';
+
+
+
+/*  Variables
+    ========================================================================= */
+
+:root {
+  --color-mode: 'light';
+  --color-bg: #{vars.$color-magnolia};
+  --color-text: #{vars.$color-independence};
+
+  @include tools.dark-mode() {
+    --color-bg: #{vars.$color-independence};
+    --color-text: #{vars.$color-magnolia};
+  }
+}
