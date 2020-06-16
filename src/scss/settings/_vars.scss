@@ -8,7 +8,7 @@
     ========================================================================= */
 
 @use '../../../node_modules/supple/lib/settings/defaults' with (
-  $font-size: 20px,
+  $font-size: 18px,
   $space-factor-tiny: 1,
   $space-factor-small: 2,
   $space-factor-base: 4,
@@ -30,10 +30,23 @@
 /*  Custom
     ========================================================================= */
 
-$font-size-large: 24px !default;
+/**
+ * Typography
+ */
+$font-size-alpha: 60px !default;
+$font-size-beta: 48px !default;
+$font-size-gamma: 40px !default;
+$font-size-delta: 32px !default;
+$font-size-epsilon: 24px !default;
+$font-size-zeta: 20px !default;
 
-$color-fire-opal: #ee6352 !default;
-$color-cyan-process: #08b2e3 !default;
-$color-magnolia: #efe9f4 !default;
-$color-forest-green-crayola: #57a773 !default;
-$color-independence: #484d6d !default;
+
+/**
+ * Colors
+ * https://coolors.co/fb3640-fffffc-247ba0-62a87c-392f5a
+ */
+$color-light: #fffffc !default; // Baby powder
+$color-dark: #392f5a !default; // Space cadet
+$color-brand-primary: #fb3640 !default; // Red Salsa
+$color-brand-secondary: #247ba0 !default; // Celadon blue
+$color-brand-tertiary: #62a87c !default; // Shiny shamrock

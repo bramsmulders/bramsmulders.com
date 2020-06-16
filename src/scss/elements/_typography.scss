@@ -1,0 +1,79 @@
+/*  =========================================================================
+    elements.typography
+    ========================================================================= */
+
+/*  Use/Forward rules
+    `@use` or `@forward` everything you need here from other files.
+    These can include variables, mixins & other includes.
+    ========================================================================= */
+
+@use '../../../node_modules/supple/lib/tools/mixins';
+@use '../../../node_modules/supple/lib/settings/defaults';
+@use '../settings/vars';
+
+
+
+/*  Variables
+    ========================================================================= */
+
+
+
+/*  Functions/Mixins
+    ========================================================================= */
+
+
+
+/*  Module
+    ========================================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include mixins.rem(margin-block-end, defaults.$space-small);
+}
+
+
+h1,
+.h1 {
+  @include mixins.font-size(vars.$font-size-gamma);
+
+  @include mixins.mq($from: lap) {
+    @include mixins.font-size(vars.$font-size-alpha);
+  }
+}
+
+h2,
+.h2 {
+  @include mixins.font-size(vars.$font-size-delta);
+
+  @include mixins.mq($from: lap) {
+    @include mixins.font-size(vars.$font-size-beta);
+  }
+}
+
+h3,
+.h3 {
+  @include mixins.font-size(vars.$font-size-delta);
+
+  @include mixins.mq($from: lap) {
+    @include mixins.font-size(vars.$font-size-gamma);
+  }
+}
+
+h4,
+.h4 {
+  @include mixins.font-size(vars.$font-size-delta);
+}
+
+h5,
+.h5 {
+  @include mixins.font-size(vars.$font-size-epsilon);
+}
+
+h6,
+.h6 {
+  @include mixins.font-size(vars.$font-size-zeta);
+}

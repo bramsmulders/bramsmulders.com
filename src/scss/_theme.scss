@@ -17,19 +17,30 @@
 
 :root {
   --color-mode: 'light';
-  --color-bg: #{vars.$color-magnolia};
-  --color-text: #{vars.$color-independence};
-  --color-stroke: #{vars.$color-independence};
-  --color-action-bg: #{vars.$color-forest-green-crayola};
-  --color-action-text: #{vars.$color-magnolia};
-  --color-brand-primary: #{vars.$color-fire-opal};
-  --color-brand-secondary: #{vars.$color-cyan-process};
+  --color-bg: #{vars.$color-light};
+  --color-text: #{vars.$color-dark};
+  --color-stroke: #{vars.$color-dark};
+  --color-action-bg: #{vars.$color-brand-tertiary};
+  --color-action-text: #{vars.$color-light};
+  --color-highlight: #{vars.$color-brand-primary};
+  --color-brand-primary: #{vars.$color-brand-primary};
+  --color-brand-secondary: #{vars.$color-brand-secondary};
+  --color-brand-tertiary: #{vars.$color-brand-tertiary};
 
   @include tools.dark-mode() {
-    --color-bg: #{vars.$color-independence};
-    --color-text: #{vars.$color-magnolia};
-    --color-stroke: #{vars.$color-magnolia};
-    --color-action-bg: #{vars.$color-magnolia};
-    --color-action-text: #{vars.$color-forest-green-crayola};
+    --color-bg: #{vars.$color-dark};
+    --color-text: #{vars.$color-light};
+    --color-stroke: #{vars.$color-light};
+    --color-action-bg: #{vars.$color-light};
+    --color-action-text: #{vars.$color-brand-tertiary};
   }
+}
+
+
+
+/*  Classes
+    ========================================================================= */
+
+.t-highlight {
+  color: var(--color-highlight);
 }

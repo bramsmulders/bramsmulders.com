@@ -1,6 +1,5 @@
 /*  =========================================================================
-    elements.toplevel
-    html and body elements
+    components.hero
     ========================================================================= */
 
 /*  Use/Forward rules
@@ -8,17 +7,36 @@
     These can include variables, mixins & other includes.
     ========================================================================= */
 
+@use '../../../node_modules/supple/lib/tools/functions';
 @use '../../../node_modules/supple/lib/tools/mixins';
 @use '../../../node_modules/supple/lib/settings/defaults';
-@use '../settings/vars';
+
+
+
+/*  Variables
+    ========================================================================= */
+
+
+
+/*  Functions/Mixins
+    ========================================================================= */
 
 
 
 /*  Module
     ========================================================================= */
 
-html {
-  font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
-  background-color: var(--color-bg);
-  color: var(--color-text);
+.c-hero {
+  display: flex;
+  min-height: calc(80vh - #{functions.value-to-rem(15 * defaults.$baseline)});
+}
+
+.c-hero__title {
+  text-transform: uppercase;
+}
+
+.c-hero__hi {
+  display: block;
+  line-height: 1;
+  text-transform: none;
 }
