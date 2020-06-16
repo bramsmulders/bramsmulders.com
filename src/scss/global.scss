@@ -1,1 +1,57 @@
-@import '../../node_modules/supple/lib/index.scss';
+/*  =========================================================================
+    Bram Smulders personal website
+    Extends Supple CSS
+    ========================================================================= */
+
+/*  Settings
+    ========================================================================= */
+
+@use 'settings/vars';
+
+
+
+/*  Tools
+    ========================================================================= */
+
+
+
+/*  Generic
+    ========================================================================= */
+
+@use '../../node_modules/supple/lib/generic/reset';
+
+
+
+/*  Elements
+    ========================================================================= */
+
+@use 'elements/toplevel';
+
+
+
+/*  Objects
+    ========================================================================= */
+
+// @use '../../node_modules/supple/lib/objects/list-clean';
+// @use '../../node_modules/supple/lib/objects/layout';
+// @use '../../node_modules/supple/lib/objects/mesh';
+// @use '../../node_modules/supple/lib/objects/retain';
+@use '../../node_modules/supple/lib/objects/aspect-ratio';
+
+
+
+/*  Components
+    ========================================================================= */
+
+
+
+/*  Utilities
+    ========================================================================= */
+
+// @use '../../node_modules/supple/lib/utilities/colspan';
+// @use '../../node_modules/supple/lib/utilities/colstart';
+// @use '../../node_modules/supple/lib/utilities/clearfix';
+// @use '../../node_modules/supple/lib/utilities/module';
+// @use '../../node_modules/supple/lib/utilities/spacing';
+@use '../../node_modules/supple/lib/utilities/visually-hidden';
+// @use '../../node_modules/supple/lib/utilities/hidden';

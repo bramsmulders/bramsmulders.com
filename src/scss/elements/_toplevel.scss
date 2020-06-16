@@ -1,0 +1,28 @@
+/*  =========================================================================
+    elements.toplevel
+    html and body elements
+    ========================================================================= */
+
+/*  Use/Forward rules
+    `@use` or `@forward` everything you need here from other files.
+    These can include variables, mixins & other includes.
+    ========================================================================= */
+
+@use '../../../node_modules/supple/lib/tools/mixins';
+@use '../../../node_modules/supple/lib/settings/defaults';
+@use '../settings/vars';
+
+
+
+/*  Module
+    ========================================================================= */
+
+html {
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  background-color: vars.$color-magnolia;
+  color: vars.$color-independence;
+}
+
+body {
+  @include mixins.css-lock(font-size, defaults.$font-size, vars.$font-size-large, lap, wall);
+}

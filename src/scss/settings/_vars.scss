@@ -1,0 +1,30 @@
+/*  =========================================================================
+    settings.vars
+    ========================================================================= */
+
+/*  Use/Forward rules
+    `@use` or `@forward` everything you need here from other files.
+    These can include variables, mixins & other includes.
+    ========================================================================= */
+
+@use '../../../node_modules/supple/lib/settings/defaults' with (
+  $font-size: 20px,
+  $space-factor-tiny: 1,
+  $space-factor-small: 2,
+  $space-factor-base: 4,
+  $space-factor-large: 8,
+  $space-factor-huge: 16,
+);
+
+
+
+/*  Custom
+    ========================================================================= */
+
+$font-size-large: 28px !default;
+
+$color-fire-opal: #ee6352 !default;
+$color-cyan-process: #08b2e3 !default;
+$color-magnolia: #efe9f4 !default;
+$color-forest-green-crayola: #57a773 !default;
+$color-independence: #484d6d !default;
