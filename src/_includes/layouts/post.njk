@@ -13,30 +13,32 @@
 
 {% block content %}
   <main id="main-content" tabindex="-1">
-    <article>
-      {% include "partials/components/intro.njk" %}
-      <div>
-        {{ content | safe }}
-      </div>
-      {% if site.enableThirdPartyComments %}
-        <hr />
-        <aside>
-          {% include "partials/global/third-party-comments.njk" %}
-        </aside>
-      {% endif %}
-      {% if tags %}
-        <footer>
-          <h2>Filed under</h2>
-          <ul>
-            {% for item in tags %}
-              <li>
-                <a href="/tags/{{ item }}">{{ item }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        </footer>
-      {% endif %}
-    </article>
+    <div class="[ o-retain o-retain--wall ]">
+      <article>
+        {% include "partials/components/intro.njk" %}
+        <div>
+          {{ content | safe }}
+        </div>
+        {% if site.enableThirdPartyComments %}
+          <hr />
+          <aside>
+            {% include "partials/global/third-party-comments.njk" %}
+          </aside>
+        {% endif %}
+        {% if tags %}
+          <footer>
+            <h2>Filed under</h2>
+            <ul>
+              {% for item in tags %}
+                <li>
+                  <a href="/tags/{{ item }}">{{ item }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </footer>
+        {% endif %}
+      </article>
+    </div>
   </main>
 {% endblock %}
 

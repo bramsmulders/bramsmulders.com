@@ -10,7 +10,9 @@
 
 {% block content %}
   <main id="main-content" tabindex="-1">
-    {% include "partials/components/intro.njk" %}
-    {% include "partials/components/post-list.njk" %}
+    <div class="[ o-retain o-retain--wall ]">
+      {% include "partials/components/intro.njk" %}
+      {% include "partials/components/post-list.njk" %}
+    </div>
   </main>
 {% endblock %}

@@ -1,12 +1,14 @@
 <footer role="contentinfo">
-  {% if site.shortDesc %}
-    <article>
-      <h2>{{ site.name }}</h2>
-      {{ site.shortDesc | markdownFilter | safe }}
-    </article>
-  {% endif %}
+  <div class="[ o-retain o-retain--wall ]">
+    {% if site.shortDesc %}
+      <article>
+        <h2>{{ site.name }}</h2>
+        {{ site.shortDesc | markdownFilter | safe }}
+      </article>
+    {% endif %}
 
-  {# {% set ariaLabel = 'footer navigation' %}
-  {% include "partials/components/nav.njk" %} #}
-  <theme-toggle></theme-toggle>
+    {# {% set ariaLabel = 'footer navigation' %}
+    {% include "partials/components/nav.njk" %} #}
+    <theme-toggle></theme-toggle>
+  </div>
 </footer>
