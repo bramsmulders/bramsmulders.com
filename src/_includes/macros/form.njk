@@ -3,24 +3,24 @@
    =================== #}
 
 {% macro label( text, name ) %}
-  <label class="question__label" for="field-{{ name }}">{{ text }}</label>
+  <label for="field-{{ name }}">{{ text }}</label>
 {% endmacro %}
 
 {% macro field( type, name, data ) %}
   <br>
-  <input class="question__field"
-        type="{{ type }}"
-        name="{{ name }}"
-        id="field-{{ name }}"
-        {% if data.required %}required aria-required="true"{% endif %}
-        {% if data.placeholder %}placeholder="{{ data.placeholder }}"{% endif %}
-        {% if data.pattern %}pattern="{{ data.pattern }}"{% endif %}
-        {% if data.description %}aria-describedby="description-{{ name }}"{% endif %}
-        {% if data.autocomplete %}autocomplete="{{ data.autocomplete }}"{% endif %}
-        {% if data.autocorrect %}autocorrect="{{ data.autocorrect }}"{% endif %}
-        {% if data.spellcheck %}spellcheck="{{ data.spellcheck }}"{% endif %}
-        {% if data.autocapitalize %}autocapitalize="{{ data.autocapitalize }}"{% endif %}
-        >
+  <input
+    type="{{ type }}"
+    name="{{ name }}"
+    id="field-{{ name }}"
+    {% if data.required %}required aria-required="true"{% endif %}
+    {% if data.placeholder %}placeholder="{{ data.placeholder }}"{% endif %}
+    {% if data.pattern %}pattern="{{ data.pattern }}"{% endif %}
+    {% if data.description %}aria-describedby="description-{{ name }}"{% endif %}
+    {% if data.autocomplete %}autocomplete="{{ data.autocomplete }}"{% endif %}
+    {% if data.autocorrect %}autocorrect="{{ data.autocorrect }}"{% endif %}
+    {% if data.spellcheck %}spellcheck="{{ data.spellcheck }}"{% endif %}
+    {% if data.autocapitalize %}autocapitalize="{{ data.autocapitalize }}"{% endif %}
+  >
   {% if data.description %}
     <br>
     {{ description( name, data.description ) }}
@@ -28,15 +28,16 @@
 {% endmacro %}
 
 {% macro confirm( text, name, data ) %}
-  <label for="field-{{ name }}" class="question--confirm">
-    <input class="question__field question__field--confirm"
-          type="checkbox"
-          name="{{ name }}"
-          id="field-{{ name }}"
-          value="1"
-          {% if data.required %}required aria-required="true"{% endif %}
-          {% if data.description %}aria-describedby="description-{{ name }}"{% endif %}
-          >
+  <label for="field-{{ name }}">
+    <input
+      class="question__field question__field--confirm"
+      type="checkbox"
+      name="{{ name }}"
+      id="field-{{ name }}"
+      value="1"
+      {% if data.required %}required aria-required="true"{% endif %}
+      {% if data.description %}aria-describedby="description-{{ name }}"{% endif %}
+    >
     {{ text }}
   </label>
   {% if data.description %}
@@ -47,12 +48,13 @@
 
 {% macro select( name, options, data ) %}
   <br>
-  <select id="field-{{ name }}"
-          name="{{ name }}"
-          {% if data.required %}required aria-required="true"{% endif %}
-          {% if data.multiple %}multiple{% endif %}
-          {% if data.description %}aria-describedby="description-{{ name }}"{% endif %}
-          >
+  <select
+    id="field-{{ name }}"
+    name="{{ name }}"
+    {% if data.required %}required aria-required="true"{% endif %}
+    {% if data.multiple %}multiple{% endif %}
+    {% if data.description %}aria-describedby="description-{{ name }}"{% endif %}
+  >
     {% for opt in data.options_before %}
       {{ option( opt ) }}
     {% endfor %}
@@ -79,16 +81,17 @@
 
 {% macro textarea( name, data ) %}
   <br>
-  <textarea id="field-{{ name }}"
-            name="{{ name }}"
-            {% if data.rows %}rows="{{ data.rows }}"{% else %}rows="5"{% endif %}
-            cols="100"
-            {% if data.required %}required aria-required="true"{% endif %}
-            {% if data.autocorrect %}autocorrect="{{ data.autocorrect }}"{% endif %}
-            {% if data.spellcheck %}spellcheck="{{ data.spellcheck }}"{% endif %}
-            {% if data.autocapitalize %}autocapitalize="{{ data.autocapitalize }}"{% endif %}
-            {% if data.description %}aria-describedby="description-{{ name }}"{% endif %}
-            ></textarea>
+  <textarea
+    id="field-{{ name }}"
+    name="{{ name }}"
+    {% if data.rows %}rows="{{ data.rows }}"{% else %}rows="5"{% endif %}
+    cols="100"
+    {% if data.required %}required aria-required="true"{% endif %}
+    {% if data.autocorrect %}autocorrect="{{ data.autocorrect }}"{% endif %}
+    {% if data.spellcheck %}spellcheck="{{ data.spellcheck }}"{% endif %}
+    {% if data.autocapitalize %}autocapitalize="{{ data.autocapitalize }}"{% endif %}
+    {% if data.description %}aria-describedby="description-{{ name }}"{% endif %}
+  ></textarea>
   {% if data.description %}
     {{ description( name, data.description ) }}
   {% endif %}
@@ -98,25 +101,33 @@
   <fieldset>
     <legend
       {% if data.description %}aria-describedby="description-{{ name }}"{% endif %}
-      >{{ label }}</legend>
-    <ul class="field-list__field-group__list">
+    >
+      {{ label }}
+    </legend>
+    <ul>
       {% for option in options %}
         <li>
           {% if option.value %}
             <label for="field-{{ name }}-{{ option.value }}">
-              <input type="radio"
-                    name="{{ name }}"
-                    id="field-{{ name }}-{{ option.value }}"
-                    value="{{ option.value }}"
-                    {% if option.note %}aria-describedby="description-{{ name }}-{{ option.value }}"{% endif %}
-                    >{{ option.label }}</label>
+            <input
+              type="radio"
+              name="{{ name }}"
+              id="field-{{ name }}-{{ option.value }}"
+              value="{{ option.value }}"
+              {% if option.note %}aria-describedby="description-{{ name }}-{{ option.value }}"{% endif %}
+            >
+              {{ option.label }}
+            </label>
           {% else %}
             <label for="field-{{ name }}-{{ option }}">
-              <input type="radio"
-                    name="{{ name }}"
-                    id="field-{{ name }}-{{ option }}"
-                    value="{{ option }}"
-                    >{{ option }}</label>
+            <input
+              type="radio"
+              name="{{ name }}"
+              id="field-{{ name }}-{{ option }}"
+              value="{{ option }}"
+            >
+              {{ option }}
+            </label>
           {% endif %}
           {% if option.note %}
             <br>
@@ -135,25 +146,33 @@
   <fieldset>
     <legend
       {% if data.description %}aria-describedby="description-{{ name }}"{% endif %}
-      >{{ label }}</legend>
-    <ul class="field-list__field-group__list">
+    >
+      {{ label }}
+    </legend>
+    <ul>
       {% for option in options %}
         <li>
           {% if option.value %}
             <label for="field-{{ name }}-{{ option.value }}">
-              <input type="checkbox"
-                    name="{{ name }}[]"
-                    id="field-{{ name }}-{{ option.value }}"
-                    value="{{ option.value }}"
-                    {% if option.note %}aria-describedby="description-{{ name }}-{{ option.value }}"{% endif %}
-                    >{{ option.label }}</label>
+            <input
+              type="checkbox"
+              name="{{ name }}[]"
+              id="field-{{ name }}-{{ option.value }}"
+              value="{{ option.value }}"
+              {% if option.note %}aria-describedby="description-{{ name }}-{{ option.value }}"{% endif %}
+            >
+              {{ option.label }}
+            </label>
           {% else %}
             <label for="field-{{ name }}-{{ option }}">
-              <input type="checkbox"
-                    name="{{ name }}[]"
-                    id="field-{{ name }}-{{ option }}"
-                    value="{{ option }}"
-                    >{{ option }}</label>
+            <input
+              type="checkbox"
+              name="{{ name }}[]"
+              id="field-{{ name }}-{{ option }}"
+              value="{{ option }}"
+            >
+              {{ option }}
+            </label>
           {% endif %}
           {% if option.note %}
             <br>
@@ -169,7 +188,7 @@
 {% endmacro %}
 
 {% macro description( id, html ) %}
-  <em class="[ field-list__field-group__description ]" id="description-{{ id }}">{{ html | safe }}</em>
+  <em id="description-{{ id }}">{{ html | safe }}</em>
 {% endmacro %}
 
 {% macro hidden_field( name, value ) %}
@@ -177,5 +196,5 @@
 {% endmacro %}
 
 {% macro button( text ) %}
-  <button type="submit" class="[ button ] [ font-base text-base weight-bold ]">{{ text }}</button>
+  <button type="submit">{{ text }}</button>
 {% endmacro %}
