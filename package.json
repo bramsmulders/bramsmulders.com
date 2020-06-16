@@ -39,12 +39,12 @@
     "lint": "stylelint \"src/scss/**/*.scss\"",
     "sass:tokens": "npx json-to-scss src/_data/tokens.json src/scss/_tokens.scss",
     "sass:process": "npm run sass:tokens && sass src/scss/global.scss src/_includes/assets/css/global.css --style=compressed",
-    "css": "npm run lint && npm run sass:process",
+    "postcss": "postcss src/_includes/assets/css/**/*.css --replace",
     "cms:precompile": "make-dir dist/admin && nunjucks-precompile src/_includes > dist/admin/templates.js -i \"\\.(njk|css|svg)$\"",
     "cms:bundle": "rollup --config",
-    "start": "concurrently \"npm run css -- --watch\" \"npm run cms:bundle -- --watch\" \"chokidar \\\"src/_includes/**\\\" -c \\\"npm run cms:precompile\\\"\" \"npm run serve\"",
+    "start": "concurrently \"npm run sass:process -- --watch\" \"npm run cms:bundle -- --watch\" \"chokidar \\\"src/_includes/**\\\" -c \\\"npm run cms:precompile\\\"\" \"npm run serve\"",
     "serve": "cross-env ELEVENTY_ENV=development npx eleventy --serve",
-    "production": "npm run css && npm run cms:precompile && npm run cms:bundle && npx eleventy"
+    "production": "npm run lint && npm run sass:process && npm run postcss && npm run cms:precompile && npm run cms:bundle && npx eleventy"
   },
   "repository": {
     "type": "git",
