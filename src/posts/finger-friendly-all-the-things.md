@@ -1,10 +1,12 @@
 ---
-layout: post
-title:  Finger-Friendly ALL the things
-excerpt: We should design for touch, and this is why
-date:   2013-02-26 19:10:14 +0100
-categories: touch workflow
+title: Finger-Friendly ALL the things
+metaDesc: We should design for touch, and this is why
+date: '2013-02-26'
+tags:
+  - workflow
+  - touch
 ---
+
 Since the release of the first iPhone the internet landscape has changed drastically. Companies acknowledged the importance of mobile presence, and in the years that followed mobile/touch ready websites began to become mainstream. Responsive and adaptive webdesign has gained its status quo, but we are at the verge of a new trend. A trend that will change our way of designing & building websites drastically.
 
 ## Touch has landed on the desktop
