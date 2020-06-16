@@ -1,0 +1,40 @@
+/*  =========================================================================
+    objects.grid
+    ========================================================================= */
+
+/*  Use/Forward rules
+    `@use` or `@forward` everything you need here from other files.
+    These can include variables, mixins & other includes.
+    ========================================================================= */
+
+@use '../../../node_modules/supple/lib/tools/mixins';
+@use '../../../node_modules/supple/lib/tools/functions';
+@use '../../../node_modules/supple/lib/settings/defaults';
+@use '../settings/vars';
+
+
+
+/*  Module
+    ========================================================================= */
+
+.o-grid {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(#{functions.value-to-rem(defaults.$space-base)}, 2fr)
+    [retained-start] minmax(0, 1fr)
+    [main-start] minmax(0, 65ch) [main-end]
+    minmax(0, 1fr) [retained-end]
+    minmax(#{functions.value-to-rem(defaults.$space-base)}, 2fr) [full-end];
+
+  > * {
+    grid-column: main;
+  }
+}
+
+.o-grid__retained {
+  grid-column: retained;
+}
+
+.o-grid__full {
+  grid-column: full;
+}

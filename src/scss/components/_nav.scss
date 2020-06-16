@@ -8,6 +8,8 @@
     These can include variables, mixins & other includes.
     ========================================================================= */
 
+@use '../../../node_modules/supple/lib/tools/mixins';
+
 
 
 /*  Variables
@@ -26,4 +28,10 @@
 .c-nav {
   text-transform: uppercase;
   font-weight: 500;
+}
+
+.c-nav__list {
+  @include mixins.mq($from: lap) {
+    justify-content: flex-end;
+  }
 }
