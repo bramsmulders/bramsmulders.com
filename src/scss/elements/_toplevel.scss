@@ -44,7 +44,7 @@ $font-size-max-em-clean: #{($font-size-max-clean/16)};
     ========================================================================= */
 
 html {
-  font-family: vars.$family-body;
+  font-family: #{vars.$family-body};
   background-color: var(--color-bg);
   color: var(--color-text);
 
@@ -55,6 +55,4 @@ html {
   @include mixins.mq($from: $max-bp-name) {
     font-size: $font-size-max-em;
   }
-
-
 }
