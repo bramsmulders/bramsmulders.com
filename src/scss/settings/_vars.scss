@@ -25,6 +25,15 @@
   $fit-in-breakpoint: (lap),
 );
 
+@use '../../../node_modules/supple/lib/utilities/spacing' with (
+  $in-breakpoint: (lap),
+  $sizes: (
+    '-base': defaults.$space-base,
+    '-small': defaults.$space-small,
+    '-none': 0,
+  )
+);
+
 
 
 /*  Custom
