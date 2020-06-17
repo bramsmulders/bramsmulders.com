@@ -22,6 +22,8 @@
   --color-stroke: #{vars.$color-dark};
   --color-action-bg: #{vars.$color-brand-tertiary};
   --color-action-text: #{vars.$color-light};
+  --color-slate-bg: #{vars.$color-dark};
+  --color-slate-text: #{vars.$color-light};
   --color-highlight: #{vars.$color-brand-primary};
   --color-brand-primary: #{vars.$color-brand-primary};
   --color-brand-secondary: #{vars.$color-brand-secondary};
@@ -43,4 +45,9 @@
 
 .t-highlight {
   color: var(--color-highlight);
+}
+
+.t-bg-slate {
+  color: var(--color-slate-text);
+  background-color: var(--color-slate-bg);
 }

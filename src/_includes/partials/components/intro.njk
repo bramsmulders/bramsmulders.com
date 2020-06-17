@@ -1,6 +1,8 @@
-<header>
-  <h1>{{ introHeading }}</h1>
+{% set introHeadingLevelInternal = introHeadingLevel|default("1", true) %}
+
+<header class="[ c-intro ]  [ o-grid  o-grid--inner ]  [ t-bg-slate ]">
+  <h{{ introHeadingLevelInternal }}>{{ introHeading }}</h{{ introHeadingLevelInternal }}>
   {% if introSummary %}
-    <div>{{ introSummary | safe }}</div>
+    <div class="u-module">{{ introSummary | safe }}</div>
   {% endif %}
 </header>

@@ -31,6 +31,19 @@
   }
 }
 
+.o-grid--inner {
+  --inner-space: #{functions.value-to-rem(defaults.$space-base)};
+  grid-column: full;
+  grid-template-columns:
+    [retained-start] minmax(var(--inner-space), 1fr)
+    [main-start] minmax(0, 70ch) [main-end]
+    minmax(var(--inner-space), 1fr) [retained-end];
+
+  @include mixins.mq($from: lap) {
+    grid-column: retained;
+  }
+}
+
 .o-grid__retained {
   grid-column: retained;
 }

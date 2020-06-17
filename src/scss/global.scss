@@ -59,6 +59,7 @@
 @use 'components/logo';
 @use 'components/nav';
 @use 'components/hero';
+@use 'components/intro';
 
 
 
@@ -68,7 +69,7 @@
 // @use '../../node_modules/supple/lib/utilities/colspan';
 // @use '../../node_modules/supple/lib/utilities/colstart';
 // @use '../../node_modules/supple/lib/utilities/clearfix';
-// @use '../../node_modules/supple/lib/utilities/module';
+@use '../../node_modules/supple/lib/utilities/module';
 @use '../../node_modules/supple/lib/utilities/spacing';
 @use '../../node_modules/supple/lib/utilities/visually-hidden';
 // @use '../../node_modules/supple/lib/utilities/hidden';
