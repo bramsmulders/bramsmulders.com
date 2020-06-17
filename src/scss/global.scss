@@ -41,13 +41,14 @@
 /*  Objects
     ========================================================================= */
 
-// @use '../../node_modules/supple/lib/objects/list-clean';
+@use '../../node_modules/supple/lib/objects/list-clean';
 @use '../../node_modules/supple/lib/objects/layout';
 // @use '../../node_modules/supple/lib/objects/mesh';
 @use '../../node_modules/supple/lib/objects/retain';
 @use '../../node_modules/supple/lib/objects/aspect-ratio';
 
 @use 'objects/grid';
+@use 'objects/layer';
 
 
 
@@ -59,7 +60,7 @@
 @use 'components/logo';
 @use 'components/nav';
 @use 'components/hero';
-@use 'components/intro';
+@use 'components/heading';
 
 
 

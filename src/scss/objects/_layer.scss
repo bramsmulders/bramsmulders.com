@@ -1,6 +1,5 @@
 /*  =========================================================================
-    components.nav
-    desc
+    objects.layer
     ========================================================================= */
 
 /*  Use/Forward rules
@@ -9,19 +8,21 @@
     ========================================================================= */
 
 @use '../../../node_modules/supple/lib/tools/mixins';
+@use '../../../node_modules/supple/lib/tools/functions';
+@use '../../../node_modules/supple/lib/settings/defaults';
+@use '../settings/vars';
 
 
 
 /*  Module
     ========================================================================= */
 
-.c-nav {
-  // text-transform: uppercase;
-  // font-weight: 500;
-}
+.o-layer {
+  @include mixins.rem(padding-block-start, defaults.$space-base);
+  @include mixins.rem(padding-block-end, defaults.$space-base);
 
-.c-nav__list {
   @include mixins.mq($from: lap) {
-    justify-content: flex-end;
+    @include mixins.rem(padding-block-start, defaults.$space-large);
+    @include mixins.rem(padding-block-end, defaults.$space-large);
   }
 }

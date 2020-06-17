@@ -1,7 +1,7 @@
 {% set introHeadingLevelInternal = introHeadingLevel|default("1", true) %}
 
-<header class="[ c-intro ]  [ o-grid  o-grid--inner ]  [ t-bg-slate ]">
-  <h{{ introHeadingLevelInternal }}>{{ introHeading }}</h{{ introHeadingLevelInternal }}>
+<header class="[ c-intro ]  [ o-grid  o-grid--inner ]  [ o-layer ]  [ t-slate-bg ]">
+  <h{{ introHeadingLevelInternal }} class="[ c-intro__heading ]  [ c-heading  c-heading--highlight  c-heading--quote ]">{{ introHeading }}</h{{ introHeadingLevelInternal }}>
   {% if introSummary %}
     <div class="u-module">{{ introSummary | safe }}</div>
   {% endif %}

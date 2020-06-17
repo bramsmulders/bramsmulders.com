@@ -1,11 +1,12 @@
 {% if postListItems.length %}
-  <section>
-    <h2>{{ postListHeading }}</h2>
-    <ol reversed>
+  <section class="[ o-layer ]">
+    <h2 class="[c-heading  c-heading--highlight ] [ h3 ]">{{ postListHeading }}</h2>
+    <p>Although I am not writing much anymore I do not want to withhold you some of my written articles:</p>
+    <ol class="o-list-clean" reversed>
       {% for item in postListItems %}
         {% if item.date.getTime() <= global.now %}
           <li>
-            <h3>
+            <h3 class="h6">
               <a href="{{ item.url }}" rel="bookmark">{{ item.data.title }}</a>
             </h3>
             <p>

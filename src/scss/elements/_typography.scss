@@ -22,6 +22,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: vars.$family-leader;
   @include mixins.rem(margin-block-end, defaults.$space-small);
 }
 
@@ -30,27 +31,27 @@ h1,
 .h1 {
   @include mixins.font-size(vars.$font-size-gamma);
 
-  @include mixins.mq($from: lap) {
-    @include mixins.font-size(vars.$font-size-alpha);
-  }
+  // @include mixins.mq($from: lap) {
+  //   @include mixins.font-size(vars.$font-size-alpha);
+  // }
 }
 
 h2,
 .h2 {
   @include mixins.font-size(vars.$font-size-delta);
 
-  @include mixins.mq($from: lap) {
-    @include mixins.font-size(vars.$font-size-beta);
-  }
+  // @include mixins.mq($from: lap) {
+  //   @include mixins.font-size(vars.$font-size-beta);
+  // }
 }
 
 h3,
 .h3 {
   @include mixins.font-size(vars.$font-size-delta);
 
-  @include mixins.mq($from: lap) {
-    @include mixins.font-size(vars.$font-size-gamma);
-  }
+  // @include mixins.mq($from: lap) {
+  //   @include mixins.font-size(vars.$font-size-gamma);
+  // }
 }
 
 h4,

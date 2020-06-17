@@ -22,8 +22,9 @@
   --color-stroke: #{vars.$color-dark};
   --color-action-bg: #{vars.$color-brand-tertiary};
   --color-action-text: #{vars.$color-light};
-  --color-slate-bg: #{vars.$color-dark};
-  --color-slate-text: #{vars.$color-light};
+  --color-slate-bg: #{vars.$color-gray};
+  --color-slate-text: #{vars.$color-dark};
+  --color-dash-bg: #{vars.$color-brand-tertiary};
   --color-highlight: #{vars.$color-brand-primary};
   --color-brand-primary: #{vars.$color-brand-primary};
   --color-brand-secondary: #{vars.$color-brand-secondary};
@@ -35,6 +36,9 @@
     --color-stroke: #{vars.$color-light};
     --color-action-bg: #{vars.$color-light};
     --color-action-text: #{vars.$color-brand-tertiary};
+    --color-slate-bg: #{vars.$color-brand-secondary};
+    --color-slate-text: #{vars.$color-light};
+    --color-dash-bg: #{vars.$color-brand-secondary};
   }
 }
 
@@ -47,7 +51,12 @@
   color: var(--color-highlight);
 }
 
-.t-bg-slate {
+.t-slate-bg {
   color: var(--color-slate-text);
   background-color: var(--color-slate-bg);
+}
+
+.t-dash-bg {
+  // color: var(--color-slate-text);
+  background-color: var(--color-dash-bg);
 }

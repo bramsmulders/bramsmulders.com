@@ -3,6 +3,12 @@
   publish = "dist"
 
 [[redirects]]
+  from = "/blog"
+  to = "/archive"
+  status = 301
+  force = false
+
+[[redirects]]
   from = "/blog/how-i-improved-my-workflow-with-smacss-sass"
   to = "/posts/how-i-improved-my-workflow-with-smacss-sass"
   status = 301

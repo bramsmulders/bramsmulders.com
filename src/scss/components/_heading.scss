@@ -1,5 +1,5 @@
 /*  =========================================================================
-    components.intro
+    components.heading
     ========================================================================= */
 
 /*  Use/Forward rules
@@ -17,12 +17,31 @@
 /*  Module
     ========================================================================= */
 
-.c-intro {
-  @include mixins.rem(padding-block-start, defaults.$space-base);
-  @include mixins.rem(padding-block-end, defaults.$space-base);
+.c-heading {
+  //
+}
 
-  @include mixins.mq($from: lap) {
-    @include mixins.rem(padding-block-start, defaults.$space-large);
-    @include mixins.rem(padding-block-end, defaults.$space-large);
+.c-heading--highlight {
+  position: relative;
+  @include mixins.rem(margin-block-end, defaults.$space-base);
+
+  &::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    @include mixins.rem(inline-size, defaults.$space-base * 1.5);
+    height: 4px;
+    background-color: var(--color-highlight);
+    content: '';
+  }
+}
+
+.c-heading--quote {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    right: 100%;
+    content: '“';
   }
 }

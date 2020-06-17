@@ -8,7 +8,7 @@
     ========================================================================= */
 
 @use '../../../node_modules/supple/lib/settings/defaults' with (
-  $font-size: 18px,
+  $font-size: 20px,
   $space-factor-tiny: 1,
   $space-factor-small: 2,
   $space-factor-base: 4,
@@ -42,6 +42,12 @@
 /**
  * Typography
  */
+$family-body: 'Crimson Text', serif !default;
+$family-leader: 'Ubuntu', sans-serif !default;
+
+$font-size-min: defaults.$font-size !default;
+$font-size-max: 28px !default;
+
 $font-size-alpha: 60px !default;
 $font-size-beta: 48px !default;
 $font-size-gamma: 40px !default;
@@ -52,10 +58,11 @@ $font-size-zeta: 20px !default;
 
 /**
  * Colors
- * https://coolors.co/fb3640-fffffc-247ba0-62a87c-392f5a
+ * https://coolors.co/fcfcfc-12355b-ee4266-161f2b-3ddc97
  */
-$color-light: #fffffc !default; // Baby powder
-$color-dark: #392f5a !default; // Space cadet
-$color-brand-primary: #fb3640 !default; // Red Salsa
-$color-brand-secondary: #247ba0 !default; // Celadon blue
-$color-brand-tertiary: #62a87c !default; // Shiny shamrock
+$color-light: #fcfcfc !default; // Baby powder
+$color-gray: #ececec !default;
+$color-dark: #12355b !default; // Prussian blue
+$color-brand-primary: #ee4266 !default; // Paradise pink
+$color-brand-secondary: #161F2B !default; // Rich black
+$color-brand-tertiary: #3ddc97 !default; // Medium aquamarine
