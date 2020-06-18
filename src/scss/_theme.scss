@@ -28,6 +28,11 @@
   --color-trade-bg: #{vars.$color-dark};
   --color-trade-text: #{vars.$color-light};
   --color-highlight: #{vars.$color-brand-primary};
+  --color-syn-high-bg: #{vars.$color-dark};
+  --color-syn-high-light: #{vars.$color-light};
+  --color-syn-high-dark-gray: #{vars.$color-dark-gray};
+  --color-syn-high-primary: #{vars.$color-brand-primary};
+  --color-syn-high-tertiary: #{vars.$color-brand-tertiary};
   --color-brand-primary: #{vars.$color-brand-primary};
   --color-brand-secondary: #{vars.$color-brand-secondary};
   --color-brand-tertiary: #{vars.$color-brand-tertiary};
@@ -41,6 +46,7 @@
     --color-slate-bg: #{vars.$color-brand-secondary};
     --color-slate-text: #{vars.$color-light};
     --color-dash-bg: #{vars.$color-brand-secondary};
+    --color-syn-high-bg: #{vars.$color-brand-secondary};
   }
 }
 
