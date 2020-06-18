@@ -10,6 +10,8 @@ tags:
   - sass
 ---
 
+![Atomic design folder structure](/images/talk-fronteers-e-sites.jpg)
+
 _This article is an in depth follow up on the [talk](https://bramsmulders.github.io/slides/atomic-design-met-pattern-lab.html#/) I gave at the [Fronteers meetup at e-sites](https://fronteers.nl/bijeenkomsten/2017/meetup-januari-e-sites)._
 
 In 2013 I wrote an article about [structuring CSS with Smacss & Sass](https://bramsmulders.com/blog/how-i-improved-my-workflow-with-smacss-sass/). Since then I read up on new techniques and changed my workflow here and there to accommodate modern web projects. Many things have changed over the years, but the basics remain the same.

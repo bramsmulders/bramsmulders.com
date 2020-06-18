@@ -32,7 +32,8 @@
   opacity: 0;
 
   &:focus,
-  .c-heading:hover & {
+  .c-heading:hover &,
+  .c-heading:target & {
     opacity: 1;
   }
 
