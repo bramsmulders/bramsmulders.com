@@ -23,11 +23,12 @@ SMACSS stands for Scalable and Modular Architecture for CSS, and is more a style
 The basic concept of SMACSS is to devide styles into 5 categories: base, layout, modules, states and theme*. Each category comes with a set of usage rules and naming conventions. The main reason of this categorization is that rulesets should only ever inherit and add to previous ones, never undo.
 
 Any declarations like these
-
-    border-bottom: none;
-    padding: 0;
-    float: none;
-    margin: 0;
+```css
+border-bottom: none;
+padding: 0;
+float: none;
+margin: 0;
+```
 
 ...are typically bad news. If you have to remove borders, you probably applied them to early.
 
@@ -55,19 +56,21 @@ SMACSS works especially well with [Sass](http://sass-lang.com), and I'll try to 
 ### File structure
 In Sass you can easily chop your stylesheet into partials by using the @import rule. This allows us to easily organize and maintain our files similar like this:
 
-    -theme.scss
-        - theme/_base.scss
-            - theme/base/_reset.scss
-            - theme/base/_headings.scss
-        - theme/_layout.scss
-            - theme/layout/_masthead.scss
-            - theme/layout/_main.scss
-            - theme/layout/_footer.scss
-        - theme/_modules.scss
-            - theme/modules/_search.scss
-            - theme/modules/_gallery.scss
-        - theme/_state.scss
-            - theme/state/_mediaqueries.scss
+```bash
+-theme.scss
+  - theme/_base.scss
+    - theme/base/_reset.scss
+    - theme/base/_headings.scss
+  - theme/_layout.scss
+    - theme/layout/_masthead.scss
+    - theme/layout/_main.scss
+    - theme/layout/_footer.scss
+  - theme/_modules.scss
+    - theme/modules/_search.scss
+    - theme/modules/_gallery.scss
+  - theme/_state.scss
+    - theme/state/_mediaqueries.scss
+```
 
 ### Partial setup
 Every partial stands for a standalone module wich has its own sectioning:
@@ -81,9 +84,11 @@ Since the module has its own module, state, theme sections it can be easily copi
 ### Namespacing
 I'm using a namespacing that is based off the [BEM](http://bem.info/) front-end naming methodology wich stands for: Block, Element, Modifier. The naming convention follows the following pattern:
 
-    .block{}
-    .block__element{}
-    .block--modifier{}
+```css
+.block {}
+.block__element {}
+.block--modifier {}
+```
 
 - `.block`  represents the high level element of the module
 - `.block__element`  represents a descendent of .block
@@ -94,30 +99,36 @@ The point of BEM is to tell other developers more about what a piece of markup i
 Within the SMACSS guidelines we prefix the classes with a section based prefix.
 A module should always be prefixed with .m-: e.g. .m-search, .m-contentbox. Elements that live inside a module have classnames like this: .m-search__heading. A brief example of a module:
 
-    .m-search{
-        border: 1px solid #ccc;
-    }
-        .m-search__heading{
-            font-size: 20px;
-            color: #f00;
-        }
-        .m-search__body{
-            padding: 10px;
-        }
+```css
+.m-search {
+  border: 1px solid #ccc;
+}
+  .m-search__heading {
+    font-size: 20px;
+    color: #f00;
+  }
+  .m-search__body {
+    padding: 10px;
+  }
+```
 
 
 A submodule is specified like this:
 
-    .m-search--attention{}
-        .m-search--attention__header{
-            border-bottom: 1px solid #f00;
-        }
+```css
+.m-search--attention {}
+  .m-search--attention__header {
+    border-bottom: 1px solid #f00;
+  }
+```
 
 A module that lives in the layout section gets the prefix of: .l-.
 
 When you are using BEM, though, it is important to remember that you don’t need to use it for everything. Take for example:
 
-    .text-right{ text-align: right; }
+```css
+  .text-right { text-align: right; }
+```
 
 This CSS would never fall into any BEM category, it’s merely a standalone rule.
 

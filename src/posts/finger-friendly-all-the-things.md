@@ -44,11 +44,13 @@ In a perfect world we would tweak our CSS to accommodate a range of input types 
 
 Recent drafts of the CSS 4 module include a media query for pointers to target devices with 'fine' or 'coarse'. A mouse, trackpad, of any other precise input would be categorised as 'fine', while fingers would be 'coarse'.
 
-    @media (pointer:coarse) {
-        .m-button{
-            font-size: 1.5rem;
-        }
+```css
+  @media (pointer:coarse) {
+    .m-button {
+      font-size: 1.5rem;
     }
+  }
+```
 
 This will get us only half-way, since we also have hybrids, wich will be classified as 'fine' & 'coarse'. In my opinion if a device supports touch we must always make the layout touch friendly, even if the user is using a trackpad or mouse. A new desktop design language is needed, one that replaces cursor-only interactions with conventions flexible enough to handle any of several potential input styles.
 
