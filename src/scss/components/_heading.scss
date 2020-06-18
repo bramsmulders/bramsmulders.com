@@ -18,7 +18,27 @@
     ========================================================================= */
 
 .c-heading {
-  //
+  position: relative;
+}
+
+.c-heading__permalink {
+  position: absolute;
+  @include mixins.rem(padding-inline-end, defaults.$space-tiny);
+  top: 50%;
+  right: calc(100% - 1px);
+  display: block;
+  transform: translateY(-50%);
+  font-size: 0.5em;
+  opacity: 0;
+
+  &:focus,
+  .c-heading:hover & {
+    opacity: 1;
+  }
+
+  svg {
+    display: block;
+  }
 }
 
 .c-heading--highlight {
@@ -27,12 +47,13 @@
 
   &::after {
     position: absolute;
-    top: 100%;
+    top: calc(100% + 0.25em);
     left: 0;
     @include mixins.rem(inline-size, defaults.$space-base * 1.5);
     height: 4px;
     background-color: var(--color-highlight);
     content: '';
+    pointer-events: none;
   }
 }
 

@@ -18,7 +18,7 @@
     ========================================================================= */
 
 .o-grid {
-  --main-size: 70ch;
+  --main-size: 65ch;
   display: grid;
   grid-template-columns:
     [full-start] minmax(#{functions.value-to-rem(defaults.$space-base)}, 2fr)

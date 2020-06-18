@@ -2,23 +2,24 @@
 
 {# Intro content #}
 {% set introHeading = title %}
-{% set introSummary %}
-<p>
+{% set introElement = "header" %}
+{% set introPrefix %}
   {% if date %}
-    <time datetime="{{ date | w3DateFilter }}">{{ date | dateFilter }}</time>
+    <time datetime="{{ date | w3DateFilter }}" itemprop="datePublished">{{ date | dateFilter }}</time>
   {% endif %}
-  <span>— {{ helpers.getReadingTime(content) }} minute read</span>
-</p>
+{% endset %}
+{% set introSummary %}
+  <span>Estimated reading time: {{ helpers.getReadingTime(content) }} minutes</span>
 {% endset %}
 
 {% block content %}
   <main id="main-content" tabindex="-1">
-    <div class="[ o-retain o-retain--wall ]">
-      <article>
-        {% include "partials/components/intro.njk" %}
-        <div>
+    <article class="[ o-grid ]" itemscope itemtype="http://schema.org/BlogPosting">
+      {% include "partials/components/intro.njk" %}
+      <div class="o-layer">
+        <section class="[ o-content ]  [ u-module ]  [ u-margin-block-end-base ]">
           {{ content | safe }}
-        </div>
+        </section>
         {% if site.enableThirdPartyComments %}
           <hr />
           <aside>
@@ -26,8 +27,9 @@
           </aside>
         {% endif %}
         {% if tags %}
+          <hr />
           <footer>
-            <h2>Filed under</h2>
+            <h2 class="u-zeta">Filed under</h2>
             <ul>
               {% for item in tags %}
                 <li>
@@ -37,8 +39,8 @@
             </ul>
           </footer>
         {% endif %}
-      </article>
-    </div>
+      </div>
+    </article>
   </main>
 {% endblock %}
 
