@@ -25,6 +25,8 @@
   --color-slate-bg: #{vars.$color-gray};
   --color-slate-text: #{vars.$color-dark};
   --color-dash-bg: #{vars.$color-brand-tertiary};
+  --color-trade-bg: #{vars.$color-dark};
+  --color-trade-text: #{vars.$color-light};
   --color-highlight: #{vars.$color-brand-primary};
   --color-brand-primary: #{vars.$color-brand-primary};
   --color-brand-secondary: #{vars.$color-brand-secondary};
@@ -54,6 +56,11 @@
 .t-slate-bg {
   color: var(--color-slate-text);
   background-color: var(--color-slate-bg);
+}
+
+.t-trade-bg {
+  color: var(--color-trade-text);
+  background-color: var(--color-trade-bg);
 }
 
 .t-dash-bg {

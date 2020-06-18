@@ -16,9 +16,10 @@
   $space-factor-huge: 16,
 );
 
-@use '../../../node_modules/supple/lib/objects/layout/variables' with (
+@use '../../../node_modules/supple/lib/objects/layout/variables' as layout-variables with (
   $gaps: (
     'base': defaults.$space-base,
+    'large': defaults.$space-large,
     'small': defaults.$space-small,
     'tiny': defaults.$space-tiny,
   ),
@@ -26,7 +27,7 @@
   $fit-in-breakpoint: (lap),
 );
 
-@use '../../../node_modules/supple/lib/utilities/spacing' with (
+@use '../../../node_modules/supple/lib/utilities/spacing/variables' as spacing-variables with (
   $in-breakpoint: (lap),
   $sizes: (
     '-base': defaults.$space-base,
@@ -55,6 +56,7 @@ $font-size-gamma: 24px !default;
 $font-size-delta: 24px !default;
 $font-size-epsilon: 24px !default;
 $font-size-zeta: 24px !default;
+$font-size-eta: 16px !default;
 
 
 /**
