@@ -16,10 +16,9 @@
   <main id="main-content" tabindex="-1">
     <article class="[ o-grid ]" itemscope itemtype="http://schema.org/BlogPosting">
       {% include "partials/components/intro.njk" %}
-      <div class="o-layer">
-        <section class="[ o-content ]  [ u-module ]  [ u-margin-block-end-base ]">
-          {{ content | safe }}
-        </section>
+
+      <section class="[ o-content ]  [ o-layer ]  [ o-grid  o-grid--inner ]  [ u-module ]  [ u-margin-block-end-base ]">
+        {{ content | safe }}
         {% if site.enableThirdPartyComments %}
           <hr />
           <aside>
@@ -39,7 +38,7 @@
             </ul>
           </footer>
         {% endif %}
-      </div>
+      </section>
     </article>
   </main>
 {% endblock %}

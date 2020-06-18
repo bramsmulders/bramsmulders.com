@@ -1,0 +1,24 @@
+/*  =========================================================================
+    objects.content
+    ========================================================================= */
+
+/*  Use/Forward rules
+    `@use` or `@forward` everything you need here from other files.
+    These can include variables, mixins & other includes.
+    ========================================================================= */
+
+
+
+/*  Module
+    ========================================================================= */
+
+.o-content {
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  pre {
+    grid-column: retained;
+  }
+}

@@ -21,8 +21,16 @@ module.exports = function(value, outputPath) {
       articleImages.forEach(image => {
         image.setAttribute('loading', 'lazy');
 
+        // Replace parent p wrapping with the image itself so we can place em in the grid
+        const parent = image.closest('p');
+        if (parent.nodeName === 'P') {
+           parent.replaceWith(image);
+        }
+
         const file = image.getAttribute('src');
 
+
+        // set the size of the image
         if (file.indexOf('http') < 0) {
           const dimensions = getSize('src' + file);
 
@@ -43,7 +51,11 @@ module.exports = function(value, outputPath) {
           figure.appendChild(image.cloneNode(true));
           figure.appendChild(figCaption);
 
+          figure.classList.add('o-grid__retained');
+
           image.replaceWith(figure);
+        } else {
+          image.classList.add('o-grid__retained', 'u-margin-block-end-base');
         }
       });
     }
