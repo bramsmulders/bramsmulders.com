@@ -17,10 +17,9 @@
 
 .c-masthead {
   @include mixins.rem(padding-block-start, defaults.$space-small);
-  @include mixins.rem(padding-block-end, defaults.$space-small);
+  @include mixins.rem(padding-block-end, defaults.$space-base);
 
   @include mixins.mq($from: lap) {
     @include mixins.rem(padding-block-start, defaults.$space-base);
-    @include mixins.rem(padding-block-end, defaults.$space-base);
   }
 }

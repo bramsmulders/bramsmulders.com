@@ -19,18 +19,29 @@
 
 .o-layer {
   @include mixins.rem(padding-block-start, defaults.$space-base);
-  @include mixins.rem(padding-block-end, defaults.$space-base);
-  padding-block-end: 1;
 
   @include mixins.mq($from: lap) {
     @include mixins.rem(padding-block-start, defaults.$space-large);
     @include mixins.rem(padding-block-end, defaults.$space-large - defaults.$space-base);
   }
+
+  &:first-child:not(.o-layer--bg) {
+    padding-block-start: 0;
+
+    @include mixins.mq($from: lap) {
+      @include mixins.rem(padding-block-start, defaults.$space-large - defaults.$space-base);
+    }
+  }
 }
 
+.o-layer--flow-root {
+  display: flow-root;
+}
 
 .o-layer--bg {
-  & + & {
-    @include mixins.rem(margin-block-start, defaults.$space-large);
+  @include mixins.mq($from: lap) {
+    & + & {
+      @include mixins.rem(margin-block-start, defaults.$space-large);
+    }
   }
 }
