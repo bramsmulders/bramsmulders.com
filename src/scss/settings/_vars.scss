@@ -20,6 +20,7 @@
   $gaps: (
     'base': defaults.$space-base,
     'small': defaults.$space-small,
+    'tiny': defaults.$space-tiny,
   ),
   $fill-in-breakpoint: (lap),
   $fit-in-breakpoint: (lap),
@@ -48,12 +49,12 @@ $family-leader: 'Ubuntu', sans-serif !default;
 $font-size-min: defaults.$font-size !default;
 $font-size-max: 28px !default;
 
-$font-size-alpha: 60px !default;
-$font-size-beta: 48px !default;
-$font-size-gamma: 40px !default;
-$font-size-delta: 32px !default;
+$font-size-alpha: 40px !default;
+$font-size-beta: 32px !default;
+$font-size-gamma: 24px !default;
+$font-size-delta: 24px !default;
 $font-size-epsilon: 24px !default;
-$font-size-zeta: 20px !default;
+$font-size-zeta: 24px !default;
 
 
 /**

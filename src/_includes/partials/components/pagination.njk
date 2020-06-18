@@ -1,21 +1,16 @@
 {% if paginationNextUrl or paginationPrevUrl %}
-  <hr />
-  <div>
-    <footer>
-      <nav>
-        {% if paginationPrevUrl %}
-          <a href="{{ paginationPrevUrl }}" data-direction="backwards">
-            <span>{{ paginationPrevText if paginationPrevText else 'Previous' }}</span>
-            {% include "icons/arrow.svg" %}
-          </a>
-        {% endif %}
-        {% if paginationNextUrl %}
-          <a href="{{ paginationNextUrl }}" data-direction="forwards">
-            <span>{{ paginationNextText if paginationNextText else 'Next' }}</span>
-            {% include "icons/arrow.svg" %}
-          </a>
-        {% endif %}
-      </nav>
-    </footer>
-  </div>
+  <footer>
+    <nav>
+      {% if paginationPrevUrl %}
+        <a href="{{ paginationPrevUrl }}" data-direction="backwards">
+          {{ paginationPrevText if paginationPrevText else 'Previous' }}
+        </a>
+      {% endif %}
+      {% if paginationNextUrl %}
+        <a href="{{ paginationNextUrl }}" data-direction="forwards">
+          {{ paginationNextText if paginationNextText else 'Next' }}
+        </a>
+      {% endif %}
+    </nav>
+  </footer>
 {% endif %}

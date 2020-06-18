@@ -1,5 +1,5 @@
 /*  =========================================================================
-    elements.typography
+    utilities.font-size
     ========================================================================= */
 
 /*  Use/Forward rules
@@ -12,41 +12,29 @@
 @use '../settings/vars';
 
 
-
 /*  Module
     ========================================================================= */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: vars.$family-leader;
-  @include mixins.rem(margin-block-end, defaults.$space-small);
-}
-
-
-h1 {
+.u-alpha {
   @include mixins.font-size(vars.$font-size-alpha);
 }
 
-h2 {
+.u-beta {
   @include mixins.font-size(vars.$font-size-beta);
 }
 
-h3 {
+.u-gamma {
   @include mixins.font-size(vars.$font-size-gamma);
 }
 
-h4 {
+.u-delta {
   @include mixins.font-size(vars.$font-size-delta);
 }
 
-h5 {
+.u-epsilon {
   @include mixins.font-size(vars.$font-size-epsilon);
 }
 
-h6 {
+.u-zeta {
   @include mixins.font-size(vars.$font-size-zeta);
 }

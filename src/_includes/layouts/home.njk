@@ -17,12 +17,9 @@
 {% endif %}
 
 {% block content %}
-  <main id="main-content" tabindex="-1">
-    <div class="[ o-grid ]">
-      {% include "partials/components/hero.njk" %}
-      {% include "partials/components/intro.njk" %}
-      {% include "partials/components/post-list.njk" %}
-      {% include "partials/components/pagination.njk" %}
-    </div>
+  <main class="[ o-grid ]" id="main-content" tabindex="-1">
+    {% include "partials/components/hero.njk" %}
+    {% include "partials/components/intro.njk" %}
+    {% include "partials/components/post-list.njk" %}
   </main>
 {% endblock %}
