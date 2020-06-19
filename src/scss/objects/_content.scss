@@ -7,6 +7,9 @@
     These can include variables, mixins & other includes.
     ========================================================================= */
 
+@use '../../../node_modules/supple/lib/tools/mixins';
+@use '../../../node_modules/supple/lib/settings/defaults';
+
 
 
 /*  Module
@@ -16,6 +19,14 @@
   img {
     width: 100%;
     height: auto;
+
+    &:first-child {
+      @include mixins.rem(margin-top, -(defaults.$space-base));
+
+      @include mixins.mq($from: lap) {
+        @include mixins.rem(margin-top, -(defaults.$space-large));
+      }
+    }
   }
 
   pre {

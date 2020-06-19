@@ -32,7 +32,7 @@ pre[class*='language-'] {
   background: none;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
   font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
-  font-size: 1em;
+  font-size: 0.85em;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -53,7 +53,6 @@ pre[class*='language-'] {
   @include mixins.rem(padding, defaults.$space-base);
   @include mixins.rem(margin-block-end, defaults.$space-base);
   overflow: auto;
-  border-radius: 0.3em;
 }
 
 :not(pre) > code[class*='language-'],
