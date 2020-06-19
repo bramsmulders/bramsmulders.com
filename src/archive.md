@@ -1,5 +1,5 @@
 ---
-title: 'Posts Archive'
+title: 'Why yes, I also write'
 layout: 'layouts/archive.njk'
 ---
 
