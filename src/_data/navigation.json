@@ -1,18 +1,18 @@
 {
   "items": [
     {
-      "text": "Home",
-      "url": "/",
+      "text": "Blog",
+      "url": "/archive",
       "external": false
     },
     {
-      "text": "GitHub",
-      "url": "https://github.com/bramsmulders",
-      "external": true
+      "text": "About me",
+      "url": "/about",
+      "external": false
     },
     {
       "text": "Contact",
-      "url": "/contact",
+      "url": "#contact",
       "external": false
     }
   ]
