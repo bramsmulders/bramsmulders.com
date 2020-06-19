@@ -1,0 +1,39 @@
+/*  =========================================================================
+    elements.form
+    ========================================================================= */
+
+/*  Use/Forward rules
+    `@use` or `@forward` everything you need here from other files.
+    These can include variables, mixins & other includes.
+    ========================================================================= */
+
+@use '../../../node_modules/supple/lib/tools/mixins';
+@use '../../../node_modules/supple/lib/tools/functions';
+@use '../../../node_modules/supple/lib/settings/defaults';
+@use '../settings/vars';
+
+
+
+/*  Module
+    ========================================================================= */
+
+label {
+  font-family: #{vars.$family-leader};
+
+  &[for] {
+    cursor: pointer;
+  }
+}
+
+input {
+  &[type='text'],
+  &[type='email'] {
+    @include mixins.rem(padding-block-start, defaults.$space-tiny - 1px);
+    @include mixins.rem(padding-block-end, defaults.$space-tiny - 1px);
+    @include mixins.rem(padding-inline-start, defaults.$space-small);
+    @include mixins.rem(padding-inline-end, defaults.$space-small);
+    border: none;
+    border-block-end: 2px solid var(--color-input-border);
+    background-color: var(--color-input-bg);
+  }
+}
