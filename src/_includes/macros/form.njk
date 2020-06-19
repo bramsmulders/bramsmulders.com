@@ -12,6 +12,7 @@
     type="{{ type }}"
     name="{{ name }}"
     id="field-{{ name }}"
+    class="c-input-text"
     {% if data.required %}required aria-required="true"{% endif %}
     {% if data.placeholder %}placeholder="{{ data.placeholder }}"{% endif %}
     {% if data.pattern %}pattern="{{ data.pattern }}"{% endif %}
@@ -83,9 +84,9 @@
   <br>
   <textarea
     id="field-{{ name }}"
+    class="c-input-text  c-input-text--area"
     name="{{ name }}"
     {% if data.rows %}rows="{{ data.rows }}"{% else %}rows="5"{% endif %}
-    cols="100"
     {% if data.required %}required aria-required="true"{% endif %}
     {% if data.autocorrect %}autocorrect="{{ data.autocorrect }}"{% endif %}
     {% if data.spellcheck %}spellcheck="{{ data.spellcheck }}"{% endif %}

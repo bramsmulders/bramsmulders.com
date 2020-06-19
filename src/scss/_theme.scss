@@ -23,7 +23,7 @@
   --color-action-bg: #{vars.$color-dark};
   --color-action-text: #{vars.$color-light};
   --color-input-bg: #{vars.$color-gray};
-  --color-input-border: #{vars.$color-brand-primary};
+  --color-input-border: #{vars.$color-brand-tertiary};
   --color-slate-bg: #{vars.$color-gray};
   --color-slate-text: #{vars.$color-dark};
   --color-dash-bg: #{vars.$color-brand-tertiary};
@@ -44,6 +44,7 @@
     --color-text: #{vars.$color-light};
     --color-stroke: #{vars.$color-light};
     --color-action-bg: #{vars.$color-brand-primary};
+    --color-input-bg: #{vars.$color-dark-gray};
     --color-slate-bg: #{vars.$color-brand-secondary};
     --color-slate-text: #{vars.$color-light};
     --color-dash-bg: #{vars.$color-brand-secondary};

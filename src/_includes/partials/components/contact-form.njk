@@ -1,16 +1,16 @@
 {% from "macros/form.njk" import label, field, textarea, button %}
 
-<form name="contact" method="POST" data-netlify="true" action="/thanking-you" netlify-honeypot="bot-field">
-  <ol class="o-list-clean">
-    <li>
+<form class="c-form" name="contact" method="POST" data-netlify="true" action="/thanking-you" netlify-honeypot="bot-field">
+  <ol class="[ c-form__list ]  [ o-list-clean ]">
+    <li class="[ c-form__list-item ]">
       {{ label("What’s your name?", "name") }}
       {{ field( "text", "name", { required: true, placeholder: "Katherine Johnson", autocomplete: "name", autocorrect: "off", autocapitalize: "off" } ) }}
     </li>
-    <li>
+    <li class="[ c-form__list-item ]">
       {{ label("What’s your email address?", "email") }}
       {{ field( "email", "email", { required: true, placeholder: "katherine@johnson.tld", autocomplete: "email" } ) }}
     </li>
-    <li>
+    <li class="[ c-form__list-item ]">
       {{ label("What’s on your mind?", "message") }}
       {{ textarea( "message", { required: true, autocapitalize: "sentences", spellcheck: "true" } ) }}
     </li>
