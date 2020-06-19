@@ -1,7 +1,7 @@
 ---
 title: 'About'
-permalink: '/about/index.html'
-layout: 'layouts/about.njk'
+permalink: '/awesome/index.html'
+layout: 'layouts/page.njk'
 introSummary: '<p>I’m Bram Smulders, a Front-end UI developer from Tilburg, the Netherlands. With a strong focus on accessibility & progressive enhancement I wire up HTML, CSS and JavaScript into rich online experiences.</p>'
 ---
 

@@ -1,7 +1,7 @@
 {% from "macros/form.njk" import label, field, textarea, button %}
 
 <form name="contact" method="POST" data-netlify="true" action="/thank-you" netlify-honeypot="bot-field">
-  <ol>
+  <ol class="o-list-clean">
     <li>
       {{ label("What’s your name?", "name") }}
       {{ field( "text", "name", { required: true, placeholder: "Katherine Johnson", autocomplete: "name", autocorrect: "off", autocapitalize: "off" } ) }}

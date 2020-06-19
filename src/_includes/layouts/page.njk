@@ -5,15 +5,11 @@
 
 {% block content %}
   <main id="main-content" tabindex="-1">
-    <div class="[ o-retain o-retain--wall ]">
-      <article>
-        {% include "partials/components/intro.njk" %}
-        <div>
-          {{ content | safe }}
-        </div>
-      </article>
-    </div>
+    <article class="[ o-grid ]">
+      {% include "partials/components/intro.njk" %}
+      <section class="[ o-content ]  [ o-layer ]  [ o-grid  o-grid--inner ]  [ u-module ]  [ u-margin-block-end-base ]">
+        {{ content | safe }}
+      </section>
+    </article>
   </main>
 {% endblock %}
-
-{{ content | safe }}
