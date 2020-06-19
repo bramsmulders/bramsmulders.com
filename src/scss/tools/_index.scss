@@ -9,9 +9,7 @@
  */
 @mixin dark-mode() {
   @media (prefers-color-scheme: dark) {
-    & {
-      --color-mode: 'dark';
-    }
+    --color-mode: 'dark';
 
     &:not([data-user-color-scheme]) {
       @content;
