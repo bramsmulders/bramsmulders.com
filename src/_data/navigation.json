@@ -1,11 +1,6 @@
 {
   "items": [
     {
-      "text": "Blog",
-      "url": "/writing",
-      "external": false
-    },
-    {
       "text": "About me",
       "url": "/awesome",
       "external": false
@@ -16,8 +11,13 @@
       "external": false
     },
     {
-      "text": "Contact",
-      "url": "/reachable",
+      "text": "Blog",
+      "url": "/writing",
+      "external": false
+    },
+    {
+      "text": "Hire me",
+      "url": "/available",
       "external": false
     }
   ]

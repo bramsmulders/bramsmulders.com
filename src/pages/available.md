@@ -1,6 +1,6 @@
 ---
 title: 'Lets talk!'
-permalink: '/reachable/index.html'
+permalink: '/available/index.html'
 layout: 'layouts/contact.njk'
 introSummary: '<p>Feel free to contact me if you’d like to work together or just to have a chat. </p>'
 ---

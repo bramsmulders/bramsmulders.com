@@ -1,0 +1,20 @@
+{% extends 'layouts/base.njk' %}
+
+{# Intro content #}
+{% set introHeading = title %}
+
+{% block content %}
+  <main id="main-content" tabindex="-1">
+    <article class="[ o-grid ]">
+      {% include "partials/components/intro.njk" %}
+      <section class="[ o-content ]  [ o-layer ]  [ o-grid  o-grid--inner ]  [ u-module ]  [ u-margin-block-end-base ]">
+        {{ content | safe }}
+        <div>
+          {% include "partials/components/work-list.njk" %}
+        </div>
+      </section>
+    </article>
+  </main>
+{% endblock %}
+
+{{ content | safe }}
