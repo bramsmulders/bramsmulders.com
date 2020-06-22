@@ -24,8 +24,8 @@ In other words I:
 - **Test accross devices and browsers**  to guarantee working functionality for all users.
 - **Optimize for performance** to ensure a speedy and lightweight project.
 
-## Company details
-**bram.is** is registered in the Dutch Chamber of Commerce under number XXXXXXXX. VAT number: NLXXXXXXXXXXXX.
+<!-- ## Company details
+**bram.is** is registered in the Dutch Chamber of Commerce under number XXXXXXXX. VAT number: NLXXXXXXXXXXXX. -->
 
 ## Still with me?
 Drop me a message below. The more details about your project you include in your message, the faster I can get back to you. You’ll hear back from me within 2–4 business days.
