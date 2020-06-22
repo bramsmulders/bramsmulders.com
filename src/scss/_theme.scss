@@ -25,6 +25,7 @@
   --color-action-bg-active: #{vars.$color-brand-primary};
   --color-input-bg: #{vars.$color-gray};
   --color-input-border: #{vars.$color-brand-tertiary};
+  --color-input-placeholder: #{vars.$color-dark-gray};
   --color-slate-bg: #{vars.$color-gray};
   --color-slate-text: #{vars.$color-dark};
   --color-dash-bg: #{vars.$color-brand-tertiary};
@@ -46,6 +47,7 @@
     --color-stroke: #{vars.$color-light};
     --color-action-bg: #{vars.$color-brand-primary};
     --color-input-bg: #{vars.$color-dark-gray};
+    --color-input-placeholder: #{vars.$color-gray};
     --color-slate-bg: #{vars.$color-brand-secondary};
     --color-slate-text: #{vars.$color-light};
     --color-dash-bg: #{vars.$color-brand-secondary};

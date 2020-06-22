@@ -27,6 +27,8 @@
   color: var(--color-action-text);
   font-family: #{vars.$family-leader};
   appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 
   &:focus,
   &:hover {

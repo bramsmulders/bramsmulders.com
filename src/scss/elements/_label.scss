@@ -1,0 +1,23 @@
+/*  =========================================================================
+    elements.label
+    ========================================================================= */
+
+/*  Use/Forward rules
+    `@use` or `@forward` everything you need here from other files.
+    These can include variables, mixins & other includes.
+    ========================================================================= */
+
+@use '../settings/vars';
+
+
+
+/*  Module
+    ========================================================================= */
+
+label {
+  font-family: #{vars.$family-leader};
+
+  &[for] {
+    cursor: pointer;
+  }
+}

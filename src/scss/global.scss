@@ -29,7 +29,7 @@
 @use 'elements/typography';
 @use 'elements/links';
 @use 'elements/hr';
-@use 'elements/form';
+@use 'elements/label';
 
 
 
@@ -51,8 +51,10 @@
 /*  Components
     ========================================================================= */
 
-@use 'components/skip-link';
 @use 'components/button';
+@use 'components/skip-link';
+@use 'components/form';
+@use 'components/input';
 @use 'components/masthead';
 @use 'components/logo';
 @use 'components/nav';
