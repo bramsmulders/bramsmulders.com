@@ -1,5 +1,5 @@
 /*  =========================================================================
-    elements.button
+    components.button
     ========================================================================= */
 
 /*  Use/Forward rules
@@ -17,7 +17,8 @@
 /*  Module
     ========================================================================= */
 
-button {
+.c-button {
+  display: inline-block;
   @include mixins.rem(padding-block-start, defaults.$space-tiny);
   @include mixins.rem(padding-block-end, defaults.$space-tiny);
   @include mixins.rem(padding-inline-start, defaults.$space-small);
@@ -29,6 +30,7 @@ button {
 
   &:focus,
   &:hover {
+    color: var(--color-action-text);
     background-color: var(--color-action-bg-active);
   }
 }

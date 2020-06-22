@@ -68,7 +68,7 @@ class ThemeToggle extends HTMLElement {
     this.innerHTML = html`
       <div class="u-margin-block-end-base">
         <div class="u-visually-hidden  js-mode-status" role="status"></div>
-        <button class="js-mode-toggle">
+        <button class="[ c-button ]  [ js-mode-toggle ]">
           Dark theme
         </button>
       </div>
