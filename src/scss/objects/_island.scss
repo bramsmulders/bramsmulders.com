@@ -1,5 +1,5 @@
 /*  =========================================================================
-    components.recent
+    objects.island
     ========================================================================= */
 
 /*  Use/Forward rules
@@ -8,21 +8,23 @@
     ========================================================================= */
 
 @use '../../../node_modules/supple/lib/tools/mixins';
+@use '../../../node_modules/supple/lib/settings/defaults';
+
+
+
+/*  Variables
+    ========================================================================= */
+
+
+
+/*  Functions/Mixins
+    ========================================================================= */
 
 
 
 /*  Module
     ========================================================================= */
 
-.c-recent {
-  --columns: 2;
-  grid-column: retained;
-}
-
-.c-recent__item {
-  --colspan: 2;
-
-  @include mixins.mq($from: lap) {
-    --colspan: 1;
-  }
+.o-island {
+  @include mixins.rem(padding, defaults.$space-base);
 }
