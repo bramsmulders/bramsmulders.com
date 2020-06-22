@@ -9,6 +9,12 @@
   force = false
 
 [[redirects]]
+  from = "/about"
+  to = "/awesome"
+  status = 301
+  force = false
+
+[[redirects]]
   from = "/posts"
   to = "/writing"
   status = 301
