@@ -17,8 +17,10 @@ You can [check out my website](https://djrebolo.com) and stream my music [on spo
 ## Experience
 I hold myself to high standards in:
 
-- Designing and creating websites
-- modern HTML, CSS (incl. Sass) and JavaScript (vanilla or, when needed, with a framework like React, Vue or Svelte).
+- Designing and creating websites.s
+- Semantic HTML.
+- Modern, lightweight and scalable CSS (incl. Sass).
+- Vanilla JavaScript (when needed: frameworks like React, Vue or Svelte).
 - Accessible code
 - Responsive design
 - Build tools like Webpack, Gulp, NPM scripts

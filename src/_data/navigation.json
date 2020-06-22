@@ -2,22 +2,22 @@
   "items": [
     {
       "text": "About me",
-      "url": "/awesome",
+      "url": "/awesome/",
       "external": false
     },
     {
       "text": "Work",
-      "url": "/working",
+      "url": "/working/",
       "external": false
     },
     {
       "text": "Blog",
-      "url": "/writing",
+      "url": "/writing/",
       "external": false
     },
     {
       "text": "Hire me",
-      "url": "/available",
+      "url": "/available/",
       "external": false
     }
   ]

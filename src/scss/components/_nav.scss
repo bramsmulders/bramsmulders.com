@@ -16,12 +16,17 @@
     ========================================================================= */
 
 .c-nav {
-  // text-transform: uppercase;
-  // font-weight: 500;
+  //
 }
 
 .c-nav__list {
   @include mixins.mq($from: lap) {
     justify-content: flex-end;
+  }
+}
+
+.c-nav__link {
+  &[aria-current='page'] {
+    color: var(--color-brand-primary);
   }
 }

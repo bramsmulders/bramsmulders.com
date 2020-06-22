@@ -14,7 +14,7 @@
         {% endif %}
 
         <li class="[ c-nav__item ]  [ o-layout__cell  o-layout__cell--fit ]">
-          <a href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text }}</a>
+          <a class="[ c-nav__link ]" href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text }}</a>
         </li>
       {% endfor %}
     </ul>
