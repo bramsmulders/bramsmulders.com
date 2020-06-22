@@ -3,6 +3,7 @@ title: 'About'
 permalink: '/awesome/index.html'
 layout: 'layouts/page.njk'
 introSummary: '<p>I’m Bram Smulders, a Front-end UI developer from the Netherlands. With a strong focus on accessibility & progressive enhancement I wire up HTML, CSS and JavaScript into rich online experiences.</p>'
+part: 'awesome'
 ---
 
 I’ve started contributing to the web around 2007 and worked with many different companies. These include agencies like [we are you](https://www.weareyou.com/), [E-sites](https://www.e-sites.nl/), [Freshheads](http://freshheads.com) and clients like [Eneco](http://eneco.com), [KNVB](http://knvb.nl), [Quinny](http://www.quinny.nl/), [Dunea](http://dunea.nl) & [Emerce](http://emerce.nl).

@@ -5,6 +5,7 @@ date: '2014-03-22'
 tags:
   - private
   - inner-learning
+part: 'writing'
 ---
 
 While everyone knows the words “introvert” and “extrovert”, I’m surprised by the misunderstanding of the terms. Many people have the following understanding:

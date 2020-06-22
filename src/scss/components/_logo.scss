@@ -25,30 +25,34 @@
   color: var(--color-brand-primary);
   font-family: vars.$family-leader;
   font-weight: 800;
-  text-decoration: none;
   white-space: nowrap;
 
-  &::before,
-  &::after {
-    position: absolute;
-    block-size: 4px;
-    content: '';
-    background-color: var(--color-stroke);
-  }
+  // &::before,
+  // &::after {
+  //   position: absolute;
+  //   block-size: 4px;
+  //   content: '';
+  //   background-color: var(--color-stroke);
+  // }
 
-  &::before {
-    inline-size: 63%;
-    top: 0;
-    right: 0;
-  }
+  // &::before {
+  //   inline-size: 63%;
+  //   top: 0;
+  //   right: 0;
+  // }
 
-  &::after {
-    bottom: 0;
-    left: 0;
-    inline-size: 37%;
-  }
+  // &::after {
+  //   bottom: 0;
+  //   left: 0;
+  //   inline-size: 37%;
+  // }
 
   @include mixins.mq($from: lap) {
     @include mixins.font-size(vars.$font-size-delta);
   }
+}
+
+.c-logo__domain,
+.c-logo__part {
+  text-decoration: none;
 }

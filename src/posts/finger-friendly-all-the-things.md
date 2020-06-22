@@ -5,6 +5,7 @@ date: '2013-02-26'
 tags:
   - workflow
   - touch
+part: 'writing'
 ---
 
 Since the release of the first iPhone the internet landscape has changed drastically. Companies acknowledged the importance of mobile presence, and in the years that followed mobile/touch ready websites began to become mainstream. Responsive and adaptive webdesign has gained its status quo, but we are at the verge of a new trend. A trend that will change our way of designing & building websites drastically.

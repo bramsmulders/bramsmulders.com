@@ -9,6 +9,7 @@ tags:
   - scss
   - smacss
   - bem
+part: 'writing'
 ---
 
 _Update: 27-02-2017_

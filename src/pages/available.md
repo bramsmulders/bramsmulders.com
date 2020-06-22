@@ -3,6 +3,7 @@ title: 'Hire Me'
 permalink: '/available/index.html'
 layout: 'layouts/contact.njk'
 introSummary: '<p>As a front-end UI developer, I work on <a href="https://bradfrost.com/blog/post/frontend-design">the front-end of the front-end</a>. That means I create HTML, CSS, and presentational JavaScript code that makes up a user interface.</p><p>Currently I’m available for long-term projects, consultancy, performance audits, workshops & training.</p>'
+part: 'available'
 ---
 
 I hold myself to high standards, and provide value for the investment you make when hiring me. My work is:

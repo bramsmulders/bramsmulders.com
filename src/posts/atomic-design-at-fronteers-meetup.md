@@ -7,6 +7,7 @@ tags:
   - atomic-design
   - css
   - components
+part: 'writing'
 ---
 
 On the 24th of January in 2017 I will be talking about Atomic Design at the [Fronteers meetup at E-sites](https://fronteers.nl/bijeenkomsten/2017/meetup-januari-e-sites).

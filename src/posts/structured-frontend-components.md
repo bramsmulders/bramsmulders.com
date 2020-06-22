@@ -8,6 +8,7 @@ tags:
   - css
   - components
   - sass
+part: 'writing'
 ---
 
 ![Atomic design folder structure](/images/talk-fronteers-e-sites.jpg)
