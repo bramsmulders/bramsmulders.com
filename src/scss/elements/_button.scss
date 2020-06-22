@@ -25,4 +25,12 @@ button {
   background-color: var(--color-action-bg);
   color: var(--color-action-text);
   font-family: #{vars.$family-leader};
+  appearance: none;
+
+  &:focus,
+  &:hover {
+    background-color: var(--color-action-bg-active);
+  }
 }
+
+

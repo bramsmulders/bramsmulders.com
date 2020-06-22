@@ -37,7 +37,7 @@
   }
 
   &::before {
-    inline-size: 62.5%;
+    inline-size: 63%;
     top: 0;
     right: 0;
   }
@@ -45,7 +45,7 @@
   &::after {
     bottom: 0;
     left: 0;
-    inline-size: 37.5%;
+    inline-size: 37%;
   }
 
   @include mixins.mq($from: lap) {
