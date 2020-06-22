@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Bram Smulders, Front-end UI engineer
+title: Home
 postsHeading: Latest posts
 archiveButtonText: See all posts
 metaDesc: 'My name is Bram Smulders and I am a UI developer, front-end architect & writer from Tilburg, The Netherlands'
