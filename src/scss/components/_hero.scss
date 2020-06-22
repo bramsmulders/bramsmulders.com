@@ -1,0 +1,32 @@
+/*  =========================================================================
+    components.hero
+    ========================================================================= */
+
+/*  Use/Forward rules
+    `@use` or `@forward` everything you need here from other files.
+    These can include variables, mixins & other includes.
+    ========================================================================= */
+
+@use '../../../node_modules/supple/lib/tools/functions';
+@use '../../../node_modules/supple/lib/tools/mixins';
+@use '../../../node_modules/supple/lib/settings/defaults';
+@use '../settings/vars';
+
+
+
+/*  Module
+    ========================================================================= */
+
+.c-hero {
+  display: flex;
+  min-height: calc(60vh - #{functions.value-to-rem(15 * defaults.$baseline)});
+}
+
+.c-hero__title {
+  text-transform: uppercase;
+}
+
+.c-hero__hi {
+  display: block;
+  text-transform: none;
+}

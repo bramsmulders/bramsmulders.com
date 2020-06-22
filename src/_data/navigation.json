@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "text": "About me",
+      "url": "/awesome/",
+      "external": false
+    },
+    {
+      "text": "Work",
+      "url": "/working/",
+      "external": false
+    },
+    {
+      "text": "Blog",
+      "url": "/writing/",
+      "external": false
+    },
+    {
+      "text": "Hire me",
+      "url": "/available/",
+      "external": false
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+/*  =========================================================================
+    components.masthead
+    ========================================================================= */
+
+/*  Use/Forward rules
+    `@use` or `@forward` everything you need here from other files.
+    These can include variables, mixins & other includes.
+    ========================================================================= */
+
+@use '../../../node_modules/supple/lib/tools/mixins';
+@use '../../../node_modules/supple/lib/settings/defaults';
+
+
+
+/*  Module
+    ========================================================================= */
+
+.c-masthead {
+  @include mixins.rem(padding-block-start, defaults.$space-small);
+  @include mixins.rem(padding-block-end, defaults.$space-base);
+
+  @include mixins.mq($from: lap) {
+    @include mixins.rem(padding-block-start, defaults.$space-base);
+  }
+}

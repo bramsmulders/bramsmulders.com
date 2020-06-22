@@ -1,8 +1,17 @@
-_build
+*.log
+npm-debug.*
+*.scssc
+*.log
+*.swp
+.DS_Store
 .sass-cache
-.jekyll-metadata
-bower_components
 node_modules
-*.map
-*.css
-!_source/_css/**/*.css
+dist 
+
+# Specifics
+
+# Hide design tokens
+src/scss/_tokens.scss
+
+# Hide compiled CSS
+src/_includes/assets/*

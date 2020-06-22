@@ -1,0 +1,16 @@
+{% if paginationNextUrl or paginationPrevUrl %}
+  <footer class="u-margin-block-end-base">
+    <nav>
+      {% if paginationPrevUrl %}
+        <a href="{{ paginationPrevUrl }}" data-direction="backwards">
+          {{ paginationPrevText if paginationPrevText else 'Previous' }}
+        </a>
+      {% endif %}
+      {% if paginationNextUrl %}
+        <a href="{{ paginationNextUrl }}" data-direction="forwards">
+          {{ paginationNextText if paginationNextText else 'Next' }}
+        </a>
+      {% endif %}
+    </nav>
+  </footer>
+{% endif %}
