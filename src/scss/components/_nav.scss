@@ -1,0 +1,32 @@
+/*  =========================================================================
+    components.nav
+    desc
+    ========================================================================= */
+
+/*  Use/Forward rules
+    `@use` or `@forward` everything you need here from other files.
+    These can include variables, mixins & other includes.
+    ========================================================================= */
+
+@use '../../../node_modules/supple/lib/tools/mixins';
+
+
+
+/*  Module
+    ========================================================================= */
+
+.c-nav {
+  //
+}
+
+.c-nav__list {
+  @include mixins.mq($from: lap) {
+    justify-content: flex-end;
+  }
+}
+
+.c-nav__link {
+  &[aria-current='page'] {
+    color: var(--color-brand-primary);
+  }
+}

@@ -1,0 +1,27 @@
+{% extends 'layouts/base.njk' %}
+
+{# Intro content #}
+{% set introHeadingLevel = "2" %}
+{% set introHeadingQuote = true %}
+{% set introSummary %}
+  {{ content | safe }}
+{% endset %}
+
+{# Post list content #}
+{% set postListHeading = postsHeading %}
+{% set postListItems = collections.postFeed %}
+
+{# Archive link #}
+{% if postListItems.length < collections.posts.length %}
+  {% set paginationNextText = archiveButtonText %}
+  {% set paginationNextUrl = '/archive' %}
+{% endif %}
+
+{% block content %}
+  <main class="[ o-grid ]" id="main-content" tabindex="-1">
+    {% include "partials/components/hero.njk" %}
+    {% include "partials/components/intro.njk" %}
+    {% include "partials/components/trusted.njk" %}
+    {% include "partials/components/post-list.njk" %}
+  </main>
+{% endblock %}

@@ -1,0 +1,51 @@
+[build]
+  command = "npm run production"
+  publish = "dist"
+
+[[redirects]]
+  from = "/blog"
+  to = "/writing"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/about"
+  to = "/awesome"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/posts"
+  to = "/writing"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/blog/how-i-improved-my-workflow-with-smacss-sass"
+  to = "/posts/how-i-improved-my-workflow-with-smacss-sass"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/blog/finger-friendly-all-the-things"
+  to = "/posts/finger-friendly-all-the-things"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/blog/i-am-fine-just-an-introvert"
+  to = "/posts/i-am-fine-just-an-introvert"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/blog/atomic-design-at-fronteers-meetup"
+  to = "/posts/atomic-design-at-fronteers-meetup"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/blog/structured-frontend-components"
+  to = "/posts/structured-frontend-components"
+  status = 301
+  force = false

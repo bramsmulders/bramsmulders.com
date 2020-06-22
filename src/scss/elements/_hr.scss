@@ -1,0 +1,26 @@
+/*  =========================================================================
+    elements.hr
+    ========================================================================= */
+
+/*  Use/Forward rules
+    `@use` or `@forward` everything you need here from other files.
+    These can include variables, mixins & other includes.
+    ========================================================================= */
+
+@use '../../../node_modules/supple/lib/tools/mixins';
+@use '../../../node_modules/supple/lib/tools/functions';
+@use '../../../node_modules/supple/lib/settings/defaults';
+@use '../settings/vars';
+
+
+
+/*  Module
+    ========================================================================= */
+
+hr {
+  color: currentColor;
+  border: none;
+  border-block-end-width: 1px;
+  border-block-end-style: solid;
+  @include mixins.rem(margin-block-end, defaults.$space-base - 1px);
+}

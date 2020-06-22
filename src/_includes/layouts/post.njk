@@ -1,0 +1,49 @@
+{% extends 'layouts/base.njk' %}
+
+{# Syntax highlighting #}
+{% block head %}
+  <style>{% include "assets/css/highlight.css" %}</style>
+{% endblock %}
+
+{# Intro content #}
+{% set introHeading = title %}
+{% set introElement = "header" %}
+{% set introPrefix %}
+  {% if date %}
+    <time datetime="{{ date | w3DateFilter }}" itemprop="datePublished">{{ date | dateFilter }}</time>
+  {% endif %}
+{% endset %}
+{% set introSummary %}
+  <span>Estimated reading time: {{ helpers.getReadingTime(content) }} minutes</span>
+{% endset %}
+
+{% block content %}
+  <main id="main-content" tabindex="-1">
+    <article class="[ o-grid ]" itemscope itemtype="http://schema.org/BlogPosting">
+      {% include "partials/components/intro.njk" %}
+
+      <section class="[ o-content ]  [ o-layer ]  [ o-grid  o-grid--inner ]  [ u-module ]  [ u-margin-block-end-base ]">
+        {{ content | safe }}
+        {% if site.enableThirdPartyComments %}
+          <hr />
+          <aside>
+            {% include "partials/global/third-party-comments.njk" %}
+          </aside>
+        {% endif %}
+        {% if tags %}
+          <hr />
+          <footer>
+            <h2 class="u-zeta">Filed under</h2>
+            <ul>
+              {% for item in tags %}
+                <li>
+                  <a href="/tags/{{ item }}">{{ item }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </footer>
+        {% endif %}
+      </section>
+    </article>
+  </main>
+{% endblock %}

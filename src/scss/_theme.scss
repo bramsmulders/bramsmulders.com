@@ -1,0 +1,89 @@
+/*  =========================================================================
+    theme
+    ========================================================================= */
+
+/*  Use/Forward rules
+    `@use` or `@forward` everything you need here from other files.
+    These can include variables, mixins & other includes.
+    ========================================================================= */
+
+@use 'settings/vars';
+@use 'tools';
+
+
+
+/*  Variables
+    ========================================================================= */
+
+:root {
+  --color-mode: 'light';
+  --color-bg: #{vars.$color-light};
+  --color-text: #{vars.$color-dark};
+  --color-stroke: #{vars.$color-dark};
+  --color-action-bg: #{vars.$color-dark};
+  --color-action-text: #{vars.$color-light};
+  --color-action-bg-active: #{vars.$color-brand-primary};
+  --color-input-bg: #{vars.$color-gray};
+  --color-input-border: #{vars.$color-brand-tertiary};
+  --color-input-placeholder: #{vars.$color-dark-gray};
+  --color-slate-bg: #{vars.$color-gray};
+  --color-slate-text: #{vars.$color-dark};
+  --color-dash-bg: #{vars.$color-brand-tertiary};
+  --color-trade-bg: #{vars.$color-dark};
+  --color-trade-text: #{vars.$color-light};
+  --color-highlight: #{vars.$color-brand-primary};
+  --color-syn-high-bg: #{vars.$color-dark};
+  --color-syn-high-light: #{vars.$color-light};
+  --color-syn-high-dark-gray: #{vars.$color-dark-gray};
+  --color-syn-high-primary: #{vars.$color-brand-primary};
+  --color-syn-high-tertiary: #{vars.$color-brand-tertiary};
+  --color-brand-primary: #{vars.$color-brand-primary};
+  --color-brand-secondary: #{vars.$color-brand-secondary};
+  --color-brand-tertiary: #{vars.$color-brand-tertiary};
+
+  @include tools.dark-mode() {
+    --color-bg: #{vars.$color-dark};
+    --color-text: #{vars.$color-light};
+    --color-stroke: #{vars.$color-light};
+    --color-action-bg: #{vars.$color-brand-primary};
+    --color-input-bg: #{vars.$color-dark-gray};
+    --color-input-placeholder: #{vars.$color-gray};
+    --color-slate-bg: #{vars.$color-brand-secondary};
+    --color-slate-text: #{vars.$color-light};
+    --color-dash-bg: #{vars.$color-brand-secondary};
+    --color-trade-bg: #{vars.$color-brand-secondary};
+    --color-syn-high-bg: #{vars.$color-brand-secondary};
+  }
+}
+
+
+
+/*  Classes
+    ========================================================================= */
+
+.t-highlight {
+  color: var(--color-highlight);
+}
+
+.t-dark-color {
+  color: var(--color-text);
+}
+
+.t-tertiary-color {
+  color: var(--color-brand-tertiary);
+}
+
+.t-slate-bg {
+  color: var(--color-slate-text);
+  background-color: var(--color-slate-bg);
+}
+
+.t-trade-bg {
+  color: var(--color-trade-text);
+  background-color: var(--color-trade-bg);
+}
+
+.t-dash-bg {
+  // color: var(--color-slate-text);
+  background-color: var(--color-dash-bg);
+}

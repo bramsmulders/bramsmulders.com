@@ -1,0 +1,22 @@
+{% if navigation.items %}
+  <nav class="[ c-nav ]" aria-label="{{ariaLabel}}">
+    <ul class="[ c-nav__list ]  [ o-layout  o-layout--gap-base ]  [ u-margin-block-end-none ]">
+      {% for item in navigation.items %}
+        {% set relAttribute = '' %}
+        {% set currentAttribute = '' %}
+
+        {% if item.rel %}
+          {% set relAttribute = ' rel="' + item.rel + '"' %}
+        {% endif %}
+
+        {% if page.url == item.url %}
+          {% set currentAttribute = ' aria-current="page"' %}
+        {% endif %}
+
+        <li class="[ c-nav__item ]  [ o-layout__cell  o-layout__cell--fit ]">
+          <a class="[ c-nav__link ]" href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+{% endif %}

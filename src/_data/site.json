@@ -1,0 +1,12 @@
+{
+  "name": "Bram<span class='t-dark-color'>.</span>is",
+  "shortDesc": "Bram Smulders",
+  "url": "https://bramsmulders.com",
+  "authorEmail": "hello@bramsmulders.com",
+  "authorHandle": "@bramsmulders",
+  "authorName": "Bram Smulders",
+  "enableThirdPartyComments": false,
+  "maxPostsPerPage": 5,
+  "paymentPointer": false,
+  "faviconPath": "/images/meta/icon-512x512.png"
+}

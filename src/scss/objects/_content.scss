@@ -1,0 +1,35 @@
+/*  =========================================================================
+    objects.content
+    ========================================================================= */
+
+/*  Use/Forward rules
+    `@use` or `@forward` everything you need here from other files.
+    These can include variables, mixins & other includes.
+    ========================================================================= */
+
+@use '../../../node_modules/supple/lib/tools/mixins';
+@use '../../../node_modules/supple/lib/settings/defaults';
+
+
+
+/*  Module
+    ========================================================================= */
+
+.o-content {
+  img {
+    width: 100%;
+    height: auto;
+
+    &:first-child {
+      @include mixins.rem(margin-top, -(defaults.$space-base));
+
+      @include mixins.mq($from: lap) {
+        @include mixins.rem(margin-top, -(defaults.$space-large));
+      }
+    }
+  }
+
+  pre {
+    grid-column: retained;
+  }
+}

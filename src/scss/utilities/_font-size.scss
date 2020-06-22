@@ -1,0 +1,44 @@
+/*  =========================================================================
+    utilities.font-size
+    ========================================================================= */
+
+/*  Use/Forward rules
+    `@use` or `@forward` everything you need here from other files.
+    These can include variables, mixins & other includes.
+    ========================================================================= */
+
+@use '../../../node_modules/supple/lib/tools/mixins';
+@use '../../../node_modules/supple/lib/settings/defaults';
+@use '../settings/vars';
+
+
+/*  Module
+    ========================================================================= */
+
+.u-alpha {
+  @include mixins.font-size(vars.$font-size-alpha);
+}
+
+.u-beta {
+  @include mixins.font-size(vars.$font-size-beta);
+}
+
+.u-gamma {
+  @include mixins.font-size(vars.$font-size-gamma);
+}
+
+.u-delta {
+  @include mixins.font-size(vars.$font-size-delta);
+}
+
+.u-epsilon {
+  @include mixins.font-size(vars.$font-size-epsilon);
+}
+
+.u-zeta {
+  @include mixins.font-size(vars.$font-size-zeta);
+}
+
+.u-eta {
+  @include mixins.font-size(vars.$font-size-eta);
+}

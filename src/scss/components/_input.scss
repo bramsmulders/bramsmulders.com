@@ -1,0 +1,39 @@
+/*  =========================================================================
+    components.input
+    ========================================================================= */
+
+/*  Use/Forward rules
+    `@use` or `@forward` everything you need here from other files.
+    These can include variables, mixins & other includes.
+    ========================================================================= */
+
+@use '../../../node_modules/supple/lib/tools/mixins';
+@use '../../../node_modules/supple/lib/tools/functions';
+@use '../../../node_modules/supple/lib/settings/defaults';
+@use '../settings/vars';
+
+
+
+/*  Module
+    ========================================================================= */
+
+.c-input-text {
+  @include mixins.rem(padding-block-start, defaults.$space-tiny - 1px);
+  @include mixins.rem(padding-block-end, defaults.$space-tiny - 1px);
+  @include mixins.rem(padding-inline-start, defaults.$space-small);
+  @include mixins.rem(padding-inline-end, defaults.$space-small);
+  border: none;
+  border-bottom: 2px solid var(--color-input-border);
+  background-color: var(--color-input-bg);
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.c-input-text--area {
+  inline-size: 100%;
+}
+
+::placeholder {
+  color: var(--color-input-placeholder);
+}

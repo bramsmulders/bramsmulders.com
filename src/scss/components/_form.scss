@@ -1,0 +1,26 @@
+/*  =========================================================================
+    components.form
+    ========================================================================= */
+
+/*  Use/Forward rules
+    `@use` or `@forward` everything you need here from other files.
+    These can include variables, mixins & other includes.
+    ========================================================================= */
+
+@use '../../../node_modules/supple/lib/tools/mixins';
+@use '../../../node_modules/supple/lib/settings/defaults';
+
+
+
+/*  Module
+    ========================================================================= */
+
+.c-form {
+  //
+}
+
+.c-form__list-item {
+  &:not(:last-child) {
+    @include mixins.rem(margin-block-end, defaults.$space-base);
+  }
+}
