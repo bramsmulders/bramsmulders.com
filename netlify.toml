@@ -3,26 +3,26 @@
   publish = "dist"
 
 [[redirects]]
-  from = “http://www.bramsmulders.com/* 3”
-  to = “https://bram.is/:splat”
+  from = "http://www.bramsmulders.com/* 3"
+  to = "https://bram.is/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = “https://www.bramsmulders.com/* 3”
-  to = “https://bram.is/:splat”
+  from = "https://www.bramsmulders.com/* 3"
+  to = "https://bram.is/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = “http://bramsmulders.com/* 3”
-  to = “https://bram.is/:splat”
+  from = "http://bramsmulders.com/* 3"
+  to = "https://bram.is/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = “https://bramsmulders.com/* 3”
-  to = “https://bram.is/:splat”
+  from = "https://bramsmulders.com/* 3"
+  to = "https://bram.is/:splat"
   status = 301
   force = true
 
