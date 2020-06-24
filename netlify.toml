@@ -5,21 +5,25 @@
 [[redirects]]
 from = "http://bramsmulders.com/*"
 to = "https://bram.is/:splat"
+status = 301
 force = true
 
 [[redirects]]
 from = "https://bramsmulders.com/*"
 to = "https://bram.is/:splat"
+status = 301
 force = true
 
 [[redirects]]
 from = "http://www.bramsmulders.com/*"
 to = "https://bram.is/:splat"
+status = 301
 force = true
 
 [[redirects]]
 from = "https://www.bramsmulders.com/*"
 to = "https://bram.is/:splat"
+status = 301
 force = true
 
 [[redirects]]
