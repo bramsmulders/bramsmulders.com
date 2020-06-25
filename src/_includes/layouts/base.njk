@@ -37,7 +37,8 @@
   {% include "partials/global/site-foot.njk" %}
   {% block foot %}
   {% endblock %}
-  <script type="module" src="/js/components/theme-toggle.js" async defer></script>
+
+  {# <script type="module" src="/js/components/theme-toggle.js" async defer></script> #}
 
   <script>
     if ('serviceWorker' in navigator) {
@@ -46,12 +47,6 @@
       });
     }
   </script>
-
-  <script
-    data-goatcounter="https://bramsmulders.goatcounter.com/count"
-    async
-    src="//gc.zgo.at/count.js"
-  ></script>
 
   <script type="text/javascript">
     var _gaq = _gaq || []
