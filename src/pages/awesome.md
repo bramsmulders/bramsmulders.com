@@ -1,5 +1,5 @@
 ---
-title: 'About'
+title: 'About me'
 permalink: '/awesome/index.html'
 layout: 'layouts/page.njk'
 introSummary: '<p>I’m Bram Smulders, a Front-end UI developer from the Netherlands. With a strong focus on accessibility & progressive enhancement I wire up HTML, CSS and JavaScript into rich online experiences.</p>'
@@ -18,12 +18,13 @@ You can [check out my website](https://djrebolo.com) and stream my music [on spo
 ## Experience
 I hold myself to high standards in:
 
-- Designing and creating websites.s
+- Designing and creating websites.
 - Semantic HTML.
 - Modern, lightweight and scalable CSS (incl. Sass).
 - Vanilla JavaScript (when needed: frameworks like React, Vue or Svelte).
 - Accessible code
 - Responsive design
+- Progressive Web Apps (PWA)
 - Build tools like Webpack, Gulp, NPM scripts
 - Styleguide drive development (using tools like [Pattern Lab](https://patternlab.io/))
 - Methods like scrum, Jira, TargetProcess, Trello, git, style- and JavaScript linters and other tools.
