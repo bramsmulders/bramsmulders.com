@@ -35,6 +35,7 @@
   {% block foot %}
   {% endblock %}
   <script type="module" src="/js/components/theme-toggle.js" async defer></script>
+
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
@@ -42,6 +43,20 @@
       });
     }
   </script>
+
+  <script
+    data-goatcounter="https://bramsmulders.goatcounter.com/count"
+    async
+    src="//gc.zgo.at/count.js"
+  ></script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || []
+    _gaq.push(['_setAccount', 'UA-39276659-1'])
+    _gaq.push(['_trackPageview'])
+  </script>
+  <script type="text/javascript" async src="//google-analytics.com/ga.js"></script>
+
   {# <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script> #}
 </body>
 </html>
