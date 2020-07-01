@@ -1,0 +1,34 @@
+/*  =========================================================================
+    elements.blockquote
+    ========================================================================= */
+
+/*  Use/Forward rules
+    `@use` or `@forward` everything you need here from other files.
+    These can include variables, mixins & other includes.
+    ========================================================================= */
+
+@use '../../../node_modules/supple/lib/tools/mixins';
+@use '../../../node_modules/supple/lib/tools/functions';
+@use '../../../node_modules/supple/lib/settings/defaults';
+@use '../settings/vars';
+
+
+
+/*  Variables
+    ========================================================================= */
+
+
+
+/*  Functions/Mixins
+    ========================================================================= */
+
+
+
+/*  Module
+    ========================================================================= */
+
+blockquote {
+  @include mixins.rem(padding-inline-start, defaults.$space-base);
+  border-left: 4px solid var(--color-slate-bg);
+  font-style: italic;
+}

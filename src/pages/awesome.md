@@ -18,12 +18,13 @@ You can [check out my website](https://djrebolo.com) and stream my music [on spo
 ## Experience
 I hold myself to high standards in:
 
-- Designing and creating websites.s
+- Designing and creating websites.
 - Semantic HTML.
 - Modern, lightweight and scalable CSS (incl. Sass).
 - Vanilla JavaScript (when needed: frameworks like React, Vue or Svelte).
 - Accessible code
 - Responsive design
+- Progressive Web Apps (PWA)
 - Build tools like Webpack, Gulp, NPM scripts
 - Styleguide drive development (using tools like [Pattern Lab](https://patternlab.io/))
 - Methods like scrum, Jira, TargetProcess, Trello, git, style- and JavaScript linters and other tools.

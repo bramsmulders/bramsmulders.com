@@ -11,9 +11,12 @@
   <meta name="theme-color" content="#ee4266"/>
 
   {% include "partials/global/meta-info.njk" %}
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://www.google-analytics.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://bramsmulders.goatcounter.com">
 
   <!-- the fastest google fonts  as per https://csswizardry.com/2020/05/the-fastest-google-fonts/ -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Ubuntu:wght@700&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Ubuntu:wght@700&display=swap" media="print" onload="this.media='all'" />
   <noscript>
@@ -34,7 +37,9 @@
   {% include "partials/global/site-foot.njk" %}
   {% block foot %}
   {% endblock %}
-  <script type="module" src="/js/components/theme-toggle.js" async defer></script>
+
+  {# <script type="module" src="/js/components/theme-toggle.js" async defer></script> #}
+
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
@@ -42,6 +47,14 @@
       });
     }
   </script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || []
+    _gaq.push(['_setAccount', 'UA-39276659-1'])
+    _gaq.push(['_trackPageview'])
+  </script>
+  <script type="text/javascript" async src="//google-analytics.com/ga.js"></script>
+
   {# <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script> #}
 </body>
 </html>

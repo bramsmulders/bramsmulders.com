@@ -16,6 +16,7 @@ module.exports = function(value, outputPath) {
       ...document.querySelectorAll('.o-content h2, .o-content h3')
     ];
     const articleEmbeds = [...document.querySelectorAll('.o-content iframe')];
+    const articleQuotes = [...document.querySelectorAll('.o-content blockquote')];
 
     if (articleImages.length) {
       articleImages.forEach(image => {
@@ -97,6 +98,13 @@ module.exports = function(value, outputPath) {
 
           embed.replaceWith(player);
         }
+      });
+    }
+
+    if (articleQuotes.length) {
+      articleQuotes.forEach(quote => {
+        // quote.classList.add('o-grid', 'o-grid--inner');
+        quote.classList.add('u-module');
       });
     }
 
