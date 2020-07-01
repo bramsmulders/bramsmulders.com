@@ -12,4 +12,4 @@ Hi, I’m Bram. I’m a front-end UI engineer from The Netherlands and I work by
 
 Find out more about [what i do](awesome/#heading-experience), my [background and experience](/awesome) or [my articles](#articles).
 
-Interested in working with me? [Contact me](/contact) for availability.
+Interested in working with me? [Contact me](/available) for availability.
