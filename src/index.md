@@ -2,7 +2,7 @@
 layout: home
 title: Home
 introHeading: I craft usable front-end code
-heroPayoff: Front-end UI engineer & music producer
+heroPayoff: Front-end UI engineer
 metaDesc: My name is Bram Smulders and I am a UI developer, front-end architect
   & writer from Tilburg, The Netherlands
 postsHeading: Latest posts
