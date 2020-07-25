@@ -1,12 +1,13 @@
 {
+  "showThemeCredit": false,
   "name": "Bram<span class='t-dark-color'>.</span>is",
   "shortDesc": "Bram Smulders, Front-end UI engineer",
   "url": "https://bram.is",
-  "authorEmail": "hello@bramsmulders.com",
+  "authorEmail": "hello@bram.is",
   "authorHandle": "@bramsmulders",
   "authorName": "Bram Smulders",
   "enableThirdPartyComments": false,
-  "maxPostsPerPage": 5,
   "paymentPointer": false,
-  "faviconPath": "/images/meta/icon-512x512.png"
+  "faviconPath": "/images/meta/icon-512x512.png",
+  "maxPostsPerPage": 5
 }
