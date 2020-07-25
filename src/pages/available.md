@@ -2,20 +2,22 @@
 title: 'Hire Me'
 permalink: '/available/index.html'
 layout: 'layouts/contact.njk'
-introSummary: '<p>As a front-end UI developer, I work on <a href="https://bradfrost.com/blog/post/frontend-design">the front-end of the front-end</a>. That means I create HTML, CSS, and presentational JavaScript code that makes up a user interface.</p><p>Currently I’m available for long-term projects, consultancy, performance audits, workshops & training.</p>'
+introSummary: '<p>As a front-end UI developer, I work on <a href="https://bradfrost.com/blog/post/frontend-design">the front-end of the front-end</a>. That means I create HTML, CSS, and presentational JavaScript code that makes up a user interface.</p><p>Currently I’m available for long-term projects, consultancy & performance audits.</p>'
 part: 'available'
 ---
 
-I hold myself to high standards, and provide value for the investment you make when hiring me. My work is:
+I hold myself to high standards, and provide value for the investment you make when hiring me. My work entails:
 
-- **Standards-compliant.**
-- **Mobile first.** I take a mobile-first approach to building front-ends.
-- **Fully responsive**, tested across numerous devices and browsers.
-- **Cross-browser compatible.** I don't optimize for older browsers (IE anyone?), but the interfaces I build are usually usable in those browsers. I just feel that a website does not need to look the same in every browser.
-- **Accessible.** The products I work on are by default usable for assistive technology users such as screenreaders.
-- **Progressively enhanced.** The front-end is using semantically marked up content, styled with modern CSS, and enhanced with JavaScript for interactivity.
-- **Uses the latest in the front-end field.** New CSS, with possible fallbacks for older browsers.
-- **Optimized for performance.** The experience feels lightweight and fast.
+- Designing and creating websites.
+- Semantic HTML.
+- Modern, lightweight and scalable CSS (incl. Sass).
+- Vanilla JavaScript (when needed: frameworks like React, Vue or Svelte).
+- Accessible code
+- Responsive design
+- Progressive Web Apps (PWA)
+- Build tools like Webpack, Gulp, NPM scripts
+- Styleguide drive development (using tools like [Pattern Lab](https://patternlab.io/))
+- Methods like scrum, Jira, TargetProcess, Trello, git, style- and JavaScript linters and other tools.
 
 In other words I:
 
