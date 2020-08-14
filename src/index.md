@@ -14,6 +14,6 @@ Hi, I’m Bram. I’m a front-end UI developer from The Netherlands and I work b
 
 Find out more about [what i do](awesome/#heading-experience), my [background and experience](/awesome) or [my articles](#articles).
 
-Interested in working with me? <a href="/available" class="c-button  c-button--inline">I’m available</a> for new projects, performance audits and consultancy.
+**Interested in working with me?** <a href="/available" class="c-button  c-button--inline">I’m available</a> for new projects, performance audits and consultancy.
 
 

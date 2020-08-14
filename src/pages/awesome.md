@@ -30,4 +30,4 @@ I hold myself to high standards in:
 - Methods like scrum, Jira, TargetProcess, Trello, git, style- and JavaScript linters and other tools.
 
 ## Hire me!
-Got excited? Learn more about the [work I do](/available) or [hire me](/available).
+Got excited? Learn more about the [work I do](/working) or [hire me](/available).
