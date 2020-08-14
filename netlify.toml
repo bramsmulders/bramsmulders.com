@@ -46,48 +46,77 @@
 
 [[redirects]]
   from = "/blog/how-i-improved-my-workflow-with-smacss-sass"
-  to = "/posts/how-i-improved-my-workflow-with-smacss-sass"
+  to = "/writing/how-i-improved-my-workflow-with-smacss-sass"
   status = 301
   force = true
 
 [[redirects]]
   from = "/how-i-improved-my-workflow-with-smacss-sass.html"
-  to = "/posts/how-i-improved-my-workflow-with-smacss-sass"
+  to = "/writing/how-i-improved-my-workflow-with-smacss-sass"
   status = 301
   force = true
 
 [[redirects]]
+  from = "/posts/how-i-improved-my-workflow-with-smacss-sass"
+  to = "/writing/how-i-improved-my-workflow-with-smacss-sass"
+  status = 301
+  force = true
+
+
+[[redirects]]
   from = "/blog/finger-friendly-all-the-things"
-  to = "/posts/finger-friendly-all-the-things"
+  to = "/writing/finger-friendly-all-the-things"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/posts/finger-friendly-all-the-things"
+  to = "/writing/finger-friendly-all-the-things"
   status = 301
   force = true
 
 [[redirects]]
   from = "/finger-friendly-all-the-things.html"
-  to = "/posts/finger-friendly-all-the-things"
+  to = "/writing/finger-friendly-all-the-things"
+  status = 301
+  force = true
+
+
+[[redirects]]
+  from = "/blog/i-am-fine-just-an-introvert"
+  to = "/writing/i-am-fine-just-an-introvert"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/blog/i-am-fine-just-an-introvert"
-  to = "/posts/i-am-fine-just-an-introvert"
+  from = "/posts/i-am-fine-just-an-introvert"
+  to = "/writing/i-am-fine-just-an-introvert"
   status = 301
   force = true
 
 [[redirects]]
   from = "/i-am-fine-just-an-introvert.html"
-  to = "/posts/i-am-fine-just-an-introvert"
+  to = "/writing/i-am-fine-just-an-introvert"
+  status = 301
+  force = true
+
+
+[[redirects]]
+  from = "/blog/atomic-design-at-fronteers-meetup"
+  to = "/writing/atomic-design-at-fronteers-meetup"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/blog/atomic-design-at-fronteers-meetup"
-  to = "/posts/atomic-design-at-fronteers-meetup"
+  from = "/posts/atomic-design-at-fronteers-meetup"
+  to = "/writing/atomic-design-at-fronteers-meetup"
   status = 301
   force = true
 
 [[redirects]]
   from = "/blog/structured-frontend-components"
-  to = "/posts/structured-frontend-components"
+  to = "/writing/structured-frontend-components"
   status = 301
   force = true
+
+
