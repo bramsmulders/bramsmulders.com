@@ -1,6 +1,7 @@
 ---
 title: 'Using'
 permalink: '/using/index.html'
+metaDesc: While developing, making music or playing games you can find me using a lot of hardware and software
 introSummary: '<p>While developing, making music or playing games you can find me using a lot of hardware and software. Visit <a href="https://uses.tech">uses.tech</a> for a list of what others use.</p>'
 part: 'using'
 ---
