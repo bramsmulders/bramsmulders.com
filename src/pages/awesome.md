@@ -29,5 +29,5 @@ I hold myself to high standards in:
 - Styleguide drive development (using tools like [Pattern Lab](https://patternlab.io/))
 - Methods like scrum, Jira, TargetProcess, Trello, git, style- and JavaScript linters and other tools.
 
-## Hire me!
-Got excited? Learn more about the [work I do](/working) or [hire me](/available).
+## Got excited?
+Learn more about the [work I do](/working), the [tools I use](/using) or [hire me](/available).
