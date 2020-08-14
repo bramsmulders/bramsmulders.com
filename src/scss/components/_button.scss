@@ -26,15 +26,28 @@
   background-color: var(--color-action-bg);
   color: var(--color-action-text);
   font-family: #{vars.$family-leader};
+  text-decoration: none;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
 
   &:focus,
   &:hover {
-    color: var(--color-action-text);
+    color: var(--color-action-text-active);
     background-color: var(--color-action-bg-active);
   }
+}
+
+
+/**
+ * modifier: inline
+ */
+.c-button--inline {
+  font-family: #{vars.$family-body};
+  padding-block-start: 0;
+  padding-block-end: 0;
+  @include mixins.rem(padding-inline-start, defaults.$space-tiny);
+  @include mixins.rem(padding-inline-end, defaults.$space-tiny);
 }
 
 

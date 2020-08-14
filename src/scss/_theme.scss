@@ -23,6 +23,7 @@
   --color-action-bg: #{vars.$color-dark};
   --color-action-text: #{vars.$color-light};
   --color-action-bg-active: #{vars.$color-brand-primary};
+  --color-action-text-active: #{vars.$color-light};
   --color-input-bg: #{vars.$color-gray};
   --color-input-border: #{vars.$color-brand-tertiary};
   --color-input-placeholder: #{vars.$color-dark-gray};
@@ -46,6 +47,8 @@
     --color-text: #{vars.$color-light};
     --color-stroke: #{vars.$color-light};
     --color-action-bg: #{vars.$color-brand-primary};
+    --color-action-text-active: #{vars.$color-dark};
+    --color-action-bg-active: #{vars.$color-brand-tertiary};
     --color-input-bg: #{vars.$color-dark-gray};
     --color-input-placeholder: #{vars.$color-gray};
     --color-slate-bg: #{vars.$color-brand-secondary};
