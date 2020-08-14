@@ -36,12 +36,34 @@ module.exports = function(value, outputPath) {
           const dimensions = getSize('src' + file);
 
           image.setAttribute('width', dimensions.width);
-          image.setAttribute('height', dimensions.height);;
+          image.setAttribute('height', dimensions.height);
+        }
+
+        // webp
+        if (file.includes('webp')) {
+          const picture = document.createElement('picture');
+          const sourceWebp = document.createElement('source');
+          const sourceJpeg = document.createElement('source');
+
+          sourceWebp.srcset = file;
+          sourceWebp.type = 'image/webp';
+
+          sourceJpeg.srcset = file.replace('.webp', '.jpg');
+          sourceJpeg.type = 'image/jpeg';
+
+          picture.appendChild(sourceWebp);
+          picture.appendChild(sourceJpeg);
+          image.src = file.replace('.webp', '.jpg');
+          picture.appendChild(image.cloneNode(true));
+
+          picture.classList.add('o-grid__retained', 'u-margin-block-end-base');
+
+          image.replaceWith(picture);
         }
 
         // If an image has a title it means that the user added a caption
         // so replace the image with a figure containing that image and a caption
-        if (image.hasAttribute('title')) {
+        else if (image.hasAttribute('title')) {
           const figure = document.createElement('figure');
           const figCaption = document.createElement('figcaption');
 

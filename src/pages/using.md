@@ -4,7 +4,7 @@ permalink: '/using/index.html'
 introSummary: '<p>While developing, making music or playing games you can find me using a lot of hardware and software. Visit <a href="https://uses.tech">uses.tech</a> for a list of what others use.</p>'
 part: 'using'
 ---
-![My office with a desk, laptop, etc](/images/uses-small.jpg)
+![My office with a desk, laptop, etc](/images/uses-small.webp)
 
 ## Hardware
 
@@ -29,7 +29,7 @@ part: 'using'
 * [Custom made Ikea kitchen tabletop (293x100 cm)](https://www.ikea.com/us/en/p/karlby-countertop-oak-veneer-70335207/)
 * [Ikea Finnvard trestles](https://www.ikea.com/nl/en/p/finnvard-trestle-with-shelf-white-80150095/)
 
-![Game section of my room with Xbox one, tv and Nintendo consoles](/images/uses-small-2.jpg)
+![Game section of my room with Xbox one, tv and Nintendo consoles](/images/uses-small-2.webp)
 
 ## Software
 

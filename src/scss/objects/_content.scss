@@ -19,7 +19,11 @@
   img {
     width: 100%;
     height: auto;
+  }
 
+  img,
+  picture,
+  figure {
     &:first-child {
       @include mixins.rem(margin-top, -(defaults.$space-base));
 
