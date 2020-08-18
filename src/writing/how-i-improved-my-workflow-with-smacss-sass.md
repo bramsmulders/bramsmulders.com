@@ -134,7 +134,7 @@ When you are using BEM, though, it is important to remember that you don’t nee
 This CSS would never fall into any BEM category, it’s merely a standalone rule.
 
 ### Using Sass @extend
-Sass @extend is a very powerfull tool to DRY out you stylesheets, but must not be overused. Since we want modules to be portable you must only extend within a modules scope, a module must not be tied to other modules to work.
+Sass @extend is a very powerful tool to DRY out you stylesheets, but must not be overused. Since we want modules to be portable you must only extend within a modules scope, a module must not be tied to other modules to work.
 
 ## Conclusion
 SMACSS is a very user-friendly approach to modular CSS. It asks for nothing less than a complete shift from a "page mentality" towards web design, to a search and codification of visual patterns. For that it offers a sensible categorization and naming scheme. It goes along very well with SASS, especially using the @extend feature and when it comes to themeing. It's kind of an open question how SASS's nesting capabilities fit with SMACSS, but in general I think it can bring lots of very valuable and badly needed modularity and conventions to the web design community.
