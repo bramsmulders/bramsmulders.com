@@ -3,8 +3,7 @@ layout: home
 title: Home
 introHeading: I write modern, usable, scalable & resilient front-end code
 heroPayoff: Front-end UI developer
-metaDesc: My name is Bram Smulders and I am a UI developer, front-end architect
-  & writer from Tilburg, The Netherlands
+metaDesc: My name is Bram Smulders and I am a front-end UI developer from The Netherlands. I specialise in scalable code for apps and websites with a strong focus on accessibility, progressive enhancement and powerfull, speedy development.
 postsHeading: Latest posts
 archiveButtonText: See all posts
 socialImage: ""
