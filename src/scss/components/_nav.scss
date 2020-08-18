@@ -26,7 +26,7 @@
 }
 
 .c-nav__link {
-  &[aria-current='page'] {
+  &.is-active {
     color: var(--color-brand-primary);
   }
 }
