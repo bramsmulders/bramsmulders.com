@@ -1,5 +1,5 @@
 /*  =========================================================================
-    elements.typography
+    elements.code
     ========================================================================= */
 
 /*  Use/Forward rules
@@ -13,40 +13,23 @@
 
 
 
+/*  Variables
+    ========================================================================= */
+
+
+
+/*  Functions/Mixins
+    ========================================================================= */
+
+
+
 /*  Module
     ========================================================================= */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: vars.$family-leader;
-  @include mixins.rem(margin-block-end, defaults.$space-small);
-}
-
-
-h1 {
-  @include mixins.font-size(vars.$font-size-alpha);
-}
-
-h2 {
-  @include mixins.font-size(vars.$font-size-beta);
-}
-
-h3 {
-  @include mixins.font-size(vars.$font-size-gamma);
-}
-
-h4 {
-  @include mixins.font-size(vars.$font-size-delta);
-}
-
-h5 {
-  @include mixins.font-size(vars.$font-size-epsilon);
-}
-
-h6 {
-  @include mixins.font-size(vars.$font-size-zeta);
+code {
+  display: inline-block;
+  padding-inline-start: 0.3em;
+  padding-inline-end: 0.3em;
+  font-size: 0.85em;
+  background-color: var(--color-code-bg);
 }
