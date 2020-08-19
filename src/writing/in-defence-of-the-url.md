@@ -29,7 +29,7 @@ Let's say that a user has navigated to the following URL:
 `http://awesome-bank.com/superawesome-phishing-page.html`
 Chrome will only show `awesome-bank.com` making it impossible for the user to check if the site sends data securely and indentifying the fishy html page they are on. 
 
-Basically Chrome reduces the ability for a user to verify a URL by 3 points to just 1 point. Making it less easy for a user to identify possible fraud/phishing/scams.
+Basically Chrome reduces the ability for a user to verify a URL by 3 points to just 1 point (`https`, the domain and the endpoint). Making it less easy for a user to identify possible fraud/phishing/scams.
 
 ## Identity
 Let's say you are using Chrome 86 and you found out about this blog on Twitter. You clicked on the link in the Twitter post and landed on this page immediately. The URL-bar is showing you `bram.is`. Are you on the homepage? How do you share this page? Where the hell are you? 
