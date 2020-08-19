@@ -1,6 +1,8 @@
 ---
 layout: layouts/post.njk
 title: In defence of the URL
+metaDesc: Be creative and clear with your URLs. Browsers should not hide the
+  URL. The users will thank you.
 date: 2020-08-19T13:05:46.664Z
 tags:
   - platform
