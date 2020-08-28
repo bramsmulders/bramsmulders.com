@@ -14,6 +14,14 @@
   $space-factor-base: 4,
   $space-factor-large: 8,
   $space-factor-huge: 16,
+  $static-breakpoint-name: wall,
+  $static-breakpoint-size: 1280px,
+  $breakpoints: (
+    palm: 480px,
+    lap: 640px,
+    desk: 960px,
+    wall: 1280px,
+  ),
 );
 
 @use '../../../node_modules/supple/lib/objects/layout/variables' as layout-variables with (
@@ -23,8 +31,8 @@
     'small': defaults.$space-small,
     'tiny': defaults.$space-tiny,
   ),
-  $fill-in-breakpoint: (lap),
-  $fit-in-breakpoint: (lap),
+  $fill-in-breakpoint: (palm, lap),
+  $fit-in-breakpoint: (palm, lap),
 );
 
 @use '../../../node_modules/supple/lib/utilities/spacing/variables' as spacing-variables with (

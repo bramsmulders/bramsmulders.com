@@ -19,7 +19,12 @@
 
 .c-hero {
   display: flex;
-  min-height: calc(60vh - #{functions.value-to-rem(15 * defaults.$baseline)});
+  text-align: center;
+
+  @include mixins.mq(palm) {
+    text-align: start;
+    min-height: calc(60vh - #{functions.value-to-rem(15 * defaults.$baseline)});
+  }
 }
 
 .c-hero__title {
@@ -29,4 +34,16 @@
 .c-hero__hi {
   display: block;
   text-transform: none;
+}
+
+.c-hero__wrap-image {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  @include mixins.rem(inline-size, defaults.$baseline * 14);
+}
+
+.c-hero__image {
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--color-brand-primary);
 }
