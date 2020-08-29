@@ -1,15 +1,18 @@
 ---
-title: 'Using'
-permalink: '/using/index.html'
-metaDesc: While developing, making music or playing games you can find me using a lot of hardware and software
-introSummary: '<p>While developing, making music or playing games you can find me using a lot of hardware and software. Visit <a href="https://uses.tech">uses.tech</a> for a list of what others use.</p>'
-part: 'using'
+title: Using
+permalink: /using/index.html
+metaDesc: While developing, making music or playing games you can find me using
+  a lot of hardware and software
+introSummary: <p>While developing, making music or playing games you can find me
+  using a lot of hardware and software. Visit <a
+  href="https://uses.tech">uses.tech</a> for a list of what others use.</p>
+part: using
 ---
 ![My office with a desk, laptop, etc](/images/uses-small.webp)
 
 ## Hardware
 
-* [MacBook Pro (15-inch, 2019)](https://support.apple.com/kb/SP794)
+* [MacBook Pro (16-inch, 2019)](https://support.apple.com/kb/SP809)
 * [LG 29UB67 Ultrawide 21:9 monitor](https://www.coolblue.nl/product/595980/lg-29ub67.html)
 * [M-Audio BX8 D3 Studio reference monitors](https://m-audio.com/bx8d3)
 * [M-Audio Keystation 88](https://m-audio.com/products/view3/keystation-88)
