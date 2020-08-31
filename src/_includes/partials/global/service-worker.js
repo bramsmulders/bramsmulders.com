@@ -63,8 +63,6 @@ self.addEventListener('activate', evt => {
 self.addEventListener('fetch', evt => {
   const {hostname} = new URL(evt.request.url);
 
-  console.log('evt.request', evt.request);
-
   // Check we don't want to ignore this host
   if (IGNORED_HOSTS.indexOf(hostname) >= 0) {
     return;
