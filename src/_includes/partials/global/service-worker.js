@@ -14,7 +14,13 @@ const EXCLUDED_URLS = [
 ];
 
 // URLS that we want to be cached when the worker is installed
-const PRE_CACHE_URLS = ['/'];
+const PRE_CACHE_URLS = [
+  '/',
+  '/fonts/ubuntu-v14-latin-700.woff2',
+  '/fonts/crimson-text-v10-latin-regular.woff2',
+  '/fonts/crimson-text-v10-latin-italic.woff2',
+  '/fonts/crimson-text-v10-latin-700.woff2',
+];
 
 // You might want to bypass a certain host
 const IGNORED_HOSTS = ['localhost', 'unpkg.com', ];
@@ -56,6 +62,8 @@ self.addEventListener('activate', evt => {
 
 self.addEventListener('fetch', evt => {
   const {hostname} = new URL(evt.request.url);
+
+  console.log('evt.request', evt.request);
 
   // Check we don't want to ignore this host
   if (IGNORED_HOSTS.indexOf(hostname) >= 0) {
