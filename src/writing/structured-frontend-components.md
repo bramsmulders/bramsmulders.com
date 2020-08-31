@@ -10,7 +10,7 @@ tags:
   - sass
 part: writing
 ---
-![Atomic design folder structure](/images/talk-fronteers-e-sites.jpg)
+![Bram Smulders speaking about Atomic Design fot Fronteers at E-sites](/images/talk-fronteers-e-sites.jpg)
 
 *This article is an in depth follow up on the [talk](https://bramsmulders.github.io/slides/atomic-design-met-pattern-lab.html#/) I gave at the [Fronteers meetup at e-sites](https://fronteers.nl/bijeenkomsten/2017/meetup-januari-e-sites).*
 
