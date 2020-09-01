@@ -15,6 +15,16 @@
 {% endset %}
 {% set introSummary %}
   <span>Estimated reading time: {{ helpers.getReadingTime(content) }} minutes</span>
+  {% if tags %}
+    <p class="u-visually-hidden">Filed under</p>
+    <ul class="o-layout  o-layout--gap-small">
+      {% for item in tags %}
+        <li class="o-layout__cell  o-layout__cell--fit">
+          <a href="/tags/{{ item }}">#{{ item }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 {% endset %}
 
 {% block content %}
@@ -29,19 +39,6 @@
           <aside>
             {% include "partials/global/third-party-comments.njk" %}
           </aside>
-        {% endif %}
-        {% if tags %}
-          <hr />
-          <footer>
-            <h2 class="u-zeta">Filed under</h2>
-            <ul>
-              {% for item in tags %}
-                <li>
-                  <a href="/tags/{{ item }}">{{ item }}</a>
-                </li>
-              {% endfor %}
-            </ul>
-          </footer>
         {% endif %}
       </section>
     </article>
