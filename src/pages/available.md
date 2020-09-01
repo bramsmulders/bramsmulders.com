@@ -1,9 +1,12 @@
 ---
-title: 'Let’s talk'
-permalink: '/available/index.html'
-layout: 'layouts/contact.njk'
-introSummary: '<p>Feel free to contact me if you’d like to work together on projects, consultancy, performance audits or just to have a talk.</p>'
-part: 'available'
+layout: layouts/contact.njk
+title: Let’s talk
+permalink: /available/index.html
+introSummary: <p>Feel free to contact me if you’d like to work together on
+  projects, consultancy, performance audits or just to have a talk.</p>
+part: available
+metaDesc: I’m for hire as a senior Front-end UI developer. Currently I’m open
+  for new long-term projects, performance audits and consultancy.
 ---
 
 ## Availability
