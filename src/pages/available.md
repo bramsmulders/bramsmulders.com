@@ -7,6 +7,7 @@ introSummary: <p>Feel free to contact me if you’d like to work together on
 part: available
 metaDesc: I’m for hire as a senior Front-end UI developer. Currently I’m open
   for new long-term projects, performance audits and consultancy.
+socialImage: /images/talk-fronteers-e-sites.jpg
 ---
 
 ## Availability
