@@ -14,7 +14,7 @@
   {% endif %}
 {% endset %}
 {% set introSummary %}
-  <span>Estimated reading time: {{ helpers.getReadingTime(content) }} minutes</span>
+  <span>Takes about {{ helpers.getReadingTime(content) }} minutes to read</span>
   {% if tags %}
     <p class="u-visually-hidden">Filed under</p>
     <ul class="o-layout  o-layout--gap-small">
