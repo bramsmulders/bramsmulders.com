@@ -42,6 +42,7 @@
   &:last-child {
     @include mixins.rem(margin-block-end, defaults.$space-base);
   }
+
   @include mixins.mq($from: lap) {
     & + & {
       @include mixins.rem(margin-block-start, defaults.$space-large);
