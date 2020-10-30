@@ -1,5 +1,5 @@
 ---
-layout: layouts/page.njk
+layout: layouts/about.njk
 title: About me
 permalink: /awesome/index.html
 introSummary: <p>I’m Bram Smulders, a Front-end UI developer from the
