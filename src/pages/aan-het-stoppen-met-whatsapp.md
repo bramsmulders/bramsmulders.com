@@ -1,6 +1,6 @@
 ---
 title: Ik stop met WhatsApp
-permalink: /ik-stop-met-whatsapp/index.html
+permalink: /aan-het-stoppen-met-whatsapp/index.html
 metaDesc: Waarom ik besloten heb te stoppen met WhatsApp
 introSummary: <p>Waarom heb ik besloten om WhatsApp(en andere Facebook & Google diensten) te verwijderen?</p>
 ---
