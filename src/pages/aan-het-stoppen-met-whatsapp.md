@@ -5,6 +5,13 @@ metaDesc: Waarom ik besloten heb te stoppen met WhatsApp
 introSummary: <p>Waarom heb ik besloten om WhatsApp(en andere Facebook & Google diensten) te verwijderen?</p>
 ---
 
+<style>
+  .o-content img {
+    border: 5px solid var(--color-stroke);
+    grid-column: main;
+  }
+</style>
+
 Recent heeft Facebook de voorwaarden van WhatsApp aangepast waardoor het makkelijker is om jouw persoonlijke gegevens te verhandelen aan derde partijen. Ook is bewezen dat Facebook actief heeft bijgedragen aan haat, racisme en polarisatie (zie documentaire "The Great Dilemma"). Aan deze ontwikkelingen wil ik niet meer meewerken, dus ik heb besloten om volledig van Facebook en Google af te stappen.
 
 ## Alternatieven
@@ -55,11 +62,3 @@ Er zijn gelukkig een hoop alternatieven beschikbaar om met elkaar in contact te 
 ![Redenen om WhatsApp te verwijderen 19](/images/articles/whatsapp/nl/19.png)
 
 ![Redenen om WhatsApp te verwijderen 20](/images/articles/whatsapp/nl/20.png)
-
-<style>
-  .o-content img {
-    border: 5px solid var(--color-stroke);
-    max-width: 640px;
-    grid-column: main;
-  }
-</style>
