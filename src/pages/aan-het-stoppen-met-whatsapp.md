@@ -16,45 +16,45 @@ Er zijn gelukkig een hoop alternatieven beschikbaar om met elkaar in contact te 
 
 ## Simpele uitleg:
 
-![Redenen om WhatsApp te verwijderen 01](/images/articles/whatsapp/01.png)
+![Redenen om WhatsApp te verwijderen 01](/images/articles/whatsapp/nl/01.png)
 
-![Redenen om WhatsApp te verwijderen 02](/images/articles/whatsapp/02.png)
+![Redenen om WhatsApp te verwijderen 02](/images/articles/whatsapp/nl/02.png)
 
-![Redenen om WhatsApp te verwijderen 03](/images/articles/whatsapp/03.png)
+![Redenen om WhatsApp te verwijderen 03](/images/articles/whatsapp/nl/03.png)
 
-![Redenen om WhatsApp te verwijderen 04](/images/articles/whatsapp/04.png)
+![Redenen om WhatsApp te verwijderen 04](/images/articles/whatsapp/nl/04.png)
 
-![Redenen om WhatsApp te verwijderen 05](/images/articles/whatsapp/05.png)
+![Redenen om WhatsApp te verwijderen 05](/images/articles/whatsapp/nl/05.png)
 
-![Redenen om WhatsApp te verwijderen 06](/images/articles/whatsapp/06.png)
+![Redenen om WhatsApp te verwijderen 06](/images/articles/whatsapp/nl/06.png)
 
-![Redenen om WhatsApp te verwijderen 07](/images/articles/whatsapp/07.png)
+![Redenen om WhatsApp te verwijderen 07](/images/articles/whatsapp/nl/07.png)
 
-![Redenen om WhatsApp te verwijderen 08](/images/articles/whatsapp/08.png)
+![Redenen om WhatsApp te verwijderen 08](/images/articles/whatsapp/nl/08.png)
 
-![Redenen om WhatsApp te verwijderen 09](/images/articles/whatsapp/09.png)
+![Redenen om WhatsApp te verwijderen 09](/images/articles/whatsapp/nl/09.png)
 
-![Redenen om WhatsApp te verwijderen 10](/images/articles/whatsapp/10.png)
+![Redenen om WhatsApp te verwijderen 10](/images/articles/whatsapp/nl/10.png)
 
-![Redenen om WhatsApp te verwijderen 11](/images/articles/whatsapp/11.png)
+![Redenen om WhatsApp te verwijderen 11](/images/articles/whatsapp/nl/11.png)
 
-![Redenen om WhatsApp te verwijderen 12](/images/articles/whatsapp/12.png)
+![Redenen om WhatsApp te verwijderen 12](/images/articles/whatsapp/nl/12.png)
 
-![Redenen om WhatsApp te verwijderen 13](/images/articles/whatsapp/13.png)
+![Redenen om WhatsApp te verwijderen 13](/images/articles/whatsapp/nl/13.png)
 
-![Redenen om WhatsApp te verwijderen 14](/images/articles/whatsapp/14.png)
+![Redenen om WhatsApp te verwijderen 14](/images/articles/whatsapp/nl/14.png)
 
-![Redenen om WhatsApp te verwijderen 15](/images/articles/whatsapp/15.png)
+![Redenen om WhatsApp te verwijderen 15](/images/articles/whatsapp/nl/15.png)
 
-![Redenen om WhatsApp te verwijderen 16](/images/articles/whatsapp/16.png)
+![Redenen om WhatsApp te verwijderen 16](/images/articles/whatsapp/nl/16.png)
 
-![Redenen om WhatsApp te verwijderen 17](/images/articles/whatsapp/17.png)
+![Redenen om WhatsApp te verwijderen 17](/images/articles/whatsapp/nl/17.png)
 
-![Redenen om WhatsApp te verwijderen 18](/images/articles/whatsapp/18.png)
+![Redenen om WhatsApp te verwijderen 18](/images/articles/whatsapp/nl/18.png)
 
-![Redenen om WhatsApp te verwijderen 19](/images/articles/whatsapp/19.png)
+![Redenen om WhatsApp te verwijderen 19](/images/articles/whatsapp/nl/19.png)
 
-![Redenen om WhatsApp te verwijderen 20](/images/articles/whatsapp/20.png)
+![Redenen om WhatsApp te verwijderen 20](/images/articles/whatsapp/nl/20.png)
 
 <style>
   .o-content img {
