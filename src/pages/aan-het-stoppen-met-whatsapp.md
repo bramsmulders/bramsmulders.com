@@ -12,7 +12,7 @@ introSummary: <p>Waarom heb ik besloten om WhatsApp(en andere Facebook & Google 
   }
 </style>
 
-Recent heeft Facebook de voorwaarden van WhatsApp aangepast waardoor het makkelijker is om jouw persoonlijke gegevens te verhandelen aan derde partijen. Ook is bewezen dat Facebook actief heeft bijgedragen aan haat, racisme en polarisatie (zie documentaire "The Social Dilemma"). Aan deze ontwikkelingen wil ik niet meer meewerken, dus ik heb besloten om volledig van Facebook en Google af te stappen.
+Recent heeft Facebook de voorwaarden van WhatsApp aangepast waardoor het makkelijker is om jouw persoonlijke gegevens te verhandelen aan derde partijen. Ook is bewezen dat Facebook actief heeft bijgedragen aan haat, racisme en polarisatie (zie documentaire "[The Social Dilemma](https://www.imdb.com/title/tt11464826)"). Aan deze ontwikkelingen wil ik niet meer meewerken, dus ik heb besloten om volledig van Facebook en Google af te stappen.
 
 ## Alternatieven
 Er zijn gelukkig een hoop alternatieven beschikbaar om met elkaar in contact te blijven. Deze alternatieven plegen minder/geen inbreuk op je privacy en de samenleving:
