@@ -15,6 +15,7 @@ socialImage: /images/uses-small.jpg
 
 * [MacBook Pro (16-inch, 2019)](https://support.apple.com/kb/SP809)
 * [LG 49WL95C-W 49 Inch 32:9 UltraWide Monitor](https://www.lg.com/us/monitors/lg-49WL95C-W-ultrawide-monitor)
+* [Logitech StreamCam](https://www.logitech.com/en-us/products/webcams/streamcam.960-001289.html)
 * [M-Audio BX8 D3 Studio reference monitors](https://m-audio.com/bx8d3)
 * [Apple HomePod Mini Black](https://www.apple.com/homepod-mini/)
 * [Pioneer DDJ-RR DJ controller](https://www.pioneerdj.com/nl-nl/product/controller/archive/ddj-rr/black/overview/)
