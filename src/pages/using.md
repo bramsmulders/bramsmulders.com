@@ -7,25 +7,24 @@ introSummary: <p>While developing, making music or playing games you can find me
   using a lot of hardware and software. Visit <a
   href="https://uses.tech">uses.tech</a> for a list of what others use.</p>
 part: using
+socialImage: /images/uses-small.jpg
 ---
 ![My office with a desk, laptop, etc](/images/uses-small.webp)
 
 ## Hardware
 
 * [MacBook Pro (16-inch, 2019)](https://support.apple.com/kb/SP809)
-* [LG 29UB67 Ultrawide 21:9 monitor](https://www.coolblue.nl/product/595980/lg-29ub67.html)
+* [LG 49WL95C-W 49 Inch 32:9 UltraWide Monitor](https://www.lg.com/us/monitors/lg-49WL95C-W-ultrawide-monitor)
 * [M-Audio BX8 D3 Studio reference monitors](https://m-audio.com/bx8d3)
-* [M-Audio Keystation 88](https://m-audio.com/products/view3/keystation-88)
+* [Apple HomePod Mini Black](https://www.apple.com/homepod-mini/)
 * [Pioneer DDJ-RR DJ controller](https://www.pioneerdj.com/nl-nl/product/controller/archive/ddj-rr/black/overview/)
 * [Pioneer HDJ-X5BT headphones](https://www.pioneerdj.com/nl-nl/product/headphones/hdj-x5bt/black/overview/)
 * [Focusrite Scarlett 2i2 audio interface](https://focusrite.com/nl/node/289)
 * [Logitech MX Master mouse](https://www.amazon.nl/dp/B0761YL588/ref=cm_sw_em_r_mt_dp_6vPnFbH2DMZQF)
 * [Apple Aluminium Wired Keyboard](https://www.amazon.com/Apple-Aluminum-Keyboard-MB110LL-Refurbished/dp/B078YG84MN)
 * [Apple iPhone XR](https://www.apple.com/nl/shop/buy-iphone/iphone-xr)
-* [Apple iPad Mini 2](https://support.apple.com/nl-nl/HT201471#ipadmini)
 * [Apple Watch Series 3](https://www.apple.com/nl/apple-watch-series-3/)
 * [Phillips Hue Play](https://www.philips-hue.com/nl-nl/p/hue-white-and-color-ambiance-play-tafellamp--2-pack/7820230P7)
-* [Nikkei Extreme X6 Action cam](https://www.amazon.co.uk/dp/B01HDPGMOW/ref=cm_sw_em_r_mt_dp_zCPnFb5XEPKZ3)
 * [Nintendo Switch](https://www.nintendo.nl/Nintendo-Switch-familie/Nintendo-Switch/Nintendo-Switch-1148779.html)
 * [Nintendo 64](https://www.amazon.com/dp/B00002DHEV/ref=cm_sw_em_r_mt_dp_-TPnFb6N7MCB1)
 * [Xbox One - Limited Edition Halo 5: Guardians Bundle](https://www.amazon.com/Xbox-One-1TB-Console-Limited-Guardians/dp/B0136JP9OS)
