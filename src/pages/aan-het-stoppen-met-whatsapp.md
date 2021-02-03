@@ -2,7 +2,7 @@
 title: Ik stop met WhatsApp
 permalink: /aan-het-stoppen-met-whatsapp/index.html
 metaDesc: Waarom ik besloten heb te stoppen met WhatsApp
-introSummary: <p>Waarom heb ik besloten om WhatsApp(en andere Facebook & Google diensten) te verwijderen?</p>
+introSummary: <p>Recent heeft Facebook de voorwaarden van WhatsApp aangepast waardoor het makkelijker is om jouw persoonlijke gegevens te verhandelen aan derde partijen. Ook is bewezen dat Facebook actief heeft bijgedragen aan haat, racisme en polarisatie (zie documentaire “<a href='https://www.imdb.com/title/tt11464826'>The Social Dilemma</a>”).</p><p>Aan deze ontwikkelingen wil ik niet meer meewerken, dus ik heb besloten om volledig van de diensten van Facebook(en Google) af te stappen.</p>
 ---
 
 <style>
@@ -12,16 +12,14 @@ introSummary: <p>Waarom heb ik besloten om WhatsApp(en andere Facebook & Google 
   }
 </style>
 
-Recent heeft Facebook de voorwaarden van WhatsApp aangepast waardoor het makkelijker is om jouw persoonlijke gegevens te verhandelen aan derde partijen. Ook is bewezen dat Facebook actief heeft bijgedragen aan haat, racisme en polarisatie (zie documentaire "[The Social Dilemma](https://www.imdb.com/title/tt11464826)"). Aan deze ontwikkelingen wil ik niet meer meewerken, dus ik heb besloten om volledig van Facebook en Google af te stappen.
-
 ## Alternatieven
 Er zijn gelukkig een hoop alternatieven beschikbaar om met elkaar in contact te blijven. Deze alternatieven plegen minder/geen inbreuk op je privacy en de samenleving:
 
-* [Signal](https://signal.org/install), message app volledig gericht privacy.
-* [iMessage](https://support.apple.com/explore/messages), standaard berichten app op iPhones.
+* [Signal](https://signal.org/install), message app volledig gericht op privacy.
+* [iMessage](https://support.apple.com/explore/messages), standaard berichten op iPhones.
 * [Threema](https://threema.ch/en/), veiligheid en privacy eerst.
 
-## Simpele uitleg:
+## Simpele uitleg
 
 ![Redenen om WhatsApp te verwijderen 01](/images/articles/whatsapp/nl/01.png)
 
