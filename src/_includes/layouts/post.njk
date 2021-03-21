@@ -32,7 +32,7 @@
     <article class="[ o-grid ]" itemscope itemtype="http://schema.org/BlogPosting">
       {% include "partials/components/intro.njk" %}
 
-      <section class="[ o-content ]  [ o-layer ]  [ o-grid  o-grid--inner ]  [ u-module ]  [ u-margin-block-end-base ]">
+      <section class="[ o-content ]  [ o-layer ]  [ o-grid  o-grid--inner ]  [ o-flow ]  [ u-margin-block-end-base ]">
         {{ content | safe }}
         {% if site.enableThirdPartyComments %}
           <hr />

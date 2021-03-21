@@ -1,120 +1,121 @@
-const jsdom = require('@tbranyen/jsdom');
-const {JSDOM} = jsdom;
-const minify = require('../utils/minify.js');
-const slugify = require('slugify');
-const getSize = require('image-size');
+const jsdom = require("@tbranyen/jsdom");
+const { JSDOM } = jsdom;
+const minify = require("../utils/minify.js");
+const slugify = require("slugify");
+const getSize = require("image-size");
 
-module.exports = function(value, outputPath) {
-  if (outputPath.endsWith('.html')) {
+module.exports = function (value, outputPath) {
+  if (outputPath.endsWith(".html")) {
     const DOM = new JSDOM(value, {
-      resources: 'usable'
+      resources: "usable",
     });
 
     const document = DOM.window.document;
-    const articleImages = [...document.querySelectorAll('.o-content img')];
+    const articleImages = [...document.querySelectorAll(".o-content img")];
     const articleHeadings = [
-      ...document.querySelectorAll('.o-content h2, .o-content h3')
+      ...document.querySelectorAll(".o-content h2, .o-content h3"),
     ];
-    const articleEmbeds = [...document.querySelectorAll('.o-content iframe')];
-    const articleQuotes = [...document.querySelectorAll('.o-content blockquote')];
+    const articleEmbeds = [...document.querySelectorAll(".o-content iframe")];
+    const articleQuotes = [
+      ...document.querySelectorAll(".o-content blockquote"),
+    ];
 
     if (articleImages.length) {
-      articleImages.forEach(image => {
-        image.setAttribute('loading', 'lazy');
+      articleImages.forEach((image) => {
+        image.setAttribute("loading", "lazy");
 
         // Replace parent p wrapping with the image itself so we can place em in the grid
-        const parent = image.closest('p');
-        if (parent.nodeName === 'P') {
-           parent.replaceWith(image);
+        const parent = image.closest("p");
+        if (parent.nodeName === "P") {
+          parent.replaceWith(image);
         }
 
-        const file = image.getAttribute('src');
-
+        const file = image.getAttribute("src");
 
         // set the size of the image
-        if (file.indexOf('http') < 0) {
-          const dimensions = getSize('src' + file);
+        if (file.indexOf("http") < 0) {
+          const dimensions = getSize("src" + file);
 
-          image.setAttribute('width', dimensions.width);
-          image.setAttribute('height', dimensions.height);
+          image.setAttribute("width", dimensions.width);
+          image.setAttribute("height", dimensions.height);
         }
 
         // webp
-        if (file.includes('webp')) {
-          const picture = document.createElement('picture');
-          const sourceWebp = document.createElement('source');
-          const sourceJpeg = document.createElement('source');
+        if (file.includes("webp")) {
+          const picture = document.createElement("picture");
+          const sourceWebp = document.createElement("source");
+          const sourceJpeg = document.createElement("source");
 
           sourceWebp.srcset = file;
-          sourceWebp.type = 'image/webp';
+          sourceWebp.type = "image/webp";
 
-          sourceJpeg.srcset = file.replace('.webp', '.jpg');
-          sourceJpeg.type = 'image/jpeg';
+          sourceJpeg.srcset = file.replace(".webp", ".jpg");
+          sourceJpeg.type = "image/jpeg";
 
           picture.appendChild(sourceWebp);
           picture.appendChild(sourceJpeg);
-          image.src = file.replace('.webp', '.jpg');
+          image.src = file.replace(".webp", ".jpg");
           picture.appendChild(image.cloneNode(true));
 
-          picture.classList.add('o-grid__retained', 'u-margin-block-end-base');
+          picture.classList.add("o-grid__retained", "u-margin-block-end-base");
 
           image.replaceWith(picture);
         }
 
         // If an image has a title it means that the user added a caption
         // so replace the image with a figure containing that image and a caption
-        else if (image.hasAttribute('title')) {
-          const figure = document.createElement('figure');
-          const figCaption = document.createElement('figcaption');
+        else if (image.hasAttribute("title")) {
+          const figure = document.createElement("figure");
+          const figCaption = document.createElement("figcaption");
 
-          figCaption.innerHTML = image.getAttribute('title');
+          figCaption.innerHTML = image.getAttribute("title");
 
-          image.removeAttribute('title');
+          image.removeAttribute("title");
 
           figure.appendChild(image.cloneNode(true));
           figure.appendChild(figCaption);
 
-          figure.classList.add('o-grid__retained');
+          figure.classList.add("o-grid__retained");
 
           image.replaceWith(figure);
         } else {
-          image.classList.add('o-grid__retained', 'u-margin-block-end-base');
+          image.classList.add("o-grid__retained", "u-margin-block-end-base");
         }
       });
     }
 
     if (articleHeadings.length) {
       // Loop each heading and add a little anchor and an ID to each one
-      articleHeadings.forEach(heading => {
+      articleHeadings.forEach((heading) => {
         const headingSlug = slugify(heading.textContent.toLowerCase());
-        const anchor = document.createElement('a');
+        const anchor = document.createElement("a");
 
-        heading.classList.add('c-heading');
-        anchor.setAttribute('href', `#heading-${headingSlug}`);
-        anchor.classList.add('c-heading__permalink');
+        heading.classList.add("c-heading");
+        anchor.setAttribute("href", `#heading-${headingSlug}`);
+        anchor.classList.add("c-heading__permalink");
         anchor.innerHTML = minify(`
         <span class="u-visually-hidden"> permalink</span>
         <svg fill="currentColor" aria-hidden="true" focusable="false" width="1em" height="1em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <path d="M9.199 13.599a5.99 5.99 0 0 0 3.949 2.345 5.987 5.987 0 0 0 5.105-1.702l2.995-2.994a5.992 5.992 0 0 0 1.695-4.285 5.976 5.976 0 0 0-1.831-4.211 5.99 5.99 0 0 0-6.431-1.242 6.003 6.003 0 0 0-1.905 1.24l-1.731 1.721a.999.999 0 1 0 1.41 1.418l1.709-1.699a3.985 3.985 0 0 1 2.761-1.123 3.975 3.975 0 0 1 2.799 1.122 3.997 3.997 0 0 1 .111 5.644l-3.005 3.006a3.982 3.982 0 0 1-3.395 1.126 3.987 3.987 0 0 1-2.632-1.563A1 1 0 0 0 9.201 13.6zm5.602-3.198a5.99 5.99 0 0 0-3.949-2.345 5.987 5.987 0 0 0-5.105 1.702l-2.995 2.994a5.992 5.992 0 0 0-1.695 4.285 5.976 5.976 0 0 0 1.831 4.211 5.99 5.99 0 0 0 6.431 1.242 6.003 6.003 0 0 0 1.905-1.24l1.723-1.723a.999.999 0 1 0-1.414-1.414L9.836 19.81a3.985 3.985 0 0 1-2.761 1.123 3.975 3.975 0 0 1-2.799-1.122 3.997 3.997 0 0 1-.111-5.644l3.005-3.006a3.982 3.982 0 0 1 3.395-1.126 3.987 3.987 0 0 1 2.632 1.563 1 1 0 0 0 1.602-1.198z"/>
         </svg>`);
 
-        if (heading.nodeName === 'H2') {
-          heading.classList.add('c-heading--highlight');
+        if (heading.nodeName === "H2") {
+          heading.classList.add("c-heading--highlight");
         }
 
-        heading.setAttribute('id', `heading-${headingSlug}`);
+        heading.setAttribute("id", `heading-${headingSlug}`);
         heading.appendChild(anchor);
       });
     }
 
     // Look for videos are wrap them in a container element
     if (articleEmbeds.length) {
-      articleEmbeds.forEach(embed => {
-        if (embed.hasAttribute('allowfullscreen')) {
-          const player = document.createElement('div');
+      articleEmbeds.forEach((embed) => {
+        if (embed.hasAttribute("allowfullscreen")) {
+          const player = document.createElement("div");
 
-          player.classList.add('o-aspect-ratio', 'o-aspect-ratio--16by9');
-          embed.classList.add('o-aspect-ratio__item');
+          player.classList.add("o-aspect-ratio", "o-aspect-ratio--16by9");
+          embed.classList.add("o-aspect-ratio__item");
 
           player.appendChild(embed.cloneNode(true));
 
@@ -124,13 +125,13 @@ module.exports = function(value, outputPath) {
     }
 
     if (articleQuotes.length) {
-      articleQuotes.forEach(quote => {
+      articleQuotes.forEach((quote) => {
         // quote.classList.add('o-grid', 'o-grid--inner');
-        quote.classList.add('u-module');
+        quote.classList.add("o-flow");
       });
     }
 
-    return '<!DOCTYPE html>\r\n' + document.documentElement.outerHTML;
+    return "<!DOCTYPE html>\r\n" + document.documentElement.outerHTML;
   }
   return value;
 };

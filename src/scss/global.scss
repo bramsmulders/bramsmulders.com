@@ -43,6 +43,7 @@
 @use '../../node_modules/@supple-kit/supple-css/objects/layout';
 @use '../../node_modules/@supple-kit/supple-css/objects/mesh';
 @use '../../node_modules/@supple-kit/supple-css/objects/aspect-ratio';
+@use '../../node_modules/@supple-kit/supple-css/objects/flow';
 
 @use 'objects/grid';
 @use 'objects/layer';
@@ -78,11 +79,7 @@
 /*  Utilities
     ========================================================================= */
 
-// @use '../../node_modules/@supple-kit/supple-css/utilities/colspan';
-// @use '../../node_modules/@supple-kit/supple-css/utilities/colstart';
-// @use '../../node_modules/@supple-kit/supple-css/utilities/clearfix';
 @use '../../node_modules/@supple-kit/supple-css/utilities/spacing';
 @use '../../node_modules/@supple-kit/supple-css/utilities/visually-hidden';
-// @use '../../node_modules/@supple-kit/supple-css/utilities/hidden';
 
 @use 'utilities/font-size';

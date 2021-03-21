@@ -3,10 +3,10 @@
 
 <{{ introElementInternal }} class="[ c-intro ]  [ o-grid  o-grid--inner ]  [ o-layer  o-layer--bg ]  [ t-slate-bg ]">
   {% if introPrefix %}
-    <div class="u-module">{{ introPrefix | safe }}</div>
+    <div class="o-flow">{{ introPrefix | safe }}</div>
   {% endif %}
   <h{{ introHeadingLevelInternal }} class="[ c-intro__heading ]  [ c-heading  c-heading--highlight  {% if introHeadingQuote %}c-heading--quote{% endif %} ]">{{ introHeading | safe }}</h{{ introHeadingLevelInternal }}>
   {% if introSummary %}
-    <div class="[ o-content ]  [ u-module ]  [ u-margin-block-end-base ]">{{ introSummary | safe }}</div>
+    <div class="[ o-content ]  [ o-flow ]  [ u-margin-block-end-base ]">{{ introSummary | safe }}</div>
   {% endif %}
 </{{ introElementInternal }}>
