@@ -7,9 +7,7 @@
     These can include variables, mixins & other includes.
     ========================================================================= */
 
-@use '../../../node_modules/@supple-kit/supple-css/tools/mixins';
-@use '../../../node_modules/@supple-kit/supple-css/tools/functions';
-@use '../../../node_modules/@supple-kit/supple-css/settings/defaults';
+@use '../../../node_modules/@supple-kit/supple-css/tools/space';
 @use '../settings/vars';
 
 
@@ -19,10 +17,10 @@
 
 .c-button {
   display: inline-block;
-  @include mixins.rem(padding-block-start, defaults.$space-tiny);
-  @include mixins.rem(padding-block-end, defaults.$space-tiny);
-  @include mixins.rem(padding-inline-start, defaults.$space-small);
-  @include mixins.rem(padding-inline-end, defaults.$space-small);
+  padding-block-start: space.get('tiny');
+  padding-block-end: space.get('tiny');
+  padding-inline-start: space.get('small');
+  padding-inline-end: space.get('small');
   background-color: var(--color-action-bg);
   color: var(--color-action-text);
   font-family: #{vars.$family-leader};
@@ -46,8 +44,8 @@
   font-family: #{vars.$family-body};
   padding-block-start: 0;
   padding-block-end: 0;
-  @include mixins.rem(padding-inline-start, defaults.$space-tiny);
-  @include mixins.rem(padding-inline-end, defaults.$space-tiny);
+  padding-inline-start: space.get('tiny');
+  padding-inline-end: space.get('tiny');
 }
 
 

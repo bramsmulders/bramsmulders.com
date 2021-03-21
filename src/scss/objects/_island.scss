@@ -7,8 +7,7 @@
     These can include variables, mixins & other includes.
     ========================================================================= */
 
-@use '../../../node_modules/@supple-kit/supple-css/tools/mixins';
-@use '../../../node_modules/@supple-kit/supple-css/settings/defaults';
+@use '../../../node_modules/@supple-kit/supple-css/tools/space';
 
 
 
@@ -26,5 +25,5 @@
     ========================================================================= */
 
 .o-island {
-  @include mixins.rem(padding, defaults.$space-base);
+  padding: space.get('base');
 }

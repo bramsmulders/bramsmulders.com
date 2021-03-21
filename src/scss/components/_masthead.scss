@@ -7,8 +7,8 @@
     These can include variables, mixins & other includes.
     ========================================================================= */
 
-@use '../../../node_modules/@supple-kit/supple-css/tools/mixins';
-@use '../../../node_modules/@supple-kit/supple-css/settings/defaults';
+@use '../../../node_modules/@supple-kit/supple-css/tools/space';
+@use '../../../node_modules/@supple-kit/supple-css/tools/responsive';
 
 
 
@@ -16,10 +16,10 @@
     ========================================================================= */
 
 .c-masthead {
-  @include mixins.rem(padding-block-start, defaults.$space-small);
-  @include mixins.rem(padding-block-end, defaults.$space-base);
+  padding-block-start: space.get('small');
+  padding-block-end: space.get('base');
 
-  @include mixins.mq($from: lap) {
-    @include mixins.rem(padding-block-start, defaults.$space-base);
+  @include responsive.mq(lap) {
+    padding-block-start: space.get('base');
   }
 }

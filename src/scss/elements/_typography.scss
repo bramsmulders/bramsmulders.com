@@ -7,7 +7,8 @@
     These can include variables, mixins & other includes.
     ========================================================================= */
 
-@use '../../../node_modules/@supple-kit/supple-css/tools/mixins';
+@use '../../../node_modules/@supple-kit/supple-css/tools/space';
+@use '../../../node_modules/@supple-kit/supple-css/tools/typography';
 @use '../../../node_modules/@supple-kit/supple-css/settings/defaults';
 @use '../settings/vars';
 
@@ -23,30 +24,30 @@ h4,
 h5,
 h6 {
   font-family: vars.$family-leader;
-  @include mixins.rem(margin-block-end, defaults.$space-small);
+  margin-block-end: space.get('small');
 }
 
 
 h1 {
-  @include mixins.font-size(vars.$font-size-alpha);
+  @include typography.font-size(vars.$font-size-alpha);
 }
 
 h2 {
-  @include mixins.font-size(vars.$font-size-beta);
+  @include typography.font-size(vars.$font-size-beta);
 }
 
 h3 {
-  @include mixins.font-size(vars.$font-size-gamma);
+  @include typography.font-size(vars.$font-size-gamma);
 }
 
 h4 {
-  @include mixins.font-size(vars.$font-size-delta);
+  @include typography.font-size(vars.$font-size-delta);
 }
 
 h5 {
-  @include mixins.font-size(vars.$font-size-epsilon);
+  @include typography.font-size(vars.$font-size-epsilon);
 }
 
 h6 {
-  @include mixins.font-size(vars.$font-size-zeta);
+  @include typography.font-size(vars.$font-size-zeta);
 }

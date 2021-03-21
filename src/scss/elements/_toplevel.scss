@@ -9,8 +9,8 @@
     ========================================================================= */
 
 @use 'sass:map';
-@use '../../../node_modules/@supple-kit/supple-css/tools/mixins';
-@use '../../../node_modules/@supple-kit/supple-css/tools/functions';
+@use '../../../node_modules/@supple-kit/supple-css/tools/_internal/functions';
+@use '../../../node_modules/@supple-kit/supple-css/tools/responsive';
 @use '../../../node_modules/@supple-kit/supple-css/settings/defaults';
 @use '../settings/vars';
 
@@ -48,11 +48,11 @@ html {
   background-color: var(--color-bg);
   color: var(--color-text);
 
-  @include mixins.mq($from: $min-bp-name) {
+  @include responsive.mq($min-bp-name) {
     font-size: calc(#{$font-size-em} + (#{$font-size-max-em-clean} - #{$font-size-clean / 16}) * (100vw - #{$min-bp-em}) / (#{$max-bp-em-clean} - #{$min-bp-em-clean}));
   }
 
-  @include mixins.mq($from: $max-bp-name) {
+  @include responsive.mq($max-bp-name) {
     font-size: $font-size-max-em;
   }
 }

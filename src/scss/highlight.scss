@@ -7,9 +7,7 @@
     These can include variables, mixins & other includes.
     ========================================================================= */
 
-@use 'settings/vars';
-@use '../../node_modules/@supple-kit/supple-css/tools/mixins';
-@use '../../node_modules/@supple-kit/supple-css/settings/defaults';
+@use '../../node_modules/@supple-kit/supple-css/tools/space';
 
 
 
@@ -50,8 +48,8 @@ pre[class*='language-'] {
 
 /* Code blocks */
 pre[class*='language-'] {
-  @include mixins.rem(padding, defaults.$space-base);
-  @include mixins.rem(margin-block-end, defaults.$space-base);
+  padding: space.get('base');
+  margin-block-end: space.get('base');
   overflow: auto;
 }
 

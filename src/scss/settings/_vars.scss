@@ -9,13 +9,13 @@
 
 @use '../../../node_modules/@supple-kit/supple-css/settings/defaults' with (
   $font-size: 20px,
-  $space-factor-tiny: 1,
-  $space-factor-small: 2,
-  $space-factor-base: 4,
-  $space-factor-large: 8,
-  $space-factor-huge: 16,
-  $static-breakpoint-name: wall,
-  $static-breakpoint-size: 1280px,
+  $space-factors: (
+    'tiny': 1,
+    'small': 2,
+    'base': 4,
+    'large': 8,
+    'huge': 16
+  ),
   $breakpoints: (
     palm: 480px,
     lap: 640px,
@@ -26,21 +26,20 @@
 
 @use '../../../node_modules/@supple-kit/supple-css/objects/layout/variables' as layout-variables with (
   $gaps: (
-    'base': defaults.$space-base,
-    'large': defaults.$space-large,
-    'small': defaults.$space-small,
-    'tiny': defaults.$space-tiny,
+    'base',
+    'large',
+    'small',
+    'tiny',
   ),
-  $fill-in-breakpoint: (palm, lap),
-  $fit-in-breakpoint: (palm, lap),
+  $fill-in-query: (palm, lap),
+  $fit-in-query: (palm, lap),
 );
 
 @use '../../../node_modules/@supple-kit/supple-css/utilities/spacing/variables' as spacing-variables with (
-  $in-breakpoint: (lap),
+  $in-query: (lap),
   $sizes: (
-    '-base': defaults.$space-base,
-    '-small': defaults.$space-small,
-    '-none': 0,
+    'base',
+    'small'
   )
 );
 

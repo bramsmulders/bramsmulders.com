@@ -7,10 +7,8 @@
     These can include variables, mixins & other includes.
     ========================================================================= */
 
-@use '../../../node_modules/@supple-kit/supple-css/tools/mixins';
-@use '../../../node_modules/@supple-kit/supple-css/tools/functions';
-@use '../../../node_modules/@supple-kit/supple-css/settings/defaults';
-@use '../settings/vars';
+@use '../../../node_modules/@supple-kit/supple-css/tools/responsive';
+@use '../../../node_modules/@supple-kit/supple-css/tools/space';
 
 
 
@@ -18,18 +16,18 @@
     ========================================================================= */
 
 .o-layer {
-  @include mixins.rem(padding-block-start, defaults.$space-base);
+  padding-block-start: space.get('base');
 
-  @include mixins.mq($from: lap) {
-    @include mixins.rem(padding-block-start, defaults.$space-large);
-    @include mixins.rem(padding-block-end, defaults.$space-large - defaults.$space-base);
+  @include responsive.mq(lap) {
+    padding-block-start: space.get('large');
+    padding-block-end: space.get('large') - space.get('base');
   }
 
   &:first-child:not(.o-layer--bg) {
     padding-block-start: 0;
 
-    @include mixins.mq($from: lap) {
-      @include mixins.rem(padding-block-start, defaults.$space-large - defaults.$space-base);
+    @include responsive.mq(lap) {
+      padding-block-start: space.get('large') - space.get('base');
     }
   }
 }
@@ -40,16 +38,16 @@
 
 .o-layer--bg {
   &:last-child {
-    @include mixins.rem(margin-block-end, defaults.$space-base);
+    padding-block-end: space.get('base');
   }
 
-  @include mixins.mq($from: lap) {
+  @include responsive.mq(lap) {
     & + & {
-      @include mixins.rem(margin-block-start, defaults.$space-large);
+      margin-block-start: space.get('large');
     }
 
     &:last-child {
-      @include mixins.rem(margin-block-end, defaults.$space-large);
+      margin-block-end: space.get('large');
     }
   }
 }

@@ -7,8 +7,7 @@
     These can include variables, mixins & other includes.
     ========================================================================= */
 
-@use '../../../node_modules/@supple-kit/supple-css/tools/mixins';
-@use '../../../node_modules/@supple-kit/supple-css/settings/defaults';
+@use '../../../node_modules/@supple-kit/supple-css/tools/typography';
 @use '../settings/vars';
 
 
@@ -16,29 +15,29 @@
     ========================================================================= */
 
 .u-alpha {
-  @include mixins.font-size(vars.$font-size-alpha);
+  @include typography.font-size(vars.$font-size-alpha);
 }
 
 .u-beta {
-  @include mixins.font-size(vars.$font-size-beta);
+  @include typography.font-size(vars.$font-size-beta);
 }
 
 .u-gamma {
-  @include mixins.font-size(vars.$font-size-gamma);
+  @include typography.font-size(vars.$font-size-gamma);
 }
 
 .u-delta {
-  @include mixins.font-size(vars.$font-size-delta);
+  @include typography.font-size(vars.$font-size-delta);
 }
 
 .u-epsilon {
-  @include mixins.font-size(vars.$font-size-epsilon);
+  @include typography.font-size(vars.$font-size-epsilon);
 }
 
 .u-zeta {
-  @include mixins.font-size(vars.$font-size-zeta);
+  @include typography.font-size(vars.$font-size-zeta);
 }
 
 .u-eta {
-  @include mixins.font-size(vars.$font-size-eta);
+  @include typography.font-size(vars.$font-size-eta);
 }

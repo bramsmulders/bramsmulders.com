@@ -7,7 +7,7 @@
     These can include variables, mixins & other includes.
     ========================================================================= */
 
-@use '../../../node_modules/@supple-kit/supple-css/tools/mixins';
+@use '../../../node_modules/@supple-kit/supple-css/tools/responsive';
 
 
 
@@ -22,7 +22,7 @@
 .c-recent__item {
   --colspan: 2;
 
-  @include mixins.mq($from: lap) {
+  @include responsive.mq(lap) {
     --colspan: 1;
   }
 }

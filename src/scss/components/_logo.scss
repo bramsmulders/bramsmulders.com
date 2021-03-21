@@ -7,8 +7,9 @@
     These can include variables, mixins & other includes.
     ========================================================================= */
 
-@use '../../../node_modules/@supple-kit/supple-css/tools/mixins';
-@use '../../../node_modules/@supple-kit/supple-css/settings/defaults';
+@use '../../../node_modules/@supple-kit/supple-css/tools/space';
+@use '../../../node_modules/@supple-kit/supple-css/tools/typography';
+@use '../../../node_modules/@supple-kit/supple-css/tools/responsive';
 @use '../settings/vars';
 
 
@@ -19,36 +20,16 @@
 .c-logo {
   position: relative;
   display: inline-block;
-  @include mixins.rem(padding-block-start, defaults.$space-tiny);
-  @include mixins.rem(padding-block-end, defaults.$space-tiny);
-  @include mixins.font-size(vars.$font-size-epsilon);
+  padding-block-start: space.get('tiny');
+  padding-block-end: space.get('tiny');
+  @include typography.font-size(vars.$font-size-epsilon);
   color: var(--color-brand-primary);
   font-family: vars.$family-leader;
   font-weight: 800;
   white-space: nowrap;
 
-  // &::before,
-  // &::after {
-  //   position: absolute;
-  //   block-size: 4px;
-  //   content: '';
-  //   background-color: var(--color-stroke);
-  // }
-
-  // &::before {
-  //   inline-size: 63%;
-  //   top: 0;
-  //   right: 0;
-  // }
-
-  // &::after {
-  //   bottom: 0;
-  //   left: 0;
-  //   inline-size: 37%;
-  // }
-
-  @include mixins.mq($from: lap) {
-    @include mixins.font-size(vars.$font-size-delta);
+  @include responsive.mq(lap) {
+    @include typography.font-size(vars.$font-size-delta);
   }
 }
 
