@@ -7,7 +7,7 @@
     These can include variables, mixins & other includes.
     ========================================================================= */
 
-@use '../../../node_modules/supple/lib/settings/defaults' with (
+@use '../../../node_modules/@supple-kit/supple-css/settings/defaults' with (
   $font-size: 20px,
   $space-factor-tiny: 1,
   $space-factor-small: 2,
@@ -24,7 +24,7 @@
   ),
 );
 
-@use '../../../node_modules/supple/lib/objects/layout/variables' as layout-variables with (
+@use '../../../node_modules/@supple-kit/supple-css/objects/layout/variables' as layout-variables with (
   $gaps: (
     'base': defaults.$space-base,
     'large': defaults.$space-large,
@@ -35,7 +35,7 @@
   $fit-in-breakpoint: (palm, lap),
 );
 
-@use '../../../node_modules/supple/lib/utilities/spacing/variables' as spacing-variables with (
+@use '../../../node_modules/@supple-kit/supple-css/utilities/spacing/variables' as spacing-variables with (
   $in-breakpoint: (lap),
   $sizes: (
     '-base': defaults.$space-base,

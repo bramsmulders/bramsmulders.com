@@ -19,7 +19,7 @@
     ========================================================================= */
 
 @use 'generic/fonts';
-@use '../../node_modules/supple/lib/generic/reset';
+@use '../../node_modules/@supple-kit/supple-css/generic/reset';
 
 
 
@@ -39,10 +39,10 @@
 /*  Objects
     ========================================================================= */
 
-@use '../../node_modules/supple/lib/objects/list-clean';
-@use '../../node_modules/supple/lib/objects/layout';
-@use '../../node_modules/supple/lib/objects/mesh';
-@use '../../node_modules/supple/lib/objects/aspect-ratio';
+@use '../../node_modules/@supple-kit/supple-css/objects/list-clean';
+@use '../../node_modules/@supple-kit/supple-css/objects/layout';
+@use '../../node_modules/@supple-kit/supple-css/objects/mesh';
+@use '../../node_modules/@supple-kit/supple-css/objects/aspect-ratio';
 
 @use 'objects/grid';
 @use 'objects/layer';
@@ -78,12 +78,12 @@
 /*  Utilities
     ========================================================================= */
 
-// @use '../../node_modules/supple/lib/utilities/colspan';
-// @use '../../node_modules/supple/lib/utilities/colstart';
-// @use '../../node_modules/supple/lib/utilities/clearfix';
-@use '../../node_modules/supple/lib/utilities/module';
-@use '../../node_modules/supple/lib/utilities/spacing';
-@use '../../node_modules/supple/lib/utilities/visually-hidden';
-// @use '../../node_modules/supple/lib/utilities/hidden';
+// @use '../../node_modules/@supple-kit/supple-css/utilities/colspan';
+// @use '../../node_modules/@supple-kit/supple-css/utilities/colstart';
+// @use '../../node_modules/@supple-kit/supple-css/utilities/clearfix';
+@use '../../node_modules/@supple-kit/supple-css/utilities/module';
+@use '../../node_modules/@supple-kit/supple-css/utilities/spacing';
+@use '../../node_modules/@supple-kit/supple-css/utilities/visually-hidden';
+// @use '../../node_modules/@supple-kit/supple-css/utilities/hidden';
 
 @use 'utilities/font-size';
