@@ -9,6 +9,7 @@
     ========================================================================= */
 
 @use '../../../node_modules/@supple-kit/supple-css/tools/responsive';
+@use '../../../node_modules/@supple-kit/supple-css/tools/space';
 
 
 
@@ -20,6 +21,8 @@
 }
 
 .c-nav__list {
+  --layout-block-gap: 0;
+
   @include responsive.mq(lap) {
     justify-content: flex-end;
   }

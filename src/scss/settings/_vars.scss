@@ -10,6 +10,7 @@
 @use '../../../node_modules/@supple-kit/supple-css/settings/defaults' with (
   $font-size: 20px,
   $space-factors: (
+    'none': 0,
     'tiny': 1,
     'small': 2,
     'base': 4,
@@ -38,8 +39,9 @@
 @use '../../../node_modules/@supple-kit/supple-css/utilities/spacing/variables' as spacing-variables with (
   $in-query: (lap),
   $sizes: (
-    'base',
-    'small'
+    'none',
+    'small',
+    'base'
   )
 );
 
