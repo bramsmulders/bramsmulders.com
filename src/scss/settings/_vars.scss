@@ -45,7 +45,7 @@
 );
 
 @use '../../../node_modules/@supple-kit/supple-css/utilities/spacing/variables' as spacing-variables with (
-  $in-query: (lap),
+  $in-query: (palm, lap),
   $sizes: (
     'none',
     'small',
