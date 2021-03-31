@@ -1,6 +1,6 @@
 {% if navigation.items %}
-  <nav class="[ c-nav ]" aria-label="{{ariaLabel}}">
-    <ul class="[ c-nav__list ]  [ o-layout  o-layout--gap-base ]">
+  <nav class="c-nav" aria-label="{{ariaLabel}}">
+    <ul class="c-nav__list  |  o-layout  o-layout--gap-base">
       {% for item in navigation.items %}
         {% set relAttribute = '' %}
         {% set currentAttribute = '' %}
@@ -15,11 +15,11 @@
         {% endif %}
 
         {% if part in item.url %}
-          {% set activeClass = ' [ is-active ]"' %}
+          {% set activeClass = ' is-active"' %}
         {% endif %}
 
-        <li class="[ c-nav__item ]  [ o-layout__fit ]">
-          <a class="[ c-nav__link ]{{ activeClass | safe }}" href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text }}</a>
+        <li class="c-nav__item  |  o-layout__fit">
+          <a class="c-nav__link{{ activeClass | safe }}" href="{{ item.url }}"{{ relAttribute | safe }}{{ currentAttribute | safe }}>{{ item.text }}</a>
         </li>
       {% endfor %}
     </ul>
