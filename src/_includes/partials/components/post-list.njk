@@ -1,21 +1,23 @@
 {% if postListItems.length %}
-  <section class="[ o-layer ]" id="articles">
+  <section class="o-layer  |  o-flow" id="articles">
     {% if postListHeading %}
-    <h2 class="[c-heading  c-heading--highlight ] [ h3 ]">{{ postListHeading }}</h2>
+    <h2 class="c-heading  c-heading--highlight  |  h3">{{ postListHeading }}</h2>
     <p>Although I am not writing much anymore I do not want to withhold you some of my written articles:</p>
     {% endif %}
-    <ol class="o-list-clean" reversed>
-      {% for item in postListItems %}
-        {% if item.date.getTime() <= global.now %}
-          <li>
-            <time datetime="{{ item.date | w3DateFilter }}">{{ item.date | dateFilter }}</time>
-            <h3>
-              <a href="{{ item.url }}" rel="bookmark">{{ item.data.title }}</a>
-            </h3>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ol>
-    {% include "partials/components/pagination.njk" %}
+    <div>
+      <ol class="o-list-clean  |  o-flow  o-flow--small" reversed>
+        {% for item in postListItems %}
+          {% if item.date.getTime() <= global.now %}
+            <li>
+              <time datetime="{{ item.date | w3DateFilter }}">{{ item.date | dateFilter }}</time>
+              <h3>
+                <a href="{{ item.url }}" rel="bookmark">{{ item.data.title }}</a>
+              </h3>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+      {% include "partials/components/pagination.njk" %}
+    </div>
   </section>
 {% endif %}
