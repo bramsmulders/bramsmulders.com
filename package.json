@@ -1,7 +1,18 @@
 {
-  "name": "bramsmulders.com",
+  "name": "bram.is",
   "version": "6.0.1",
-  "description": "My personal site",
+  "description": "bram.is personal protfolio",
+  "author": "Bram Smulders <source@bram.is>",
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://www.github.com/sponsors/bramsmulders"
+    },
+    {
+      "type": "paypal",
+      "url": "https://www.paypal.me/smuldersbram/EUR"
+    }
+  ],
   "main": "index.js",
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
@@ -54,6 +65,5 @@
     "url": "git+https://github.com/bramsmulders/bramsmulders.com.git"
   },
   "keywords": [],
-  "author": "",
   "license": "MIT"
 }
