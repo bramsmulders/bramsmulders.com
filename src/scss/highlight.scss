@@ -49,7 +49,6 @@ pre[class*='language-'] {
 /* Code blocks */
 pre[class*='language-'] {
   padding: space.get('base');
-  margin-block-end: space.get('base');
   overflow: auto;
 }
 

@@ -1,12 +1,12 @@
 {% set introHeadingLevelInternal = introHeadingLevel|default("1", true) %}
 {% set introElementInternal = introElement|default("section", true) %}
 
-<{{ introElementInternal }} class="[ c-intro ]  [ o-grid  o-grid--inner ]  [ o-layer  o-layer--bg ]  [ t-slate-bg ]">
+<{{ introElementInternal }} class="c-intro  |  o-grid  o-grid--inner  |  o-layer  o-layer--bg  |  o-flow  |  t-slate-bg">
   {% if introPrefix %}
     <div class="o-flow">{{ introPrefix | safe }}</div>
   {% endif %}
-  <h{{ introHeadingLevelInternal }} class="[ c-intro__heading ]  [ c-heading  c-heading--highlight  {% if introHeadingQuote %}c-heading--quote{% endif %} ]">{{ introHeading | safe }}</h{{ introHeadingLevelInternal }}>
+  <h{{ introHeadingLevelInternal }} class="c-intro__heading  |  c-heading  c-heading--highlight  {% if introHeadingQuote %}c-heading--quote{% endif %}">{{ introHeading | safe }}</h{{ introHeadingLevelInternal }}>
   {% if introSummary %}
-    <div class="[ o-content ]  [ o-flow ]  [ u-margin-block-end-base ]">{{ introSummary | safe }}</div>
+    <div class="o-content  |  o-flow  |  u-margin-block-end-base">{{ introSummary | safe }}</div>
   {% endif %}
 </{{ introElementInternal }}>

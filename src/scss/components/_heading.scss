@@ -8,6 +8,7 @@
     ========================================================================= */
 
 @use '../../../node_modules/@supple-kit/supple-css/tools/space';
+@use '../../../node_modules/@supple-kit/supple-css/tools/rem';
 
 
 
@@ -41,14 +42,13 @@
 
 .c-heading--highlight {
   position: relative;
-  margin-block-end: space.get('base');
 
   &::after {
     position: absolute;
-    top: calc(100% + 0.25em);
+    top: calc(100% + #{space.get('tiny')});
     left: 0;
     inline-size: space.get('base') * 1.5;
-    height: 4px;
+    height: rem.convert(4px);
     background-color: var(--color-highlight);
     content: '';
     pointer-events: none;

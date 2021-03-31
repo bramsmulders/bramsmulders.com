@@ -17,17 +17,18 @@
 
 .o-layer {
   padding-block-start: space.get('base');
+  padding-block-end: space.get('base');
 
   @include responsive.mq(lap) {
     padding-block-start: space.get('large');
-    padding-block-end: space.get('large') - space.get('base');
+    padding-block-end: space.get('large');
   }
 
   &:first-child:not(.o-layer--bg) {
     padding-block-start: 0;
 
     @include responsive.mq(lap) {
-      padding-block-start: space.get('large') - space.get('base');
+      padding-block-start: space.get('large');
     }
   }
 }

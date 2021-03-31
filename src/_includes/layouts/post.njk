@@ -17,9 +17,9 @@
   <span>Takes about {{ helpers.getReadingTime(content) }} minutes to read</span>
   {% if tags %}
     <p class="u-visually-hidden">Filed under</p>
-    <ul class="o-layout  o-layout--gap-small">
+    <ul class="c-tags  |  o-layout  o-layout--gap-small">
       {% for item in tags %}
-        <li class="o-layout__cell  o-layout__cell--fit">
+        <li class="o-layout__fit">
           <a href="/tags/{{ item }}">#{{ item }}</a>
         </li>
       {% endfor %}
@@ -29,10 +29,10 @@
 
 {% block content %}
   <main id="main-content" tabindex="-1">
-    <article class="[ o-grid ]" itemscope itemtype="http://schema.org/BlogPosting">
+    <article class="o-grid" itemscope itemtype="http://schema.org/BlogPosting">
       {% include "partials/components/intro.njk" %}
 
-      <section class="[ o-content ]  [ o-layer ]  [ o-grid  o-grid--inner ]  [ o-flow ]  [ u-margin-block-end-base ]">
+      <section class="o-content  |  o-layer  |  o-grid  o-grid--inner  |  o-flow  |  u-margin-block-end-base">
         {{ content | safe }}
         {% if site.enableThirdPartyComments %}
           <hr />
