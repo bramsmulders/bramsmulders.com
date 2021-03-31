@@ -36,6 +36,13 @@
   $fit-in-query: (palm, lap),
 );
 
+@use '../../../node_modules/@supple-kit/supple-css/objects/flow/variables' as flow-variables with (
+  $gaps: (
+    'tiny',
+    'base'
+  )
+);
+
 @use '../../../node_modules/@supple-kit/supple-css/utilities/spacing/variables' as spacing-variables with (
   $in-query: (lap),
   $sizes: (

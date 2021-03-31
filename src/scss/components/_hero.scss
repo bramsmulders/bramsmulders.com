@@ -8,6 +8,7 @@
     ========================================================================= */
 
 @use '../../../node_modules/@supple-kit/supple-css/tools/responsive';
+@use '../../../node_modules/@supple-kit/supple-css/tools/space';
 @use '../../../node_modules/@supple-kit/supple-css/tools/rem';
 @use '../../../node_modules/@supple-kit/supple-css/settings/defaults';
 
@@ -17,7 +18,7 @@
     ========================================================================= */
 
 .c-hero {
-  display: flex;
+  --layout-block-gap: 0;
   text-align: center;
 
   @include responsive.mq(palm) {
