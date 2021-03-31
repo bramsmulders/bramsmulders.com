@@ -18,10 +18,13 @@
   //
 }
 
+.c-trusted__list {
+  --layout-block-gap: #{space.get('base')};
+}
+
 .c-trusted__wrap-logo {
   display: block;
   block-size: space.get('base');
-  margin-block-end: space.get('base');
   opacity: 0.7;
 
   &:hover,

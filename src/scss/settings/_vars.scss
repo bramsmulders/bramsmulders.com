@@ -39,6 +39,7 @@
 @use '../../../node_modules/@supple-kit/supple-css/objects/flow/variables' as flow-variables with (
   $gaps: (
     'tiny',
+    'small',
     'base'
   )
 );
