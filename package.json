@@ -62,7 +62,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bramsmulders/bramsmulders.com.git"
+    "url": "git+https://github.com/bram-is/homepage.git"
   },
   "keywords": [],
   "license": "MIT"
