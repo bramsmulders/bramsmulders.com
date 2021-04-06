@@ -7,7 +7,7 @@
   [headers.values]
     Content-Security-Policy = "default-src 'self';"
     X-Frame-Options = "SAMEORIGIN"
-    X-XSS-Protection = 1
+    X-XSS-Protection = "1"
     X-Content-Type-Options = "nosniff"
 
 
