@@ -2,6 +2,11 @@
   command = "npm run production"
   publish = "dist"
 
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self';"
+
 [[redirects]]
   from = "http://bramsmulders.com/*"
   to = "https://bram.is/:splat"
