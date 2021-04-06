@@ -38,10 +38,6 @@
 }
 
 .o-layer--bg {
-  &:last-child {
-    padding-block-end: space.get('base');
-  }
-
   @include responsive.mq(lap) {
     & + & {
       margin-block-start: space.get('large');
