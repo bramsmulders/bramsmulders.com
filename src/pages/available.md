@@ -12,7 +12,7 @@ socialImage: /images/talk-fronteers-e-sites.jpg
 
 ## Availability
 
-I’m for hire as a senior Front-end UI developer. Currently **[I will be open for new long-term projects, performance audits and consultancy from Q3 2021](#heading-still-with-me)**.
+I’m for hire as a senior Front-end UI developer. Currently **[I am open for new long-term projects, performance audits and consultancy from Q3 2021](#heading-still-with-me)**.
 
 I hold myself to high standards in:
 
@@ -28,7 +28,9 @@ I hold myself to high standards in:
 - Methods like scrum, Jira, TargetProcess, Trello, git, style- and JavaScript linters and other tools.
 
 ## Company details
+
 **bram.is** is registered in the Dutch Chamber of Commerce under number 80002668. VAT number: NL003379779B98.
 
 ## Still with me?
+
 Drop me a message below. The more details about your project you include in your message, the faster I can get back to you. You’ll hear back from me within 2–4 business days.

@@ -1,8 +1,8 @@
 ---
-title: 'Recent Work'
-permalink: '/working/index.html'
-layout: 'layouts/work.njk'
-part: 'working'
+title: "Recent Work"
+permalink: "/working/index.html"
+layout: "layouts/work.njk"
+part: "working"
 ---
 
-I **lead UI front-end development** for companies and organizations, building resilient UI foundations for their online experiences. Learn more about the work I do or [hire me](/available).
+I hold myself to high standards in **front-end UI development** for companies and organizations, building resilient UI's for their online outlets. Learn more about the work I do below or [hire me](/available).
