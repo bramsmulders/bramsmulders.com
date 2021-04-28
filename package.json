@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "@erquhart/rollup-plugin-node-builtins": "^2.1.5",
+    "@netlify/plugin-lighthouse": "^2.1.0",
     "autoprefixer": "^10.2.5",
     "bl": "^4.1.0",
     "chokidar-cli": "^2.1.0",
