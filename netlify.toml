@@ -27,6 +27,7 @@
     X-Frame-Options = "SAMEORIGIN"
     X-XSS-Protection = "1"
     X-Content-Type-Options = "nosniff"
+    Permissions-Policy = "interest-cohort=()"
 
 
 [[redirects]]
