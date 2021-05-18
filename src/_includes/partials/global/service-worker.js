@@ -10,16 +10,15 @@ const EXCLUDED_URLS = [
   "https://identity.netlify.com/v1/netlify-identity-widget.js",
   "https://unpkg.com/netlify-cms@^2.9.3/dist/netlify-cms.js",
   "/thanking-you",
-];
-
-// URLS that we want to be cached when the worker is installed
-const PRE_CACHE_URLS = [
-  "/",
   "/fonts/ubuntu-v14-latin-700.woff2",
   "/fonts/crimson-text-v10-latin-regular.woff2",
   "/fonts/crimson-text-v10-latin-italic.woff2",
   "/fonts/crimson-text-v10-latin-700.woff2",
+  "/svg/sprite.svg",
 ];
+
+// URLS that we want to be cached when the worker is installed
+const PRE_CACHE_URLS = ["/"];
 
 // You might want to bypass a certain host
 const IGNORED_HOSTS = ["localhost", "unpkg.com"];
