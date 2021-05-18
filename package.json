@@ -45,7 +45,8 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "stylelint": "^13.13.1",
     "stylelint-config-supple": "^3.0.3",
-    "stylelint-scss": "^3.19.0"
+    "stylelint-scss": "^3.19.0",
+    "svgstore-cli": "^2.0.0"
   },
   "scripts": {
     "lint": "stylelint \"src/scss/**/*.scss\"",
@@ -55,10 +56,11 @@
     "cms:precompile": "make-dir dist/admin && nunjucks-precompile src/_includes > dist/admin/templates.js -i \"\\.(njk|css|svg)$\"",
     "cms:bundle": "rollup --config",
     "gzip": "gzip-size src/_includes/assets/css/global.css",
+    "svg": "svgstore -o src/_includes/assets/svg/sprite.svg src/_includes/icons/**/*.svg",
     "test": "npm run lint && npm run gzip",
-    "start": "concurrently \"npm run sass:process -- --watch\" \"npm run cms:bundle -- --watch\" \"chokidar \\\"src/_includes/**\\\" -c \\\"npm run cms:precompile\\\"\" \"npm run serve\"",
+    "start": "npm run svg && concurrently \"npm run sass:process -- --watch\" \"npm run cms:bundle -- --watch\" \"chokidar \\\"src/_includes/**\\\" -c \\\"npm run cms:precompile\\\"\" \"npm run serve\"",
     "serve": "cross-env ELEVENTY_ENV=development npx eleventy --serve",
-    "production": "npm run lint && npm run sass:process && npm run postcss && npm run cms:precompile && npm run cms:bundle && npx eleventy"
+    "production": "npm run lint && npm run sass:process && npm run postcss && npm run cms:precompile && npm run cms:bundle && npm run svg && npx eleventy"
   },
   "repository": {
     "type": "git",
